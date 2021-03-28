@@ -1,0 +1,4 @@
+/* 评论不显示浏览器版本和操作系统版本 */
+.vsys {
+  display: none !important;
+}

@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-atom.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"hexo.xiaosi.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="一、安装之前准备1.1 Git1.2 Node1.3 Github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docsify笔记搭建">
+<meta property="og:url" content="https://hexo.xiaosi.world/archives/f8fffde8.html">
+<meta property="og:site_name" content="小四先生の博客">
+<meta property="og:description" content="一、安装之前准备1.1 Git1.2 Node1.3 Github">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/docsify%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/%E5%AF%BC%E8%88%AA%E6%A0%8F.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/%E4%B8%BB%E9%A2%98.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/Githubpages.png">
+<meta property="article:published_time" content="2021-03-20T02:18:28.000Z">
+<meta property="article:modified_time" content="2021-03-27T02:13:48.440Z">
+<meta property="article:author" content="Mr.XiaoSi">
+<meta property="article:tag" content="Docsify">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="Node">
+<meta property="article:tag" content="Github">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/docsify%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8.png">
+
+<link rel="canonical" href="https://hexo.xiaosi.world/archives/f8fffde8.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Docsify笔记搭建 | 小四先生の博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  
+  <!-- 百度收录 -->
+  <meta name="baidu-site-verification" content="code-BGK9bbVOtE" />
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">小四先生の博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">记录生活中的点点滴滴</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">9</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">13</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/zxiaosi" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener external nofollow noreferrer" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/f8fffde8.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://gitee.com/zxiaosi/img/raw/master/Common/头像.jpg">
+      <meta itemprop="name" content="Mr.XiaoSi">
+      <meta itemprop="description" content="生命不息 奋斗不止">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小四先生の博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Docsify笔记搭建
+        </h1>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-03-20 10:18:28" itemprop="dateCreated datePublished" datetime="2021-03-20T10:18:28+08:00">2021-03-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-27 10:13:48" itemprop="dateModified" datetime="2021-03-27T10:13:48+08:00">2021-03-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Docsify-%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">Docsify 笔记</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">评论数：</span>
+    
+    <a title="valine" href="/archives/f8fffde8.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/f8fffde8.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="一、安装之前准备"><a href="#一、安装之前准备" class="headerlink" title="一、安装之前准备"></a>一、安装之前准备</h2><h3 id="1-1-Git"><a href="#1-1-Git" class="headerlink" title="1.1 Git"></a>1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3><h3 id="1-2-Node"><a href="#1-2-Node" class="headerlink" title="1.2 Node"></a>1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3><h3 id="1-3-Github"><a href="#1-3-Github" class="headerlink" title="1.3 Github"></a>1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3><span id="more"></span>
+
+<h2 id="二、Docsify"><a href="#二、Docsify" class="headerlink" title="二、Docsify"></a>二、Docsify</h2><h3 id="2-1-Docsify简介"><a href="#2-1-Docsify简介" class="headerlink" title="2.1 Docsify简介"></a>2.1 Docsify简介</h3><ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://docsify.js.org/#/zh-cn/">官方文档</a> 不是很多，建议阅读。</li>
+<li>docsify 可以快速帮你生成文档网站。不同于 GitBook、Hexo 的地方是它不会生成静态的 <code>.html</code> 文件，所有转换工作都是在运行时。如果你想要开始使用它，只需要创建一个 <code>index.html</code> 就可以开始编写文档并直接<a target="_blank" rel="noopener external nofollow noreferrer" href="https://docsify.js.org/#/zh-cn/deploy">部署在 GitHub Pages</a>。</li>
+</ul>
+<h3 id="2-2-Docsify安装及初始化"><a href="#2-2-Docsify安装及初始化" class="headerlink" title="2.2 Docsify安装及初始化"></a>2.2 Docsify安装及初始化</h3><ul>
+<li><p>全局安装 <code>docsify-cli</code> 工具，可以方便地创建及在本地预览生成的文档。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i docsify-cli -g</span><br></pre></td></tr></table></figure></li>
+<li><p>新建文件夹（名字、位置随意），进入到文件夹，并初始化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 我的文件在e盘下docs</span><br><span class="line">e:			# 进入到e:</span><br><span class="line">cd docs			# 进入到文件夹</span><br><span class="line">docsify init		# 初始化</span><br></pre></td></tr></table></figure></li>
+<li><p>初始化成功后，可以看到 <code>./docs</code> 目录下创建的几个文件</p>
+<ul>
+<li><code>index.html</code> 入口文件</li>
+<li><code>README.md</code> 会做为主页内容渲染</li>
+<li><code>.nojekyll</code> 用于阻止 GitHub Pages 忽略掉下划线开头的文件</li>
+</ul>
+</li>
+<li><p>直接编辑 <code>./docs/README.md</code> 就能更新文档内容</p>
+</li>
+</ul>
+<h3 id="2-3-Docsify服务启动"><a href="#2-3-Docsify服务启动" class="headerlink" title="2.3 Docsify服务启动"></a>2.3 Docsify服务启动</h3><ul>
+<li><p>通过运行 <code>docsify serve</code> 启动一个本地服务器，可以方便地实时预览效果。默认访问地址 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:3000/">http://localhost:3000</a> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docsify serve</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/docsify%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8.png"></p>
+</li>
+</ul>
+<h2 id="三、Docsify配置"><a href="#三、Docsify配置" class="headerlink" title="三、Docsify配置"></a>三、Docsify配置</h2><p><font color='red'><strong>服务开启且配置后，网页需多刷新几次才会显示配置的内容，<code>Ctrl+R</code> 强制刷新</strong></font></p>
+<h3 id="3-1-侧边栏与目录"><a href="#3-1-侧边栏与目录" class="headerlink" title="3.1 侧边栏与目录"></a>3.1 侧边栏与目录</h3><ul>
+<li><p>在 <code>./docs</code> 下新建文件 <code>_sidebar.md</code>，并修改 <code>index.html</code> 文件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- index.html --&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="built_in">window</span>.$docsify = &#123;</span><br><span class="line">+   <span class="comment">// 侧边栏</span></span><br><span class="line">+   loadSidebar: <span class="literal">true</span>,</span><br><span class="line">    </span><br><span class="line">+   <span class="comment">// 最大目录级别</span></span><br><span class="line">+   subMaxLevel: <span class="number">2</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">+ &lt;!-- 官方 --&gt;</span><br><span class="line">+ <span class="xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p> <code>subMaxLevel </code> 控制着侧边栏显示最大目录级数，效果见下图</p>
+</li>
+<li><p>在 <code>_sidebar.md</code> 文件中添加如下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- docs&#x2F;_sidebar.md --&gt; </span><br><span class="line"></span><br><span class="line">+ [首页](README.md)</span><br><span class="line">+ [指南]()</span><br></pre></td></tr></table></figure></li>
+<li><p>在 <code>README.md</code> 文件中添加如下代码</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">## 我是二级标题</span></span><br><span class="line"><span class="section">### 我是三级标题</span></span><br></pre></td></tr></table></figure></li>
+<li><p>刷新网页，即可看到效果</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98.png"></p>
+</li>
+</ul>
+<h3 id="3-2-导航栏"><a href="#3-2-导航栏" class="headerlink" title="3.2 导航栏"></a>3.2 导航栏</h3><ul>
+<li><p>在 <code>./docs</code> 下新建文件 <code>_navbar.md</code>，并修改 <code>index.html</code> 文件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- index.html --&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="built_in">window</span>.$docsify = &#123;</span><br><span class="line">+   <span class="comment">// 导航栏</span></span><br><span class="line">+   loadNavbar: <span class="literal">true</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">-  &lt;!-- Docsify v4 --&gt;</span><br><span class="line">-  <span class="xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/docsify@4&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>在 <code>_navbar.md</code> 文件中添加如下代码</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- <span class="emphasis">_navbar.md --&gt;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">+ [<span class="string">En</span>](<span class="link">/</span>)</span></span><br><span class="line"><span class="emphasis">+ [<span class="string">中文</span>](<span class="link">/zh-cn/</span>)</span></span><br></pre></td></tr></table></figure></li>
+<li><p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/%E5%AF%BC%E8%88%AA%E6%A0%8F.png"></p>
+</li>
+</ul>
+<h3 id="3-3-封面"><a href="#3-3-封面" class="headerlink" title="3.3 封面"></a>3.3 封面</h3><ul>
+<li><p>在 <code>./docs</code> 下新建文件 <code>_coverpage.md</code>，并修改 <code>index.html</code> 文件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- index.html --&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="built_in">window</span>.$docsify = &#123;</span><br><span class="line">+   <span class="comment">// 封面</span></span><br><span class="line">+   coverpage: <span class="literal">true</span>,</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>在 <code>_coverpage.md</code> 文件中添加如下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- _coverpage.md --&gt;</span><br><span class="line"></span><br><span class="line">![logo](https:&#x2F;&#x2F;docsify.js.org&#x2F;_media&#x2F;icon.svg)</span><br><span class="line"></span><br><span class="line">**#** **docsify &lt;small&gt;3.5&lt;&#x2F;small&gt;**</span><br><span class="line"></span><br><span class="line">&gt; 一个神奇的文档网站生成器。</span><br><span class="line"></span><br><span class="line">+ 简单、轻便 (压缩后 ~21kB)</span><br><span class="line">+ 无需生成 html 文件 </span><br><span class="line">+ 众多主题 </span><br><span class="line"></span><br><span class="line">[GitHub](https:&#x2F;&#x2F;github.com&#x2F;docsifyjs&#x2F;docsify&#x2F;) [Get Started](README)</span><br></pre></td></tr></table></figure></li>
+<li><p>访问 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:3000/#/">http://localhost:3000/#/</a> 即可看到效果</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/%E4%B8%BB%E9%A2%98.png"></p>
+</li>
+</ul>
+<h3 id="3-4-主题选择"><a href="#3-4-主题选择" class="headerlink" title="3.4 主题选择"></a>3.4 主题选择</h3><ul>
+<li><p>目前提供三套主题可供选择，模仿 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://vuejs.org/">Vue</a> 和 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://buble.surge.sh/">buble</a> 官网订制的主题样式。还有 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/liril-net">@liril-net</a> 贡献的黑色风格的主题。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/docsify/themes/vue.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/docsify/themes/buble.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/docsify/themes/dark.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/docsify/themes/pure.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/docsify/themes/dolphin.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>将上述主题之一加到 <code>&lt;head&gt;&lt;/head&gt;</code> 之间，并去掉官方的主题</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">- <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">+ <span class="comment">&lt;!-- 主题 --&gt;</span></span><br><span class="line">+ <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//cdn.jsdelivr.net/npm/docsify/themes/dark.css&quot;</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>刷新网页即可看到效果</p>
+</li>
+</ul>
+<h2 id="四、写作与部署"><a href="#四、写作与部署" class="headerlink" title="四、写作与部署"></a>四、写作与部署</h2><h3 id="4-1-写作"><a href="#4-1-写作" class="headerlink" title="4.1 写作"></a>4.1 写作</h3><ul>
+<li>在 <code>README.md</code> 中写笔记即可</li>
+</ul>
+<h3 id="4-2-上传到Github"><a href="#4-2-上传到Github" class="headerlink" title="4.2 上传到Github"></a>4.2 上传到Github</h3><ul>
+<li><p><code>Github 新建仓库</code> –&gt; <code>Settings</code> –&gt; <code>Options</code> –&gt; <code>GitHub Pages</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/docsify/doc/Githubpages.png"></p>
+</li>
+</ul>
+<br>
+
+
+    </div>
+
+    
+    
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:16px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
+    
+</div>
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Mr.XiaoSi
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://hexo.xiaosi.world/archives/f8fffde8.html" title="Docsify笔记搭建">https://hexo.xiaosi.world/archives/f8fffde8.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Docsify/" rel="tag"><i class="fa fa-tag"></i> Docsify</a>
+              <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
+              <a href="/tags/Node/" rel="tag"><i class="fa fa-tag"></i> Node</a>
+              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
+          </div>
+          <script type="text/javascript">
+            var tagsall=document.getElementsByClassName("post-tags")
+            for (var i = tagsall.length - 1; i >= 0; i--){
+                var tags=tagsall[i].getElementsByTagName("a");
+                for (var j = tags.length - 1; j >= 0; j--) {
+                    var golden_ratio = 0.618033988749895;
+                    var s = 0.5;
+                    var v = 0.999;
+                    var h = golden_ratio + Math.random()*0.8 - 0.5;
+                    var h_i = parseInt(h * 6);
+                    var f = h * 6 - h_i;
+                    var p = v * (1 - s);
+                    var q = v * (1 - f * s);
+                    var t = v * (1 - (1 - f) * s);
+                    var r, g, b;
+                    switch (h_i) {
+                        case 0:
+                            r = v;
+                            g = t;
+                            b = p;
+                            break;
+                        case 1:
+                            r = q;
+                            g = v;
+                            b = p;
+                            break;
+                        case 2:
+                            r = p;
+                            g = v;
+                            b = t;
+                            break;
+                        case 3 :
+                            r = p;
+                            g = q;
+                            b = v;
+                            break;
+                        case 4:
+                            r = t;
+                            g = p;
+                            b = v;
+                            break;
+                        case 5:
+                            r = v;
+                            g = p;
+                            b = q;
+                            break;
+                        default:
+                            r = 1;
+                            g = 1;
+                            b = 1;
+                      }
+                    tags[j].style.background = "rgba("+parseInt(r*255)+","+parseInt(g*255)+","+parseInt(b*255)+","+0.5+")";
+                }
+            }                        
+            </script>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/archives/c776502.html" rel="prev" title="Hexo-Next配置（进阶篇）">
+      <i class="fa fa-chevron-left"></i> Hexo-Next配置（进阶篇）
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/archives/cd1d42d1.html" rel="next" title="Docsify进阶配置">
+      Docsify进阶配置 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85%E4%B9%8B%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-text">一、安装之前准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Git"><span class="nav-text">1.1 Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Node"><span class="nav-text">1.2 Node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-Github"><span class="nav-text">1.3 Github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81Docsify"><span class="nav-text">二、Docsify</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Docsify%E7%AE%80%E4%BB%8B"><span class="nav-text">2.1 Docsify简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Docsify%E5%AE%89%E8%A3%85%E5%8F%8A%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-text">2.2 Docsify安装及初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-Docsify%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8"><span class="nav-text">2.3 Docsify服务启动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81Docsify%E9%85%8D%E7%BD%AE"><span class="nav-text">三、Docsify配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E4%BE%A7%E8%BE%B9%E6%A0%8F%E4%B8%8E%E7%9B%AE%E5%BD%95"><span class="nav-text">3.1 侧边栏与目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E5%AF%BC%E8%88%AA%E6%A0%8F"><span class="nav-text">3.2 导航栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E5%B0%81%E9%9D%A2"><span class="nav-text">3.3 封面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-%E4%B8%BB%E9%A2%98%E9%80%89%E6%8B%A9"><span class="nav-text">3.4 主题选择</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%86%99%E4%BD%9C%E4%B8%8E%E9%83%A8%E7%BD%B2"><span class="nav-text">四、写作与部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-%E5%86%99%E4%BD%9C"><span class="nav-text">4.1 写作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-%E4%B8%8A%E4%BC%A0%E5%88%B0Github"><span class="nav-text">4.2 上传到Github</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mr.XiaoSi"
+      src="https://gitee.com/zxiaosi/img/raw/master/Common/头像.jpg">
+  <p class="site-author-name" itemprop="name">Mr.XiaoSi</p>
+  <div class="site-description" itemprop="description">生命不息 奋斗不止</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://xiaosi.world/" title="Web → https:&#x2F;&#x2F;xiaosi.world" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-globe fa-fw"></i>Web</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://doc.xiaosi.world/#" title="Note → https:&#x2F;&#x2F;doc.xiaosi.world&#x2F;#" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-book fa-fw"></i>Note</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/zxiaosi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zxiaosi" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://gitee.com/zxiaosi" title="Gitee → https:&#x2F;&#x2F;gitee.com&#x2F;zxiaosi" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-google fa-fw"></i>Gitee</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://wq133.github.io/" title="Friendship → https:&#x2F;&#x2F;wq133.github.io" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-gamepad fa-fw"></i>Friendship</a>
+      </span>
+  </div>
+
+
+
+
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-" aria-hidden="true"></i>
+        近期文章
+      </div>
+      <ul class="links-of-blogroll-list">
+        
+        
+          <li>
+            <a href="/archives/1c750174.html" title="Gitee" target="_blank">Gitee</a>
+          </li>
+        
+          <li>
+            <a href="/archives/9a453af.html" title="Typora配置与主题" target="_blank">Typora配置与主题</a>
+          </li>
+        
+          <li>
+            <a href="/archives/dd170fc7.html" title="Typora" target="_blank">Typora</a>
+          </li>
+        
+          <li>
+            <a href="/archives/cd1d42d1.html" title="Docsify进阶配置" target="_blank">Docsify进阶配置</a>
+          </li>
+        
+          <li>
+            <a href="/archives/f8fffde8.html" title="Docsify笔记搭建" target="_blank">Docsify笔记搭建</a>
+          </li>
+        
+      </ul>
+    </div>
+
+
+
+
+<script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+<div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div id="myCanvasContainer" class="widget tagcloud">
+        <canvas width="250" height="250" id="resCanvas" style="width=100%">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Docsify/" rel="tag">Docsify</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Git/" rel="tag">Git</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Gitee/" rel="tag">Gitee</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Next/" rel="tag">Next</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node/" rel="tag">Node</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Typora/" rel="tag">Typora</a><span class="tag-list-count">2</span></li></ul>
+        </canvas>
+    </div>
+</div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr.XiaoSi</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">68k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:02</span>
+</div><!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span> 
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("03/01/2021 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+}
+setInterval("createtime()",250);
+</script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'QziLm2izkeAN6gNxAIUxvFmN-MdYXbMMI',
+      appKey     : 't8Qm51Nos54BIEkgpNq5qQEq',
+      placeholder: "在这里写下你的评论吧！",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+
+  <script async src="/js/cursor/text.js"></script>
+
+</body>
+</html>
