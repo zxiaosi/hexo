@@ -223,49 +223,84 @@
     <content><![CDATA[<h2 id="一、自定义配置"><a href="#一、自定义配置" class="headerlink" title="一、自定义配置"></a>一、自定义配置</h2><p>当我们下载好软件之后，可以根据个人情况配置一下Typora。以下是我的配置，仅供参考！！！</p>
 <h3 id="1-1默认打开软件之后是这个界面："><a href="#1-1默认打开软件之后是这个界面：" class="headerlink" title="1.1默认打开软件之后是这个界面："></a>1.1默认打开软件之后是这个界面：</h3><span id="more"></span>
 
-<img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/%E9%BB%98%E8%AE%A4%E7%95%8C%E9%9D%A2-1609171708759.png" style="zoom:80%;" />
-
-<h3 id="1-2-侧边栏"><a href="#1-2-侧边栏" class="headerlink" title="1.2 侧边栏"></a>1.2 侧边栏</h3><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/侧边栏.png" style="zoom:80%;" />
-
-<h3 id="1-3-切换视图模式"><a href="#1-3-切换视图模式" class="headerlink" title="1.3 切换视图模式"></a>1.3 切换视图模式</h3><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/切换模式.png" style="zoom:80%;" />
-
-<h3 id="1-4-文件操作"><a href="#1-4-文件操作" class="headerlink" title="1.4 文件操作"></a>1.4 文件操作</h3><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/文件操作.png" style="zoom:80%;" />
-
-<h3 id="1-5-源代码模式"><a href="#1-5-源代码模式" class="headerlink" title="1.5 源代码模式"></a>1.5 源代码模式</h3><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/源代码1.png" style="zoom:80%;" />
-
-<img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/源代码2.png" alt="源代码2" style="zoom:80%;" />
-
-<h3 id="1-6-偏好设置"><a href="#1-6-偏好设置" class="headerlink" title="1.6 偏好设置"></a>1.6 偏好设置</h3><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/菜单.png" style="zoom:80%;" />
-
-<h4 id="1-6-1-选中偏好设置"><a href="#1-6-1-选中偏好设置" class="headerlink" title="1.6.1 选中偏好设置"></a>1.6.1 选中偏好设置</h4><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/偏好设置.png" style="zoom:80%;" />
-
-<h4 id="1-6-2-启动选项（根据个人爱好选择）"><a href="#1-6-2-启动选项（根据个人爱好选择）" class="headerlink" title="1.6.2 启动选项（根据个人爱好选择）"></a>1.6.2 启动选项（根据个人爱好选择）</h4><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/修改启动项.png" style="zoom:80%;" />
-
-<h4 id="1-6-3-保存与恢复"><a href="#1-6-3-保存与恢复" class="headerlink" title="1.6.3 保存与恢复"></a>1.6.3 保存与恢复</h4><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/保存与恢复.png" style="zoom:80%;" />
-
-<h3 id="1-7-窗口样式（可以选中重启对比一下效果，个人倾向于一体化）"><a href="#1-7-窗口样式（可以选中重启对比一下效果，个人倾向于一体化）" class="headerlink" title="1.7 窗口样式（可以选中重启对比一下效果，个人倾向于一体化）"></a>1.7 窗口样式（可以选中重启对比一下效果，个人倾向于一体化）</h3><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/窗口样式.png" style="zoom:80%;" />
-
-<h4 id="1-10-1默认样式"><a href="#1-10-1默认样式" class="headerlink" title="1.10.1默认样式"></a>1.10.1默认样式</h4><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/%E9%BB%98%E8%AE%A4%E7%95%8C%E9%9D%A2-1609171708759.png" style="zoom:80%;" />
-
-<h4 id="1-10-2-一体化样式"><a href="#1-10-2-一体化样式" class="headerlink" title="1.10.2 一体化样式"></a>1.10.2 一体化样式</h4><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/一体化样式.png" style="zoom:80%;" />
-
-<h3 id="1-11-编辑器（根据个人爱好修改）"><a href="#1-11-编辑器（根据个人爱好修改）" class="headerlink" title="1.11 编辑器（根据个人爱好修改）"></a>1.11 编辑器（根据个人爱好修改）</h3><h3 id="1-12-图像（关系到图片如何上传，下一篇讲）"><a href="#1-12-图像（关系到图片如何上传，下一篇讲）" class="headerlink" title="1.12 图像（关系到图片如何上传，下一篇讲）"></a>1.12 图像（关系到图片如何上传，下一篇讲）</h3><h3 id="1-13-Markdown语法支持（根据个人爱好修改）"><a href="#1-13-Markdown语法支持（根据个人爱好修改）" class="headerlink" title="1.13 Markdown语法支持（根据个人爱好修改）"></a>1.13 Markdown语法支持（根据个人爱好修改）</h3><h2 id="二、主题选择"><a href="#二、主题选择" class="headerlink" title="二、主题选择"></a>二、主题选择</h2><h3 id="2-1-自带样式选择（选择之后重启生效）"><a href="#2-1-自带样式选择（选择之后重启生效）" class="headerlink" title="2.1 自带样式选择（选择之后重启生效）"></a>2.1 自带样式选择（选择之后<font color='red'>重启生效</font>）</h3><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/自带样式选择.png" style="zoom:80%;" />
-
-<h3 id="2-2-获取主题（在线方法）"><a href="#2-2-获取主题（在线方法）" class="headerlink" title="2.2 获取主题（在线方法）"></a>2.2 获取主题（在线方法）</h3><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/获取主题-1609169043802.png" style="zoom:80%;" />
-
-<h4 id="2-2-1打开界面如下：-（根据个人喜好选择）"><a href="#2-2-1打开界面如下：-（根据个人喜好选择）" class="headerlink" title="2.2.1打开界面如下：    （根据个人喜好选择）"></a>2.2.1打开界面如下：    （根据个人喜好选择）</h4><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/Typora主题.png" style="zoom: 67%;" />
-
-<h4 id="2-2-2-下载安装包"><a href="#2-2-2-下载安装包" class="headerlink" title="2.2.2 下载安装包"></a>2.2.2 下载安装包</h4><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/%E4%B8%8B%E8%BD%BD.png"></p>
-<h3 id="2-3-获取主题（离线方法）"><a href="#2-3-获取主题（离线方法）" class="headerlink" title="2.3 获取主题（离线方法）"></a>2.3 获取主题（离线方法）</h3><h4 id="saffron-推荐，效果如下："><a href="#saffron-推荐，效果如下：" class="headerlink" title="saffron  推荐，效果如下："></a><a href="https://wws.lanzous.com/iRgjAjtbb4j">saffron</a>  推荐，效果如下：</h4><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/saffron.png"></p>
-<h4 id="Panda"><a href="#Panda" class="headerlink" title="Panda"></a><a href="https://wws.lanzous.com/iVGSBjtbb2h">Panda</a></h4><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/panda.png"></p>
-<h4 id="onedark"><a href="#onedark" class="headerlink" title="onedark"></a><a href="https://wws.lanzous.com/i0DQRjtbb3i">onedark</a></h4><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/onedark.png"></p>
-<h4 id="NotesDark"><a href="#NotesDark" class="headerlink" title="NotesDark"></a><a href="https://wws.lanzous.com/iXNQ8jtbbaf">NotesDark</a></h4><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/notesdark-1609171668475.png"></p>
-<h4 id="cobalt"><a href="#cobalt" class="headerlink" title="cobalt"></a><a href="https://wws.lanzous.com/ibUCcjtbb8d">cobalt</a></h4><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/cobalt-1609170808403.png"></p>
-<h3 id="2-4-配置主题"><a href="#2-4-配置主题" class="headerlink" title="2.4 配置主题"></a>2.4 配置主题</h3><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/%E6%89%93%E5%BC%80%E4%B8%BB%E9%A2%98%E6%96%87%E4%BB%B6%E5%A4%B9.png"></p>
-<h4 id="2-4-1-解压下载好的压缩包到主题文件夹"><a href="#2-4-1-解压下载好的压缩包到主题文件夹" class="headerlink" title="2.4.1 解压下载好的压缩包到主题文件夹"></a>2.4.1 解压下载好的压缩包到主题文件夹</h4><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/%E8%A7%A3%E5%8E%8B%E6%96%87%E4%BB%B6-1609170304800.png"></p>
-<h4 id="2-4-2-复制后缀为-css文件至根目录下，重启软件。"><a href="#2-4-2-复制后缀为-css文件至根目录下，重启软件。" class="headerlink" title="2.4.2 复制后缀为.css文件至根目录下，重启软件。"></a>2.4.2 复制后缀为<code>.css</code>文件至根目录下，<font color='red'>重启软件</font>。</h4><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/css%E6%96%87%E4%BB%B6.png"></p>
-<h4 id="2-4-3-菜单–-gt-外观–-gt-主题，选择安装好的主题"><a href="#2-4-3-菜单–-gt-外观–-gt-主题，选择安装好的主题" class="headerlink" title="2.4.3 菜单–&gt;外观–&gt;主题，选择安装好的主题"></a>2.4.3 菜单–&gt;外观–&gt;主题，选择安装好的主题</h4><p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98.png"></p>
-<h4 id="2-4-4-最后重启软件即可！！！"><a href="#2-4-4-最后重启软件即可！！！" class="headerlink" title="2.4.4 最后重启软件即可！！！"></a>2.4.4 最后重启软件即可！！！</h4><br>]]></content>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%BB%98%E8%AE%A4.png"></p>
+<h3 id="1-2-侧边栏"><a href="#1-2-侧边栏" class="headerlink" title="1.2 侧边栏"></a>1.2 侧边栏</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BE%A7%E8%BE%B9%E6%A0%8F.png"></p>
+<h3 id="1-3-切换视图模式"><a href="#1-3-切换视图模式" class="headerlink" title="1.3 切换视图模式"></a>1.3 切换视图模式</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E5%88%87%E6%8D%A2%E6%A8%A1%E5%BC%8F.png"></p>
+<h3 id="1-4-文件操作"><a href="#1-4-文件操作" class="headerlink" title="1.4 文件操作"></a>1.4 文件操作</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.png"></p>
+<h3 id="1-5-源代码模式"><a href="#1-5-源代码模式" class="headerlink" title="1.5 源代码模式"></a>1.5 源代码模式</h3><ul>
+<li><p>点击 <code>&lt;/&gt;</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%BA%90%E4%BB%A3%E7%A0%811.png"></p>
+</li>
+<li><p>编写内容</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%BA%90%E4%BB%A3%E7%A0%812.png"></p>
+</li>
+</ul>
+<h3 id="1-6-偏好设置"><a href="#1-6-偏好设置" class="headerlink" title="1.6 偏好设置"></a>1.6 偏好设置</h3><ul>
+<li><p>选中 <code>偏好设置</code></p>
+<p><img data-src="D:/PicGo/图片/偏好设置.png"></p>
+</li>
+<li><p>启动选项（根据个人爱好选择）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E9%A1%B9.png"></p>
+</li>
+<li><p>保存与恢复</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BF%9D%E5%AD%98%E4%B8%8E%E6%81%A2%E5%A4%8D.png"></p>
+</li>
+</ul>
+<h3 id="1-7-窗口样式（可以选中重启对比一下效果，个人倾向于一体化）"><a href="#1-7-窗口样式（可以选中重启对比一下效果，个人倾向于一体化）" class="headerlink" title="1.7 窗口样式（可以选中重启对比一下效果，个人倾向于一体化）"></a>1.7 窗口样式（可以选中重启对比一下效果，个人倾向于一体化）</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E7%AA%97%E5%8F%A3%E6%A0%B7%E5%BC%8F.png"></p>
+<ul>
+<li><p>默认样式</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%BB%98%E8%AE%A4-1617003770263.png"></p>
+</li>
+<li><p>一体化样式</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%B8%80%E4%BD%93%E5%8C%96%E6%A0%B7%E5%BC%8F.png"></p>
+</li>
+</ul>
+<h3 id="1-8-编辑器（根据个人爱好修改）"><a href="#1-8-编辑器（根据个人爱好修改）" class="headerlink" title="1.8 编辑器（根据个人爱好修改）"></a>1.8 编辑器（根据个人爱好修改）</h3><h3 id="1-9-图像（关系到图片如何上传，下一篇讲）"><a href="#1-9-图像（关系到图片如何上传，下一篇讲）" class="headerlink" title="1.9 图像（关系到图片如何上传，下一篇讲）"></a>1.9 图像（关系到图片如何上传，下一篇讲）</h3><h3 id="1-10-Markdown语法支持（根据个人爱好修改）"><a href="#1-10-Markdown语法支持（根据个人爱好修改）" class="headerlink" title="1.10 Markdown语法支持（根据个人爱好修改）"></a>1.10 Markdown语法支持（根据个人爱好修改）</h3><h2 id="二、主题选择"><a href="#二、主题选择" class="headerlink" title="二、主题选择"></a>二、主题选择</h2><h3 id="2-1-自带主题选择（选择之后重启生效）"><a href="#2-1-自带主题选择（选择之后重启生效）" class="headerlink" title="2.1 自带主题选择（选择之后重启生效）"></a>2.1 自带主题选择（选择之后<font color='red'>重启生效</font>）</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%87%AA%E5%B8%A6%E6%A0%B7%E5%BC%8F%E9%80%89%E6%8B%A9.png"></p>
+<h3 id="2-2-获取主题（在线方法）"><a href="#2-2-获取主题（在线方法）" class="headerlink" title="2.2 获取主题（在线方法）"></a>2.2 获取主题（在线方法）</h3><ul>
+<li><p>点击 <code>获取主题</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%8E%B7%E5%8F%96%E4%B8%BB%E9%A2%98-1609169043802.png"></p>
+</li>
+<li><p>打开界面如下：    （根据个人喜好选择）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/Typora%E4%B8%BB%E9%A2%98.png"></p>
+</li>
+<li><p>下载安装包</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%B8%8B%E8%BD%BD.png"></p>
+</li>
+</ul>
+<h3 id="2-3-获取主题（离线方法）"><a href="#2-3-获取主题（离线方法）" class="headerlink" title="2.3 获取主题（离线方法）"></a>2.3 获取主题（离线方法）</h3><ul>
+<li><p><a href="https://wws.lanzous.com/iRgjAjtbb4j">saffron</a>  推荐，效果如下：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/saffron.png"></p>
+</li>
+<li><p><a href="https://wws.lanzous.com/iVGSBjtbb2h">Panda</a></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/panda.png"></p>
+</li>
+<li><p><a href="https://wws.lanzous.com/i0DQRjtbb3i">onedark</a></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/onedark.png"></p>
+</li>
+<li><p><a href="https://wws.lanzous.com/iXNQ8jtbbaf">NotesDark</a></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/notesdark-1609171668475.png"></p>
+</li>
+<li><p><a href="https://wws.lanzous.com/ibUCcjtbb8d">cobalt</a></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/cobalt-1609170808403.png"></p>
+</li>
+</ul>
+<h3 id="2-4-配置主题"><a href="#2-4-配置主题" class="headerlink" title="2.4 配置主题"></a>2.4 配置主题</h3><ul>
+<li><p><code>打开主题文件夹</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%89%93%E5%BC%80%E4%B8%BB%E9%A2%98%E6%96%87%E4%BB%B6%E5%A4%B9.png"></p>
+</li>
+<li><p>2.4.1 解压下载好的压缩包到主题文件夹</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%A7%A3%E5%8E%8B%E6%96%87%E4%BB%B6-1609170304800.png"></p>
+</li>
+<li><p>复制后缀为<code>.css</code>文件至根目录下，<font color='red'>重启软件</font>。</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/css%E6%96%87%E4%BB%B6.png"></p>
+</li>
+<li><p>2.4.3 菜单–&gt;外观–&gt;主题，选择安装好的主题</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98.png"></p>
+</li>
+<li><p>2.4.4 最后重启软件即可！！！</p>
+</li>
+</ul>
+<br>]]></content>
       <categories>
         <category>Typora</category>
       </categories>
@@ -311,14 +346,14 @@
 </ul>
 </li>
 </ol>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/%E6%9C%89%E5%BA%8F.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora/%E6%9C%89%E5%BA%8F.png"></p>
 </li>
 </ul>
 </li>
 <li><p>无序列表</p>
 <ul>
 <li><p>+ + 空格，<font color='red'>注意</font>是<code>+</code> + <code>空格</code>，实现无序序列。效果如下：</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/%E6%97%A0%E5%BA%8F.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora/%E6%97%A0%E5%BA%8F.png"></p>
 </li>
 </ul>
 </li>
@@ -331,7 +366,7 @@
 <p>（点击代码框，在 <strong>选择语言</strong> 中输入编程语言实现和上面相同的效果）</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>我是html代码<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Typora/%60%60%60%E7%9A%84%E4%BD%BF%E7%94%A8.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora/%60%60%60%E7%9A%84%E4%BD%BF%E7%94%A8.png"></p>
 </li>
 </ul>
 <h3 id="2-7-自适应代码块"><a href="#2-7-自适应代码块" class="headerlink" title="2.7 自适应代码块"></a>2.7 自适应代码块</h3><ul>
