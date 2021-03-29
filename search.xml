@@ -53,7 +53,7 @@
 </li>
 <li><p>token：填入码云的私人令牌</p>
 <p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png"></p>
-<p><img data-src="D:/PicGo/图片/私人令牌提交.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C%E6%8F%90%E4%BA%A4.png"></p>
 <p><font color='red'>私人令牌生成之后只显示一次</font></p>
 </li>
 <li><p>path：路径，一般写上 <code>img</code>，也可以多层路径 <code>img/image</code></p>
@@ -589,8 +589,8 @@
         <category>Docsify 笔记</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Docsify</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -680,8 +680,8 @@
         <category>Docsify 笔记</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Docsify</tag>
+        <tag>Git</tag>
         <tag>Node</tag>
         <tag>Github</tag>
       </tags>
