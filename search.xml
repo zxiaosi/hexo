@@ -22,77 +22,88 @@
 <li><p>安装的时候选择 <code>为所有人安装</code> </p>
 </li>
 <li><p>主界面</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E4%B8%BB%E7%95%8C%E9%9D%A2.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%BB%E7%95%8C%E9%9D%A2.png"></p>
 </li>
 </ul>
 <ul>
 <li><p>选择<code>插件设置</code> –&gt; 搜索<code>gitee</code> –&gt; 安装<code>gitee-uploader</code> （安装插件之前需要先安装<a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8.png"></p>
 </li>
 </ul>
 <h3 id="2-2-Gitee配置"><a href="#2-2-Gitee配置" class="headerlink" title="2.2 Gitee配置"></a>2.2 Gitee配置</h3><ul>
 <li><p>点击右上角 <code>+</code> 号，新建仓库</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
 </li>
 </ul>
 <ul>
 <li><p>创建公开的仓库</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
 </li>
 </ul>
 <h3 id="2-3-配置PicGo上的Gitee信息"><a href="#2-3-配置PicGo上的Gitee信息" class="headerlink" title="2.3 配置PicGo上的Gitee信息"></a>2.3 配置PicGo上的Gitee信息</h3><ul>
 <li><p>选择 <code> 图床设置</code> –&gt; 然后点击 <code>gitee</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/PicGo%E4%B8%8A%E7%9A%84Gitee%E4%BF%A1%E6%81%AF.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/PicGo%E4%B8%8A%E7%9A%84Gitee%E4%BF%A1%E6%81%AF.png"></p>
 </li>
 </ul>
 <ul>
 <li><p>repo：用户名/仓库名称，比如我自己的仓库zxiaosi/image，也可以直接复制仓库的url</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/repo.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/repo.png"></p>
 </li>
 <li><p>branch：分支，这里写上 <code>master</code></p>
 </li>
 <li><p>token：填入码云的私人令牌</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png"></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C%E6%8F%90%E4%BA%A4.png"></p>
-<p><font color='red'>私人令牌生成之后只显示一次</font></p>
+</li>
+</ul>
+<ul>
+<li><p><code>设置</code> –&gt; 选择 <code>私人令牌</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png"></p>
+</li>
+</ul>
+<ul>
+<li><p>勾选 <code>projects</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C%E6%8F%90%E4%BA%A4.png"></p>
+</li>
+<li><p><font color='red'>私人令牌生成之后只显示一次</font></p>
 </li>
 <li><p>path：路径，一般写上 <code>img</code>，也可以多层路径 <code>img/image</code></p>
 </li>
 <li><p>customPath：提交消息，这一项和下一项customURL都不用填。在提交到码云后，会显示提交消息，插件默认提交的是 <code>Upload 图片名 by picGo - 时间</code></p>
 </li>
 <li><p>配置完成 <code>设为默认图床</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E9%85%8D%E7%BD%AE%E5%AE%8C%E6%88%90.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E9%85%8D%E7%BD%AE%E5%AE%8C%E6%88%90.png"></p>
 </li>
 </ul>
 <h3 id="2-4-简单使用"><a href="#2-4-简单使用" class="headerlink" title="2.4 简单使用"></a>2.4 简单使用</h3><ul>
 <li><p>将图片托进主界面</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E4%B8%BB%E7%95%8C%E9%9D%A21.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%BB%E7%95%8C%E9%9D%A21.png"></p>
 </li>
 </ul>
 <ul>
 <li><p>等待上传成功，便可在gitee中看到</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/gitee%E5%9B%BE%E7%89%87.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/gitee%E5%9B%BE%E7%89%87.png"></p>
 </li>
-<li><p>点开一张图片，在导航栏找到图片的url</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E5%9B%BE%E7%89%87url.png"></p>
+<li><p>点开图片，在导航栏找到图片的url</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E5%9B%BE%E7%89%87url.png"></p>
 </li>
 <li><p>url：<code>https://gitee.com/zxiaosi/img/</code><font color='red'>blob</font><code>/master/PicGo+Typora+Gitee/bg.jpg</code>，将 <code>blob</code> 改为 <code>raw</code> 便是图片的真实的url，例如 <code>https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/bg.jpg</code></p>
 </li>
 </ul>
 <h3 id="2-5-Typora配置"><a href="#2-5-Typora配置" class="headerlink" title="2.5 Typora配置"></a>2.5 Typora配置</h3><ul>
 <li><p>找到 <code>偏好设置</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/Typora%E8%AE%BE%E7%BD%AE.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/Typora%E8%AE%BE%E7%BD%AE.png"></p>
 </li>
 <li><p>配置</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/PicGo%E9%85%8D%E7%BD%AE-1616939817003.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/PicGo%E9%85%8D%E7%BD%AE-1616939817003.png"></p>
 </li>
 <li><p>验证图片上传选项（PicGo后台打开）</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E9%AA%8C%E8%AF%81%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E9%80%89%E9%A1%B9.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E9%AA%8C%E8%AF%81%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E9%80%89%E9%A1%B9.png"></p>
+</li>
+<li><p>验证失败，请修改端口号（<font color='red'>见3.1</font>）</p>
 </li>
 </ul>
 <h3 id="2-6-Typora中使用"><a href="#2-6-Typora中使用" class="headerlink" title="2.6 Typora中使用"></a>2.6 Typora中使用</h3><ul>
 <li><p>复制图片到Typora</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png"></p>
 </li>
 </ul>
 <ul>
@@ -100,18 +111,18 @@
 </ul>
 <h2 id="三、常见问题"><a href="#三、常见问题" class="headerlink" title="三、常见问题"></a>三、常见问题</h2><h3 id="3-1-PicGo端口错误"><a href="#3-1-PicGo端口错误" class="headerlink" title="3.1 PicGo端口错误"></a>3.1 PicGo端口错误</h3><ul>
 <li><p>上传图片时，显示下面信息，表示PicGo端口号错误</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%A4%B1%E8%B4%A5.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%A4%B1%E8%B4%A5.png"></p>
 </li>
 <li><p><code>PicGo设置</code> –&gt; 选择<code>设置Server</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E8%AE%BEServer.png" alt="设Server"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E8%AE%BEServer.png"></p>
 </li>
 <li><p>端口号修改为 <code>36677</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E7%AB%AF%E5%8F%A3%E5%8F%B7-1616940784874.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E7%AB%AF%E5%8F%A3%E5%8F%B7-1616940784874.png"></p>
 </li>
 </ul>
 <h3 id="3-2-PicGo重复上传图片"><a href="#3-2-PicGo重复上传图片" class="headerlink" title="3.2 PicGo重复上传图片"></a>3.2 PicGo重复上传图片</h3><ul>
 <li><p>上传图片时，显示下面信息，表示图片重复</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/%E9%87%8D%E5%A4%8D%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E9%87%8D%E5%A4%8D%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png"></p>
 </li>
 </ul>
 <ul>
@@ -155,48 +166,48 @@
 </ul>
 <h2 id="二、Gihee使用-同Github"><a href="#二、Gihee使用-同Github" class="headerlink" title="二、Gihee使用(同Github)"></a>二、Gihee使用(同<a href="http://localhost:4000/archives/d345b092.html">Github</a>)</h2><h3 id="2-1-Gitee官网，注册账号并登录"><a href="#2-1-Gitee官网，注册账号并登录" class="headerlink" title="2.1 Gitee官网，注册账号并登录"></a>2.1 <a href="https://gitee.com/">Gitee官网</a>，注册账号并登录</h3><h3 id="2-2-创建仓库"><a href="#2-2-创建仓库" class="headerlink" title="2.2 创建仓库"></a>2.2 创建仓库</h3><ul>
 <li><p>找到左下角的 <code>仓库</code>，并点击左边的 <code>+</code>号</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%931.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%931.png"></p>
 </li>
 <li><p>完善仓库相关信息</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93-1617005250610.png"></p>
 </li>
 </ul>
 <h3 id="2-3-文件操作"><a href="#2-3-文件操作" class="headerlink" title="2.3 文件操作"></a>2.3 文件操作</h3><ul>
 <li><p>根据需要选择 <code>新建文件</code>、<code>新建文件夹</code>、<code>上传文件</code>、<code>搜索文件</code> </p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C-1617005262548.png"></p>
 </li>
 </ul>
 <h3 id="2-4-项目克隆-下载"><a href="#2-4-项目克隆-下载" class="headerlink" title="2.4 项目克隆/下载"></a>2.4 项目克隆/下载</h3><ul>
 <li><p>方法一和方法二需要 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%85%8B%E9%9A%86%E5%92%8C%E4%B8%8B%E8%BD%BD.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%85%8B%E9%9A%86%E5%92%8C%E4%B8%8B%E8%BD%BD.png"></p>
 </li>
 </ul>
 <h3 id="2-5-更多服务"><a href="#2-5-更多服务" class="headerlink" title="2.5 更多服务"></a>2.5 更多服务</h3><ul>
 <li><p>这里的服务可以一键部署，个人感觉Gitee这点比Gihub好</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1.png"></p>
 </li>
 </ul>
 <h3 id="2-6-删除仓库"><a href="#2-6-删除仓库" class="headerlink" title="2.6 删除仓库"></a>2.6 删除仓库</h3><ul>
 <li><p>点击 <code>管理</code> –&gt; 找到<code>删除仓库</code> –&gt; <code>删除仓库</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93-1616810809021.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93-1616810809021.png"></p>
 </li>
 <li><p>根据操作输入 <code>仓库名</code> 以及 <code>密码</code> 即可删除（慎重！慎重！慎重！）</p>
 </li>
 </ul>
 <h2 id="三、Gitee同步Github"><a href="#三、Gitee同步Github" class="headerlink" title="三、Gitee同步Github"></a>三、Gitee同步Github</h2><h3 id="3-1-官方介绍"><a href="#3-1-官方介绍" class="headerlink" title="3.1 官方介绍"></a>3.1 <a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">官方介绍</a></h3><h3 id="3-2-仓库导入"><a href="#3-2-仓库导入" class="headerlink" title="3.2 仓库导入"></a>3.2 仓库导入</h3><ul>
 <li><p>登陆 Gitee 账号，点击右上角的 + 号，点击「从 GitHub 导入仓库」，在跳转的页面中授权 Gitee 访问。</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105453_df1887b4_551147.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%AF%BC%E5%85%A5.png"></p>
 </li>
 <li><p>与 GitHub 对接。</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103534_e8434068_551147.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E6%8E%88%E6%9D%83.png"></p>
 </li>
 <li><p>选择性的导入您的 Github 项目到 Gitee</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103621_76ddb06d_551147.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E9%80%89%E6%8B%A9%E9%A1%B9%E7%9B%AE.png"></p>
 </li>
 </ul>
 <h3 id="3-3-保持同步更新"><a href="#3-3-保持同步更新" class="headerlink" title="3.3 保持同步更新"></a>3.3 保持同步更新</h3><ul>
 <li><p>在项目主页点击同步更新按钮即可！</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105403_b8666166_551147.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%90%8C%E6%AD%A5.png"></p>
 </li>
 <li><p>这里的同步功能默认是强制同步（新代码直接覆盖）</p>
 </li>
@@ -237,7 +248,7 @@
 </ul>
 <h3 id="1-6-偏好设置"><a href="#1-6-偏好设置" class="headerlink" title="1.6 偏好设置"></a>1.6 偏好设置</h3><ul>
 <li><p>选中 <code>偏好设置</code></p>
-<p><img data-src="D:/PicGo/图片/偏好设置.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E5%81%8F%E5%A5%BD%E8%AE%BE%E7%BD%AE.png"></p>
 </li>
 <li><p>启动选项（根据个人爱好选择）</p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E9%A1%B9.png"></p>
@@ -288,13 +299,13 @@
 <li><p><code>打开主题文件夹</code></p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%89%93%E5%BC%80%E4%B8%BB%E9%A2%98%E6%96%87%E4%BB%B6%E5%A4%B9.png"></p>
 </li>
-<li><p>2.4.1 解压下载好的压缩包到主题文件夹</p>
+<li><p>解压下载好的压缩包到主题文件夹</p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%A7%A3%E5%8E%8B%E6%96%87%E4%BB%B6-1609170304800.png"></p>
 </li>
 <li><p>复制后缀为<code>.css</code>文件至根目录下，<font color='red'>重启软件</font>。</p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/css%E6%96%87%E4%BB%B6.png"></p>
 </li>
-<li><p>2.4.3 菜单–&gt;外观–&gt;主题，选择安装好的主题</p>
+<li><p>菜单–&gt;外观–&gt;主题，选择安装好的主题</p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98.png"></p>
 </li>
 <li><p>2.4.4 最后重启软件即可！！！</p>
@@ -414,7 +425,7 @@
 <h3 id="2-11-css样式"><a href="#2-11-css样式" class="headerlink" title="2.11 css样式"></a>2.11 css样式</h3><ul>
 <li><code>&lt;font color=&#39;red&#39;&gt;文本&lt;/font&gt;</code>，可以实现文本字体变红。</li>
 <li><code>&lt;center&gt;文本&lt;\center&gt;</code>，可以实现文本居中。</li>
-<li><code>&lt;u&gt;文本\&lt;/u&gt;</code>，可以实现文本下划线。</li>
+<li><code>&lt;u&gt;文本&lt;/u&gt;</code>，可以实现文本下划线。</li>
 </ul>
 <h3 id="2-12-超链接"><a href="#2-12-超链接" class="headerlink" title="2.12 超链接"></a>2.12 超链接</h3><ul>
 <li>直接输入：<a href="https://xiaosi.world/">https://xiaosi.world/</a></li>
