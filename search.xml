@@ -94,6 +94,86 @@
       </tags>
   </entry>
   <entry>
+    <title>Gitee</title>
+    <url>/archives/1c750174.html</url>
+    <content><![CDATA[<h2 id="一、Gitee"><a href="#一、Gitee" class="headerlink" title="一、Gitee"></a>一、Gitee</h2><h3 id="1-1-Gitee简介"><a href="#1-1-Gitee简介" class="headerlink" title="1.1 Gitee简介"></a>1.1 Gitee简介</h3><ul>
+<li><a href="https://gitee.com/">Gitee</a>是<a href="https://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD/5462428">开源中国</a>（OSChina）推出的基于Git的代码托管服务。同<a href="https://github.com/">Github</a>一样，都是代码托管服务平台。</li>
+</ul>
+<span id="more"></span>
+
+<ul>
+<li><a href="http://git.mydoc.io/">更多详情</a></li>
+</ul>
+<h3 id="1-2-Github与Gitee比较"><a href="#1-2-Github与Gitee比较" class="headerlink" title="1.2 Github与Gitee比较"></a>1.2 Github与Gitee比较</h3><ul>
+<li>GitHub界面是英文，且拥有相当多的开发者用户，知名的库也多</li>
+<li>Gitee界面是中文，且大部分用户都是国人，优秀的库相对于GitHub也少</li>
+<li>在国内访问Github偶尔会有不稳定情况，而Gitee不会出现不稳定情况。</li>
+</ul>
+<h2 id="二、Gihee使用-同Github"><a href="#二、Gihee使用-同Github" class="headerlink" title="二、Gihee使用(同Github)"></a>二、Gihee使用(同<a href="http://localhost:4000/archives/d345b092.html">Github</a>)</h2><h3 id="2-1-Gitee官网，注册账号并登录"><a href="#2-1-Gitee官网，注册账号并登录" class="headerlink" title="2.1 Gitee官网，注册账号并登录"></a>2.1 <a href="https://gitee.com/">Gitee官网</a>，注册账号并登录</h3><h3 id="2-2-创建仓库"><a href="#2-2-创建仓库" class="headerlink" title="2.2 创建仓库"></a>2.2 创建仓库</h3><ul>
+<li><p>找到左下角的 <code>仓库</code>，并点击左边的 <code>+</code>号</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%931.png"></p>
+</li>
+<li><p>完善仓库相关信息</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
+</li>
+</ul>
+<h3 id="2-3-文件操作"><a href="#2-3-文件操作" class="headerlink" title="2.3 文件操作"></a>2.3 文件操作</h3><ul>
+<li><p>根据需要选择 <code>新建文件</code>、<code>新建文件夹</code>、<code>上传文件</code>、<code>搜索文件</code> </p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.png"></p>
+</li>
+</ul>
+<h3 id="2-4-项目克隆-下载"><a href="#2-4-项目克隆-下载" class="headerlink" title="2.4 项目克隆/下载"></a>2.4 项目克隆/下载</h3><ul>
+<li><p>方法一和方法二需要 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%85%8B%E9%9A%86%E5%92%8C%E4%B8%8B%E8%BD%BD.png"></p>
+</li>
+</ul>
+<h3 id="2-5-更多服务"><a href="#2-5-更多服务" class="headerlink" title="2.5 更多服务"></a>2.5 更多服务</h3><ul>
+<li><p>这里的服务可以一键部署，个人感觉Gitee这点比Gihub好</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1.png"></p>
+</li>
+</ul>
+<h3 id="2-6-删除仓库"><a href="#2-6-删除仓库" class="headerlink" title="2.6 删除仓库"></a>2.6 删除仓库</h3><ul>
+<li><p>点击 <code>管理</code> –&gt; 找到<code>删除仓库</code> –&gt; <code>删除仓库</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93-1616810809021.png"></p>
+</li>
+<li><p>根据操作输入 <code>仓库名</code> 以及 <code>密码</code> 即可删除（慎重！慎重！慎重！）</p>
+</li>
+</ul>
+<h2 id="三、Gitee同步Github"><a href="#三、Gitee同步Github" class="headerlink" title="三、Gitee同步Github"></a>三、Gitee同步Github</h2><h3 id="3-1-官方介绍"><a href="#3-1-官方介绍" class="headerlink" title="3.1 官方介绍"></a>3.1 <a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">官方介绍</a></h3><h3 id="3-2-仓库导入"><a href="#3-2-仓库导入" class="headerlink" title="3.2 仓库导入"></a>3.2 仓库导入</h3><ul>
+<li><p>登陆 Gitee 账号，点击右上角的 + 号，点击「从 GitHub 导入仓库」，在跳转的页面中授权 Gitee 访问。</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105453_df1887b4_551147.png"></p>
+</li>
+<li><p>与 GitHub 对接。</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103534_e8434068_551147.png"></p>
+</li>
+<li><p>选择性的导入您的 Github 项目到 Gitee</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103621_76ddb06d_551147.png"></p>
+</li>
+</ul>
+<h3 id="3-3-保持同步更新"><a href="#3-3-保持同步更新" class="headerlink" title="3.3 保持同步更新"></a>3.3 保持同步更新</h3><ul>
+<li><p>在项目主页点击同步更新按钮即可！</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105403_b8666166_551147.png"></p>
+</li>
+<li><p>这里的同步功能默认是强制同步（新代码直接覆盖）</p>
+</li>
+</ul>
+<br/>
+
+<blockquote>
+<p>参考文档：【鸣谢】</p>
+<p><a href="https://blog.csdn.net/AC_872767407/article/details/113177983?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_v2~rank_aggregation-3-113177983.pc_agg_rank_aggregation&utm_term=gitee%E5%92%8Cgithub%E7%9A%84%E5%8C%BA%E5%88%AB&spm=1000.2123.3001.4430">Gitee及Github的区别</a></p>
+<p><a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">如何将 GitHub 项目导入码云</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Gitee</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Gitee</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git</title>
     <url>/archives/6525f1ce.html</url>
     <content><![CDATA[<h3 id="1-1-Git简介"><a href="#1-1-Git简介" class="headerlink" title="1.1 Git简介"></a>1.1 Git简介</h3><ul>
@@ -110,12 +190,14 @@
 <li><p><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">安装教程</a></p>
 </li>
 <li><p>安装完成之后，找到这个 <code>Git Bash</code> 的命令行工具，用这个工具来使用git。</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Git/git.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git/git.png"></p>
 </li>
 </ul>
 </li>
+</ul>
+<ul>
 <li><p>linux 安装</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure></li>
 <li><p>安装完成之后，用  <code>git --version</code>  查看git版本</p>
 </li>
 </ul>
@@ -261,86 +343,6 @@
       <tags>
         <tag>Git</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Gitee</title>
-    <url>/archives/1c750174.html</url>
-    <content><![CDATA[<h2 id="一、Gitee"><a href="#一、Gitee" class="headerlink" title="一、Gitee"></a>一、Gitee</h2><h3 id="1-1-Gitee简介"><a href="#1-1-Gitee简介" class="headerlink" title="1.1 Gitee简介"></a>1.1 Gitee简介</h3><ul>
-<li><a href="https://gitee.com/">Gitee</a>是<a href="https://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD/5462428">开源中国</a>（OSChina）推出的基于Git的代码托管服务。同<a href="https://github.com/">Github</a>一样，都是代码托管服务平台。</li>
-</ul>
-<span id="more"></span>
-
-<ul>
-<li><a href="http://git.mydoc.io/">更多详情</a></li>
-</ul>
-<h3 id="1-2-Github与Gitee比较"><a href="#1-2-Github与Gitee比较" class="headerlink" title="1.2 Github与Gitee比较"></a>1.2 Github与Gitee比较</h3><ul>
-<li>GitHub界面是英文，且拥有相当多的开发者用户，知名的库也多</li>
-<li>Gitee界面是中文，且大部分用户都是国人，优秀的库相对于GitHub也少</li>
-<li>在国内访问Github偶尔会有不稳定情况，而Gitee不会出现不稳定情况。</li>
-</ul>
-<h2 id="二、Gihee使用-同Github"><a href="#二、Gihee使用-同Github" class="headerlink" title="二、Gihee使用(同Github)"></a>二、Gihee使用(同<a href="http://localhost:4000/archives/d345b092.html">Github</a>)</h2><h3 id="2-1-Gitee官网，注册账号并登录"><a href="#2-1-Gitee官网，注册账号并登录" class="headerlink" title="2.1 Gitee官网，注册账号并登录"></a>2.1 <a href="https://gitee.com/">Gitee官网</a>，注册账号并登录</h3><h3 id="2-2-创建仓库"><a href="#2-2-创建仓库" class="headerlink" title="2.2 创建仓库"></a>2.2 创建仓库</h3><ul>
-<li><p>找到左下角的 <code>仓库</code>，并点击左边的 <code>+</code>号</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%931.png"></p>
-</li>
-<li><p>完善仓库相关信息</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
-</li>
-</ul>
-<h3 id="2-3-文件操作"><a href="#2-3-文件操作" class="headerlink" title="2.3 文件操作"></a>2.3 文件操作</h3><ul>
-<li><p>根据需要选择 <code>新建文件</code>、<code>新建文件夹</code>、<code>上传文件</code>、<code>搜索文件</code> </p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.png"></p>
-</li>
-</ul>
-<h3 id="2-4-项目克隆-下载"><a href="#2-4-项目克隆-下载" class="headerlink" title="2.4 项目克隆/下载"></a>2.4 项目克隆/下载</h3><ul>
-<li><p>方法一和方法二需要 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%85%8B%E9%9A%86%E5%92%8C%E4%B8%8B%E8%BD%BD.png"></p>
-</li>
-</ul>
-<h3 id="2-5-更多服务"><a href="#2-5-更多服务" class="headerlink" title="2.5 更多服务"></a>2.5 更多服务</h3><ul>
-<li><p>这里的服务可以一键部署，个人感觉Gitee这点比Gihub好</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1.png"></p>
-</li>
-</ul>
-<h3 id="2-6-删除仓库"><a href="#2-6-删除仓库" class="headerlink" title="2.6 删除仓库"></a>2.6 删除仓库</h3><ul>
-<li><p>点击 <code>管理</code> –&gt; 找到<code>删除仓库</code> –&gt; <code>删除仓库</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93-1616810809021.png"></p>
-</li>
-<li><p>根据操作输入 <code>仓库名</code> 以及 <code>密码</code> 即可删除（慎重！慎重！慎重！）</p>
-</li>
-</ul>
-<h2 id="三、Gitee同步Github"><a href="#三、Gitee同步Github" class="headerlink" title="三、Gitee同步Github"></a>三、Gitee同步Github</h2><h3 id="3-1-官方介绍"><a href="#3-1-官方介绍" class="headerlink" title="3.1 官方介绍"></a>3.1 <a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">官方介绍</a></h3><h3 id="3-2-仓库导入"><a href="#3-2-仓库导入" class="headerlink" title="3.2 仓库导入"></a>3.2 仓库导入</h3><ul>
-<li><p>登陆 Gitee 账号，点击右上角的 + 号，点击「从 GitHub 导入仓库」，在跳转的页面中授权 Gitee 访问。</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105453_df1887b4_551147.png"></p>
-</li>
-<li><p>与 GitHub 对接。</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103534_e8434068_551147.png"></p>
-</li>
-<li><p>选择性的导入您的 Github 项目到 Gitee</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103621_76ddb06d_551147.png"></p>
-</li>
-</ul>
-<h3 id="3-3-保持同步更新"><a href="#3-3-保持同步更新" class="headerlink" title="3.3 保持同步更新"></a>3.3 保持同步更新</h3><ul>
-<li><p>在项目主页点击同步更新按钮即可！</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105403_b8666166_551147.png"></p>
-</li>
-<li><p>这里的同步功能默认是强制同步（新代码直接覆盖）</p>
-</li>
-</ul>
-<br/>
-
-<blockquote>
-<p>参考文档：【鸣谢】</p>
-<p><a href="https://blog.csdn.net/AC_872767407/article/details/113177983?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_v2~rank_aggregation-3-113177983.pc_agg_rank_aggregation&utm_term=gitee%E5%92%8Cgithub%E7%9A%84%E5%8C%BA%E5%88%AB&spm=1000.2123.3001.4430">Gitee及Github的区别</a></p>
-<p><a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">如何将 GitHub 项目导入码云</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Gitee</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Gitee</tag>
       </tags>
   </entry>
   <entry>
@@ -827,6 +829,110 @@
       </tags>
   </entry>
   <entry>
+    <title>Node安装</title>
+    <url>/archives/84979429.html</url>
+    <content><![CDATA[<h2 id="一、Node安装"><a href="#一、Node安装" class="headerlink" title="一、Node安装"></a>一、Node安装</h2><h3 id="1-1-Node简介"><a href="#1-1-Node简介" class="headerlink" title="1.1 Node简介"></a>1.1 Node简介</h3><ul>
+<li><p>node（结点）:网络连接的端点，或两条（或多条）线路的连接点。结点可以是处理器、控制器或工作站。结点随其功能不同而各不相同，它们可以通过链路互联在一起，在网络中用作控制点。</p>
+<span id="more"></span></li>
+</ul>
+<h3 id="1-2-Node下载"><a href="#1-2-Node下载" class="headerlink" title="1.2 Node下载"></a>1.2 Node下载</h3><ul>
+<li><p>可以在 <a href="https://nodejs.org/zh-cn/">Node官网</a> 下载 <code>node</code> 并安装</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E5%AE%98%E7%BD%91-1616991075154.png"></p>
+</li>
+</ul>
+<h3 id="1-3-Node安装"><a href="#1-3-Node安装" class="headerlink" title="1.3 Node安装"></a>1.3 Node安装</h3><ul>
+<li><p><code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node1.png"></p>
+</li>
+</ul>
+<ul>
+<li><p><code>I accept...</code> –&gt; <code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node2.png"></p>
+</li>
+<li><p><code>Change</code> –&gt; <code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node3.png"></p>
+</li>
+<li><p><code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node4.png"></p>
+</li>
+<li><p><code>Next</code> –&gt; <code>Finish</code></p>
+</li>
+</ul>
+<h3 id="1-4-node和npm版本"><a href="#1-4-node和npm版本" class="headerlink" title="1.4 node和npm版本"></a>1.4 node和npm版本</h3><ul>
+<li><p>启动 <code>cmd</code> 命令框，执行下面代码查看 <code>node</code> 和 <code>npm</code> 版本</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E7%89%88%E6%9C%AC%E5%8F%B7.png"></p>
+</li>
+</ul>
+<h2 id="二、node配置-可选"><a href="#二、node配置-可选" class="headerlink" title="二、node配置(可选)"></a>二、node配置(可选)</h2><h3 id="2-1-配置npm在安装全局模块时的路径和缓存cache的路径"><a href="#2-1-配置npm在安装全局模块时的路径和缓存cache的路径" class="headerlink" title="2.1 配置npm在安装全局模块时的路径和缓存cache的路径"></a>2.1 配置npm在安装全局模块时的路径和缓存cache的路径</h3><ul>
+<li><p>因为在执行例如 <code>npm i docsify-cli -g</code> 等命令全局安装的时候，默认会将模块安装在 <code>C:\Users\用户名\AppData\Roaming</code> (需显示隐藏文件才能看到 <code>AppData</code> )路径下的 <code>npm</code> 和 <code>npm_cache</code> 中，不方便管理且占用C盘空间，如下图所示：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E8%B7%AF%E5%BE%841.png"></p>
+</li>
+</ul>
+<ul>
+<li><p>在 <code>node.js</code> 安装目录下建立 <code>node_global</code> 及 <code>node_cache</code> 两个文件夹</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E5%88%9B%E5%BB%BAnode_%E6%96%87%E4%BB%B6.png"></p>
+</li>
+<li><p>启动cmd，依次输入：（我的 <code>node</code> 在D盘下）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;D:\node\node_global&quot;</span><br><span class="line"></span><br><span class="line">npm config set cache &quot;D:\node\node_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="D:/PicGo/图片/npm全局-1616406279132.png"></p>
+</li>
+</ul>
+<h3 id="2-2-配置环境变量"><a href="#2-2-配置环境变量" class="headerlink" title="2.2 配置环境变量"></a>2.2 配置环境变量</h3><ul>
+<li><p>右键 <code>此电脑</code> –&gt; <code>属性</code> –&gt; <code>高级系统设置</code> –&gt; <code>环境变量</code>（找不到可以直接搜 <code>环境变量</code>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png"></p>
+</li>
+<li><p><code>系统变量</code> 中新建一个变量名为 <code>NODE_PATH</code> ，变量值为<code>D:\node\node_global\node_modules</code>，如下图：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F-1616406654354.png"></p>
+</li>
+<li><p>最后编辑 <code>用户变量</code> 里的 <code>Path</code>，将相应npm的路径改为：<code>D:\node\node_global</code>，如下：（npm路径为刚刚新建 <code>node_global</code> 路径）</p>
+<ul>
+<li><p>更改前：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385.png"></p>
+</li>
+<li><p>更改后：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/path%E5%8F%98%E9%87%8F2.png"></p>
+</li>
+</ul>
+</li>
+<li><p>重新打开命令框，出现下面界面表示配置成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F.png"></p>
+</li>
+</ul>
+<h3 id="2-3-node淘宝镜像"><a href="#2-3-node淘宝镜像" class="headerlink" title="2.3 node淘宝镜像"></a>2.3 node淘宝镜像</h3><ul>
+<li><p>命令框输入下面代码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
+<li><p>检查是否配置成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.png"></p>
+</li>
+</ul>
+<h3 id="2-4-取消node全局配置"><a href="#2-4-取消node全局配置" class="headerlink" title="2.4 取消node全局配置"></a>2.4 取消node全局配置</h3><ul>
+<li><p>想取消node的全局变量，卸载重装解决不了问题</p>
+</li>
+<li><p>找到 <code>C:\Users\Administrator\.npmrc</code> 文件并打开</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">prefix&#x3D;D:\node\node_global</span><br><span class="line">cache&#x3D;D:\node\node_cache</span><br><span class="line"></span><br><span class="line"># 镜像</span><br><span class="line">registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
+<li><p>删除 <code>prefix</code> 和 <code>cache</code> 这两个代码段，并环境变量改为原来的环境变量（<font color='red'><strong>见2.2</strong></font>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385-1616991444889.png"></p>
+<br/></li>
+</ul>
+<blockquote>
+<p>参考链接：【鸣谢】</p>
+<p><a href="https://blog.csdn.net/antma/article/details/86104068">Node.js 安装详细步骤教程</a></p>
+<p><a href="https://blog.csdn.net/huanghanqian/article/details/52808170">如何删除npm之前设置的npm config set prefix…</a></p>
+</blockquote>
+<br/>]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>Node</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo安装及配置</title>
     <url>/archives/5ef212b6.html</url>
     <content><![CDATA[<h2 id="一、安装之前准备"><a href="#一、安装之前准备" class="headerlink" title="一、安装之前准备"></a>一、安装之前准备</h2><h3 id="1-1-Git"><a href="#1-1-Git" class="headerlink" title="1.1 Git"></a>1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3><h3 id="1-2-Node"><a href="#1-2-Node" class="headerlink" title="1.2 Node"></a>1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3><h3 id="1-3-Github"><a href="#1-3-Github" class="headerlink" title="1.3 Github"></a>1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3><span id="more"></span>
@@ -897,106 +1003,6 @@
         <tag>Node</tag>
         <tag>Github</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Node安装</title>
-    <url>/archives/84979429.html</url>
-    <content><![CDATA[<h2 id="一、node安装"><a href="#一、node安装" class="headerlink" title="一、node安装"></a>一、node安装</h2><h3 id="1-1-node简介"><a href="#1-1-node简介" class="headerlink" title="1.1 node简介"></a>1.1 node简介</h3><ul>
-<li><p>node（结点）:网络连接的端点，或两条（或多条）线路的连接点。结点可以是处理器、控制器或工作站。结点随其功能不同而各不相同，它们可以通过链路互联在一起，在网络中用作控制点。</p>
-<span id="more"></span></li>
-</ul>
-<h3 id="1-2-node下载"><a href="#1-2-node下载" class="headerlink" title="1.2 node下载"></a>1.2 node下载</h3><ul>
-<li><p>可以在 <a href="https://nodejs.org/zh-cn/">node官网</a> 下载 <code>node</code> 并安装</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/node%E5%AE%98%E7%BD%91.png"></p>
-</li>
-</ul>
-<h3 id="1-3-node安装"><a href="#1-3-node安装" class="headerlink" title="1.3 node安装"></a>1.3 node安装</h3><ul>
-<li><p><code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/node1.png"></p>
-</li>
-<li><p><code>I accept...</code> –&gt; <code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/node2.png"></p>
-</li>
-<li><p><code>Change</code> –&gt; <code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/node3.png"></p>
-</li>
-<li><p><code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/node4.png"></p>
-</li>
-<li><p><code>Next</code> –&gt; <code>Finish</code></p>
-</li>
-</ul>
-<h3 id="1-4-node和npm版本"><a href="#1-4-node和npm版本" class="headerlink" title="1.4 node和npm版本"></a>1.4 node和npm版本</h3><ul>
-<li><p>启动 <code>cmd</code> 命令框，执行下面代码查看 <code>node</code> 和 <code>npm</code> 版本</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/node%E7%89%88%E6%9C%AC%E5%8F%B7.png"></p>
-</li>
-</ul>
-<h2 id="二、node配置-可选"><a href="#二、node配置-可选" class="headerlink" title="二、node配置(可选)"></a>二、node配置(可选)</h2><h3 id="2-1-配置npm在安装全局模块时的路径和缓存cache的路径"><a href="#2-1-配置npm在安装全局模块时的路径和缓存cache的路径" class="headerlink" title="2.1 配置npm在安装全局模块时的路径和缓存cache的路径"></a>2.1 配置npm在安装全局模块时的路径和缓存cache的路径</h3><ul>
-<li><p>因为在执行例如 <code>npm i docsify-cli -g</code> 等命令全局安装的时候，默认会将模块安装在 <code>C:\Users\用户名\AppData\Roaming</code> (需显示隐藏文件才能看到 <code>AppData</code> )路径下的 <code>npm</code> 和 <code>npm_cache</code> 中，不方便管理且占用C盘空间，如下图所示：</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/%E8%B7%AF%E5%BE%841.png"></p>
-</li>
-<li><p>在 <code>node.js</code> 安装目录下建立 <code>node_global</code> 及 <code>node_cache</code> 两个文件夹</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/%E5%88%9B%E5%BB%BAnode_%E6%96%87%E4%BB%B6.png"></p>
-</li>
-<li><p>启动cmd，依次输入：（我的 <code>node</code> 在D盘下）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;D:\node\node_global&quot;</span><br><span class="line"></span><br><span class="line">npm config set cache &quot;D:\node\node_cache&quot;</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/npm%E5%85%A8%E5%B1%80-1616406279132.png"></p>
-</li>
-</ul>
-<h3 id="2-2-配置环境变量"><a href="#2-2-配置环境变量" class="headerlink" title="2.2 配置环境变量"></a>2.2 配置环境变量</h3><ul>
-<li><p>右键 <code>此电脑</code> –&gt; <code>属性</code> –&gt; <code>高级系统设置</code> –&gt; <code>环境变量</code>（找不到可以直接搜 <code>环境变量</code>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png"></p>
-</li>
-<li><p><code>系统变量</code> 中新建一个变量名为 <code>NODE_PATH</code> ，变量值为<code>D:\node\node_global\node_modules</code>，如下图：</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F-1616406654354.png"></p>
-</li>
-<li><p>最后编辑 <code>用户变量</code> 里的 <code>Path</code>，将相应npm的路径改为：<code>D:\node\node_global</code>，如下：（npm路径为刚刚新建 <code>node_global</code> 路径）</p>
-<ul>
-<li><p>更改前：</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385.png"></p>
-</li>
-<li><p>更改后：</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/path%E5%8F%98%E9%87%8F2.png"></p>
-</li>
-</ul>
-</li>
-<li><p>重新打开命令框，出现下面界面表示配置成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F.png"></p>
-</li>
-</ul>
-<h3 id="2-3-node淘宝镜像"><a href="#2-3-node淘宝镜像" class="headerlink" title="2.3 node淘宝镜像"></a>2.3 node淘宝镜像</h3><ul>
-<li><p>命令框输入下面代码</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
-<li><p>检查是否配置成功</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.png"></p>
-</li>
-</ul>
-<h3 id="2-4-取消node全局配置"><a href="#2-4-取消node全局配置" class="headerlink" title="2.4 取消node全局配置"></a>2.4 取消node全局配置</h3><ul>
-<li><p>想取消node的全局变量，卸载重装解决不了问题</p>
-</li>
-<li><p>找到 <code>C:\Users\Administrator\.npmrc</code> 文件并打开</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">prefix&#x3D;D:\node\node_global</span><br><span class="line">cache&#x3D;D:\node\node_cache</span><br><span class="line"></span><br><span class="line"># 镜像</span><br><span class="line">registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
-<li><p>删除 <code>prefix</code> 和 <code>cache</code> 这两个代码段，并环境变量改为原来的环境变量（<font color='red'><strong>见2.2</strong></font>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385.png"></p>
-<br/></li>
-</ul>
-<blockquote>
-<p>参考链接：【鸣谢】</p>
-<p><a href="https://blog.csdn.net/antma/article/details/86104068">Node.js 安装详细步骤教程</a></p>
-<p><a href="https://blog.csdn.net/huanghanqian/article/details/52808170">如何删除npm之前设置的npm config set prefix…</a></p>
-</blockquote>
-<br/>]]></content>
-      <categories>
-        <category>Node</category>
-      </categories>
-      <tags>
-        <tag>Node</tag>
       </tags>
   </entry>
   <entry>
