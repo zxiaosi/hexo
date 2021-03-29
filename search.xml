@@ -94,86 +94,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Gitee</title>
-    <url>/archives/1c750174.html</url>
-    <content><![CDATA[<h2 id="一、Gitee"><a href="#一、Gitee" class="headerlink" title="一、Gitee"></a>一、Gitee</h2><h3 id="1-1-Gitee简介"><a href="#1-1-Gitee简介" class="headerlink" title="1.1 Gitee简介"></a>1.1 Gitee简介</h3><ul>
-<li><a href="https://gitee.com/">Gitee</a>是<a href="https://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD/5462428">开源中国</a>（OSChina）推出的基于Git的代码托管服务。同<a href="https://github.com/">Github</a>一样，都是代码托管服务平台。</li>
-</ul>
-<span id="more"></span>
-
-<ul>
-<li><a href="http://git.mydoc.io/">更多详情</a></li>
-</ul>
-<h3 id="1-2-Github与Gitee比较"><a href="#1-2-Github与Gitee比较" class="headerlink" title="1.2 Github与Gitee比较"></a>1.2 Github与Gitee比较</h3><ul>
-<li>GitHub界面是英文，且拥有相当多的开发者用户，知名的库也多</li>
-<li>Gitee界面是中文，且大部分用户都是国人，优秀的库相对于GitHub也少</li>
-<li>在国内访问Github偶尔会有不稳定情况，而Gitee不会出现不稳定情况。</li>
-</ul>
-<h2 id="二、Gihee使用-同Github"><a href="#二、Gihee使用-同Github" class="headerlink" title="二、Gihee使用(同Github)"></a>二、Gihee使用(同<a href="http://localhost:4000/archives/d345b092.html">Github</a>)</h2><h3 id="2-1-Gitee官网，注册账号并登录"><a href="#2-1-Gitee官网，注册账号并登录" class="headerlink" title="2.1 Gitee官网，注册账号并登录"></a>2.1 <a href="https://gitee.com/">Gitee官网</a>，注册账号并登录</h3><h3 id="2-2-创建仓库"><a href="#2-2-创建仓库" class="headerlink" title="2.2 创建仓库"></a>2.2 创建仓库</h3><ul>
-<li><p>找到左下角的 <code>仓库</code>，并点击左边的 <code>+</code>号</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%931.png"></p>
-</li>
-<li><p>完善仓库相关信息</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
-</li>
-</ul>
-<h3 id="2-3-文件操作"><a href="#2-3-文件操作" class="headerlink" title="2.3 文件操作"></a>2.3 文件操作</h3><ul>
-<li><p>根据需要选择 <code>新建文件</code>、<code>新建文件夹</code>、<code>上传文件</code>、<code>搜索文件</code> </p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.png"></p>
-</li>
-</ul>
-<h3 id="2-4-项目克隆-下载"><a href="#2-4-项目克隆-下载" class="headerlink" title="2.4 项目克隆/下载"></a>2.4 项目克隆/下载</h3><ul>
-<li><p>方法一和方法二需要 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%85%8B%E9%9A%86%E5%92%8C%E4%B8%8B%E8%BD%BD.png"></p>
-</li>
-</ul>
-<h3 id="2-5-更多服务"><a href="#2-5-更多服务" class="headerlink" title="2.5 更多服务"></a>2.5 更多服务</h3><ul>
-<li><p>这里的服务可以一键部署，个人感觉Gitee这点比Gihub好</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1.png"></p>
-</li>
-</ul>
-<h3 id="2-6-删除仓库"><a href="#2-6-删除仓库" class="headerlink" title="2.6 删除仓库"></a>2.6 删除仓库</h3><ul>
-<li><p>点击 <code>管理</code> –&gt; 找到<code>删除仓库</code> –&gt; <code>删除仓库</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93-1616810809021.png"></p>
-</li>
-<li><p>根据操作输入 <code>仓库名</code> 以及 <code>密码</code> 即可删除（慎重！慎重！慎重！）</p>
-</li>
-</ul>
-<h2 id="三、Gitee同步Github"><a href="#三、Gitee同步Github" class="headerlink" title="三、Gitee同步Github"></a>三、Gitee同步Github</h2><h3 id="3-1-官方介绍"><a href="#3-1-官方介绍" class="headerlink" title="3.1 官方介绍"></a>3.1 <a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">官方介绍</a></h3><h3 id="3-2-仓库导入"><a href="#3-2-仓库导入" class="headerlink" title="3.2 仓库导入"></a>3.2 仓库导入</h3><ul>
-<li><p>登陆 Gitee 账号，点击右上角的 + 号，点击「从 GitHub 导入仓库」，在跳转的页面中授权 Gitee 访问。</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105453_df1887b4_551147.png"></p>
-</li>
-<li><p>与 GitHub 对接。</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103534_e8434068_551147.png"></p>
-</li>
-<li><p>选择性的导入您的 Github 项目到 Gitee</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103621_76ddb06d_551147.png"></p>
-</li>
-</ul>
-<h3 id="3-3-保持同步更新"><a href="#3-3-保持同步更新" class="headerlink" title="3.3 保持同步更新"></a>3.3 保持同步更新</h3><ul>
-<li><p>在项目主页点击同步更新按钮即可！</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105403_b8666166_551147.png"></p>
-</li>
-<li><p>这里的同步功能默认是强制同步（新代码直接覆盖）</p>
-</li>
-</ul>
-<br/>
-
-<blockquote>
-<p>参考文档：【鸣谢】</p>
-<p><a href="https://blog.csdn.net/AC_872767407/article/details/113177983?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_v2~rank_aggregation-3-113177983.pc_agg_rank_aggregation&utm_term=gitee%E5%92%8Cgithub%E7%9A%84%E5%8C%BA%E5%88%AB&spm=1000.2123.3001.4430">Gitee及Github的区别</a></p>
-<p><a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">如何将 GitHub 项目导入码云</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Gitee</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Gitee</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git</title>
     <url>/archives/6525f1ce.html</url>
     <content><![CDATA[<h3 id="1-1-Git简介"><a href="#1-1-Git简介" class="headerlink" title="1.1 Git简介"></a>1.1 Git简介</h3><ul>
@@ -255,6 +175,174 @@
       </categories>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Github</title>
+    <url>/archives/d345b092.html</url>
+    <content><![CDATA[<h2 id="一、Github"><a href="#一、Github" class="headerlink" title="一、Github"></a>一、Github</h2><h3 id="1-1-Github简介"><a href="#1-1-Github简介" class="headerlink" title="1.1 Github简介"></a>1.1 Github简介</h3><ul>
+<li><a href="https://github.com/">GitHub</a>是一个面向开源及私有软件项目的托管平台（代码托管服务平台）。</li>
+</ul>
+<span id="more"></span>
+
+<ul>
+<li><a href="https://baike.baidu.com/item/Github/10145341?fr=aladdin">更多详情</a></li>
+</ul>
+<h2 id="二、Gihub使用"><a href="#二、Gihub使用" class="headerlink" title="二、Gihub使用"></a>二、Gihub使用</h2><h3 id="2-1-Github官网，注册账号并登录，国内访问较慢"><a href="#2-1-Github官网，注册账号并登录，国内访问较慢" class="headerlink" title="2.1 Github官网，注册账号并登录，国内访问较慢"></a>2.1 <a href="https://github.com/">Github官网</a>，注册账号并登录，<a href="https://blog.csdn.net/zsf_993113/article/details/107126493">国内访问较慢</a></h3><h3 id="2-2-创建仓库（一个仓库通常用来组织一个单独的项目）"><a href="#2-2-创建仓库（一个仓库通常用来组织一个单独的项目）" class="headerlink" title="2.2 创建仓库（一个仓库通常用来组织一个单独的项目）"></a>2.2 创建仓库（一个仓库通常用来组织一个单独的项目）</h3><ul>
+<li><p>点击 <code>New</code> </p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
+</li>
+<li><p>完善仓库相关信息，然后点击 <code>Create repository</code> 即可创建成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%932.png"></p>
+</li>
+</ul>
+<h3 id="2-3-创建新文件"><a href="#2-3-创建新文件" class="headerlink" title="2.3 创建新文件"></a>2.3 创建新文件</h3><ul>
+<li><p>点击 <code>Add file</code> –&gt; 选择 <code>Create new file</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E4%BB%B61.png"></p>
+</li>
+<li><p>输入文件名以及内容</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E4%BB%B62-1616551218724.png"></p>
+</li>
+<li><p>预览效果 <code>Preview</code> –&gt; 创建文章 <code>Commit new file</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E7%AB%A03.png"></p>
+</li>
+</ul>
+<h3 id="2-4-创建文件夹"><a href="#2-4-创建文件夹" class="headerlink" title="2.4 创建文件夹"></a>2.4 创建文件夹</h3><ul>
+<li><p>因为Github仓库下不允许有空文件夹，所以在创建文件夹时创建一个空文件，防止创建文件夹失败</p>
+</li>
+<li><p>输入文件名，然后按 <code>/</code> 进入到下一层文件目录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B91-1616555079897.png"></p>
+</li>
+<li><p>输入空文件名称（随意）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B92.png"></p>
+</li>
+<li><p><code>Commit new file</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B93.png"></p>
+</li>
+</ul>
+<h3 id="2-5-上传文件"><a href="#2-5-上传文件" class="headerlink" title="2.5 上传文件"></a>2.5 上传文件</h3><ul>
+<li><p>点击 <code>Add file</code> –&gt; 选择 <code>Upload files</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B61.png"></p>
+</li>
+<li><p>选择文件 <code>choose your files</code> –&gt; 提交 <code>Commit chagnes</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B62.png"></p>
+</li>
+</ul>
+<h3 id="2-6-修改文件、删除文件"><a href="#2-6-修改文件、删除文件" class="headerlink" title="2.6 修改文件、删除文件"></a>2.6 修改文件、删除文件</h3><ul>
+<li><p>选择需要修改或删除的文件</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E7%82%B9%E5%87%BB%E6%96%87%E4%BB%B6.png"></p>
+</li>
+<li><p>点击对应的图标，即可修改、删除文件</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E4%BF%AE%E6%94%B9%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6.png"></p>
+</li>
+</ul>
+<h3 id="2-7-克隆文件到本地"><a href="#2-7-克隆文件到本地" class="headerlink" title="2.7 克隆文件到本地"></a>2.7 克隆文件到本地</h3><ul>
+<li><p>方法一和方法二需要<a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93.png"></p>
+</li>
+</ul>
+<h3 id="2-8-创建分支"><a href="#2-8-创建分支" class="headerlink" title="2.8 创建分支"></a>2.8 创建分支</h3><ul>
+<li>分支是一个可以让你在同一时间工作在同一个仓库的不同版本的方法。</li>
+<li>在你的仓库中会有一个默认的名叫“master”的主分支，该分支用来存储你最终确定的版本代码。我们用其他的子分支来进行编辑和更改，确定之后再提交到主分支。</li>
+<li><a href="https://blog.csdn.net/qq_31877249/article/details/79740748">更多详情</a></li>
+</ul>
+<h3 id="2-9-删除仓库"><a href="#2-9-删除仓库" class="headerlink" title="2.9 删除仓库"></a>2.9 删除仓库</h3><ul>
+<li><p><code>Settings</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E8%AE%BE%E7%BD%AE.png"></p>
+</li>
+<li><p>拉到最下面，找到 <code>Delete this repository</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93.png"></p>
+</li>
+<li><p>根据操作输入 <code>仓库名</code> 以及 <code>密码</code> 即可删除（<font color='red'>慎重！慎重！慎重！</font>）</p>
+</li>
+</ul>
+<br/>]]></content>
+      <categories>
+        <category>GitHub</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gitee</title>
+    <url>/archives/1c750174.html</url>
+    <content><![CDATA[<h2 id="一、Gitee"><a href="#一、Gitee" class="headerlink" title="一、Gitee"></a>一、Gitee</h2><h3 id="1-1-Gitee简介"><a href="#1-1-Gitee简介" class="headerlink" title="1.1 Gitee简介"></a>1.1 Gitee简介</h3><ul>
+<li><a href="https://gitee.com/">Gitee</a>是<a href="https://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD/5462428">开源中国</a>（OSChina）推出的基于Git的代码托管服务。同<a href="https://github.com/">Github</a>一样，都是代码托管服务平台。</li>
+</ul>
+<span id="more"></span>
+
+<ul>
+<li><a href="http://git.mydoc.io/">更多详情</a></li>
+</ul>
+<h3 id="1-2-Github与Gitee比较"><a href="#1-2-Github与Gitee比较" class="headerlink" title="1.2 Github与Gitee比较"></a>1.2 Github与Gitee比较</h3><ul>
+<li>GitHub界面是英文，且拥有相当多的开发者用户，知名的库也多</li>
+<li>Gitee界面是中文，且大部分用户都是国人，优秀的库相对于GitHub也少</li>
+<li>在国内访问Github偶尔会有不稳定情况，而Gitee不会出现不稳定情况。</li>
+</ul>
+<h2 id="二、Gihee使用-同Github"><a href="#二、Gihee使用-同Github" class="headerlink" title="二、Gihee使用(同Github)"></a>二、Gihee使用(同<a href="http://localhost:4000/archives/d345b092.html">Github</a>)</h2><h3 id="2-1-Gitee官网，注册账号并登录"><a href="#2-1-Gitee官网，注册账号并登录" class="headerlink" title="2.1 Gitee官网，注册账号并登录"></a>2.1 <a href="https://gitee.com/">Gitee官网</a>，注册账号并登录</h3><h3 id="2-2-创建仓库"><a href="#2-2-创建仓库" class="headerlink" title="2.2 创建仓库"></a>2.2 创建仓库</h3><ul>
+<li><p>找到左下角的 <code>仓库</code>，并点击左边的 <code>+</code>号</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%931.png"></p>
+</li>
+<li><p>完善仓库相关信息</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
+</li>
+</ul>
+<h3 id="2-3-文件操作"><a href="#2-3-文件操作" class="headerlink" title="2.3 文件操作"></a>2.3 文件操作</h3><ul>
+<li><p>根据需要选择 <code>新建文件</code>、<code>新建文件夹</code>、<code>上传文件</code>、<code>搜索文件</code> </p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.png"></p>
+</li>
+</ul>
+<h3 id="2-4-项目克隆-下载"><a href="#2-4-项目克隆-下载" class="headerlink" title="2.4 项目克隆/下载"></a>2.4 项目克隆/下载</h3><ul>
+<li><p>方法一和方法二需要 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%85%8B%E9%9A%86%E5%92%8C%E4%B8%8B%E8%BD%BD.png"></p>
+</li>
+</ul>
+<h3 id="2-5-更多服务"><a href="#2-5-更多服务" class="headerlink" title="2.5 更多服务"></a>2.5 更多服务</h3><ul>
+<li><p>这里的服务可以一键部署，个人感觉Gitee这点比Gihub好</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1.png"></p>
+</li>
+</ul>
+<h3 id="2-6-删除仓库"><a href="#2-6-删除仓库" class="headerlink" title="2.6 删除仓库"></a>2.6 删除仓库</h3><ul>
+<li><p>点击 <code>管理</code> –&gt; 找到<code>删除仓库</code> –&gt; <code>删除仓库</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93-1616810809021.png"></p>
+</li>
+<li><p>根据操作输入 <code>仓库名</code> 以及 <code>密码</code> 即可删除（慎重！慎重！慎重！）</p>
+</li>
+</ul>
+<h2 id="三、Gitee同步Github"><a href="#三、Gitee同步Github" class="headerlink" title="三、Gitee同步Github"></a>三、Gitee同步Github</h2><h3 id="3-1-官方介绍"><a href="#3-1-官方介绍" class="headerlink" title="3.1 官方介绍"></a>3.1 <a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">官方介绍</a></h3><h3 id="3-2-仓库导入"><a href="#3-2-仓库导入" class="headerlink" title="3.2 仓库导入"></a>3.2 仓库导入</h3><ul>
+<li><p>登陆 Gitee 账号，点击右上角的 + 号，点击「从 GitHub 导入仓库」，在跳转的页面中授权 Gitee 访问。</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105453_df1887b4_551147.png"></p>
+</li>
+<li><p>与 GitHub 对接。</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103534_e8434068_551147.png"></p>
+</li>
+<li><p>选择性的导入您的 Github 项目到 Gitee</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/103621_76ddb06d_551147.png"></p>
+</li>
+</ul>
+<h3 id="3-3-保持同步更新"><a href="#3-3-保持同步更新" class="headerlink" title="3.3 保持同步更新"></a>3.3 保持同步更新</h3><ul>
+<li><p>在项目主页点击同步更新按钮即可！</p>
+<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Gitee/105403_b8666166_551147.png"></p>
+</li>
+<li><p>这里的同步功能默认是强制同步（新代码直接覆盖）</p>
+</li>
+</ul>
+<br/>
+
+<blockquote>
+<p>参考文档：【鸣谢】</p>
+<p><a href="https://blog.csdn.net/AC_872767407/article/details/113177983?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_v2~rank_aggregation-3-113177983.pc_agg_rank_aggregation&utm_term=gitee%E5%92%8Cgithub%E7%9A%84%E5%8C%BA%E5%88%AB&spm=1000.2123.3001.4430">Gitee及Github的区别</a></p>
+<p><a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">如何将 GitHub 项目导入码云</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Gitee</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Gitee</tag>
       </tags>
   </entry>
   <entry>
@@ -349,275 +437,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Github</title>
-    <url>/archives/d345b092.html</url>
-    <content><![CDATA[<h2 id="一、Github"><a href="#一、Github" class="headerlink" title="一、Github"></a>一、Github</h2><h3 id="1-1-Github简介"><a href="#1-1-Github简介" class="headerlink" title="1.1 Github简介"></a>1.1 Github简介</h3><ul>
-<li><a href="https://github.com/">GitHub</a>是一个面向开源及私有软件项目的托管平台（代码托管服务平台）。</li>
-</ul>
-<span id="more"></span>
-
-<ul>
-<li><a href="https://baike.baidu.com/item/Github/10145341?fr=aladdin">更多详情</a></li>
-</ul>
-<h2 id="二、Gihub使用"><a href="#二、Gihub使用" class="headerlink" title="二、Gihub使用"></a>二、Gihub使用</h2><h3 id="2-1-Github官网，注册账号并登录，国内访问较慢"><a href="#2-1-Github官网，注册账号并登录，国内访问较慢" class="headerlink" title="2.1 Github官网，注册账号并登录，国内访问较慢"></a>2.1 <a href="https://github.com/">Github官网</a>，注册账号并登录，<a href="https://blog.csdn.net/zsf_993113/article/details/107126493">国内访问较慢</a></h3><h3 id="2-2-创建仓库（一个仓库通常用来组织一个单独的项目）"><a href="#2-2-创建仓库（一个仓库通常用来组织一个单独的项目）" class="headerlink" title="2.2 创建仓库（一个仓库通常用来组织一个单独的项目）"></a>2.2 创建仓库（一个仓库通常用来组织一个单独的项目）</h3><ul>
-<li><p>点击 <code>New</code> </p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
-</li>
-<li><p>完善仓库相关信息，然后点击 <code>Create repository</code> 即可创建成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%932.png"></p>
-</li>
-</ul>
-<h3 id="2-3-创建新文件"><a href="#2-3-创建新文件" class="headerlink" title="2.3 创建新文件"></a>2.3 创建新文件</h3><ul>
-<li><p>点击 <code>Add file</code> –&gt; 选择 <code>Create new file</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E4%BB%B61.png"></p>
-</li>
-<li><p>输入文件名以及内容</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E4%BB%B62-1616551218724.png"></p>
-</li>
-<li><p>预览效果 <code>Preview</code> –&gt; 创建文章 <code>Commit new file</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E7%AB%A03.png"></p>
-</li>
-</ul>
-<h3 id="2-4-创建文件夹"><a href="#2-4-创建文件夹" class="headerlink" title="2.4 创建文件夹"></a>2.4 创建文件夹</h3><ul>
-<li><p>因为Github仓库下不允许有空文件夹，所以在创建文件夹时创建一个空文件，防止创建文件夹失败</p>
-</li>
-<li><p>输入文件名，然后按 <code>/</code> 进入到下一层文件目录</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B91-1616555079897.png"></p>
-</li>
-<li><p>输入空文件名称（随意）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B92.png"></p>
-</li>
-<li><p><code>Commit new file</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B93.png"></p>
-</li>
-</ul>
-<h3 id="2-5-上传文件"><a href="#2-5-上传文件" class="headerlink" title="2.5 上传文件"></a>2.5 上传文件</h3><ul>
-<li><p>点击 <code>Add file</code> –&gt; 选择 <code>Upload files</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B61.png"></p>
-</li>
-<li><p>选择文件 <code>choose your files</code> –&gt; 提交 <code>Commit chagnes</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B62.png"></p>
-</li>
-</ul>
-<h3 id="2-6-修改文件、删除文件"><a href="#2-6-修改文件、删除文件" class="headerlink" title="2.6 修改文件、删除文件"></a>2.6 修改文件、删除文件</h3><ul>
-<li><p>选择需要修改或删除的文件</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E7%82%B9%E5%87%BB%E6%96%87%E4%BB%B6.png"></p>
-</li>
-<li><p>点击对应的图标，即可修改、删除文件</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E4%BF%AE%E6%94%B9%E5%92%8C%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6.png"></p>
-</li>
-</ul>
-<h3 id="2-7-克隆文件到本地"><a href="#2-7-克隆文件到本地" class="headerlink" title="2.7 克隆文件到本地"></a>2.7 克隆文件到本地</h3><ul>
-<li><p>方法一和方法二需要<a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%85%8B%E9%9A%86%E4%BB%93%E5%BA%93.png"></p>
-</li>
-</ul>
-<h3 id="2-8-创建分支"><a href="#2-8-创建分支" class="headerlink" title="2.8 创建分支"></a>2.8 创建分支</h3><ul>
-<li>分支是一个可以让你在同一时间工作在同一个仓库的不同版本的方法。</li>
-<li>在你的仓库中会有一个默认的名叫“master”的主分支，该分支用来存储你最终确定的版本代码。我们用其他的子分支来进行编辑和更改，确定之后再提交到主分支。</li>
-<li><a href="https://blog.csdn.net/qq_31877249/article/details/79740748">更多详情</a></li>
-</ul>
-<h3 id="2-9-删除仓库"><a href="#2-9-删除仓库" class="headerlink" title="2.9 删除仓库"></a>2.9 删除仓库</h3><ul>
-<li><p><code>Settings</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E8%AE%BE%E7%BD%AE.png"></p>
-</li>
-<li><p>拉到最下面，找到 <code>Delete this repository</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93.png"></p>
-</li>
-<li><p>根据操作输入 <code>仓库名</code> 以及 <code>密码</code> 即可删除（<font color='red'>慎重！慎重！慎重！</font>）</p>
-</li>
-</ul>
-<br/>]]></content>
-      <categories>
-        <category>GitHub</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo-Next配置（插件篇）</title>
-    <url>/archives/b78f5428.html</url>
-    <content><![CDATA[<p><font color="red"><strong>注意：</strong></font></p>
-<ol>
-<li><p>下面的配置每一项都需要 <code>hexo clean</code> 和 <code>hexo s</code> 来实现预览</p>
-</li>
-<li><p>站点配置文件 <code>./_config.yml</code> </p>
-</li>
-<li><p>主题配置文件 <code>./source/_data/next.yml</code></p>
-</li>
-</ol>
-<h3 id="1-设置-hexo-永久链接"><a href="#1-设置-hexo-永久链接" class="headerlink" title="1. 设置 hexo 永久链接"></a>1. 设置 hexo 永久链接</h3><span id="more"></span>
-
-<ul>
-<li><p>安装插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure></li>
-<li><p>然后在站点配置文件<code>_config.yml</code> 中修改为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- url: http:&#x2F;&#x2F;example.com				# 网站域名</span><br><span class="line">+ url: https:&#x2F;&#x2F;hexo.xiaosi.world     </span><br><span class="line"></span><br><span class="line">- permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;  # 永久链接格式</span><br><span class="line">+ permalink: archives&#x2F;:abbrlink.html      </span><br><span class="line">+ abbrlink:</span><br><span class="line">+  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">+  rep: hex    # 进制：dec(default) and hex</span><br><span class="line"></span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览（文章链接由原来的 <code>时间+题目.html</code> 变成了 <code>算法+进制.html</code>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Hexo/%E6%B0%B8%E4%B9%85%E9%93%BE%E6%8E%A5.png"></p>
-</li>
-</ul>
-<h3 id="2-字数统计、阅读时长"><a href="#2-字数统计、阅读时长" class="headerlink" title="2. 字数统计、阅读时长"></a>2. 字数统计、阅读时长</h3><ul>
-<li><p>安装插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure></li>
-<li><p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true		# false会显示一行</span><br><span class="line">  item_text_post: true		# 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字</span><br><span class="line">- item_text_total: false    # 底部footer是否显示字数统计属性文字(可选)</span><br><span class="line">+ item_text_total: true</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Hexo/%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF.png"></p>
-</li>
-</ul>
-<h3 id="3-相关文章推荐（文章末尾）"><a href="#3-相关文章推荐（文章末尾）" class="headerlink" title="3. 相关文章推荐（文章末尾）"></a>3. 相关文章推荐（文章末尾）</h3><ul>
-<li><p>安装插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-related-popular-posts --save</span><br></pre></td></tr></table></figure></li>
-<li><p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">related_posts:</span><br><span class="line">  enable: true</span><br><span class="line">  title: 相关文章推荐      # 属性的命名</span><br><span class="line">  display_in_home: false # false代表首页不显示</span><br><span class="line">  params:</span><br><span class="line">    maxCount: 5          # 最多5条</span><br><span class="line">    #PPMixingRate: 0.0   # 相关度</span><br><span class="line">    #isDate: true        # 是否显示日期</span><br><span class="line">    #isImage: false      # 是否显示配图</span><br><span class="line">    isExcerpt: false     # 是否显示摘要</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Hexo/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%EF%BC%88%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%EF%BC%89.png"></p>
-</li>
-</ul>
-<h3 id="4-配置-hexo-本地搜索"><a href="#4-配置-hexo-本地搜索" class="headerlink" title="4. 配置 hexo 本地搜索"></a>4. 配置 hexo 本地搜索</h3><ul>
-<li><p>对于动态网站来说，可以通过php实现。但是，Hexo博客是静态网站，用不了php。<br>NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-searchdb，预先生成了一个文本库search.xml，然后传到了网站里面。在本地搜索的时候，NexT直接用 javascript调用了这个文件，从而实现了静态网站的本地搜索</p>
-</li>
-<li><p>安装插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></li>
-<li><p>然后我们修改站点配置文件 <code>_config.yml</code> ，添加如下内容：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 本地搜索</span><br><span class="line">search:	</span><br><span class="line">  path: search.xml			# 索引文件的路径，相对于站点根目录</span><br><span class="line">  field: post				# 搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面</span><br><span class="line">  format: html</span><br><span class="line">  limit: 100				# 限制搜索的条目数</span><br></pre></td></tr></table></figure></li>
-<li><p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:			# 本地搜索</span><br><span class="line">- enable: true			# 是否开启</span><br><span class="line">+ enable: true</span><br><span class="line"></span><br><span class="line">  # 如果 auto, 通过改变输入触发搜索。</span><br><span class="line">  # 如果 manual, 通过按enter键或搜索按钮触发搜索。</span><br><span class="line">  trigger: auto			# auto|manual</span><br><span class="line">  </span><br><span class="line">  # 显示每篇文章的前n个结果，通过设置为-1显示所有结果</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  # 不可转义的html字符串到可读的字符串。</span><br><span class="line">  unescape: false</span><br><span class="line">  # 在页面加载时预加载搜索数据</span><br><span class="line">  preload: false</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Hexo/%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2.png"></p>
-</li>
-</ul>
-<h3 id="5-加载进度条（可选）"><a href="#5-加载进度条（可选）" class="headerlink" title="5. 加载进度条（可选）"></a>5. 加载进度条（可选）</h3><ul>
-<li><p>进入NexT文件目录</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd themes&#x2F;next</span><br></pre></td></tr></table></figure></li>
-<li><p>克隆插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace</span><br></pre></td></tr></table></figure></li>
-<li><p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pace:</span><br><span class="line">- enable: false						# 是否开启</span><br><span class="line">+ enable: true</span><br><span class="line">  # 可选择加载主题:</span><br><span class="line">  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple</span><br><span class="line">  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal</span><br><span class="line">  theme: center-atom</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Hexo/%E5%8A%A0%E8%BD%BD%E8%BF%9B%E5%BA%A6.png"></p>
-</li>
-</ul>
-<h3 id="6-1-动态背景"><a href="#6-1-动态背景" class="headerlink" title="6.1 动态背景"></a>6.1 动态背景</h3><ul>
-<li><p>进入NexT文件目录</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd themes&#x2F;next</span><br></pre></td></tr></table></figure></li>
-<li><p>克隆插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest</span><br></pre></td></tr></table></figure></li>
-<li><p>主题配置文件 <code>next.yml</code> 中，添加如下内容：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">canvas_nest:</span><br><span class="line">  enable: true</span><br><span class="line">  # 下面是自定义参数(去掉#即可启用)</span><br><span class="line">  # onmobile: true 			# 是否显示在手机上</span><br><span class="line">  # color: &#39;0,0,255&#39; 		# 颜色值</span><br><span class="line">  # opacity: 0.5 			# 线条的不透明度: 0~1</span><br><span class="line">  # zIndex: -1 				# 背景的z-index属性</span><br><span class="line">  # count: 99 				# 行数</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Hexo/%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF%E4%B8%80.png"></p>
-</li>
-</ul>
-<h3 id="6-2-动态背景-补"><a href="#6-2-动态背景-补" class="headerlink" title="6.2 动态背景(补)"></a>6.2 动态背景(补)</h3><ul>
-<li><p>进入NexT文件目录</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd themes&#x2F;next</span><br></pre></td></tr></table></figure></li>
-<li><p>克隆插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-three source&#x2F;lib&#x2F;three</span><br></pre></td></tr></table></figure></li>
-<li><p>主题配置文件 <code>next.yml</code> 中，三种选一种</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">three:</span><br><span class="line">- enable: false</span><br><span class="line">+ enable: true</span><br><span class="line">  three_waves: true</span><br><span class="line">  #canvas_lines: true</span><br><span class="line">  #canvas_sphere: true</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="7-nofollow-标签的使用"><a href="#7-nofollow-标签的使用" class="headerlink" title="7. nofollow 标签的使用"></a>7. nofollow 标签的使用</h3><ul>
-<li><p>减少出站链接能够有效防止权重分散，hexo有很方便的自动为出站链接添加 <code>nofollow</code> 标签的插件</p>
-</li>
-<li><p>安装插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-nofollow --save</span><br></pre></td></tr></table></figure></li>
-<li><p>然后我们在站点的配置文件<code>_config.yml</code> 中添加配置，将 <code>nofollow</code> 设置为 <code>true</code>：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 外部链接优化</span><br><span class="line">nofollow:</span><br><span class="line">  enable: true</span><br><span class="line">  field: site</span><br><span class="line">  exclude:</span><br><span class="line">    - &#39;exclude1.com&#39;</span><br><span class="line">    - &#39;exclude2.com&#39;</span><br></pre></td></tr></table></figure></li>
-<li><p>其中 <code>exclude</code>（例外的链接，比如友链）将不会被加上 <code>nofollow</code> 属性</p>
-</li>
-</ul>
-<h3 id="8-置顶文章标志"><a href="#8-置顶文章标志" class="headerlink" title="8.  置顶文章标志"></a>8.  置顶文章标志</h3><ul>
-<li><p>安装插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure></li>
-<li><p>方法一：</p>
-<ul>
-<li><p>新建<code>./source/_data/post-meta.swig</code> 文件，并将下面代码放入 <code>post-meta.swig</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line">    &lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;			# 图标</span><br><span class="line">    &lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;</span><br><span class="line">    &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>postMeta</code> 的注释：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-  #postMeta: source&#x2F;_data&#x2F;post-meta.swig</span><br><span class="line">+  postMeta: source&#x2F;_data&#x2F;post-meta.swig</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Hexo/%E7%BD%AE%E9%A1%B6%E4%B8%80.png"></p>
-</li>
-</ul>
-</li>
-<li><p>方法二：</p>
-<ul>
-<li><p>添加置顶标志：在 <code>.\themes\next\layout_macro</code> 下的 <code>post.swig</code>，找到<code>&lt;div class=&quot;post-meta&quot;&gt;</code> ，在下面添加对应代码</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;post-meta&quot;&gt;</span><br><span class="line"> +        &#123;% if post.top %&#125;</span><br><span class="line"> +            &lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line"> +            &lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;		# 图标</span><br><span class="line"> +            &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line"> +        &#123;% endif %&#125;</span><br><span class="line">          </span><br><span class="line">          &#123;%- set date_diff &#x3D; date(post.date) !&#x3D; date(post.updated) %&#125;</span><br><span class="line">     ......</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Hexo/%E7%BD%AE%E9%A1%B6%E4%BA%8C-1615202884367.png"></p>
-</li>
-</ul>
-</li>
-<li><p>图标如果显示不出来，可替换</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-  &lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">+  &lt;i class&#x3D;&quot;fa fa-anchor&quot;&gt;&lt;&#x2F;i&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>使用方法：在需要置顶的文章的 Front-matter 中加上 top: true 或者 top: 任意数字，比如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo-Next配置（插件篇）</span><br><span class="line">categories: Hexo博客</span><br><span class="line">tags:</span><br><span class="line">  - Hexo</span><br><span class="line">  - Next</span><br><span class="line">comments: true</span><br><span class="line">abbrlink: b78f5428</span><br><span class="line">date: 2021-03-08 17:07:19</span><br><span class="line">top: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h4 id="注意：top-中数字越大，文章越靠前"><a href="#注意：top-中数字越大，文章越靠前" class="headerlink" title="注意：top 中数字越大，文章越靠前"></a><font color="red">注意：</font>top 中数字越大，文章越靠前</h4></li>
-</ul>
-<h3 id="9-标签云"><a href="#9-标签云" class="headerlink" title="9. 标签云"></a>9. 标签云</h3><ul>
-<li><p>安装插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-cloud@^2.0.* --save</span><br></pre></td></tr></table></figure></li>
-<li><p>在自定义样式文件 <code>.\source\_data\sidebar.swig</code> 中添加：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;# 标签云 #&#125;</span><br><span class="line">&#123;% if site.tags.length &gt; 1 %&#125;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#x2F;js&#x2F;tagcloud.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#x2F;js&#x2F;tagcanvas.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;Tag Cloud&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">        &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width&#x3D;100%&quot;&gt;</span><br><span class="line">            &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">        &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>在主题配置文件 <code>_config.yml</code> 中添加如下的配置项，可以自定义标签云的字体和颜色，还有突出高亮</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># hexo-tag-cloud</span><br><span class="line">tag_cloud:</span><br><span class="line">    textFont: Trebuchet MS, Helvetica</span><br><span class="line">    textColor: &#39;#333&#39;</span><br><span class="line">    textHeight: 25</span><br><span class="line">    outlineColor: &#39;#E2E1D1&#39;</span><br><span class="line">    maxSpeed: 0.1</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/img/raw/master/Hexo/%E6%A0%87%E7%AD%BE%E4%BA%91.png"></p>
-</li>
-</ul>
-<h3 id="10-静态资源压缩"><a href="#10-静态资源压缩" class="headerlink" title="10. 静态资源压缩"></a>10. 静态资源压缩</h3><ul>
-<li><p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">压缩静态资源</a></p>
-</li>
-<li><p>安装hexo-all-minifier插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure></li>
-<li><p>如果安装失败试试用 <code>cnpm</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure></li>
-<li><p>在站点配置文件 <code>_config.yml</code> 中添加</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">all_minifier: true</span><br></pre></td></tr></table></figure></li>
-<li><p>详细设置：（详见 <a href="https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md">README</a>）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># html压缩</span><br><span class="line">html_minifier:</span><br><span class="line">  enable: true</span><br><span class="line">  ignore_error: false</span><br><span class="line">  exclude:</span><br><span class="line"></span><br><span class="line"># css压缩</span><br><span class="line">css_minifier:</span><br><span class="line">  enable: true</span><br><span class="line">  exclude:</span><br><span class="line">    - &#39;*.min.css&#39;</span><br><span class="line">    </span><br><span class="line"># js压缩</span><br><span class="line">js_minifier:</span><br><span class="line">  enable: true</span><br><span class="line">  mangle: true</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - &#39;*.min.js&#39;</span><br><span class="line">js_concator:</span><br><span class="line">  enable: false</span><br><span class="line">  bundle_path: &#39;&#x2F;js&#x2F;bundle.js&#39;</span><br><span class="line">  front: false</span><br><span class="line">  silent: false</span><br><span class="line"></span><br><span class="line"># 图片优化</span><br><span class="line">image_minifier:</span><br><span class="line">  enable: true</span><br><span class="line">  interlaced: false</span><br><span class="line">  multipass: false</span><br><span class="line">  optimizationLevel: 2</span><br><span class="line">  pngquant: false</span><br><span class="line">  progressive: false</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="11-数学公式"><a href="#11-数学公式" class="headerlink" title="11. 数学公式"></a>11. 数学公式</h3><ul>
-<li><a href="https://blog.csdn.net/qq_38496329/article/details/104065659">数学公式渲染</a></li>
-</ul>
-<h3 id="12-插件管理器"><a href="#12-插件管理器" class="headerlink" title="12. 插件管理器"></a>12. 插件管理器</h3><ul>
-<li><p>安装插件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexagon-cli</span><br></pre></td></tr></table></figure></li>
-<li><p>用来查看插件列表</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexagon -l</span><br><span class="line">hexa -l</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="13-添加live2d"><a href="#13-添加live2d" class="headerlink" title="13. 添加live2d"></a>13. 添加live2d</h3><ul>
-<li><a href="https://www.dazhuanlan.com/2020/03/17/5e709539efa8e/">Hexo Next 添加萌萌的宠物live2d</a></li>
-</ul>
-<h3 id="14-收录"><a href="#14-收录" class="headerlink" title="14. 收录"></a>14. 收录</h3><ul>
-<li><a href="https://www.cnblogs.com/TRHX/p/11699948.html">百度、谷歌收录</a></li>
-</ul>
-<br>
-
-<blockquote>
-<p>参考网站：【鸣谢】</p>
-<p><a href="https://blog.csdn.net/iwyang/article/details/106989237">Hexo-NexT (v7.7.2) 主题配置</a></p>
-<p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">Hexo折腾系列——博客访问速度优化</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/149575559">Hexo博客建立标签云及效果展示</a></p>
-</blockquote>
-<br>
-
-]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo-Next配置（基础篇）</title>
     <url>/archives/2d288079.html</url>
     <content><![CDATA[<p><font color="red"><strong>注意：</strong></font></p>
@@ -699,7 +518,7 @@
 <p><code>yourname</code> 改成自己的名字</p>
 </li>
 <li><p>效果预览</p>
-<p><img data-src="D:/PicGo/图片/社交链接图.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5%E5%9B%BE.png"></p>
 </li>
 <li><p>只显示图标效果预览</p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5%E5%9B%BE%E6%A0%87.png"></p>
@@ -829,6 +648,187 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo-Next配置（插件篇）</title>
+    <url>/archives/b78f5428.html</url>
+    <content><![CDATA[<p><font color="red"><strong>注意：</strong></font></p>
+<ol>
+<li><p>下面的配置每一项都需要 <code>hexo clean</code> 和 <code>hexo s</code> 来实现预览</p>
+</li>
+<li><p>站点配置文件 <code>./_config.yml</code> </p>
+</li>
+<li><p>主题配置文件 <code>./source/_data/next.yml</code></p>
+</li>
+</ol>
+<h3 id="1-设置-hexo-永久链接"><a href="#1-设置-hexo-永久链接" class="headerlink" title="1. 设置 hexo 永久链接"></a>1. 设置 hexo 永久链接</h3><span id="more"></span>
+
+<ul>
+<li><p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure></li>
+<li><p>然后在站点配置文件<code>_config.yml</code> 中修改为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- url: http:&#x2F;&#x2F;example.com				# 网站域名</span><br><span class="line">+ url: https:&#x2F;&#x2F;hexo.xiaosi.world     </span><br><span class="line"></span><br><span class="line">- permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;  # 永久链接格式</span><br><span class="line">+ permalink: archives&#x2F;:abbrlink.html      </span><br><span class="line">+ abbrlink:</span><br><span class="line">+  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">+  rep: hex    # 进制：dec(default) and hex</span><br><span class="line"></span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览（文章链接由原来的 <code>时间+题目.html</code> 变成了 <code>算法+进制.html</code>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E6%B0%B8%E4%B9%85%E9%93%BE%E6%8E%A5.png"></p>
+</li>
+</ul>
+<h3 id="2-字数统计、阅读时长"><a href="#2-字数统计、阅读时长" class="headerlink" title="2. 字数统计、阅读时长"></a>2. 字数统计、阅读时长</h3><ul>
+<li><p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure></li>
+<li><p>主题配置文件 <code>next.yml</code> 中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true		# false会显示一行</span><br><span class="line">  item_text_post: true		# 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字</span><br><span class="line">- item_text_total: false    # 底部footer是否显示字数统计属性文字(可选)</span><br><span class="line">+ item_text_total: true</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF.png"></p>
+</li>
+</ul>
+<h3 id="3-相关文章推荐（文章末尾）"><a href="#3-相关文章推荐（文章末尾）" class="headerlink" title="3. 相关文章推荐（文章末尾）"></a>3. 相关文章推荐（文章末尾）</h3><ul>
+<li><p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-related-popular-posts --save</span><br></pre></td></tr></table></figure></li>
+<li><p>主题配置文件 <code>next.yml</code> 中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">related_posts:</span><br><span class="line">  enable: true</span><br><span class="line">  title: 相关文章推荐      # 属性的命名</span><br><span class="line">  display_in_home: false # false代表首页不显示</span><br><span class="line">  params:</span><br><span class="line">    maxCount: 5          # 最多5条</span><br><span class="line">    #PPMixingRate: 0.0   # 相关度</span><br><span class="line">    #isDate: true        # 是否显示日期</span><br><span class="line">    #isImage: false      # 是否显示配图</span><br><span class="line">    isExcerpt: false     # 是否显示摘要</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%EF%BC%88%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%EF%BC%89.png"></p>
+</li>
+</ul>
+<h3 id="4-配置-hexo-本地搜索"><a href="#4-配置-hexo-本地搜索" class="headerlink" title="4. 配置 hexo 本地搜索"></a>4. 配置 hexo 本地搜索</h3><ul>
+<li><p>对于动态网站来说，可以通过php实现。但是，Hexo博客是静态网站，用不了php。<br>NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-searchdb，预先生成了一个文本库search.xml，然后传到了网站里面。在本地搜索的时候，NexT直接用 javascript调用了这个文件，从而实现了静态网站的本地搜索</p>
+</li>
+<li><p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></li>
+<li><p>然后我们修改站点配置文件 <code>_config.yml</code> ，添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 本地搜索</span><br><span class="line">search:	</span><br><span class="line">  path: search.xml			# 索引文件的路径，相对于站点根目录</span><br><span class="line">  field: post				# 搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面</span><br><span class="line">  format: html</span><br><span class="line">  limit: 100				# 限制搜索的条目数</span><br></pre></td></tr></table></figure></li>
+<li><p>主题配置文件 <code>next.yml</code> 中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:			# 本地搜索</span><br><span class="line">- enable: true			# 是否开启</span><br><span class="line">+ enable: true</span><br><span class="line"></span><br><span class="line">  # 如果 auto, 通过改变输入触发搜索。</span><br><span class="line">  # 如果 manual, 通过按enter键或搜索按钮触发搜索。</span><br><span class="line">  trigger: auto			# auto|manual</span><br><span class="line">  </span><br><span class="line">  # 显示每篇文章的前n个结果，通过设置为-1显示所有结果</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  # 不可转义的html字符串到可读的字符串。</span><br><span class="line">  unescape: false</span><br><span class="line">  # 在页面加载时预加载搜索数据</span><br><span class="line">  preload: false</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2.png"></p>
+</li>
+</ul>
+<h3 id="5-加载进度条（可选）"><a href="#5-加载进度条（可选）" class="headerlink" title="5. 加载进度条（可选）"></a>5. 加载进度条（可选）</h3><ul>
+<li><p>进入NexT文件目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd themes&#x2F;next</span><br></pre></td></tr></table></figure></li>
+<li><p>克隆插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-pace source&#x2F;lib&#x2F;pace</span><br></pre></td></tr></table></figure></li>
+<li><p>主题配置文件 <code>next.yml</code> 中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pace:</span><br><span class="line">- enable: false						# 是否开启</span><br><span class="line">+ enable: true</span><br><span class="line">  # 可选择加载主题:</span><br><span class="line">  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple</span><br><span class="line">  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal</span><br><span class="line">  theme: center-atom</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E5%8A%A0%E8%BD%BD%E8%BF%9B%E5%BA%A6.png"></p>
+</li>
+</ul>
+<h3 id="6-1-动态背景"><a href="#6-1-动态背景" class="headerlink" title="6.1 动态背景"></a>6.1 动态背景</h3><ul>
+<li><p>进入NexT文件目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd themes&#x2F;next</span><br></pre></td></tr></table></figure></li>
+<li><p>克隆插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-canvas-nest source&#x2F;lib&#x2F;canvas-nest</span><br></pre></td></tr></table></figure></li>
+<li><p>主题配置文件 <code>next.yml</code> 中，添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">canvas_nest:</span><br><span class="line">  enable: true</span><br><span class="line">  # 下面是自定义参数(去掉#即可启用)</span><br><span class="line">  # onmobile: true 			# 是否显示在手机上</span><br><span class="line">  # color: &#39;0,0,255&#39; 		# 颜色值</span><br><span class="line">  # opacity: 0.5 			# 线条的不透明度: 0~1</span><br><span class="line">  # zIndex: -1 				# 背景的z-index属性</span><br><span class="line">  # count: 99 				# 行数</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF%E4%B8%80.png"></p>
+</li>
+</ul>
+<h3 id="6-2-动态背景-补"><a href="#6-2-动态背景-补" class="headerlink" title="6.2 动态背景(补)"></a>6.2 动态背景(补)</h3><ul>
+<li><p>进入NexT文件目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd themes&#x2F;next</span><br></pre></td></tr></table></figure></li>
+<li><p>克隆插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;theme-next-three source&#x2F;lib&#x2F;three</span><br></pre></td></tr></table></figure></li>
+<li><p>主题配置文件 <code>next.yml</code> 中，三种选一种</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">three:</span><br><span class="line">- enable: false</span><br><span class="line">+ enable: true</span><br><span class="line">  three_waves: true</span><br><span class="line">  #canvas_lines: true</span><br><span class="line">  #canvas_sphere: true</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="7-nofollow-标签的使用"><a href="#7-nofollow-标签的使用" class="headerlink" title="7. nofollow 标签的使用"></a>7. nofollow 标签的使用</h3><ul>
+<li><p>减少出站链接能够有效防止权重分散，hexo有很方便的自动为出站链接添加 <code>nofollow</code> 标签的插件</p>
+</li>
+<li><p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-nofollow --save</span><br></pre></td></tr></table></figure></li>
+<li><p>然后我们在站点的配置文件<code>_config.yml</code> 中添加配置，将 <code>nofollow</code> 设置为 <code>true</code>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 外部链接优化</span><br><span class="line">nofollow:</span><br><span class="line">  enable: true</span><br><span class="line">  field: site</span><br><span class="line">  exclude:</span><br><span class="line">    - &#39;exclude1.com&#39;</span><br><span class="line">    - &#39;exclude2.com&#39;</span><br></pre></td></tr></table></figure></li>
+<li><p>其中 <code>exclude</code>（例外的链接，比如友链）将不会被加上 <code>nofollow</code> 属性</p>
+</li>
+</ul>
+<h3 id="8-置顶文章标志"><a href="#8-置顶文章标志" class="headerlink" title="8.  置顶文章标志"></a>8.  置顶文章标志</h3><ul>
+<li><p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure></li>
+<li><p>方法一：</p>
+<ul>
+<li><p>新建<code>./source/_data/post-meta.swig</code> 文件，并将下面代码放入 <code>post-meta.swig</code> 中</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line">    &lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;			# 图标</span><br><span class="line">    &lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;</span><br><span class="line">    &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>postMeta</code> 的注释：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-  #postMeta: source&#x2F;_data&#x2F;post-meta.swig</span><br><span class="line">+  postMeta: source&#x2F;_data&#x2F;post-meta.swig</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E7%BD%AE%E9%A1%B6%E4%B8%80.png"></p>
+</li>
+</ul>
+</li>
+<li><p>方法二：</p>
+<ul>
+<li><p>添加置顶标志：在 <code>.\themes\next\layout_macro</code> 下的 <code>post.swig</code>，找到<code>&lt;div class=&quot;post-meta&quot;&gt;</code> ，在下面添加对应代码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;post-meta&quot;&gt;</span><br><span class="line"> +        &#123;% if post.top %&#125;</span><br><span class="line"> +            &lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line"> +            &lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;		# 图标</span><br><span class="line"> +            &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line"> +        &#123;% endif %&#125;</span><br><span class="line">          </span><br><span class="line">          &#123;%- set date_diff &#x3D; date(post.date) !&#x3D; date(post.updated) %&#125;</span><br><span class="line">     ......</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E7%BD%AE%E9%A1%B6%E4%BA%8C-1615202884367.png"></p>
+</li>
+</ul>
+</li>
+<li><p>图标如果显示不出来，可替换</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-  &lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">+  &lt;i class&#x3D;&quot;fa fa-anchor&quot;&gt;&lt;&#x2F;i&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>使用方法：在需要置顶的文章的 Front-matter 中加上 top: true 或者 top: 任意数字，比如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo-Next配置（插件篇）</span><br><span class="line">categories: Hexo博客</span><br><span class="line">tags:</span><br><span class="line">  - Hexo</span><br><span class="line">  - Next</span><br><span class="line">comments: true</span><br><span class="line">abbrlink: b78f5428</span><br><span class="line">date: 2021-03-08 17:07:19</span><br><span class="line">top: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h4 id="注意：top-中数字越大，文章越靠前"><a href="#注意：top-中数字越大，文章越靠前" class="headerlink" title="注意：top 中数字越大，文章越靠前"></a><font color="red">注意：</font>top 中数字越大，文章越靠前</h4></li>
+</ul>
+<h3 id="9-标签云"><a href="#9-标签云" class="headerlink" title="9. 标签云"></a>9. 标签云</h3><ul>
+<li><p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-cloud@^2.0.* --save</span><br></pre></td></tr></table></figure></li>
+<li><p>在自定义样式文件 <code>.\source\_data\sidebar.swig</code> 中添加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;# 标签云 #&#125;</span><br><span class="line">&#123;% if site.tags.length &gt; 1 %&#125;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#x2F;js&#x2F;tagcloud.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; charset&#x3D;&quot;utf-8&quot; src&#x3D;&quot;&#x2F;js&#x2F;tagcanvas.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;widget-wrap&quot;&gt;</span><br><span class="line">    &lt;h3 class&#x3D;&quot;widget-title&quot;&gt;Tag Cloud&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;myCanvasContainer&quot; class&#x3D;&quot;widget tagcloud&quot;&gt;</span><br><span class="line">        &lt;canvas width&#x3D;&quot;250&quot; height&#x3D;&quot;250&quot; id&#x3D;&quot;resCanvas&quot; style&#x3D;&quot;width&#x3D;100%&quot;&gt;</span><br><span class="line">            &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">        &lt;&#x2F;canvas&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>在主题配置文件 <code>_config.yml</code> 中添加如下的配置项，可以自定义标签云的字体和颜色，还有突出高亮</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># hexo-tag-cloud</span><br><span class="line">tag_cloud:</span><br><span class="line">    textFont: Trebuchet MS, Helvetica</span><br><span class="line">    textColor: &#39;#333&#39;</span><br><span class="line">    textHeight: 25</span><br><span class="line">    outlineColor: &#39;#E2E1D1&#39;</span><br><span class="line">    maxSpeed: 0.1</span><br></pre></td></tr></table></figure></li>
+<li><p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E6%A0%87%E7%AD%BE%E4%BA%91.png"></p>
+</li>
+</ul>
+<h3 id="10-静态资源压缩"><a href="#10-静态资源压缩" class="headerlink" title="10. 静态资源压缩"></a>10. 静态资源压缩</h3><ul>
+<li><p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">压缩静态资源</a></p>
+</li>
+<li><p>安装hexo-all-minifier插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure></li>
+<li><p>如果安装失败试试用 <code>cnpm</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure></li>
+<li><p>在站点配置文件 <code>_config.yml</code> 中添加</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">all_minifier: true</span><br></pre></td></tr></table></figure></li>
+<li><p>详细设置：（详见 <a href="https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md">README</a>）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># html压缩</span><br><span class="line">html_minifier:</span><br><span class="line">  enable: true</span><br><span class="line">  ignore_error: false</span><br><span class="line">  exclude:</span><br><span class="line"></span><br><span class="line"># css压缩</span><br><span class="line">css_minifier:</span><br><span class="line">  enable: true</span><br><span class="line">  exclude:</span><br><span class="line">    - &#39;*.min.css&#39;</span><br><span class="line">    </span><br><span class="line"># js压缩</span><br><span class="line">js_minifier:</span><br><span class="line">  enable: true</span><br><span class="line">  mangle: true</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - &#39;*.min.js&#39;</span><br><span class="line">js_concator:</span><br><span class="line">  enable: false</span><br><span class="line">  bundle_path: &#39;&#x2F;js&#x2F;bundle.js&#39;</span><br><span class="line">  front: false</span><br><span class="line">  silent: false</span><br><span class="line"></span><br><span class="line"># 图片优化</span><br><span class="line">image_minifier:</span><br><span class="line">  enable: true</span><br><span class="line">  interlaced: false</span><br><span class="line">  multipass: false</span><br><span class="line">  optimizationLevel: 2</span><br><span class="line">  pngquant: false</span><br><span class="line">  progressive: false</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="11-数学公式"><a href="#11-数学公式" class="headerlink" title="11. 数学公式"></a>11. 数学公式</h3><ul>
+<li><a href="https://blog.csdn.net/qq_38496329/article/details/104065659">数学公式渲染</a></li>
+</ul>
+<h3 id="12-插件管理器"><a href="#12-插件管理器" class="headerlink" title="12. 插件管理器"></a>12. 插件管理器</h3><ul>
+<li><p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexagon-cli</span><br></pre></td></tr></table></figure></li>
+<li><p>用来查看插件列表</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexagon -l</span><br><span class="line">hexa -l</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="13-添加live2d"><a href="#13-添加live2d" class="headerlink" title="13. 添加live2d"></a>13. 添加live2d</h3><ul>
+<li><a href="https://www.dazhuanlan.com/2020/03/17/5e709539efa8e/">Hexo Next 添加萌萌的宠物live2d</a></li>
+</ul>
+<h3 id="14-收录"><a href="#14-收录" class="headerlink" title="14. 收录"></a>14. 收录</h3><ul>
+<li><a href="https://www.cnblogs.com/TRHX/p/11699948.html">百度、谷歌收录</a></li>
+</ul>
+<br>
+
+<blockquote>
+<p>参考网站：【鸣谢】</p>
+<p><a href="https://blog.csdn.net/iwyang/article/details/106989237">Hexo-NexT (v7.7.2) 主题配置</a></p>
+<p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">Hexo折腾系列——博客访问速度优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/149575559">Hexo博客建立标签云及效果展示</a></p>
+</blockquote>
+<br>
+
+]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo安装及配置</title>
     <url>/archives/5ef212b6.html</url>
     <content><![CDATA[<h2 id="一、安装之前准备"><a href="#一、安装之前准备" class="headerlink" title="一、安装之前准备"></a>一、安装之前准备</h2><h3 id="1-1-Git"><a href="#1-1-Git" class="headerlink" title="1.1 Git"></a>1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3><h3 id="1-2-Node"><a href="#1-2-Node" class="headerlink" title="1.2 Node"></a>1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3><h3 id="1-3-Github"><a href="#1-3-Github" class="headerlink" title="1.3 Github"></a>1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3><span id="more"></span>
@@ -899,110 +899,6 @@
         <tag>Node</tag>
         <tag>Github</tag>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Node安装</title>
-    <url>/archives/84979429.html</url>
-    <content><![CDATA[<h2 id="一、Node安装"><a href="#一、Node安装" class="headerlink" title="一、Node安装"></a>一、Node安装</h2><h3 id="1-1-Node简介"><a href="#1-1-Node简介" class="headerlink" title="1.1 Node简介"></a>1.1 Node简介</h3><ul>
-<li><p>node（结点）:网络连接的端点，或两条（或多条）线路的连接点。结点可以是处理器、控制器或工作站。结点随其功能不同而各不相同，它们可以通过链路互联在一起，在网络中用作控制点。</p>
-<span id="more"></span></li>
-</ul>
-<h3 id="1-2-Node下载"><a href="#1-2-Node下载" class="headerlink" title="1.2 Node下载"></a>1.2 Node下载</h3><ul>
-<li><p>可以在 <a href="https://nodejs.org/zh-cn/">Node官网</a> 下载 <code>node</code> 并安装</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E5%AE%98%E7%BD%91-1616991075154.png"></p>
-</li>
-</ul>
-<h3 id="1-3-Node安装"><a href="#1-3-Node安装" class="headerlink" title="1.3 Node安装"></a>1.3 Node安装</h3><ul>
-<li><p><code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node1.png"></p>
-</li>
-</ul>
-<ul>
-<li><p><code>I accept...</code> –&gt; <code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node2.png"></p>
-</li>
-<li><p><code>Change</code> –&gt; <code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node3.png"></p>
-</li>
-<li><p><code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node4.png"></p>
-</li>
-<li><p><code>Next</code> –&gt; <code>Finish</code></p>
-</li>
-</ul>
-<h3 id="1-4-node和npm版本"><a href="#1-4-node和npm版本" class="headerlink" title="1.4 node和npm版本"></a>1.4 node和npm版本</h3><ul>
-<li><p>启动 <code>cmd</code> 命令框，执行下面代码查看 <code>node</code> 和 <code>npm</code> 版本</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E7%89%88%E6%9C%AC%E5%8F%B7.png"></p>
-</li>
-</ul>
-<h2 id="二、node配置-可选"><a href="#二、node配置-可选" class="headerlink" title="二、node配置(可选)"></a>二、node配置(可选)</h2><h3 id="2-1-配置npm在安装全局模块时的路径和缓存cache的路径"><a href="#2-1-配置npm在安装全局模块时的路径和缓存cache的路径" class="headerlink" title="2.1 配置npm在安装全局模块时的路径和缓存cache的路径"></a>2.1 配置npm在安装全局模块时的路径和缓存cache的路径</h3><ul>
-<li><p>因为在执行例如 <code>npm i docsify-cli -g</code> 等命令全局安装的时候，默认会将模块安装在 <code>C:\Users\用户名\AppData\Roaming</code> (需显示隐藏文件才能看到 <code>AppData</code> )路径下的 <code>npm</code> 和 <code>npm_cache</code> 中，不方便管理且占用C盘空间，如下图所示：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E8%B7%AF%E5%BE%841.png"></p>
-</li>
-</ul>
-<ul>
-<li><p>在 <code>node.js</code> 安装目录下建立 <code>node_global</code> 及 <code>node_cache</code> 两个文件夹</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E5%88%9B%E5%BB%BAnode_%E6%96%87%E4%BB%B6.png"></p>
-</li>
-<li><p>启动cmd，依次输入：（我的 <code>node</code> 在D盘下）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;D:\node\node_global&quot;</span><br><span class="line"></span><br><span class="line">npm config set cache &quot;D:\node\node_cache&quot;</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/npm%E5%85%A8%E5%B1%80-1616406279132.png"></p>
-</li>
-</ul>
-<h3 id="2-2-配置环境变量"><a href="#2-2-配置环境变量" class="headerlink" title="2.2 配置环境变量"></a>2.2 配置环境变量</h3><ul>
-<li><p>右键 <code>此电脑</code> –&gt; <code>属性</code> –&gt; <code>高级系统设置</code> –&gt; <code>环境变量</code>（找不到可以直接搜 <code>环境变量</code>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png"></p>
-</li>
-<li><p><code>系统变量</code> 中新建一个变量名为 <code>NODE_PATH</code> ，变量值为<code>D:\node\node_global\node_modules</code>，如下图：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F-1616406654354.png"></p>
-</li>
-<li><p>最后编辑 <code>用户变量</code> 里的 <code>Path</code>，将相应npm的路径改为：<code>D:\node\node_global</code>，如下：（npm路径为刚刚新建 <code>node_global</code> 路径）</p>
-<ul>
-<li><p>更改前：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385.png"></p>
-</li>
-<li><p>更改后：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/path%E5%8F%98%E9%87%8F2.png"></p>
-</li>
-</ul>
-</li>
-<li><p>重新打开命令框，出现下面界面表示配置成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F.png"></p>
-</li>
-</ul>
-<h3 id="2-3-node淘宝镜像"><a href="#2-3-node淘宝镜像" class="headerlink" title="2.3 node淘宝镜像"></a>2.3 node淘宝镜像</h3><ul>
-<li><p>命令框输入下面代码</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
-<li><p>检查是否配置成功</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.png"></p>
-</li>
-</ul>
-<h3 id="2-4-取消node全局配置"><a href="#2-4-取消node全局配置" class="headerlink" title="2.4 取消node全局配置"></a>2.4 取消node全局配置</h3><ul>
-<li><p>想取消node的全局变量，卸载重装解决不了问题</p>
-</li>
-<li><p>找到 <code>C:\Users\Administrator\.npmrc</code> 文件并打开</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">prefix&#x3D;D:\node\node_global</span><br><span class="line">cache&#x3D;D:\node\node_cache</span><br><span class="line"></span><br><span class="line"># 镜像</span><br><span class="line">registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
-<li><p>删除 <code>prefix</code> 和 <code>cache</code> 这两个代码段，并环境变量改为原来的环境变量（<font color='red'><strong>见2.2</strong></font>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385-1616991444889.png"></p>
-<br/></li>
-</ul>
-<blockquote>
-<p>参考链接：【鸣谢】</p>
-<p><a href="https://blog.csdn.net/antma/article/details/86104068">Node.js 安装详细步骤教程</a></p>
-<p><a href="https://blog.csdn.net/huanghanqian/article/details/52808170">如何删除npm之前设置的npm config set prefix…</a></p>
-</blockquote>
-<br/>]]></content>
-      <categories>
-        <category>Node</category>
-      </categories>
-      <tags>
-        <tag>Node</tag>
       </tags>
   </entry>
   <entry>
@@ -1140,6 +1036,110 @@
         <tag>Gitee</tag>
         <tag>Typora</tag>
         <tag>PicGo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Node安装</title>
+    <url>/archives/84979429.html</url>
+    <content><![CDATA[<h2 id="一、Node安装"><a href="#一、Node安装" class="headerlink" title="一、Node安装"></a>一、Node安装</h2><h3 id="1-1-Node简介"><a href="#1-1-Node简介" class="headerlink" title="1.1 Node简介"></a>1.1 Node简介</h3><ul>
+<li><p>node（结点）:网络连接的端点，或两条（或多条）线路的连接点。结点可以是处理器、控制器或工作站。结点随其功能不同而各不相同，它们可以通过链路互联在一起，在网络中用作控制点。</p>
+<span id="more"></span></li>
+</ul>
+<h3 id="1-2-Node下载"><a href="#1-2-Node下载" class="headerlink" title="1.2 Node下载"></a>1.2 Node下载</h3><ul>
+<li><p>可以在 <a href="https://nodejs.org/zh-cn/">Node官网</a> 下载 <code>node</code> 并安装</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E5%AE%98%E7%BD%91-1616991075154.png"></p>
+</li>
+</ul>
+<h3 id="1-3-Node安装"><a href="#1-3-Node安装" class="headerlink" title="1.3 Node安装"></a>1.3 Node安装</h3><ul>
+<li><p><code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node1.png"></p>
+</li>
+</ul>
+<ul>
+<li><p><code>I accept...</code> –&gt; <code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node2.png"></p>
+</li>
+<li><p><code>Change</code> –&gt; <code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node3.png"></p>
+</li>
+<li><p><code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node4.png"></p>
+</li>
+<li><p><code>Next</code> –&gt; <code>Finish</code></p>
+</li>
+</ul>
+<h3 id="1-4-node和npm版本"><a href="#1-4-node和npm版本" class="headerlink" title="1.4 node和npm版本"></a>1.4 node和npm版本</h3><ul>
+<li><p>启动 <code>cmd</code> 命令框，执行下面代码查看 <code>node</code> 和 <code>npm</code> 版本</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E7%89%88%E6%9C%AC%E5%8F%B7.png"></p>
+</li>
+</ul>
+<h2 id="二、node配置-可选"><a href="#二、node配置-可选" class="headerlink" title="二、node配置(可选)"></a>二、node配置(可选)</h2><h3 id="2-1-配置npm在安装全局模块时的路径和缓存cache的路径"><a href="#2-1-配置npm在安装全局模块时的路径和缓存cache的路径" class="headerlink" title="2.1 配置npm在安装全局模块时的路径和缓存cache的路径"></a>2.1 配置npm在安装全局模块时的路径和缓存cache的路径</h3><ul>
+<li><p>因为在执行例如 <code>npm i docsify-cli -g</code> 等命令全局安装的时候，默认会将模块安装在 <code>C:\Users\用户名\AppData\Roaming</code> (需显示隐藏文件才能看到 <code>AppData</code> )路径下的 <code>npm</code> 和 <code>npm_cache</code> 中，不方便管理且占用C盘空间，如下图所示：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E8%B7%AF%E5%BE%841.png"></p>
+</li>
+</ul>
+<ul>
+<li><p>在 <code>node.js</code> 安装目录下建立 <code>node_global</code> 及 <code>node_cache</code> 两个文件夹</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E5%88%9B%E5%BB%BAnode_%E6%96%87%E4%BB%B6.png"></p>
+</li>
+<li><p>启动cmd，依次输入：（我的 <code>node</code> 在D盘下）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set prefix &quot;D:\node\node_global&quot;</span><br><span class="line"></span><br><span class="line">npm config set cache &quot;D:\node\node_cache&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/npm%E5%85%A8%E5%B1%80-1616406279132.png"></p>
+</li>
+</ul>
+<h3 id="2-2-配置环境变量"><a href="#2-2-配置环境变量" class="headerlink" title="2.2 配置环境变量"></a>2.2 配置环境变量</h3><ul>
+<li><p>右键 <code>此电脑</code> –&gt; <code>属性</code> –&gt; <code>高级系统设置</code> –&gt; <code>环境变量</code>（找不到可以直接搜 <code>环境变量</code>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png"></p>
+</li>
+<li><p><code>系统变量</code> 中新建一个变量名为 <code>NODE_PATH</code> ，变量值为<code>D:\node\node_global\node_modules</code>，如下图：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F-1616406654354.png"></p>
+</li>
+<li><p>最后编辑 <code>用户变量</code> 里的 <code>Path</code>，将相应npm的路径改为：<code>D:\node\node_global</code>，如下：（npm路径为刚刚新建 <code>node_global</code> 路径）</p>
+<ul>
+<li><p>更改前：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385.png"></p>
+</li>
+<li><p>更改后：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/path%E5%8F%98%E9%87%8F2.png"></p>
+</li>
+</ul>
+</li>
+<li><p>重新打开命令框，出现下面界面表示配置成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F.png"></p>
+</li>
+</ul>
+<h3 id="2-3-node淘宝镜像"><a href="#2-3-node淘宝镜像" class="headerlink" title="2.3 node淘宝镜像"></a>2.3 node淘宝镜像</h3><ul>
+<li><p>命令框输入下面代码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
+<li><p>检查是否配置成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.png"></p>
+</li>
+</ul>
+<h3 id="2-4-取消node全局配置"><a href="#2-4-取消node全局配置" class="headerlink" title="2.4 取消node全局配置"></a>2.4 取消node全局配置</h3><ul>
+<li><p>想取消node的全局变量，卸载重装解决不了问题</p>
+</li>
+<li><p>找到 <code>C:\Users\Administrator\.npmrc</code> 文件并打开</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">prefix&#x3D;D:\node\node_global</span><br><span class="line">cache&#x3D;D:\node\node_cache</span><br><span class="line"></span><br><span class="line"># 镜像</span><br><span class="line">registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
+<li><p>删除 <code>prefix</code> 和 <code>cache</code> 这两个代码段，并环境变量改为原来的环境变量（<font color='red'><strong>见2.2</strong></font>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385-1616991444889.png"></p>
+<br/></li>
+</ul>
+<blockquote>
+<p>参考链接：【鸣谢】</p>
+<p><a href="https://blog.csdn.net/antma/article/details/86104068">Node.js 安装详细步骤教程</a></p>
+<p><a href="https://blog.csdn.net/huanghanqian/article/details/52808170">如何删除npm之前设置的npm config set prefix…</a></p>
+</blockquote>
+<br/>]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>Node</tag>
       </tags>
   </entry>
   <entry>
