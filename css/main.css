@@ -1296,7 +1296,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #18ffff;
+  background: #52ffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2869,7 +2869,7 @@ code {
   padding-left: 20px;
 }
 .category-list li a {
-  font-size: 20px;
+  font-size: 18px;
 }
 .vsys {
   display: none !important;
