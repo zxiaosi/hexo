@@ -1296,7 +1296,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #dff;
+  background: #3b83ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2864,9 +2864,9 @@ code {
 }
 .category-list li {
   height: 30px;
-  width: 180px;
+  width: 200px;
   float: left;
-  padding-left: 120px;
+  padding-left: 20px;
 }
 .category-list li a {
   font-size: 20px;
