@@ -23,47 +23,42 @@
     var CONFIG = {"hostname":"hexo.xiaosi.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、自定义配置当我们下载好软件之后，可以根据个人情况配置一下Typora。以下是我的配置，仅供参考！！！ 1.1默认打开软件之后是这个界面：">
+  <meta name="description" content="一、Vercel1.1 Vercel简介（以前叫 ZEIT） Vercel 是一个站点托管服务平台，相较于其他的站点托管服务平台CloudFlare、Netlify，主要优点体现在下面几点： 国内访问速度快（首要原因） 项目自动更新部署（懒人专属） 可以部署多个网站或者服务 （简直不要太爽！！！）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Typora配置与主题">
-<meta property="og:url" content="https://hexo.xiaosi.world/archives/9a453af.html">
+<meta property="og:title" content="Vercel托管Github Pages">
+<meta property="og:url" content="https://hexo.xiaosi.world/archives/a2816564.html">
 <meta property="og:site_name" content="小四先生の博客">
-<meta property="og:description" content="一、自定义配置当我们下载好软件之后，可以根据个人情况配置一下Typora。以下是我的配置，仅供参考！！！ 1.1默认打开软件之后是这个界面：">
+<meta property="og:description" content="一、Vercel1.1 Vercel简介（以前叫 ZEIT） Vercel 是一个站点托管服务平台，相较于其他的站点托管服务平台CloudFlare、Netlify，主要优点体现在下面几点： 国内访问速度快（首要原因） 项目自动更新部署（懒人专属） 可以部署多个网站或者服务 （简直不要太爽！！！）">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%BB%98%E8%AE%A4.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BE%A7%E8%BE%B9%E6%A0%8F.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E5%88%87%E6%8D%A2%E6%A8%A1%E5%BC%8F.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%BA%90%E4%BB%A3%E7%A0%811.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%BA%90%E4%BB%A3%E7%A0%812.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E5%81%8F%E5%A5%BD%E8%AE%BE%E7%BD%AE.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E9%A1%B9.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BF%9D%E5%AD%98%E4%B8%8E%E6%81%A2%E5%A4%8D.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E7%AA%97%E5%8F%A3%E6%A0%B7%E5%BC%8F.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%BB%98%E8%AE%A4-1617003770263.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%B8%80%E4%BD%93%E5%8C%96%E6%A0%B7%E5%BC%8F.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%87%AA%E5%B8%A6%E6%A0%B7%E5%BC%8F%E9%80%89%E6%8B%A9.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%8E%B7%E5%8F%96%E4%B8%BB%E9%A2%98-1609169043802.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/Typora%E4%B8%BB%E9%A2%98.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%B8%8B%E8%BD%BD.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/saffron.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/panda.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/onedark.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/notesdark-1609171668475.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/cobalt-1609170808403.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%89%93%E5%BC%80%E4%B8%BB%E9%A2%98%E6%96%87%E4%BB%B6%E5%A4%B9.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%A7%A3%E5%8E%8B%E6%96%87%E4%BB%B6-1609170304800.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/css%E6%96%87%E4%BB%B6.png">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98.png">
-<meta property="article:published_time" content="2021-03-24T07:52:03.000Z">
-<meta property="article:modified_time" content="2021-03-31T01:41:08.943Z">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BD%BF%E7%94%A8Github%E7%99%BB%E5%BD%95.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E5%AF%BC%E5%85%A5.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E8%8C%83%E5%9B%B4.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%B7%AF%E5%BE%84.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82%E5%9F%9F%E5%90%8D.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E7%AE%A1%E7%90%86.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BF%AE%E6%94%B9DNS.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%B0%E5%BD%95.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/Domains.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82DNS.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0DNS.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%88%90%E5%8A%9F.png">
+<meta property="article:published_time" content="2021-04-03T03:18:43.000Z">
+<meta property="article:modified_time" content="2021-04-03T09:13:58.302Z">
 <meta property="article:author" content="Mr.XiaoSi">
-<meta property="article:tag" content="Typora">
-<meta property="article:tag" content="Markdown">
+<meta property="article:tag" content="Github">
+<meta property="article:tag" content="Github Pages">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%BB%98%E8%AE%A4.png">
+<meta name="twitter:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7.png">
 
-<link rel="canonical" href="https://hexo.xiaosi.world/archives/9a453af.html">
+<link rel="canonical" href="https://hexo.xiaosi.world/archives/a2816564.html">
 
 
 <script id="page-configurations">
@@ -76,7 +71,7 @@
   };
 </script>
 
-  <title>Typora配置与主题 | 小四先生の博客</title>
+  <title>Vercel托管Github Pages | 小四先生の博客</title>
   
 
 
@@ -231,7 +226,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/9a453af.html">
+    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/a2816564.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://gitee.com/zxiaosi/image/raw/master/Common/头像.jpg">
@@ -244,34 +239,32 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Typora配置与主题
+          Vercel托管Github Pages
         </h1>
 
         <div class="post-meta">
 
+          
+            <i class="fa fa-anchor"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-03-24 15:52:03" itemprop="dateCreated datePublished" datetime="2021-03-24T15:52:03+08:00">2021-03-24</time>
+              <time title="创建时间：2021-04-03 11:18:43 / 修改时间：17:13:58" itemprop="dateCreated datePublished" datetime="2021-04-03T11:18:43+08:00">2021-04-03</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-31 09:41:08" itemprop="dateModified" datetime="2021-03-31T09:41:08+08:00">2021-03-31</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Typora/" itemprop="url" rel="index"><span itemprop="name">Typora</span></a>
+                  <a href="/categories/Github-Pages/" itemprop="url" rel="index"><span itemprop="name">Github Pages</span></a>
                 </span>
             </span>
 
@@ -291,8 +284,8 @@
       </span>
       <span class="post-meta-item-text">评论数：</span>
     
-    <a title="valine" href="/archives/9a453af.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/9a453af.html" itemprop="commentCount"></span>
+    <a title="valine" href="/archives/a2816564.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/a2816564.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -302,7 +295,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>447</span>
+              <span>1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -321,87 +314,109 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、自定义配置"><a href="#一、自定义配置" class="headerlink" title="一、自定义配置"></a>一、自定义配置</h2><p>当我们下载好软件之后，可以根据个人情况配置一下Typora。以下是我的配置，仅供参考！！！</p>
-<h3 id="1-1默认打开软件之后是这个界面："><a href="#1-1默认打开软件之后是这个界面：" class="headerlink" title="1.1默认打开软件之后是这个界面："></a>1.1默认打开软件之后是这个界面：</h3><span id="more"></span>
+        <h2 id="一、Vercel"><a href="#一、Vercel" class="headerlink" title="一、Vercel"></a>一、Vercel</h2><h3 id="1-1-Vercel简介（以前叫-ZEIT）"><a href="#1-1-Vercel简介（以前叫-ZEIT）" class="headerlink" title="1.1 Vercel简介（以前叫 ZEIT）"></a>1.1 Vercel简介（以前叫 ZEIT）</h3><ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://vercel.com/">Vercel</a> 是一个站点托管服务平台，相较于其他的站点托管服务平台<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.cloudflare.com/">CloudFlare</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.netlify.com/">Netlify</a>，主要优点体现在下面几点：<ul>
+<li>国内访问速度快（首要原因）</li>
+<li>项目自动更新部署（懒人专属）</li>
+<li><font color='red'>可以部署多个网站或者服务</font> （简直不要太爽！！！）</li>
+</ul>
+<span id="more"></span>
 
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%BB%98%E8%AE%A4.png"></p>
-<h3 id="1-2-侧边栏"><a href="#1-2-侧边栏" class="headerlink" title="1.2 侧边栏"></a>1.2 侧边栏</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BE%A7%E8%BE%B9%E6%A0%8F.png"></p>
-<h3 id="1-3-切换视图模式"><a href="#1-3-切换视图模式" class="headerlink" title="1.3 切换视图模式"></a>1.3 切换视图模式</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E5%88%87%E6%8D%A2%E6%A8%A1%E5%BC%8F.png"></p>
-<h3 id="1-4-文件操作"><a href="#1-4-文件操作" class="headerlink" title="1.4 文件操作"></a>1.4 文件操作</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.png"></p>
-<h3 id="1-5-源代码模式"><a href="#1-5-源代码模式" class="headerlink" title="1.5 源代码模式"></a>1.5 源代码模式</h3><ul>
-<li><p>点击 <code>&lt;/&gt;</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%BA%90%E4%BB%A3%E7%A0%811.png"></p>
-</li>
-<li><p>编写内容</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%BA%90%E4%BB%A3%E7%A0%812.png"></p>
-</li>
-</ul>
-<h3 id="1-6-偏好设置"><a href="#1-6-偏好设置" class="headerlink" title="1.6 偏好设置"></a>1.6 偏好设置</h3><ul>
-<li><p>选中 <code>偏好设置</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E5%81%8F%E5%A5%BD%E8%AE%BE%E7%BD%AE.png"></p>
-</li>
-<li><p>启动选项（根据个人爱好选择）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8%E9%A1%B9.png"></p>
-</li>
-<li><p>保存与恢复</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%BF%9D%E5%AD%98%E4%B8%8E%E6%81%A2%E5%A4%8D.png"></p>
-</li>
-</ul>
-<h3 id="1-7-窗口样式（可以选中重启对比一下效果，个人倾向于一体化）"><a href="#1-7-窗口样式（可以选中重启对比一下效果，个人倾向于一体化）" class="headerlink" title="1.7 窗口样式（可以选中重启对比一下效果，个人倾向于一体化）"></a>1.7 窗口样式（可以选中重启对比一下效果，个人倾向于一体化）</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E7%AA%97%E5%8F%A3%E6%A0%B7%E5%BC%8F.png"></p>
 <ul>
-<li><p>默认样式</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%BB%98%E8%AE%A4-1617003770263.png"></p>
+<li>网站自动配置https，不用自己申请证书</li>
+</ul>
 </li>
-<li><p>一体化样式</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%B8%80%E4%BD%93%E5%8C%96%E6%A0%B7%E5%BC%8F.png"></p>
+<li>最重要的是Vercel个人完全免费。Vercel从开始的一个月免费20G，到后来的一个月免费100G，直到现在的个人完全免费，可见其诚意。</li>
+</ul>
+<h3 id="1-2-Vercel工作原理"><a href="#1-2-Vercel工作原理" class="headerlink" title="1.2 Vercel工作原理"></a>1.2 Vercel工作原理</h3><ul>
+<li>Vercel属于复制一份你Github的 Pages文件，然后在它给你的空间新开一个页面，同时提供cdn加速。</li>
+<li>部署比较简单，用GitHub登陆授权后，修改DNS配置域名即可。</li>
+</ul>
+<h2 id="二、Vercel使用"><a href="#二、Vercel使用" class="headerlink" title="二、Vercel使用"></a>二、Vercel使用</h2><h3 id="2-1-Vercel官网"><a href="#2-1-Vercel官网" class="headerlink" title="2.1 Vercel官网"></a>2.1 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://vercel.com/">Vercel官网</a></h3><ul>
+<li><p>进入官网，注册账号</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7.png"></p>
+</li>
+<li><p>使用GitHub或者GitLab登录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BD%BF%E7%94%A8Github%E7%99%BB%E5%BD%95.png"></p>
+</li>
+<li><p>选择 <code>Github Pages</code> 导入，或者新建一个模板（Vercel提供了诸多模板）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E5%AF%BC%E5%85%A5.png"></p>
+</li>
+<li><p>选择作用范围，用于个人还是用于小组</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E8%8C%83%E5%9B%B4.png"></p>
+</li>
+<li><p>选择路径（一般都是在仓库根目录下 <code>root</code> ）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%B7%AF%E5%BE%84.png"></p>
+</li>
+<li><p>选择网站对应的模板（如果网站使用了不属于原模板框架的文件，建议选择Other，部署效果和选择模板是一样的）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2.png"></p>
+</li>
+<li><p>部署成功，点击 <code>Visit</code> 即可看到自己的网站</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png"></p>
 </li>
 </ul>
-<h3 id="1-8-编辑器（根据个人爱好修改）"><a href="#1-8-编辑器（根据个人爱好修改）" class="headerlink" title="1.8 编辑器（根据个人爱好修改）"></a>1.8 编辑器（根据个人爱好修改）</h3><h3 id="1-9-图像上传"><a href="#1-9-图像上传" class="headerlink" title="1.9 图像上传"></a>1.9 <a href="https://hexo.xiaosi.world/archives/22902125.html">图像上传</a></h3><h3 id="1-10-Markdown语法支持（根据个人爱好修改）"><a href="#1-10-Markdown语法支持（根据个人爱好修改）" class="headerlink" title="1.10 Markdown语法支持（根据个人爱好修改）"></a>1.10 Markdown语法支持（根据个人爱好修改）</h3><h2 id="二、主题选择"><a href="#二、主题选择" class="headerlink" title="二、主题选择"></a>二、主题选择</h2><h3 id="2-1-自带主题选择（选择之后重启生效）"><a href="#2-1-自带主题选择（选择之后重启生效）" class="headerlink" title="2.1 自带主题选择（选择之后重启生效）"></a>2.1 自带主题选择（选择之后<font color='red'>重启生效</font>）</h3><p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%87%AA%E5%B8%A6%E6%A0%B7%E5%BC%8F%E9%80%89%E6%8B%A9.png"></p>
-<h3 id="2-2-获取主题（在线方法）"><a href="#2-2-获取主题（在线方法）" class="headerlink" title="2.2 获取主题（在线方法）"></a>2.2 获取主题（在线方法）</h3><ul>
-<li><p>点击 <code>获取主题</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%8E%B7%E5%8F%96%E4%B8%BB%E9%A2%98-1609169043802.png"></p>
+<h3 id="2-2-绑定域名"><a href="#2-2-绑定域名" class="headerlink" title="2.2 绑定域名"></a>2.2 绑定域名</h3><ul>
+<li><p>进入项目</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png"></p>
 </li>
-<li><p>打开界面如下：    （根据个人喜好选择）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/Typora%E4%B8%BB%E9%A2%98.png"></p>
+<li><p>参观域名</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82%E5%9F%9F%E5%90%8D.png"></p>
 </li>
-<li><p>下载安装包</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E4%B8%8B%E8%BD%BD.png"></p>
-</li>
-</ul>
-<h3 id="2-3-获取主题（离线方法）"><a href="#2-3-获取主题（离线方法）" class="headerlink" title="2.3 获取主题（离线方法）"></a>2.3 获取主题（离线方法）</h3><ul>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://wws.lanzous.com/iRgjAjtbb4j">saffron</a>  推荐，效果如下：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/saffron.png"></p>
-</li>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://wws.lanzous.com/iVGSBjtbb2h">Panda</a></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/panda.png"></p>
-</li>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://wws.lanzous.com/i0DQRjtbb3i">onedark</a></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/onedark.png"></p>
-</li>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://wws.lanzous.com/iXNQ8jtbbaf">NotesDark</a></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/notesdark-1609171668475.png"></p>
-</li>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://wws.lanzous.com/ibUCcjtbb8d">cobalt</a></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/cobalt-1609170808403.png"></p>
+<li><p>输入域名，点击 <code>Add</code>（Vercel会为每一个项目自带一个域名，可以点击 <code>Edit</code> –&gt; <code>Remove</code> 删除）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png"></p>
 </li>
 </ul>
-<h3 id="2-4-配置主题"><a href="#2-4-配置主题" class="headerlink" title="2.4 配置主题"></a>2.4 配置主题</h3><ul>
-<li><p><code>打开主题文件夹</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E6%89%93%E5%BC%80%E4%B8%BB%E9%A2%98%E6%96%87%E4%BB%B6%E5%A4%B9.png"></p>
+<h2 id="三、域名配置"><a href="#三、域名配置" class="headerlink" title="三、域名配置"></a>三、域名配置</h2><h3 id="3-1-DNS配置"><a href="#3-1-DNS配置" class="headerlink" title="3.1 DNS配置"></a>3.1 DNS配置</h3><ul>
+<li><p>Add之后，它会弹出来一些需要做的配置，接下来需要去我们的域名提供商那里根据Vercel给出的要求进行域名配置。（我是在阿里买的域名 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://dc.console.aliyun.com/">阿里域名服务</a>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%BE%E7%BD%AE.png"></p>
 </li>
-<li><p>解压下载好的压缩包到主题文件夹</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E8%A7%A3%E5%8E%8B%E6%96%87%E4%BB%B6-1609170304800.png"></p>
+<li><p>进入域名服务，点击 <code>管理</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E7%AE%A1%E7%90%86.png"></p>
 </li>
-<li><p>复制后缀为<code>.css</code>文件至根目录下，<font color='red'>重启软件</font>。</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/css%E6%96%87%E4%BB%B6.png"></p>
+<li><p>修改DNS（DNS修改之后，大概需要等10分钟才会生效）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BF%AE%E6%94%B9DNS.png"></p>
 </li>
-<li><p>菜单–&gt;外观–&gt;主题，选择安装好的主题</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Typora%E9%85%8D%E7%BD%AE/%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98.png"></p>
+</ul>
+<h3 id="3-2-域名解析"><a href="#3-2-域名解析" class="headerlink" title="3.2 域名解析"></a>3.2 域名解析</h3><ul>
+<li><p>域名解析，点击 <code>解析</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png"></p>
 </li>
-<li><p>2.4.4 最后重启软件即可！！！</p>
+<li><p>添加这条解析记录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@	A	默认	76.76.21.21</span><br></pre></td></tr></table></figure>
+
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png"></p>
+</li>
+<li><p>如果绑定的是主域名的话，这个时候就算配置成功了！！！</p>
+</li>
+</ul>
+<h3 id="3-3-CNAME配置（子域名）"><a href="#3-3-CNAME配置（子域名）" class="headerlink" title="3.3 CNAME配置（子域名）"></a>3.3 CNAME配置（子域名）</h3><ul>
+<li><p>记住DNS解析记录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%B0%E5%BD%95.png"></p>
+</li>
+<li><p>回到Vercel，点击 <code>Domains</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/Domains.png"></p>
+</li>
+<li><p>点击 <code>View DNS Records &amp; More</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82DNS.png"></p>
+</li>
+<li><p>填入子域名的名称，选择 <code>CNAME</code>，值为 <code>cname.vercel-dns.com</code> , TTL为 <code>60</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0DNS.png"></p>
+</li>
+<li><p>回到项目中，等待几分钟后，即可看到绑定子域名成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%88%90%E5%8A%9F.png"></p>
+</li>
+<li><p>接下来就可以通过我们设置的域名访问我们的网站啦！！！</p>
 </li>
 </ul>
 <br>
+
+<blockquote>
+<p>参考网站：【鸣谢】</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jianshu.com/p/9f67ff433d8e">vercel是什么神仙网站</a></p>
+</blockquote>
+
     </div>
 
     
@@ -420,7 +435,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://hexo.xiaosi.world/archives/9a453af.html" title="Typora配置与主题">https://hexo.xiaosi.world/archives/9a453af.html</a>
+    <a href="https://hexo.xiaosi.world/archives/a2816564.html" title="Vercel托管Github Pages">https://hexo.xiaosi.world/archives/a2816564.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -432,8 +447,8 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/Typora/" rel="tag"><i class="fa fa-tag"></i> Typora</a>
-              <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
+              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
+              <a href="/tags/Github-Pages/" rel="tag"><i class="fa fa-tag"></i> Github Pages</a>
           </div>
           <script type="text/javascript">
             var tagsall=document.getElementsByClassName("post-tags")
@@ -497,13 +512,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/archives/dd170fc7.html" rel="prev" title="Typora">
-      <i class="fa fa-chevron-left"></i> Typora
+    <a href="/archives/b48e2719.html" rel="prev" title="Github Pages">
+      <i class="fa fa-chevron-left"></i> Github Pages
     </a></div>
-      <div class="post-nav-item">
-    <a href="/archives/1c750174.html" rel="next" title="Gitee">
-      Gitee <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -563,7 +575,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE"><span class="nav-text">一、自定义配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1%E9%BB%98%E8%AE%A4%E6%89%93%E5%BC%80%E8%BD%AF%E4%BB%B6%E4%B9%8B%E5%90%8E%E6%98%AF%E8%BF%99%E4%B8%AA%E7%95%8C%E9%9D%A2%EF%BC%9A"><span class="nav-text">1.1默认打开软件之后是这个界面：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E4%BE%A7%E8%BE%B9%E6%A0%8F"><span class="nav-text">1.2 侧边栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-%E5%88%87%E6%8D%A2%E8%A7%86%E5%9B%BE%E6%A8%A1%E5%BC%8F"><span class="nav-text">1.3 切换视图模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="nav-text">1.4 文件操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-%E6%BA%90%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%BC%8F"><span class="nav-text">1.5 源代码模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-%E5%81%8F%E5%A5%BD%E8%AE%BE%E7%BD%AE"><span class="nav-text">1.6 偏好设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-7-%E7%AA%97%E5%8F%A3%E6%A0%B7%E5%BC%8F%EF%BC%88%E5%8F%AF%E4%BB%A5%E9%80%89%E4%B8%AD%E9%87%8D%E5%90%AF%E5%AF%B9%E6%AF%94%E4%B8%80%E4%B8%8B%E6%95%88%E6%9E%9C%EF%BC%8C%E4%B8%AA%E4%BA%BA%E5%80%BE%E5%90%91%E4%BA%8E%E4%B8%80%E4%BD%93%E5%8C%96%EF%BC%89"><span class="nav-text">1.7 窗口样式（可以选中重启对比一下效果，个人倾向于一体化）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-8-%E7%BC%96%E8%BE%91%E5%99%A8%EF%BC%88%E6%A0%B9%E6%8D%AE%E4%B8%AA%E4%BA%BA%E7%88%B1%E5%A5%BD%E4%BF%AE%E6%94%B9%EF%BC%89"><span class="nav-text">1.8 编辑器（根据个人爱好修改）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-9-%E5%9B%BE%E5%83%8F%E4%B8%8A%E4%BC%A0"><span class="nav-text">1.9 图像上传</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-10-Markdown%E8%AF%AD%E6%B3%95%E6%94%AF%E6%8C%81%EF%BC%88%E6%A0%B9%E6%8D%AE%E4%B8%AA%E4%BA%BA%E7%88%B1%E5%A5%BD%E4%BF%AE%E6%94%B9%EF%BC%89"><span class="nav-text">1.10 Markdown语法支持（根据个人爱好修改）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E4%B8%BB%E9%A2%98%E9%80%89%E6%8B%A9"><span class="nav-text">二、主题选择</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E8%87%AA%E5%B8%A6%E4%B8%BB%E9%A2%98%E9%80%89%E6%8B%A9%EF%BC%88%E9%80%89%E6%8B%A9%E4%B9%8B%E5%90%8E%E9%87%8D%E5%90%AF%E7%94%9F%E6%95%88%EF%BC%89"><span class="nav-text">2.1 自带主题选择（选择之后重启生效）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E8%8E%B7%E5%8F%96%E4%B8%BB%E9%A2%98%EF%BC%88%E5%9C%A8%E7%BA%BF%E6%96%B9%E6%B3%95%EF%BC%89"><span class="nav-text">2.2 获取主题（在线方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E8%8E%B7%E5%8F%96%E4%B8%BB%E9%A2%98%EF%BC%88%E7%A6%BB%E7%BA%BF%E6%96%B9%E6%B3%95%EF%BC%89"><span class="nav-text">2.3 获取主题（离线方法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="nav-text">2.4 配置主题</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81Vercel"><span class="nav-text">一、Vercel</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Vercel%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BB%A5%E5%89%8D%E5%8F%AB-ZEIT%EF%BC%89"><span class="nav-text">1.1 Vercel简介（以前叫 ZEIT）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Vercel%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-text">1.2 Vercel工作原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81Vercel%E4%BD%BF%E7%94%A8"><span class="nav-text">二、Vercel使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Vercel%E5%AE%98%E7%BD%91"><span class="nav-text">2.1 Vercel官网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D"><span class="nav-text">2.2 绑定域名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE"><span class="nav-text">三、域名配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-DNS%E9%85%8D%E7%BD%AE"><span class="nav-text">3.1 DNS配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="nav-text">3.2 域名解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-CNAME%E9%85%8D%E7%BD%AE%EF%BC%88%E5%AD%90%E5%9F%9F%E5%90%8D%EF%BC%89"><span class="nav-text">3.3 CNAME配置（子域名）</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
