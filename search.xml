@@ -96,7 +96,7 @@
 <li><p>回到项目中，等待几分钟后，即可看到绑定子域名成功</p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%88%90%E5%8A%9F.png"></p>
 </li>
-<li><p>接下来就可以通过我们设置的域名访问我们的网站啦！！！<font color="red">【注意】网站根目录下需要添加CNAME </font></p>
+<li><p>接下来就可以通过我们设置的域名访问我们的网站啦！！！<font color="red">【注意】网站根目录下需要添加CNAME </font>文件</p>
 </li>
 </ul>
 <br>
