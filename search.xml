@@ -96,8 +96,12 @@
 <li><p>回到项目中，等待几分钟后，即可看到绑定子域名成功</p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%88%90%E5%8A%9F.png"></p>
 </li>
-<li><p>接下来就可以通过我们设置的域名访问我们的网站啦！！！<font color="red">【注意】网站根目录下需要添加CNAME </font>文件</p>
+<li><p>接下来就可以通过我们设置的域名访问我们的网站啦！！！</p>
 </li>
+</ul>
+<h2 id="四、相关事项"><a href="#四、相关事项" class="headerlink" title="四、相关事项"></a>四、相关事项</h2><ul>
+<li><font color="red">【注意】网站根目录下需要添加CNAME文件 </font></li>
+<li>需要更新网站时，只需要将新内容提交到Github上，Vercel就会自动部署了！</li>
 </ul>
 <br>
 
