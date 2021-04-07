@@ -23,25 +23,39 @@
     var CONFIG = {"hostname":"hexo.xiaosi.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、安装之前准备1.1 Git1.2 Node1.3 Github">
+  <meta name="description" content="一、须知1.1 Github Pages GitHub 个人只能拥有一个 GitHub Pages。 yourname.github.io 只能作用于一个仓库。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo安装及配置">
-<meta property="og:url" content="https://hexo.xiaosi.world/archives/5ef212b6.html">
+<meta property="og:title" content="Vercel托管多个网站">
+<meta property="og:url" content="https://hexo.xiaosi.world/archives/4536b2e4.html">
 <meta property="og:site_name" content="小四先生の博客">
-<meta property="og:description" content="一、安装之前准备1.1 Git1.2 Node1.3 Github">
+<meta property="og:description" content="一、须知1.1 Github Pages GitHub 个人只能拥有一个 GitHub Pages。 yourname.github.io 只能作用于一个仓库。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png">
-<meta property="article:published_time" content="2021-03-07T08:27:17.000Z">
-<meta property="article:modified_time" content="2021-03-29T08:33:08.611Z">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/CNAME.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E4%BB%93%E5%BA%93%E7%9B%AE%E5%BD%95.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/GithubPages.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E9%94%99%E8%AF%AF1.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/import.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/Select.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E6%A0%B9%E8%B7%AF%E5%BE%84.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/Deploy.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%8F%82%E8%80%83%E5%9F%9F%E5%90%8D.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/add.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%9F%9F%E5%90%8D%E6%B7%BB%E5%8A%A0%E6%88%90%E5%8A%9F.png">
+<meta property="article:published_time" content="2021-04-07T01:15:56.000Z">
+<meta property="article:modified_time" content="2021-04-07T03:13:23.928Z">
 <meta property="article:author" content="Mr.XiaoSi">
-<meta property="article:tag" content="Git">
-<meta property="article:tag" content="Node">
 <meta property="article:tag" content="Github">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Github Pages">
+<meta property="article:tag" content="Vercel">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png">
+<meta name="twitter:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png">
 
-<link rel="canonical" href="https://hexo.xiaosi.world/archives/5ef212b6.html">
+<link rel="canonical" href="https://hexo.xiaosi.world/archives/4536b2e4.html">
 
 
 <script id="page-configurations">
@@ -54,7 +68,7 @@
   };
 </script>
 
-  <title>Hexo安装及配置 | 小四先生の博客</title>
+  <title>Vercel托管多个网站 | 小四先生の博客</title>
   
 
 
@@ -209,7 +223,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/5ef212b6.html">
+    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/4536b2e4.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://gitee.com/zxiaosi/image/raw/master/Common/头像.jpg">
@@ -222,34 +236,32 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo安装及配置
+          Vercel托管多个网站
         </h1>
 
         <div class="post-meta">
 
+          
+            <i class="fa fa-anchor"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-03-07 16:27:17" itemprop="dateCreated datePublished" datetime="2021-03-07T16:27:17+08:00">2021-03-07</time>
+              <time title="创建时间：2021-04-07 09:15:56 / 修改时间：11:13:23" itemprop="dateCreated datePublished" datetime="2021-04-07T09:15:56+08:00">2021-04-07</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-29 16:33:08" itemprop="dateModified" datetime="2021-03-29T16:33:08+08:00">2021-03-29</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">Hexo博客</span></a>
+                  <a href="/categories/Github-Pages/" itemprop="url" rel="index"><span itemprop="name">Github Pages</span></a>
                 </span>
             </span>
 
@@ -269,8 +281,8 @@
       </span>
       <span class="post-meta-item-text">评论数：</span>
     
-    <a title="valine" href="/archives/5ef212b6.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/5ef212b6.html" itemprop="commentCount"></span>
+    <a title="valine" href="/archives/4536b2e4.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/4536b2e4.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -280,7 +292,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
+              <span>1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -299,66 +311,87 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、安装之前准备"><a href="#一、安装之前准备" class="headerlink" title="一、安装之前准备"></a>一、安装之前准备</h2><h3 id="1-1-Git"><a href="#1-1-Git" class="headerlink" title="1.1 Git"></a>1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3><h3 id="1-2-Node"><a href="#1-2-Node" class="headerlink" title="1.2 Node"></a>1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3><h3 id="1-3-Github"><a href="#1-3-Github" class="headerlink" title="1.3 Github"></a>1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3><span id="more"></span>
+        <h2 id="一、须知"><a href="#一、须知" class="headerlink" title="一、须知"></a>一、须知</h2><h3 id="1-1-Github-Pages"><a href="#1-1-Github-Pages" class="headerlink" title="1.1 Github Pages"></a>1.1 Github Pages</h3><ul>
+<li>GitHub 个人只能拥有一个 GitHub Pages。</li>
+<li><code>yourname.github.io</code> 只能作用于一个仓库。</li>
+</ul>
+<span id="more"></span>
 
-<h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><h3 id="2-1-安装Hexo"><a href="#2-1-安装Hexo" class="headerlink" title="2.1 安装Hexo"></a>2.1 安装Hexo</h3><ul>
-<li><p>管理员身份启动cmd，控制台输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo </span><br></pre></td></tr></table></figure></li>
-<li><p>如果安装的慢，可以使用淘宝镜像，连续按两次 <code>Ctrl+C</code> 退出当前cmd进程，然后控制台输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
+<h3 id="1-2-Vercel"><a href="#1-2-Vercel" class="headerlink" title="1.2 Vercel"></a>1.2 Vercel</h3><ul>
+<li>参考大佬的 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://zhuanlan.zhihu.com/p/183977963">如何拥有多个GitHub Pages</a> 没有成功，故选择了 <a href="https://hexo.xiaosi.world/archives/a2816564.html">Vercel</a> 。</li>
+<li>Vercel 可以复制一份Github Pages文件，然后在它的空间新开一个页面。</li>
+<li>相当于把网站托管到了 Vercel，而不是托管到 Github。</li>
 </ul>
-<h3 id="2-2-查看Hexo信息"><a href="#2-2-查看Hexo信息" class="headerlink" title="2.2 查看Hexo信息"></a>2.2 查看Hexo信息</h3><ul>
-<li><p>控制台输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></li>
-<li><p>我的Hexo信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo-cli: 4.2.0</span><br><span class="line">node: 14.15.4</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="三、初始化"><a href="#三、初始化" class="headerlink" title="三、初始化"></a>三、初始化</h2><h3 id="3-1-初始化"><a href="#3-1-初始化" class="headerlink" title="3.1 初始化"></a>3.1 初始化</h3><ul>
-<li><p>新建一个文件夹（文件位置、名字随意）</p>
+<h2 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h2><h3 id="2-1-Github配置"><a href="#2-1-Github配置" class="headerlink" title="2.1 Github配置"></a>2.1 Github配置</h3><ul>
+<li><p>新建 Github 仓库，名字随意，添加 <code>README</code> 文件</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
 </li>
-<li><p>cmd命令进入文件夹（我的文件夹在e盘，名为blog）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">e:				# 输入 e: 回车进入e盘  </span><br><span class="line">cd blog				# 输入 cd blog 回车进入 blog 文件夹</span><br><span class="line">hexo init			# 初始化hexo文件</span><br></pre></td></tr></table></figure></li>
-<li><p>显示如下信息表示初始化成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png"></p>
+<li><p>可以将自己写好的网站上传到这个仓库，比如<a href="https://hexo.xiaosi.world/archives/5ef212b6.html">Hexo</a>、<a href="https://hexo.xiaosi.world/archives/f8fffde8.html">Docsify</a>。或者新建一个 <code>index.html</code> 文件。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>添加 <code>CNAME</code> 文件，文件里写上域名</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/CNAME.png"></p>
 </li>
-</ul>
-<h3 id="3-2-本地访问"><a href="#3-2-本地访问" class="headerlink" title="3.2 本地访问"></a>3.2 本地访问</h3><ul>
-<li><p>控制台输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean		# 清理缓存</span><br><span class="line">hexo s			# 启动服务，本地访问</span><br></pre></td></tr></table></figure></li>
-<li><p><code>hexo s</code> 是开启本地预览服务，打开浏览器访问 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容</p>
+<li><p>仓库目录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E4%BB%93%E5%BA%93%E7%9B%AE%E5%BD%95.png"></p>
 </li>
 </ul>
-<h2 id="四、配置站点信息"><a href="#四、配置站点信息" class="headerlink" title="四、配置站点信息"></a>四、配置站点信息</h2><h3 id="4-1-配置-Hexo-网站相关信息"><a href="#4-1-配置-Hexo-网站相关信息" class="headerlink" title="4.1 配置 Hexo 网站相关信息"></a>4.1 配置 Hexo 网站相关信息</h3><ul>
-<li><p>找到根目录下的 <code>_config.yml</code> 文件（以下统称为站点配置文件）并打开</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site (设置)</span><br><span class="line">title: 小四先生の博客				# 网站标题</span><br><span class="line">subtitle: &#39;记录生活中的点点滴滴&#39;			# 网站副标题</span><br><span class="line">description: &#39;生命不息 奋斗不止&#39;			# 描述，介绍网站的</span><br><span class="line">keywords:                        		# 网站的关键字</span><br><span class="line">author: Mr.XiaoSi                		# 博主姓名</span><br><span class="line">language: zh-CN                  		# 语言：zh-CN 是简体中文</span><br><span class="line">timezone: &#39;Asia&#x2F;Shanghai&#39;        		# 时区</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="4-2-部署到github"><a href="#4-2-部署到github" class="headerlink" title="4.2 部署到github"></a>4.2 部署到github</h3><ul>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/u013778905/article/details/83501204">ssh key</a> 配置</p>
+<h3 id="2-2-Github-Pages配置"><a href="#2-2-Github-Pages配置" class="headerlink" title="2.2 Github Pages配置"></a>2.2 Github Pages配置</h3><ul>
+<li><p>找到 <code>Settings</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E8%AE%BE%E7%BD%AE.png"></p>
 </li>
-<li><p>找到站点配置文件 <code>_config.yml</code> 中的deploy的部分</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:               					# git</span><br><span class="line">  type: &#39;git&#39;								</span><br><span class="line">  repo: &#39;git@github.com:zxiaosi&#x2F;Hexo.git&#39;		# github的ssh链接</span><br><span class="line">  branch: &#39;hexo&#39;					# 分支</span><br></pre></td></tr></table></figure></li>
-<li><p>安装部署插件（可在后面加上淘宝镜像）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
-<li><p>控制台输入以下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean			# 清理缓存</span><br><span class="line">hexo g				# 生成静态页面至public目录</span><br><span class="line">hexo d				# 部署到GitHub</span><br></pre></td></tr></table></figure></li>
-<li><p>部署之后，就可以通过 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://yourname.github.io/">http://yourname.github.io</a> 访问到你的博客了</p>
+<li><p><font color='red'>注意：</font><code>Github Pages</code> 不要开！不要开！不要开！！！</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/GithubPages.png"></p>
+</li>
+<li><p>如果你已经有仓库开启了 Github Pages，那么请关闭。Github 只允许个人拥有一个 GitHub Pages 。</p>
+</li>
+<li><p>否则仓库会报下面的错，并且每次部署都会给邮箱发消息（Page build warning）。</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E9%94%99%E8%AF%AF1.png"></p>
+</li>
+<li><p>不如直接托管到 Vercel，此时的 Github Pages 就只是一个仓库。（CNAME文件一定要有）</p>
 </li>
 </ul>
-<h2 id="五、常用hexo命令"><a href="#五、常用hexo命令" class="headerlink" title="五、常用hexo命令"></a>五、常用hexo命令</h2><h3 id="5-1-常见命令"><a href="#5-1-常见命令" class="headerlink" title="5.1 常见命令"></a>5.1 常见命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; 					# 新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; 				# 新建页面</span><br><span class="line">hexo help  						# 查看帮助</span><br><span class="line">hexo version  						# 查看Hexo的版本</span><br><span class="line"></span><br><span class="line">hexo clean						# 清理缓存</span><br><span class="line">hexo server 						# 开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）</span><br><span class="line">hexo generate 						# 生成静态页面至public目录</span><br><span class="line">hexo deploy 						# 部署到GitHub</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-2-缩写"><a href="#5-2-缩写" class="headerlink" title="5.2 缩写"></a>5.2 缩写</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n &#x3D;&#x3D; hexo new</span><br><span class="line">hexo g &#x3D;&#x3D; hexo generate</span><br><span class="line">hexo s &#x3D;&#x3D; hexo server</span><br><span class="line">hexo d &#x3D;&#x3D; hexo deploy</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-3-组合"><a href="#5-3-组合" class="headerlink" title="5.3 组合"></a>5.3 组合</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s -g 						#生成并本地预览</span><br><span class="line">hexo d -g 						#生成并上传</span><br></pre></td></tr></table></figure>
-
-<h2 id="六、HEXO卸载与重装"><a href="#六、HEXO卸载与重装" class="headerlink" title="六、HEXO卸载与重装"></a>六、HEXO卸载与重装</h2><h3 id="6-1-卸载hexo"><a href="#6-1-卸载hexo" class="headerlink" title="6.1 卸载hexo"></a>6.1 卸载hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-2-卸载hexo客户端"><a href="#6-2-卸载hexo客户端" class="headerlink" title="6.2 卸载hexo客户端"></a>6.2 卸载hexo客户端</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-3-进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。"><a href="#6-3-进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。" class="headerlink" title="6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。"></a>6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。</h3><br>
-
-
-
-
+<h3 id="2-3-Vercel-配置"><a href="#2-3-Vercel-配置" class="headerlink" title="2.3 Vercel 配置"></a>2.3 Vercel 配置</h3><ul>
+<li><p><a href="https://hexo.xiaosi.world/archives/a2816564.html#%E4%BA%8C%E3%80%81Vercel%E4%BD%BF%E7%94%A8">Vercle 简单使用</a></p>
+</li>
+<li><p>新建项目 <code>New Project</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE.png"></p>
+</li>
+<li><p>导入项目 <code>import</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/import.png"></p>
+</li>
+<li><p>选择个人 <code>Select</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/Select.png"></p>
+</li>
+<li><p>继续 <code>Continue</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E6%A0%B9%E8%B7%AF%E5%BE%84.png"></p>
+</li>
+<li><p>部署 <code>Deploy</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/Deploy.png"></p>
+</li>
+<li><p>部署成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png"></p>
+</li>
+</ul>
+<h3 id="2-4-域名配置"><a href="#2-4-域名配置" class="headerlink" title="2.4 域名配置"></a>2.4 域名配置</h3><ul>
+<li><p>进入项目</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png"></p>
+</li>
+<li><p>查看域名 <code>View Domains</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%8F%82%E8%80%83%E5%9F%9F%E5%90%8D.png"></p>
+</li>
+<li><p>添加域名 <code>Add</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/add.png"></p>
+</li>
+<li><p>域名添加成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%9F%9F%E5%90%8D%E6%B7%BB%E5%8A%A0%E6%88%90%E5%8A%9F.png"></p>
+</li>
+<li><p>Vercel 默认为项目创建一个域名，可以通过 <code>Edit</code> –&gt; <code>Remove</code> 删除。</p>
+</li>
+</ul>
+<h3 id="2-5-常见问题"><a href="#2-5-常见问题" class="headerlink" title="2.5 常见问题"></a>2.5 常见问题</h3><ul>
+<li>见<a href="https://hexo.xiaosi.world/archives/a2816564.html#%E4%B8%89%E3%80%81%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE">Vercel 托管 Github Pages</a></li>
+</ul>
+<br/>
     </div>
 
     
@@ -377,7 +410,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://hexo.xiaosi.world/archives/5ef212b6.html" title="Hexo安装及配置">https://hexo.xiaosi.world/archives/5ef212b6.html</a>
+    <a href="https://hexo.xiaosi.world/archives/4536b2e4.html" title="Vercel托管多个网站">https://hexo.xiaosi.world/archives/4536b2e4.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -389,10 +422,9 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
-              <a href="/tags/Node/" rel="tag"><i class="fa fa-tag"></i> Node</a>
               <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
-              <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+              <a href="/tags/Github-Pages/" rel="tag"><i class="fa fa-tag"></i> Github Pages</a>
+              <a href="/tags/Vercel/" rel="tag"><i class="fa fa-tag"></i> Vercel</a>
           </div>
           <script type="text/javascript">
             var tagsall=document.getElementsByClassName("post-tags")
@@ -456,13 +488,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/archives/d345b092.html" rel="prev" title="Github">
-      <i class="fa fa-chevron-left"></i> Github
+    <a href="/archives/a2816564.html" rel="prev" title="Vercel托管Github Pages">
+      <i class="fa fa-chevron-left"></i> Vercel托管Github Pages
     </a></div>
-      <div class="post-nav-item">
-    <a href="/archives/65f611a4.html" rel="next" title="Hexo-Next安装及使用">
-      Hexo-Next安装及使用 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -522,7 +551,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85%E4%B9%8B%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-text">一、安装之前准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Git"><span class="nav-text">1.1 Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Node"><span class="nav-text">1.2 Node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-Github"><span class="nav-text">1.3 Github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85"><span class="nav-text">二、安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E5%AE%89%E8%A3%85Hexo"><span class="nav-text">2.1 安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E6%9F%A5%E7%9C%8BHexo%E4%BF%A1%E6%81%AF"><span class="nav-text">2.2 查看Hexo信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-text">三、初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-text">3.1 初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E6%9C%AC%E5%9C%B0%E8%AE%BF%E9%97%AE"><span class="nav-text">3.2 本地访问</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E9%85%8D%E7%BD%AE%E7%AB%99%E7%82%B9%E4%BF%A1%E6%81%AF"><span class="nav-text">四、配置站点信息</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-%E9%85%8D%E7%BD%AE-Hexo-%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF"><span class="nav-text">4.1 配置 Hexo 网站相关信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-%E9%83%A8%E7%BD%B2%E5%88%B0github"><span class="nav-text">4.2 部署到github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%B8%B8%E7%94%A8hexo%E5%91%BD%E4%BB%A4"><span class="nav-text">五、常用hexo命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4"><span class="nav-text">5.1 常见命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-%E7%BC%A9%E5%86%99"><span class="nav-text">5.2 缩写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-%E7%BB%84%E5%90%88"><span class="nav-text">5.3 组合</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81HEXO%E5%8D%B8%E8%BD%BD%E4%B8%8E%E9%87%8D%E8%A3%85"><span class="nav-text">六、HEXO卸载与重装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-%E5%8D%B8%E8%BD%BDhexo"><span class="nav-text">6.1 卸载hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-%E5%8D%B8%E8%BD%BDhexo%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="nav-text">6.2 卸载hexo客户端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-%E8%BF%9B%E8%A1%8C%E9%87%8D%E8%A3%85%E4%B9%8B%E5%89%8D%EF%BC%8C%E5%A6%82%E6%9E%9C%E8%BF%98%E6%98%AF%E5%9C%A8%E5%8E%9F%E6%9D%A5%E4%BD%8D%E7%BD%AE%EF%BC%8C%E5%BF%85%E9%A1%BB%E6%89%8B%E5%8A%A8%E6%B8%85%E7%90%86%E4%BA%86%E6%89%8D%E8%83%BD%E8%BF%81%E7%A7%BB%E5%AE%89%E8%A3%85%E3%80%82"><span class="nav-text">6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E9%A1%BB%E7%9F%A5"><span class="nav-text">一、须知</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Github-Pages"><span class="nav-text">1.1 Github Pages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-Vercel"><span class="nav-text">1.2 Vercel</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%90%AD%E5%BB%BA"><span class="nav-text">二、搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Github%E9%85%8D%E7%BD%AE"><span class="nav-text">2.1 Github配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Github-Pages%E9%85%8D%E7%BD%AE"><span class="nav-text">2.2 Github Pages配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-Vercel-%E9%85%8D%E7%BD%AE"><span class="nav-text">2.3 Vercel 配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE"><span class="nav-text">2.4 域名配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="nav-text">2.5 常见问题</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
