@@ -29,14 +29,17 @@ def countdown(t):
         t -= 1
 
 if __name__ == '__main__':
+    print('执行 hexo clean 命令！')
     runCmd('hexo clean')        # 清除public文件
     time.sleep(2)
 
+    print('执行 hexo g 命令！')
     runCmd('hexo g')            # 生成public文件
     time.sleep(2)
 
+    print('执行 hexo d 命令！')
     runCmd('hexo d')            # 上传文件
     time.sleep(2)
 
-    print("部署成功！！！\n")      # 提示成功
+    print("上传成功！！！\n")      # 提示成功
     countdown(5)
