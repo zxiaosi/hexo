@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="msvalidate.01" content="true">
   <meta name="baidu-site-verification" content="true">
@@ -25,12 +25,12 @@
     var CONFIG = {"hostname":"hexo.xiaosi.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、前提1.1 已安装 Git1.2 清除 Git 的全局配置 打开 Git Bash">
+  <meta name="description" content="一、前提 1.1 已安装 Git 1.2 清除 Git 的全局配置  打开 Git Bash">
 <meta property="og:type" content="article">
 <meta property="og:title" content="配置同时使用Github、Gitee的SSH密钥">
 <meta property="og:url" content="https://hexo.xiaosi.world/archives/5f94ed31.html">
 <meta property="og:site_name" content="小四先生の博客">
-<meta property="og:description" content="一、前提1.1 已安装 Git1.2 清除 Git 的全局配置 打开 Git Bash">
+<meta property="og:description" content="一、前提 1.1 已安装 Git 1.2 清除 Git 的全局配置  打开 Git Bash">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/GitBash.png">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/Github%E5%AF%86%E9%92%A5.png">
@@ -314,94 +314,136 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、前提"><a href="#一、前提" class="headerlink" title="一、前提"></a>一、前提</h2><h3 id="1-1-已安装-Git"><a href="#1-1-已安装-Git" class="headerlink" title="1.1 已安装 Git"></a>1.1 已安装 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3><h3 id="1-2-清除-Git-的全局配置"><a href="#1-2-清除-Git-的全局配置" class="headerlink" title="1.2 清除 Git 的全局配置"></a>1.2 清除 Git 的全局配置</h3><ul>
+        <h2 id="一、前提">一、前提</h2>
+<h3 id="1-1-已安装-Git">1.1 已安装 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3>
+<h3 id="1-2-清除-Git-的全局配置">1.2 清除 Git 的全局配置</h3>
+<ul>
 <li>打开 <code>Git Bash</code></li>
 </ul>
 <span id="more"></span>
-
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/GitBash.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/GitBash.png" alt=""></p>
 <ul>
-<li><p>输入下面命令查看 Git 的全局配置</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure></li>
-<li><p>如果配置了 Git 全局变量，请删除该配置</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> user.name <span class="string">&quot;你的名字&quot;</span></span><br><span class="line">git config --global --<span class="built_in">unset</span> user.email <span class="string">&quot;你的邮箱&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>
+<p>输入下面命令查看 Git 的全局配置</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>如果配置了 Git 全局变量，请删除该配置</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> user.name <span class="string">&quot;你的名字&quot;</span></span><br><span class="line">git config --global --<span class="built_in">unset</span> user.email <span class="string">&quot;你的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h2 id="二、生成新的-SSH-密钥"><a href="#二、生成新的-SSH-密钥" class="headerlink" title="二、生成新的 SSH 密钥"></a>二、生成新的 SSH 密钥</h2><h3 id="2-1-密钥存放位置"><a href="#2-1-密钥存放位置" class="headerlink" title="2.1 密钥存放位置"></a>2.1 密钥存放位置</h3><ul>
+<h2 id="二、生成新的-SSH-密钥">二、生成新的 SSH 密钥</h2>
+<h3 id="2-1-密钥存放位置">2.1 密钥存放位置</h3>
+<ul>
 <li>默认文件夹 <code>c:\用户\user\.ssh</code></li>
 <li><code> lx@vip.qq.com</code> 改为自己的邮箱</li>
 </ul>
-<h3 id="2-2-Github-密钥"><a href="#2-2-Github-密钥" class="headerlink" title="2.2 Github 密钥"></a>2.2 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a> 密钥</h3><ul>
-<li><p>生成 Github 密钥 </p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C <span class="string">&quot;lx@qq.com&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>连按两次回车，设置为无密码</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/Github%E5%AF%86%E9%92%A5.png"></p>
+<h3 id="2-2-Github-密钥">2.2 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a> 密钥</h3>
+<ul>
+<li>
+<p>生成 Github 密钥</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C <span class="string">&quot;lx@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>连按两次回车，设置为无密码</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/Github%E5%AF%86%E9%92%A5.png" alt=""></p>
 </li>
 </ul>
-<h3 id="2-3-Gitee-密钥"><a href="#2-3-Gitee-密钥" class="headerlink" title="2.3 Gitee 密钥"></a>2.3 <a href="https://hexo.xiaosi.world/archives/1c750174.html">Gitee</a> 密钥</h3><ul>
-<li><p>生成 Gitee 密钥 </p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f ~/.ssh/id_rsa.gitee -C <span class="string">&quot;lx@vip.qq.com&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li><p>连按两次回车，设置为无密码</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/Gitee%E5%AF%86%E9%92%A5.png"></p>
+<h3 id="2-3-Gitee-密钥">2.3 <a href="https://hexo.xiaosi.world/archives/1c750174.html">Gitee</a> 密钥</h3>
+<ul>
+<li>
+<p>生成 Gitee 密钥</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f ~/.ssh/id_rsa.gitee -C <span class="string">&quot;lx@vip.qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>连按两次回车，设置为无密码</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/Gitee%E5%AF%86%E9%92%A5.png" alt=""></p>
 </li>
 </ul>
-<h3 id="2-4-文件目录"><a href="#2-4-文件目录" class="headerlink" title="2.4 文件目录"></a>2.4 文件目录</h3><ul>
-<li><p>完成之后会在 <code>c:\用户\user\.ssh</code> 生成以下目录</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png"></p>
+<h3 id="2-4-文件目录">2.4 文件目录</h3>
+<ul>
+<li>
+<p>完成之后会在 <code>c:\用户\user\.ssh</code> 生成以下目录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png" alt=""></p>
 </li>
 </ul>
-<h3 id="2-5-配置-config"><a href="#2-5-配置-config" class="headerlink" title="2.5 配置 config"></a>2.5 配置 config</h3><ul>
-<li><p>创建 config 文件</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch ~/.ssh/config</span><br></pre></td></tr></table></figure></li>
-<li><p>config 需要填写以下内容</p>
+<h3 id="2-5-配置-config">2.5 配置 config</h3>
+<ul>
+<li>
+<p>创建 config 文件</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch ~/.ssh/config</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>config 需要填写以下内容</p>
 <p><code>Host：它涵盖了下面一个段的配置，我们可以通过他来替代将要连接的服务器地址。</code></p>
 <p><code>Port：自定义的端口。默认为22，可不配置</code></p>
 <p><code>User：自定义的用户名，默认为git，可不配置</code></p>
 <p><code>HostName：真正连接的服务器地址</code></p>
 <p><code>PreferredAuthentications：指定优先使用哪种方式验证，支持密码和秘钥验证方式</code></p>
 <p><code>IdentityFile：指定本次连接使用的密钥文件</code></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git </span><br><span class="line">    IdentityFile ~/.ssh/id_rsa.github</span><br><span class="line"></span><br><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">    Port 22</span><br><span class="line">    HostName gitee.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa.gitee</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="三、添加ssh密钥"><a href="#三、添加ssh密钥" class="headerlink" title="三、添加ssh密钥"></a>三、添加ssh密钥</h2><h3 id="3-1-Github-添加-ssh-密钥"><a href="#3-1-Github-添加-ssh-密钥" class="headerlink" title="3.1 Github 添加 ssh 密钥"></a>3.1 Github 添加 ssh 密钥</h3><ul>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/settings/keys">直达地址</a></p>
-</li>
-<li><p>点击 <code>Settings</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/GithubSettings.png"></p>
-</li>
-<li><p>点击 <code>SSH and GPG keys</code> –&gt; 点击 <code>New SSH key</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/githubnew.png"></p>
-</li>
-<li><p>填写密钥的名字 –&gt; 复制 <code>id_rsa.github.pub</code> 文件里内容</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/GitHubAdd.png"></p>
-</li>
-<li><p>测试连接</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></li>
-<li><p>连接成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/Github%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F.png"></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git </span><br><span class="line">    IdentityFile ~/.ssh/id_rsa.github</span><br><span class="line"></span><br><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">    Port 22</span><br><span class="line">    HostName gitee.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa.gitee</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="3-2-Gitee-添加-ssh-密钥"><a href="#3-2-Gitee-添加-ssh-密钥" class="headerlink" title="3.2 Gitee 添加 ssh 密钥"></a>3.2 Gitee 添加 ssh 密钥</h3><ul>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitee.com/profile/sshkeys">直达地址</a></p>
+<h2 id="三、添加ssh密钥">三、添加ssh密钥</h2>
+<h3 id="3-1-Github-添加-ssh-密钥">3.1 Github 添加 ssh 密钥</h3>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/settings/keys">直达地址</a></p>
 </li>
-<li><p>点击 <code>设置</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/Gitee%E8%AE%BE%E7%BD%AE.png"></p>
+<li>
+<p>点击 <code>Settings</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/GithubSettings.png" alt=""></p>
 </li>
-<li><p>点击 <code>生成SSH公钥</code> –&gt; 填写公钥的名字 –&gt; 复制 <code>id_rsa.gitee.pub</code> 文件里内容</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/gitee%E5%85%AC%E9%92%A5.png"></p>
+<li>
+<p>点击 <code>SSH and GPG keys</code> --&gt; 点击 <code>New SSH key</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/githubnew.png" alt=""></p>
 </li>
-<li><p>测试连接</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@gitee.com</span><br></pre></td></tr></table></figure></li>
-<li><p>连接成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/gitee%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F.png"></p>
+<li>
+<p>填写密钥的名字 --&gt; 复制 <code>id_rsa.github.pub</code> 文件里内容</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/GitHubAdd.png" alt=""></p>
+</li>
+<li>
+<p>测试连接</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>连接成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/Github%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F.png" alt=""></p>
 </li>
 </ul>
-<h2 id="四、使用"><a href="#四、使用" class="headerlink" title="四、使用"></a>四、使用</h2><ul>
-<li><p>在本地上传文件时，会报不知道用户是谁的错误</p>
+<h3 id="3-2-Gitee-添加-ssh-密钥">3.2 Gitee 添加 ssh 密钥</h3>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitee.com/profile/sshkeys">直达地址</a></p>
 </li>
-<li><p>此时需要配置 local 用户名和邮箱，而不是 global。到项目文件夹下配置邮箱和用户名</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="built_in">local</span> user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line">git config --<span class="built_in">local</span> user.email <span class="string">&#x27;邮箱&#x27;</span></span><br></pre></td></tr></table></figure></li>
+<li>
+<p>点击 <code>设置</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/Gitee%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p>点击 <code>生成SSH公钥</code> --&gt; 填写公钥的名字 --&gt; 复制 <code>id_rsa.gitee.pub</code> 文件里内容</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/gitee%E5%85%AC%E9%92%A5.png" alt=""></p>
+</li>
+<li>
+<p>测试连接</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@gitee.com</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>连接成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/ssh%E5%AF%86%E9%92%A5/gitee%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+</ul>
+<h2 id="四、使用">四、使用</h2>
+<ul>
+<li>
+<p>在本地上传文件时，会报不知道用户是谁的错误</p>
+</li>
+<li>
+<p>此时需要配置 local 用户名和邮箱，而不是 global。到项目文件夹下配置邮箱和用户名</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="built_in">local</span> user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line">git config --<span class="built_in">local</span> user.email <span class="string">&#x27;邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 <br/>
-
 <blockquote>
 <p>参考文章：【鸣谢】</p>
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jianshu.com/p/68578d52470c">配置同时使用 Gitlab、Github、Gitee(码云) 共存的开发环境</a></p>
@@ -416,6 +458,26 @@
         <div style="text-align:center;color: #ccc;font-size:16px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
     
 </div>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/微信.png" alt="Mr.XiaoSi 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/支付宝.jpg" alt="Mr.XiaoSi 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
         
 
 <div>

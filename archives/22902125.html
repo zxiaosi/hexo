@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="msvalidate.01" content="true">
   <meta name="baidu-site-verification" content="true">
@@ -25,12 +25,12 @@
     var CONFIG = {"hostname":"hexo.xiaosi.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、图床1.1 图床介绍 写博客的时候，总是需要插入图片的，图片存在本地的话上传到博客网站去就没法显示了，就算一个图一个图的复制粘贴上去，想移植到其他的博客网站，图就会失效，我们就需要图床">
+  <meta name="description" content="一、图床 1.1 图床介绍  写博客的时候，总是需要插入图片的，图片存在本地的话上传到博客网站去就没法显示了，就算一个图一个图的复制粘贴上去，想移植到其他的博客网站，图就会失效，我们就需要图床">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PicGo+Typora+Gitee图床">
 <meta property="og:url" content="https://hexo.xiaosi.world/archives/22902125.html">
 <meta property="og:site_name" content="小四先生の博客">
-<meta property="og:description" content="一、图床1.1 图床介绍 写博客的时候，总是需要插入图片的，图片存在本地的话上传到博客网站去就没法显示了，就算一个图一个图的复制粘贴上去，想移植到其他的博客网站，图就会失效，我们就需要图床">
+<meta property="og:description" content="一、图床 1.1 图床介绍  写博客的时候，总是需要插入图片的，图片存在本地的话上传到博客网站去就没法显示了，就算一个图一个图的复制粘贴上去，想移植到其他的博客网站，图就会失效，我们就需要图床">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%BB%E7%95%8C%E9%9D%A2.png">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8.png">
@@ -320,140 +320,179 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、图床"><a href="#一、图床" class="headerlink" title="一、图床"></a>一、图床</h2><h3 id="1-1-图床介绍"><a href="#1-1-图床介绍" class="headerlink" title="1.1 图床介绍"></a>1.1 图床介绍</h3><ul>
-<li>写博客的时候，总是需要<font color='red'>插入图片</font>的，图片存在本地的话上传到博客网站去就没法显示了，就算一个图一个图的复制粘贴上去，想移植到其他的博客网站，图就会失效，我们就需要图床<span id="more"></span></li>
+        <h2 id="一、图床">一、图床</h2>
+<h3 id="1-1-图床介绍">1.1 图床介绍</h3>
+<ul>
+<li>写博客的时候，总是需要<font color='red'>插入图片</font>的，图片存在本地的话上传到博客网站去就没法显示了，就算一个图一个图的复制粘贴上去，想移植到其他的博客网站，图就会失效，我们就需要图床</li>
+</ul>
+<span id="more"></span>
+<ul>
 <li>图床是干什么的? 图床就是一个便于在博文中插入在线图片连接的个人图片仓库。设置图床之后，在自己博客中插入的图片链接就可以随时随地在线预览了，并且不会因为任何意外原因无法查看，除非自己亲自删除。</li>
 <li>PicGo就是为了解决这个问题诞生的，它可以将图片上传到指定的图床上，然后返回markdown链接，直接粘贴到你的文档中</li>
 </ul>
-<h3 id="1-2-相关应用"><a href="#1-2-相关应用" class="headerlink" title="1.2 相关应用"></a>1.2 相关应用</h3><ul>
+<h3 id="1-2-相关应用">1.2 相关应用</h3>
+<ul>
 <li><a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></li>
 <li><a href="https://hexo.xiaosi.world/archives/1c750174.html">Gitee</a></li>
 <li><a href="https://hexo.xiaosi.world/archives/dd170fc7.html">Typora</a></li>
-<li>PicGo<ul>
+<li>PicGo
+<ul>
 <li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/Molunerfinn/PicGo">PicGo官网下载</a></li>
 <li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://wws.lanzous.com/ixQyCjqdg7g">PicGo蓝奏云下载</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a>二、配置</h2><h3 id="2-1-PicGo配置"><a href="#2-1-PicGo配置" class="headerlink" title="2.1 PicGo配置"></a>2.1 PicGo配置</h3><ul>
-<li><p>安装的时候选择 <code>为所有人安装</code> </p>
-</li>
-<li><p>主界面</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%BB%E7%95%8C%E9%9D%A2.png"></p>
-</li>
-</ul>
+<h2 id="二、配置">二、配置</h2>
+<h3 id="2-1-PicGo配置">2.1 PicGo配置</h3>
 <ul>
-<li><p>选择<code>插件设置</code> –&gt; 搜索<code>gitee</code> –&gt; 安装<code>gitee-uploader</code> （安装插件之前需要先安装<a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8.png"></p>
+<li>
+<p>安装的时候选择 <code>为所有人安装</code></p>
+</li>
+<li>
+<p>主界面</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%BB%E7%95%8C%E9%9D%A2.png" alt=""></p>
+</li>
+<li>
+<p>选择<code>插件设置</code> --&gt; 搜索<code>gitee</code> --&gt; 安装<code>gitee-uploader</code> （安装插件之前需要先安装<a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8.png" alt=""></p>
 </li>
 </ul>
-<h3 id="2-2-Gitee配置"><a href="#2-2-Gitee配置" class="headerlink" title="2.2 Gitee配置"></a>2.2 Gitee配置</h3><ul>
-<li><p>点击右上角 <code>+</code> 号，新建仓库</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
-</li>
-</ul>
+<h3 id="2-2-Gitee配置">2.2 Gitee配置</h3>
 <ul>
-<li><p>创建公开的仓库</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png"></p>
+<li>
+<p>点击右上角 <code>+</code> 号，新建仓库</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt=""></p>
+</li>
+<li>
+<p>创建公开的仓库</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt=""></p>
 </li>
 </ul>
-<h3 id="2-3-配置PicGo上的Gitee信息"><a href="#2-3-配置PicGo上的Gitee信息" class="headerlink" title="2.3 配置PicGo上的Gitee信息"></a>2.3 配置PicGo上的Gitee信息</h3><ul>
-<li><p>选择 <code> 图床设置</code> –&gt; 然后点击 <code>gitee</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/PicGo%E4%B8%8A%E7%9A%84Gitee%E4%BF%A1%E6%81%AF.png"></p>
-</li>
-</ul>
+<h3 id="2-3-配置PicGo上的Gitee信息">2.3 配置PicGo上的Gitee信息</h3>
 <ul>
-<li><p>repo：用户名/仓库名称，比如我自己的仓库zxiaosi/image，也可以直接复制仓库的url</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/repo.png"></p>
+<li>
+<p>选择 <code> 图床设置</code> --&gt; 然后点击 <code>gitee</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/PicGo%E4%B8%8A%E7%9A%84Gitee%E4%BF%A1%E6%81%AF.png" alt=""></p>
 </li>
-<li><p>branch：分支，这里写上 <code>master</code></p>
+<li>
+<p>repo：用户名/仓库名称，比如我自己的仓库zxiaosi/image，也可以直接复制仓库的url</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/repo.png" alt=""></p>
 </li>
-<li><p>token：填入码云的私人令牌</p>
+<li>
+<p>branch：分支，这里写上 <code>master</code></p>
 </li>
-</ul>
+<li>
+<p>token：填入码云的私人令牌</p>
 <ul>
-<li><p><code>设置</code> –&gt; 选择 <code>私人令牌</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png"></p>
+<li>
+<p><code>设置</code> --&gt; 选择 <code>私人令牌</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C.png" alt=""></p>
+</li>
+<li>
+<p>勾选 <code>projects</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C%E6%8F%90%E4%BA%A4.png" alt=""></p>
+</li>
+<li>
+<p><font color='red'>私人令牌生成之后只显示一次</font></p>
 </li>
 </ul>
+</li>
+<li>
+<p>path：路径，一般写上 <code>img</code>，也可以多层路径 <code>img/image</code></p>
+</li>
+<li>
+<p>customPath：提交消息，这一项和下一项customURL都不用填。在提交到码云后，会显示提交消息，插件默认提交的是 <code>Upload 图片名 by picGo - 时间</code></p>
+</li>
+<li>
+<p>配置完成 <code>设为默认图床</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E9%85%8D%E7%BD%AE%E5%AE%8C%E6%88%90.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-4-简单使用">2.4 简单使用</h3>
 <ul>
-<li><p>勾选 <code>projects</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E7%A7%81%E4%BA%BA%E4%BB%A4%E7%89%8C%E6%8F%90%E4%BA%A4.png"></p>
+<li>
+<p>将图片托进主界面</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%BB%E7%95%8C%E9%9D%A21.png" alt=""></p>
 </li>
-<li><p><font color='red'>私人令牌生成之后只显示一次</font></p>
+<li>
+<p>等待上传成功，便可在gitee中看到</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/gitee%E5%9B%BE%E7%89%87.png" alt=""></p>
 </li>
-<li><p>path：路径，一般写上 <code>img</code>，也可以多层路径 <code>img/image</code></p>
+<li>
+<p>点开图片，在导航栏找到图片的url</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E5%9B%BE%E7%89%87url.png" alt=""></p>
 </li>
-<li><p>customPath：提交消息，这一项和下一项customURL都不用填。在提交到码云后，会显示提交消息，插件默认提交的是 <code>Upload 图片名 by picGo - 时间</code></p>
-</li>
-<li><p>配置完成 <code>设为默认图床</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E9%85%8D%E7%BD%AE%E5%AE%8C%E6%88%90.png"></p>
-</li>
-</ul>
-<h3 id="2-4-简单使用"><a href="#2-4-简单使用" class="headerlink" title="2.4 简单使用"></a>2.4 简单使用</h3><ul>
-<li><p>将图片托进主界面</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%BB%E7%95%8C%E9%9D%A21.png"></p>
+<li>
+<p>url：<code>https://gitee.com/zxiaosi/img/</code><font color='red'>blob</font><code>/master/PicGo+Typora+Gitee/bg.jpg</code>，将 <code>blob</code> 改为 <code>raw</code> 便是图片的真实的url，例如 <code>https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/bg.jpg</code></p>
 </li>
 </ul>
+<h3 id="2-5-Typora配置">2.5 Typora配置</h3>
 <ul>
-<li><p>等待上传成功，便可在gitee中看到</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/gitee%E5%9B%BE%E7%89%87.png"></p>
+<li>
+<p>找到 <code>偏好设置</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/Typora%E8%AE%BE%E7%BD%AE.png" alt=""></p>
 </li>
-<li><p>点开图片，在导航栏找到图片的url</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E5%9B%BE%E7%89%87url.png"></p>
+<li>
+<p>配置</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/PicGo%E9%85%8D%E7%BD%AE-1616939817003.png" alt=""></p>
 </li>
-<li><p>url：<code>https://gitee.com/zxiaosi/img/</code><font color='red'>blob</font><code>/master/PicGo+Typora+Gitee/bg.jpg</code>，将 <code>blob</code> 改为 <code>raw</code> 便是图片的真实的url，例如 <code>https://gitee.com/zxiaosi/img/raw/master/PicGo+Typora+Gitee/bg.jpg</code></p>
+<li>
+<p>验证图片上传选项（PicGo后台打开）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E9%AA%8C%E8%AF%81%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E9%80%89%E9%A1%B9.png" alt=""></p>
 </li>
-</ul>
-<h3 id="2-5-Typora配置"><a href="#2-5-Typora配置" class="headerlink" title="2.5 Typora配置"></a>2.5 Typora配置</h3><ul>
-<li><p>找到 <code>偏好设置</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/Typora%E8%AE%BE%E7%BD%AE.png"></p>
-</li>
-<li><p>配置</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/PicGo%E9%85%8D%E7%BD%AE-1616939817003.png"></p>
-</li>
-<li><p>验证图片上传选项（PicGo后台打开）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E9%AA%8C%E8%AF%81%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E9%80%89%E9%A1%B9.png"></p>
-</li>
-<li><p>验证失败，请修改端口号（<font color='red'>见3.1</font>）</p>
+<li>
+<p>验证失败，请修改端口号（<font color='red'>见3.1</font>）</p>
 </li>
 </ul>
-<h3 id="2-6-Typora中使用"><a href="#2-6-Typora中使用" class="headerlink" title="2.6 Typora中使用"></a>2.6 Typora中使用</h3><ul>
-<li><p>复制图片到Typora</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png"></p>
-</li>
-</ul>
+<h3 id="2-6-Typora中使用">2.6 Typora中使用</h3>
 <ul>
-<li>图片链接会由 <code>本地路径</code> 变为 <code>网络url</code></li>
-</ul>
-<h2 id="三、常见问题"><a href="#三、常见问题" class="headerlink" title="三、常见问题"></a>三、常见问题</h2><h3 id="3-1-PicGo端口错误"><a href="#3-1-PicGo端口错误" class="headerlink" title="3.1 PicGo端口错误"></a>3.1 PicGo端口错误</h3><ul>
-<li><p>上传图片时，显示下面信息，表示PicGo端口号错误</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%A4%B1%E8%B4%A5.png"></p>
+<li>
+<p>复制图片到Typora</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png" alt=""></p>
 </li>
-<li><p><code>PicGo设置</code> –&gt; 选择<code>设置Server</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E8%AE%BEServer.png"></p>
-</li>
-<li><p>端口号修改为 <code>36677</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E7%AB%AF%E5%8F%A3%E5%8F%B7-1616940784874.png"></p>
+<li>
+<p>图片链接会由 <code>本地路径</code> 变为 <code>网络url</code></p>
 </li>
 </ul>
-<h3 id="3-2-PicGo重复上传图片"><a href="#3-2-PicGo重复上传图片" class="headerlink" title="3.2 PicGo重复上传图片"></a>3.2 PicGo重复上传图片</h3><ul>
-<li><p>上传图片时，显示下面信息，表示图片重复</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E9%87%8D%E5%A4%8D%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png"></p>
-</li>
-</ul>
+<h2 id="三、常见问题">三、常见问题</h2>
+<h3 id="3-1-PicGo端口错误">3.1 PicGo端口错误</h3>
 <ul>
-<li>在Gitee仓库中删除重复图片，再次上传即可</li>
-<li>或者复制url链接（<font color='red'>见2.4 </font>）放到Typora中</li>
-</ul>
-<h3 id="3-3-图片格式"><a href="#3-3-图片格式" class="headerlink" title="3.3 图片格式"></a>3.3 图片格式</h3><ul>
-<li><p><code>![显示信息](url链接)</code></p>
+<li>
+<p>上传图片时，显示下面信息，表示PicGo端口号错误</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E5%A4%B1%E8%B4%A5.png" alt=""></p>
 </li>
-<li><p><code>[]</code> 中的信息可填可不填</p>
+<li>
+<p><code>PicGo设置</code> --&gt; 选择<code>设置Server</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E8%AE%BEServer.png" alt=""></p>
+</li>
+<li>
+<p>端口号修改为 <code>36677</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E7%AB%AF%E5%8F%A3%E5%8F%B7-1616940784874.png" alt=""></p>
+</li>
+</ul>
+<h3 id="3-2-PicGo重复上传图片">3.2 PicGo重复上传图片</h3>
+<ul>
+<li>
+<p>上传图片时，显示下面信息，表示图片重复</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/PicGo+Typora+Gitee/%E9%87%8D%E5%A4%8D%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87.png" alt=""></p>
+</li>
+<li>
+<p>在Gitee仓库中删除重复图片，再次上传即可</p>
+</li>
+<li>
+<p>或者复制url链接（<font color='red'>见2.4 </font>）放到Typora中</p>
+</li>
+</ul>
+<h3 id="3-3-图片格式">3.3 图片格式</h3>
+<ul>
+<li>
+<p><code>![显示信息](url链接)</code></p>
+</li>
+<li>
+<p><code>[]</code> 中的信息可填可不填</p>
 </li>
 </ul>
 <br>
-
 
     </div>
 
@@ -464,6 +503,26 @@
         <div style="text-align:center;color: #ccc;font-size:16px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
     
 </div>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/微信.png" alt="Mr.XiaoSi 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/支付宝.jpg" alt="Mr.XiaoSi 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
         
 
 <div>

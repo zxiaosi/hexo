@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="msvalidate.01" content="true">
   <meta name="baidu-site-verification" content="true">
@@ -25,12 +25,12 @@
     var CONFIG = {"hostname":"hexo.xiaosi.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、Vercel1.1 Vercel简介（以前叫 ZEIT） Vercel 是一个站点托管服务平台，相较于其他的站点托管服务平台CloudFlare、Netlify，主要优点体现在下面几点： 国内访问速度快（首要原因） 项目自动更新部署（懒人专属） 可以部署多个网站或者服务 （简直不要太爽！！！）">
+  <meta name="description" content="一、Vercel 1.1 Vercel简介（以前叫 ZEIT）   Vercel 是一个站点托管服务平台，相较于其他的站点托管服务平台CloudFlare、Netlify，主要优点体现在下面几点：  国内访问速度快（首要原因） 项目自动更新部署（懒人专属） 可以部署多个网站或者服务 （简直不要太爽！！！）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vercel托管Github Pages">
 <meta property="og:url" content="https://hexo.xiaosi.world/archives/a2816564.html">
 <meta property="og:site_name" content="小四先生の博客">
-<meta property="og:description" content="一、Vercel1.1 Vercel简介（以前叫 ZEIT） Vercel 是一个站点托管服务平台，相较于其他的站点托管服务平台CloudFlare、Netlify，主要优点体现在下面几点： 国内访问速度快（首要原因） 项目自动更新部署（懒人专属） 可以部署多个网站或者服务 （简直不要太爽！！！）">
+<meta property="og:description" content="一、Vercel 1.1 Vercel简介（以前叫 ZEIT）   Vercel 是一个站点托管服务平台，相较于其他的站点托管服务平台CloudFlare、Netlify，主要优点体现在下面几点：  国内访问速度快（首要原因） 项目自动更新部署（懒人专属） 可以部署多个网站或者服务 （简直不要太爽！！！）">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7.png">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BD%BF%E7%94%A8Github%E7%99%BB%E5%BD%95.png">
@@ -319,109 +319,142 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、Vercel"><a href="#一、Vercel" class="headerlink" title="一、Vercel"></a>一、Vercel</h2><h3 id="1-1-Vercel简介（以前叫-ZEIT）"><a href="#1-1-Vercel简介（以前叫-ZEIT）" class="headerlink" title="1.1 Vercel简介（以前叫 ZEIT）"></a>1.1 Vercel简介（以前叫 ZEIT）</h3><ul>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://vercel.com/">Vercel</a> 是一个站点托管服务平台，相较于其他的站点托管服务平台<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.cloudflare.com/">CloudFlare</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.netlify.com/">Netlify</a>，主要优点体现在下面几点：<ul>
+        <h2 id="一、Vercel">一、Vercel</h2>
+<h3 id="1-1-Vercel简介（以前叫-ZEIT）">1.1 Vercel简介（以前叫 ZEIT）</h3>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://vercel.com/">Vercel</a> 是一个站点托管服务平台，相较于其他的站点托管服务平台<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.cloudflare.com/">CloudFlare</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.netlify.com/">Netlify</a>，主要优点体现在下面几点：</p>
+<ul>
 <li>国内访问速度快（首要原因）</li>
 <li>项目自动更新部署（懒人专属）</li>
 <li><font color='red'>可以部署多个网站或者服务</font> （简直不要太爽！！！）</li>
 </ul>
 <span id="more"></span>
-
 <ul>
 <li>网站自动配置https，不用自己申请证书</li>
 <li>子域名的个数没有限制</li>
 </ul>
 </li>
-<li>最重要的是Vercel个人完全免费。Vercel从开始的一个月免费20G，到后来的一个月免费100G，直到现在的个人完全免费，可见其诚意。</li>
+<li>
+<p>最重要的是Vercel个人完全免费。Vercel从开始的一个月免费20G，到后来的一个月免费100G，直到现在的个人完全免费，可见其诚意。</p>
+</li>
 </ul>
-<h3 id="1-2-Vercel工作原理"><a href="#1-2-Vercel工作原理" class="headerlink" title="1.2 Vercel工作原理"></a>1.2 Vercel工作原理</h3><ul>
+<h3 id="1-2-Vercel工作原理">1.2 Vercel工作原理</h3>
+<ul>
 <li>Vercel属于复制一份Github Pages文件，然后在它给你的空间新开一个页面，同时提供cdn加速。</li>
 <li>部署比较简单，用GitHub登陆授权后，修改DNS配置域名即可。</li>
 </ul>
-<h2 id="二、Vercel使用"><a href="#二、Vercel使用" class="headerlink" title="二、Vercel使用"></a>二、Vercel使用</h2><h3 id="2-1-Vercel官网"><a href="#2-1-Vercel官网" class="headerlink" title="2.1 Vercel官网"></a>2.1 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://vercel.com/">Vercel官网</a></h3><ul>
-<li><p>进入官网，注册账号</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7.png"></p>
+<h2 id="二、Vercel使用">二、Vercel使用</h2>
+<h3 id="2-1-Vercel官网">2.1 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://vercel.com/">Vercel官网</a></h3>
+<ul>
+<li>
+<p>进入官网，注册账号</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7.png" alt=""></p>
 </li>
-<li><p>使用GitHub或者GitLab登录</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BD%BF%E7%94%A8Github%E7%99%BB%E5%BD%95.png"></p>
+<li>
+<p>使用GitHub或者GitLab登录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BD%BF%E7%94%A8Github%E7%99%BB%E5%BD%95.png" alt=""></p>
 </li>
-<li><p>选择 <code>Github Pages</code> 导入，或者新建一个模板（Vercel提供了诸多模板）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E5%AF%BC%E5%85%A5.png"></p>
+<li>
+<p>选择 <code>Github Pages</code> 导入，或者新建一个模板（Vercel提供了诸多模板）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E5%AF%BC%E5%85%A5.png" alt=""></p>
 </li>
-<li><p>选择作用范围，用于个人还是用于小组</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E8%8C%83%E5%9B%B4.png"></p>
+<li>
+<p>选择作用范围，用于个人还是用于小组</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E8%8C%83%E5%9B%B4.png" alt=""></p>
 </li>
-<li><p>选择路径（一般都是在仓库根目录下 <code>root</code> ）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%B7%AF%E5%BE%84.png"></p>
+<li>
+<p>选择路径（一般都是在仓库根目录下 <code>root</code> ）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%B7%AF%E5%BE%84.png" alt=""></p>
 </li>
-<li><p>选择网站对应的模板（如果网站使用了不属于原模板框架的文件，建议选择Other，部署效果和选择模板是一样的）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2.png"></p>
+<li>
+<p>选择网站对应的模板（如果网站使用了不属于原模板框架的文件，建议选择Other，部署效果和选择模板是一样的）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2.png" alt=""></p>
 </li>
-<li><p>部署成功，点击 <code>Visit</code> 即可看到自己的网站</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png"></p>
-</li>
-</ul>
-<h3 id="2-2-绑定域名"><a href="#2-2-绑定域名" class="headerlink" title="2.2 绑定域名"></a>2.2 绑定域名</h3><ul>
-<li><p>进入项目</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png"></p>
-</li>
-<li><p>参观域名</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82%E5%9F%9F%E5%90%8D.png"></p>
-</li>
-<li><p>输入域名，点击 <code>Add</code>（Vercel会为每一个项目自带一个域名，可以点击 <code>Edit</code> –&gt; <code>Remove</code> 删除）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png"></p>
+<li>
+<p>部署成功，点击 <code>Visit</code> 即可看到自己的网站</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png" alt=""></p>
 </li>
 </ul>
-<h2 id="三、域名配置"><a href="#三、域名配置" class="headerlink" title="三、域名配置"></a>三、域名配置</h2><h3 id="3-1-DNS配置"><a href="#3-1-DNS配置" class="headerlink" title="3.1 DNS配置"></a>3.1 DNS配置</h3><ul>
-<li><p>Add之后，它会弹出来一些需要做的配置，接下来需要去我们的域名提供商那里根据Vercel给出的要求进行域名配置。（我是在阿里买的域名 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://dc.console.aliyun.com/">阿里域名服务</a>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%BE%E7%BD%AE.png"></p>
+<h3 id="2-2-绑定域名">2.2 绑定域名</h3>
+<ul>
+<li>
+<p>进入项目</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png" alt=""></p>
 </li>
-<li><p>进入域名服务，点击 <code>管理</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E7%AE%A1%E7%90%86.png"></p>
+<li>
+<p>参观域名</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82%E5%9F%9F%E5%90%8D.png" alt=""></p>
 </li>
-<li><p>修改DNS（DNS修改之后，大概需要等10分钟才会生效）</p>
+<li>
+<p>输入域名，点击 <code>Add</code>（Vercel会为每一个项目自带一个域名，可以点击 <code>Edit</code> --&gt; <code>Remove</code> 删除）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt=""></p>
+</li>
+</ul>
+<h2 id="三、域名配置">三、域名配置</h2>
+<h3 id="3-1-DNS配置">3.1 DNS配置</h3>
+<ul>
+<li>
+<p>Add之后，它会弹出来一些需要做的配置，接下来需要去我们的域名提供商那里根据Vercel给出的要求进行域名配置。（我是在阿里买的域名 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://dc.console.aliyun.com/">阿里域名服务</a>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p>进入域名服务，点击 <code>管理</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E7%AE%A1%E7%90%86.png" alt=""></p>
+</li>
+<li>
+<p>修改DNS（DNS修改之后，大概需要等10分钟才会生效）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BF%AE%E6%94%B9DNS.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BF%AE%E6%94%B9DNS.png" alt=""></p>
 </li>
 </ul>
-<h3 id="3-2-域名解析"><a href="#3-2-域名解析" class="headerlink" title="3.2 域名解析"></a>3.2 域名解析</h3><ul>
-<li><p>域名解析，点击 <code>解析</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png"></p>
+<h3 id="3-2-域名解析">3.2 域名解析</h3>
+<ul>
+<li>
+<p>域名解析，点击 <code>解析</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png" alt=""></p>
 </li>
-<li><p>添加这条解析记录</p>
+<li>
+<p>添加这条解析记录</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@	A	默认	76.76.21.21</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png"></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt=""></p>
 </li>
-<li><p>如果绑定的是主域名的话，这个时候就算配置成功了！！！</p>
-</li>
-</ul>
-<h3 id="3-3-CNAME配置（子域名）"><a href="#3-3-CNAME配置（子域名）" class="headerlink" title="3.3 CNAME配置（子域名）"></a>3.3 CNAME配置（子域名）</h3><ul>
-<li><p>记住DNS解析记录</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%B0%E5%BD%95.png"></p>
-</li>
-<li><p>回到Vercel，点击 <code>Domains</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/Domains.png"></p>
-</li>
-<li><p>点击 <code>View DNS Records &amp; More</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82DNS.png"></p>
-</li>
-<li><p>填入子域名的名称，选择 <code>CNAME</code>，值为 <code>cname.vercel-dns.com</code> , TTL为 <code>60</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0DNS.png"></p>
-</li>
-<li><p>回到项目中，等待几分钟后，即可看到绑定子域名成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%88%90%E5%8A%9F.png"></p>
-</li>
-<li><p>接下来就可以通过我们设置的域名访问我们的网站啦！！！</p>
+<li>
+<p>如果绑定的是主域名的话，这个时候就算配置成功了！！！</p>
 </li>
 </ul>
-<h2 id="四、相关事项"><a href="#四、相关事项" class="headerlink" title="四、相关事项"></a>四、相关事项</h2><ul>
+<h3 id="3-3-CNAME配置（子域名）">3.3 CNAME配置（子域名）</h3>
+<ul>
+<li>
+<p>记住DNS解析记录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%B0%E5%BD%95.png" alt=""></p>
+</li>
+<li>
+<p>回到Vercel，点击 <code>Domains</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/Domains.png" alt=""></p>
+</li>
+<li>
+<p>点击 <code>View DNS Records &amp; More</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82DNS.png" alt=""></p>
+</li>
+<li>
+<p>填入子域名的名称，选择 <code>CNAME</code>，值为 <code>cname.vercel-dns.com</code> , TTL为 <code>60</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0DNS.png" alt=""></p>
+</li>
+<li>
+<p>回到项目中，等待几分钟后，即可看到绑定子域名成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+<li>
+<p>接下来就可以通过我们设置的域名访问我们的网站啦！！！</p>
+</li>
+</ul>
+<h2 id="四、相关事项">四、相关事项</h2>
+<ul>
 <li><font color="red">【注意】网站根目录下需要添加CNAME文件 </font></li>
 <li>需要更新网站时，只需要将新内容提交到Github上，Vercel就会自动部署了！</li>
 </ul>
 <br>
-
 <blockquote>
 <p>参考网站：【鸣谢】</p>
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jianshu.com/p/9f67ff433d8e">vercel是什么神仙网站</a></p>
@@ -436,6 +469,26 @@
         <div style="text-align:center;color: #ccc;font-size:16px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
     
 </div>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/微信.png" alt="Mr.XiaoSi 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/支付宝.jpg" alt="Mr.XiaoSi 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
         
 
 <div>

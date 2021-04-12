@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="msvalidate.01" content="true">
   <meta name="baidu-site-verification" content="true">
@@ -25,12 +25,12 @@
     var CONFIG = {"hostname":"hexo.xiaosi.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、安装之前准备1.1 Git1.2 Node1.3 Github">
+  <meta name="description" content="一、安装之前准备 1.1 Git 1.2 Node 1.3 Github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo安装及配置">
 <meta property="og:url" content="https://hexo.xiaosi.world/archives/5ef212b6.html">
 <meta property="og:site_name" content="小四先生の博客">
-<meta property="og:description" content="一、安装之前准备1.1 Git1.2 Node1.3 Github">
+<meta property="og:description" content="一、安装之前准备 1.1 Git 1.2 Node 1.3 Github">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png">
 <meta property="article:published_time" content="2021-03-07T08:27:17.000Z">
@@ -301,65 +301,102 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、安装之前准备"><a href="#一、安装之前准备" class="headerlink" title="一、安装之前准备"></a>一、安装之前准备</h2><h3 id="1-1-Git"><a href="#1-1-Git" class="headerlink" title="1.1 Git"></a>1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3><h3 id="1-2-Node"><a href="#1-2-Node" class="headerlink" title="1.2 Node"></a>1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3><h3 id="1-3-Github"><a href="#1-3-Github" class="headerlink" title="1.3 Github"></a>1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3><span id="more"></span>
-
-<h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><h3 id="2-1-安装Hexo"><a href="#2-1-安装Hexo" class="headerlink" title="2.1 安装Hexo"></a>2.1 安装Hexo</h3><ul>
-<li><p>管理员身份启动cmd，控制台输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo </span><br></pre></td></tr></table></figure></li>
-<li><p>如果安装的慢，可以使用淘宝镜像，连续按两次 <code>Ctrl+C</code> 退出当前cmd进程，然后控制台输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="2-2-查看Hexo信息"><a href="#2-2-查看Hexo信息" class="headerlink" title="2.2 查看Hexo信息"></a>2.2 查看Hexo信息</h3><ul>
-<li><p>控制台输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></li>
-<li><p>我的Hexo信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo-cli: 4.2.0</span><br><span class="line">node: 14.15.4</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="三、初始化"><a href="#三、初始化" class="headerlink" title="三、初始化"></a>三、初始化</h2><h3 id="3-1-初始化"><a href="#3-1-初始化" class="headerlink" title="3.1 初始化"></a>3.1 初始化</h3><ul>
-<li><p>新建一个文件夹（文件位置、名字随意）</p>
+        <h2 id="一、安装之前准备">一、安装之前准备</h2>
+<h3 id="1-1-Git">1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3>
+<h3 id="1-2-Node">1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3>
+<h3 id="1-3-Github">1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3>
+<span id="more"></span>
+<h2 id="二、安装">二、安装</h2>
+<h3 id="2-1-安装Hexo">2.1 安装Hexo</h3>
+<ul>
+<li>
+<p>管理员身份启动cmd，控制台输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo </span><br></pre></td></tr></table></figure>
 </li>
-<li><p>cmd命令进入文件夹（我的文件夹在e盘，名为blog）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">e:				# 输入 e: 回车进入e盘  </span><br><span class="line">cd blog				# 输入 cd blog 回车进入 blog 文件夹</span><br><span class="line">hexo init			# 初始化hexo文件</span><br></pre></td></tr></table></figure></li>
-<li><p>显示如下信息表示初始化成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png"></p>
+<li>
+<p>如果安装的慢，可以使用淘宝镜像，连续按两次 <code>Ctrl+C</code> 退出当前cmd进程，然后控制台输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="3-2-本地访问"><a href="#3-2-本地访问" class="headerlink" title="3.2 本地访问"></a>3.2 本地访问</h3><ul>
-<li><p>控制台输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean		# 清理缓存</span><br><span class="line">hexo s			# 启动服务，本地访问</span><br></pre></td></tr></table></figure></li>
-<li><p><code>hexo s</code> 是开启本地预览服务，打开浏览器访问 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容</p>
+<h3 id="2-2-查看Hexo信息">2.2 查看Hexo信息</h3>
+<ul>
+<li>
+<p>控制台输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>我的Hexo信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo-cli: 4.2.0</span><br><span class="line">node: 14.15.4</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="四、配置站点信息"><a href="#四、配置站点信息" class="headerlink" title="四、配置站点信息"></a>四、配置站点信息</h2><h3 id="4-1-配置-Hexo-网站相关信息"><a href="#4-1-配置-Hexo-网站相关信息" class="headerlink" title="4.1 配置 Hexo 网站相关信息"></a>4.1 配置 Hexo 网站相关信息</h3><ul>
-<li><p>找到根目录下的 <code>_config.yml</code> 文件（以下统称为站点配置文件）并打开</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site (设置)</span><br><span class="line">title: 小四先生の博客				# 网站标题</span><br><span class="line">subtitle: &#39;记录生活中的点点滴滴&#39;			# 网站副标题</span><br><span class="line">description: &#39;生命不息 奋斗不止&#39;			# 描述，介绍网站的</span><br><span class="line">keywords:                        		# 网站的关键字</span><br><span class="line">author: Mr.XiaoSi                		# 博主姓名</span><br><span class="line">language: zh-CN                  		# 语言：zh-CN 是简体中文</span><br><span class="line">timezone: &#39;Asia&#x2F;Shanghai&#39;        		# 时区</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="4-2-部署到github"><a href="#4-2-部署到github" class="headerlink" title="4.2 部署到github"></a>4.2 部署到github</h3><ul>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/u013778905/article/details/83501204">ssh key</a> 配置</p>
+<h2 id="三、初始化">三、初始化</h2>
+<h3 id="3-1-初始化">3.1 初始化</h3>
+<ul>
+<li>
+<p>新建一个文件夹（文件位置、名字随意）</p>
 </li>
-<li><p>找到站点配置文件 <code>_config.yml</code> 中的deploy的部分</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:               					# git</span><br><span class="line">  type: &#39;git&#39;								</span><br><span class="line">  repo: &#39;git@github.com:zxiaosi&#x2F;Hexo.git&#39;		# github的ssh链接</span><br><span class="line">  branch: &#39;hexo&#39;					# 分支</span><br></pre></td></tr></table></figure></li>
-<li><p>安装部署插件（可在后面加上淘宝镜像）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
-<li><p>控制台输入以下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean			# 清理缓存</span><br><span class="line">hexo g				# 生成静态页面至public目录</span><br><span class="line">hexo d				# 部署到GitHub</span><br></pre></td></tr></table></figure></li>
-<li><p>部署之后，就可以通过 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://yourname.github.io/">http://yourname.github.io</a> 访问到你的博客了</p>
+<li>
+<p>cmd命令进入文件夹（我的文件夹在e盘，名为blog）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">e:				# 输入 e: 回车进入e盘  </span><br><span class="line">cd blog				# 输入 cd blog 回车进入 blog 文件夹</span><br><span class="line">hexo init			# 初始化hexo文件</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>显示如下信息表示初始化成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" alt=""></p>
 </li>
 </ul>
-<h2 id="五、常用hexo命令"><a href="#五、常用hexo命令" class="headerlink" title="五、常用hexo命令"></a>五、常用hexo命令</h2><h3 id="5-1-常见命令"><a href="#5-1-常见命令" class="headerlink" title="5.1 常见命令"></a>5.1 常见命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; 					# 新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; 				# 新建页面</span><br><span class="line">hexo help  						# 查看帮助</span><br><span class="line">hexo version  						# 查看Hexo的版本</span><br><span class="line"></span><br><span class="line">hexo clean						# 清理缓存</span><br><span class="line">hexo server 						# 开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）</span><br><span class="line">hexo generate 						# 生成静态页面至public目录</span><br><span class="line">hexo deploy 						# 部署到GitHub</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-2-缩写"><a href="#5-2-缩写" class="headerlink" title="5.2 缩写"></a>5.2 缩写</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n &#x3D;&#x3D; hexo new</span><br><span class="line">hexo g &#x3D;&#x3D; hexo generate</span><br><span class="line">hexo s &#x3D;&#x3D; hexo server</span><br><span class="line">hexo d &#x3D;&#x3D; hexo deploy</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-3-组合"><a href="#5-3-组合" class="headerlink" title="5.3 组合"></a>5.3 组合</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s -g 						#生成并本地预览</span><br><span class="line">hexo d -g 						#生成并上传</span><br></pre></td></tr></table></figure>
-
-<h2 id="六、HEXO卸载与重装"><a href="#六、HEXO卸载与重装" class="headerlink" title="六、HEXO卸载与重装"></a>六、HEXO卸载与重装</h2><h3 id="6-1-卸载hexo"><a href="#6-1-卸载hexo" class="headerlink" title="6.1 卸载hexo"></a>6.1 卸载hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-2-卸载hexo客户端"><a href="#6-2-卸载hexo客户端" class="headerlink" title="6.2 卸载hexo客户端"></a>6.2 卸载hexo客户端</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<h3 id="6-3-进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。"><a href="#6-3-进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。" class="headerlink" title="6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。"></a>6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。</h3><br>
-
-
-
+<h3 id="3-2-本地访问">3.2 本地访问</h3>
+<ul>
+<li>
+<p>控制台输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean		# 清理缓存</span><br><span class="line">hexo s			# 启动服务，本地访问</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>hexo s</code> 是开启本地预览服务，打开浏览器访问 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容</p>
+</li>
+</ul>
+<h2 id="四、配置站点信息">四、配置站点信息</h2>
+<h3 id="4-1-配置-Hexo-网站相关信息">4.1 配置 Hexo 网站相关信息</h3>
+<ul>
+<li>
+<p>找到根目录下的 <code>_config.yml</code> 文件（以下统称为站点配置文件）并打开</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site (设置)</span><br><span class="line">title: 小四先生の博客				# 网站标题</span><br><span class="line">subtitle: &#39;记录生活中的点点滴滴&#39;			# 网站副标题</span><br><span class="line">description: &#39;生命不息 奋斗不止&#39;			# 描述，介绍网站的</span><br><span class="line">keywords:                        		# 网站的关键字</span><br><span class="line">author: Mr.XiaoSi                		# 博主姓名</span><br><span class="line">language: zh-CN                  		# 语言：zh-CN 是简体中文</span><br><span class="line">timezone: &#39;Asia&#x2F;Shanghai&#39;        		# 时区</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="4-2-部署到github">4.2 部署到github</h3>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/u013778905/article/details/83501204">ssh key</a> 配置</p>
+</li>
+<li>
+<p>找到站点配置文件 <code>_config.yml</code> 中的deploy的部分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:               					# git</span><br><span class="line">  type: &#39;git&#39;								</span><br><span class="line">  repo: &#39;git@github.com:zxiaosi&#x2F;Hexo.git&#39;		# github的ssh链接</span><br><span class="line">  branch: &#39;hexo&#39;					# 分支</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>安装部署插件（可在后面加上淘宝镜像）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>控制台输入以下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean			# 清理缓存</span><br><span class="line">hexo g				# 生成静态页面至public目录</span><br><span class="line">hexo d				# 部署到GitHub</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>部署之后，就可以通过 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://yourname.github.io">http://yourname.github.io</a> 访问到你的博客了</p>
+</li>
+</ul>
+<h2 id="五、常用hexo命令">五、常用hexo命令</h2>
+<h3 id="5-1-常见命令">5.1 常见命令</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; 					# 新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; 				# 新建页面</span><br><span class="line">hexo help  						# 查看帮助</span><br><span class="line">hexo version  						# 查看Hexo的版本</span><br><span class="line"></span><br><span class="line">hexo clean						# 清理缓存</span><br><span class="line">hexo server 						# 开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）</span><br><span class="line">hexo generate 						# 生成静态页面至public目录</span><br><span class="line">hexo deploy 						# 部署到GitHub</span><br></pre></td></tr></table></figure>
+<h3 id="5-2-缩写">5.2 缩写</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n &#x3D;&#x3D; hexo new</span><br><span class="line">hexo g &#x3D;&#x3D; hexo generate</span><br><span class="line">hexo s &#x3D;&#x3D; hexo server</span><br><span class="line">hexo d &#x3D;&#x3D; hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="5-3-组合">5.3 组合</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s -g 						#生成并本地预览</span><br><span class="line">hexo d -g 						#生成并上传</span><br></pre></td></tr></table></figure>
+<h2 id="六、HEXO卸载与重装">六、HEXO卸载与重装</h2>
+<h3 id="6-1-卸载hexo">6.1 卸载hexo</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo</span><br></pre></td></tr></table></figure>
+<h3 id="6-2-卸载hexo客户端">6.2 卸载hexo客户端</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="6-3-进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。">6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。</h3>
+<br>
 
     </div>
 
@@ -370,6 +407,26 @@
         <div style="text-align:center;color: #ccc;font-size:16px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
     
 </div>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/微信.png" alt="Mr.XiaoSi 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/支付宝.jpg" alt="Mr.XiaoSi 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
         
 
 <div>

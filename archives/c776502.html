@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <meta name="msvalidate.01" content="true">
   <meta name="baidu-site-verification" content="true">
@@ -25,12 +25,12 @@
     var CONFIG = {"hostname":"hexo.xiaosi.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="注意：  下面的配置每一项都需要 hexo clean 和 hexo s 来实现预览  站点配置文件 .&#x2F;_config.yml   主题配置文件 .&#x2F;source&#x2F;_data&#x2F;next.yml   1. 修改首页、归档页显示文章数量">
+  <meta name="description" content="注意：   下面的配置每一项都需要 hexo clean 和 hexo s 来实现预览   站点配置文件 .&#x2F;_config.yml   主题配置文件 .&#x2F;source&#x2F;_data&#x2F;next.yml   1. 修改首页、归档页显示文章数量">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-Next配置（进阶篇）">
 <meta property="og:url" content="https://hexo.xiaosi.world/archives/c776502.html">
 <meta property="og:site_name" content="小四先生の博客">
-<meta property="og:description" content="注意：  下面的配置每一项都需要 hexo clean 和 hexo s 来实现预览  站点配置文件 .&#x2F;_config.yml   主题配置文件 .&#x2F;source&#x2F;_data&#x2F;next.yml   1. 修改首页、归档页显示文章数量">
+<meta property="og:description" content="注意：   下面的配置每一项都需要 hexo clean 和 hexo s 来实现预览   站点配置文件 .&#x2F;_config.yml   主题配置文件 .&#x2F;source&#x2F;_data&#x2F;next.yml   1. 修改首页、归档页显示文章数量">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93.png">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BB%A3%E7%A0%81%E9%A2%9C%E8%89%B2.png">
@@ -313,202 +313,313 @@
       
         <p><font color="red"><strong>注意：</strong></font></p>
 <ol>
-<li><p>下面的配置每一项都需要 <code>hexo clean</code> 和 <code>hexo s</code> 来实现预览</p>
+<li>
+<p>下面的配置每一项都需要 <code>hexo clean</code> 和 <code>hexo s</code> 来实现预览</p>
 </li>
-<li><p>站点配置文件 <code>./_config.yml</code> </p>
+<li>
+<p>站点配置文件 <code>./_config.yml</code></p>
 </li>
-<li><p>主题配置文件 <code>./source/_data/next.yml</code></p>
+<li>
+<p>主题配置文件 <code>./source/_data/next.yml</code></p>
 </li>
 </ol>
-<h3 id="1-修改首页、归档页显示文章数量"><a href="#1-修改首页、归档页显示文章数量" class="headerlink" title="1. 修改首页、归档页显示文章数量"></a>1. 修改首页、归档页显示文章数量</h3><span id="more"></span>
-
+<h3 id="1-修改首页、归档页显示文章数量">1. 修改首页、归档页显示文章数量</h3>
+<span id="more"></span>
 <ul>
-<li><p>站点配置文件<code>_config.yml</code>里修改</p>
+<li>
+<p>站点配置文件<code>_config.yml</code>里修改</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">index_generator:	</span><br><span class="line">  path: &#39;&#39;</span><br><span class="line">  per_page: 10		# 首页显示文章数量</span><br><span class="line">  order_by: -date</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Pagination</span><br><span class="line">## Set per_page to 0 to disable pagination</span><br><span class="line">per_page: 10		# 归档页显示文章数量</span><br><span class="line">pagination_dir: page</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Pagination</span><br><span class="line">## Set per_page to 0 to disable pagination</span><br><span class="line">per_page: 10		# 归档页显示文章数量</span><br><span class="line">pagination_dir: page</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h3 id="2-中文字体"><a href="#2-中文字体" class="headerlink" title="2. 中文字体"></a>2. 中文字体</h3><ul>
-<li><p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">font:</span><br><span class="line">-  enable: false</span><br><span class="line">+  enable: true</span><br><span class="line"></span><br><span class="line">  host: https:&#x2F;&#x2F;fonts.loli.net</span><br><span class="line"></span><br><span class="line">  global:</span><br><span class="line">    external: true</span><br><span class="line">    family: Lato</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  title:</span><br><span class="line">    external: true</span><br><span class="line">    family:</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  headings:</span><br><span class="line">    external: true</span><br><span class="line">    family: Noto Serif SC</span><br><span class="line">    size:</span><br></pre></td></tr></table></figure></li>
-<li><p>新建<code> .\source_data\variables.styl</code> 文件，并添加下面代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 中文字体</span><br><span class="line">$font-family-monospace    &#x3D; consolas, Menlo, monospace, $font-family-base;</span><br><span class="line">$font-family-monospace    &#x3D; get_font_family(&#39;codes&#39;), consolas, Menlo, monospace, $font-family-base if get_font_family(&#39;codes&#39;);</span><br></pre></td></tr></table></figure></li>
-</ul>
+<h3 id="2-中文字体">2. 中文字体</h3>
 <ul>
-<li><p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>variable</code> 的注释</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #variable: source&#x2F;_data&#x2F;variables.styl</span><br><span class="line">+  variable: source&#x2F;_data&#x2F;variables.styl</span><br></pre></td></tr></table></figure></li>
-<li><p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93.png"></p>
+<li>
+<p>主题配置文件 <code>next.yml</code> 中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">font:</span><br><span class="line">-  enable: false</span><br><span class="line">+  enable: true</span><br><span class="line"></span><br><span class="line">  host: https:&#x2F;&#x2F;fonts.loli.net</span><br><span class="line"></span><br><span class="line">  global:</span><br><span class="line">    external: true</span><br><span class="line">    family: Lato</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  title:</span><br><span class="line">    external: true</span><br><span class="line">    family:</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  headings:</span><br><span class="line">    external: true</span><br><span class="line">    family: Noto Serif SC</span><br><span class="line">    size:</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>新建<code> .\source_data\variables.styl</code> 文件，并添加下面代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 中文字体</span><br><span class="line">$font-family-monospace    &#x3D; consolas, Menlo, monospace, $font-family-base;</span><br><span class="line">$font-family-monospace    &#x3D; get_font_family(&#39;codes&#39;), consolas, Menlo, monospace, $font-family-base if get_font_family(&#39;codes&#39;);</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>variable</code> 的注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #variable: source&#x2F;_data&#x2F;variables.styl</span><br><span class="line">+  variable: source&#x2F;_data&#x2F;variables.styl</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93.png" alt=""></p>
 </li>
 </ul>
-<h3 id="3-首页文章阴影边框"><a href="#3-首页文章阴影边框" class="headerlink" title="3. 首页文章阴影边框"></a>3. 首页文章阴影边框</h3><ul>
-<li><p>新建 <code>./source/_data/styles.styl</code> 文件，并在 <code>styles.styl</code> 添加如下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 文章阴影边框</span><br><span class="line">.post &#123;</span><br><span class="line">   margin-top: 0px;</span><br><span class="line">   margin-bottom: 60px;</span><br><span class="line">   padding: 25px;</span><br><span class="line">   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);</span><br><span class="line">   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>style</code> 的注释</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #style: source&#x2F;_data&#x2F;styles.styl</span><br><span class="line">+  style: source&#x2F;_data&#x2F;styles.styl</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="4-自定义单行代码颜色"><a href="#4-自定义单行代码颜色" class="headerlink" title="4. 自定义单行代码颜色"></a>4. 自定义单行代码颜色</h3><ul>
-<li><p>在 <code>./source/_data/styles.styl</code> 中添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">code &#123;</span><br><span class="line">    color: #ff511A;</span><br><span class="line">    &#x2F;&#x2F;background: #fbf7f8;</span><br><span class="line">    margin: 2px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BB%A3%E7%A0%81%E9%A2%9C%E8%89%B2.png"></p>
-</li>
-</ul>
-<h3 id="5-文章末尾添加本文结束分割线"><a href="#5-文章末尾添加本文结束分割线" class="headerlink" title="5. 文章末尾添加本文结束分割线"></a>5. 文章末尾添加本文结束分割线</h3><ul>
-<li><p>新建 <code>./source/_data/post-body-end.swig</code> 文件，并在 <code>post-body-end.swig</code> 添加内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div style&#x3D;&quot;text-align:center;color: #ccc;font-size:14px;&quot;&gt;-------------本文结束&lt;i class&#x3D;&quot;fa fa-paw&quot;&gt;&lt;&#x2F;i&gt;感谢您的阅读-------------&lt;&#x2F;div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>postBodyEnd</code> 的注释</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #postBodyEnd: source&#x2F;_data&#x2F;post-body-end.swig</span><br><span class="line">+  postBodyEnd: source&#x2F;_data&#x2F;post-body-end.swig</span><br></pre></td></tr></table></figure></li>
-<li><p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E6%84%9F%E8%B0%A2%E9%98%85%E8%AF%BB.png"></p>
-</li>
-</ul>
-<h3 id="6-圆角设置、中文字体设置"><a href="#6-圆角设置、中文字体设置" class="headerlink" title="6. 圆角设置、中文字体设置"></a>6. 圆角设置、中文字体设置</h3><ul>
-<li><p>在自定义样式文件 <code>.\source\_data\variables.styl</code> 中添加：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 圆角设置</span><br><span class="line">$border-radius-inner     &#x3D; 20px 20px 20px 20px;</span><br><span class="line">$border-radius           &#x3D; 20px;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="7-鼠标点击特效"><a href="#7-鼠标点击特效" class="headerlink" title="7. 鼠标点击特效"></a>7. 鼠标点击特效</h3><ul>
-<li><p>新建 <code>./source/_data/body-end.swig</code> 文件，并将以下代码 <code>body-end.swig</code> 文件中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 鼠标点击特效 #&#125;</span><br><span class="line">&#123;% if theme.cursor_effect &#x3D;&#x3D; &quot;fireworks&quot; %&#125;</span><br><span class="line">  &lt;script async src&#x3D;&quot;&#x2F;js&#x2F;cursor&#x2F;fireworks.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&#123;% elseif theme.cursor_effect &#x3D;&#x3D; &quot;explosion&quot; %&#125;</span><br><span class="line">  &lt;canvas class&#x3D;&quot;fireworks&quot; style&#x3D;&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;&#x2F;canvas&gt;</span><br><span class="line">  &lt;script src&#x3D;&quot;&#x2F;&#x2F;cdn.bootcss.com&#x2F;animejs&#x2F;2.2.0&#x2F;anime.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;script async src&#x3D;&quot;&#x2F;js&#x2F;cursor&#x2F;explosion.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&#123;% elseif theme.cursor_effect &#x3D;&#x3D; &quot;love&quot; %&#125;</span><br><span class="line">  &lt;script async src&#x3D;&quot;&#x2F;js&#x2F;cursor&#x2F;love.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&#123;% elseif theme.cursor_effect &#x3D;&#x3D; &quot;text&quot; %&#125;</span><br><span class="line">  &lt;script async src&#x3D;&quot;&#x2F;js&#x2F;cursor&#x2F;text.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>bodyEnd</code> 的注释</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #bodyEnd: source&#x2F;_data&#x2F;body-end.swig</span><br><span class="line">+  bodyEnd: source&#x2F;_data&#x2F;body-end.swig</span><br></pre></td></tr></table></figure></li>
-<li><p>然后在主题配置文件 <code>next.yml</code> 中增加如下配置项</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 鼠标点击特效</span><br><span class="line"># mouse click effect: fireworks | explosion | love | text</span><br><span class="line">cursor_effect: fireworks</span><br></pre></td></tr></table></figure></li>
-<li><p><font color="red">注意：</font>下面所有特效的JS代码文件都放在站点的source目录下（即 <code>./source/js/cursor/</code>）而不是主题目录下（如果没有 <code>js/cursor</code> 目录，则新建一个）</p>
+<h3 id="3-首页文章阴影边框">3. 首页文章阴影边框</h3>
 <ul>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/fireworks.js">fireworks.js</a></p>
+<li>
+<p>新建 <code>./source/_data/styles.styl</code> 文件，并在 <code>styles.styl</code> 添加如下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 文章阴影边框</span><br><span class="line">.post &#123;</span><br><span class="line">   margin-top: 0px;</span><br><span class="line">   margin-bottom: 60px;</span><br><span class="line">   padding: 25px;</span><br><span class="line">   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);</span><br><span class="line">   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/explosion.js">explosion.js</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/love.js">love.js</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/text.js">text.js</a></p>
-</li>
-</ul>
+<li>
+<p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>style</code> 的注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #style: source&#x2F;_data&#x2F;styles.styl</span><br><span class="line">+  style: source&#x2F;_data&#x2F;styles.styl</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="8-近期文章（侧边栏）"><a href="#8-近期文章（侧边栏）" class="headerlink" title="8. 近期文章（侧边栏）"></a>8. 近期文章（侧边栏）</h3><ul>
-<li><p>新建 <code>./source/_data/sidebar.swig</code> 文件，并把下面的代码放到 <code>sidebar.swig</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.recent_posts %&#125;</span><br><span class="line">    &lt;div class&#x3D;&quot;links-of-blogroll motion-element &#123;&#123; &quot;links-of-blogroll-&quot; + theme.recent_posts_layout  &#125;&#125;&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;links-of-blogroll-title&quot;&gt;</span><br><span class="line">        &lt;!-- modify icon to fire by szw --&gt;</span><br><span class="line">        &lt;i class&#x3D;&quot;fa fa-history fa-&#123;&#123; theme.recent_posts_icon | lower &#125;&#125;&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">        &#123;&#123; theme.recent_posts_title &#125;&#125;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;ul class&#x3D;&quot;links-of-blogroll-list&quot;&gt;</span><br><span class="line">        &#123;% set posts &#x3D; site.posts.sort(&#39;-date&#39;).toArray() %&#125;</span><br><span class="line">        &#123;% for post in posts.slice(&#39;0&#39;, &#39;5&#39;) %&#125;</span><br><span class="line">          &lt;li&gt;</span><br><span class="line">            &lt;a href&#x3D;&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot; title&#x3D;&quot;&#123;&#123; post.title &#125;&#125;&quot; target&#x3D;&quot;_blank&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;&#x2F;a&gt;</span><br><span class="line">          &lt;&#x2F;li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">      &lt;&#x2F;ul&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>这是因为 NexT 已经更换 Nunjucks 作为模板引擎</p>
-</li>
-<li><p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>sidebar</code> 的注释</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #sidebar: source&#x2F;_data&#x2F;sidebar.swig</span><br><span class="line">+  sidebar: source&#x2F;_data&#x2F;sidebar.swig</span><br></pre></td></tr></table></figure></li>
-<li><p>最后，为了配置方便，在主题配置文件 <code>next.yml</code> 中添加了几个变量，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">recent_posts_title: 近期文章</span><br><span class="line">recent_posts_layout: block</span><br><span class="line">recent_posts: true</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E8%BF%91%E6%9C%9F%E6%96%87%E7%AB%A0.png"></p>
-</li>
-</ul>
-<h3 id="8-去掉顶部黑线"><a href="#8-去掉顶部黑线" class="headerlink" title="8. 去掉顶部黑线"></a>8. 去掉顶部黑线</h3><ul>
-<li><p>在自定义样式文件 <code>.\source\_data\variables.styl</code> 中添加：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;去掉顶部黑线：</span><br><span class="line">.headband &#123;display:none;&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="9-修改链接文字样式"><a href="#9-修改链接文字样式" class="headerlink" title="9. 修改链接文字样式"></a>9. 修改链接文字样式</h3><ul>
-<li><p>在自定义样式文件 <code>.\source\_data\variables.styl</code> 中添加：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 文章内链接文本样式</span><br><span class="line">if hexo-config(&quot;custom_css.post_body_a.enable&quot;)</span><br><span class="line">  .post-body </span><br><span class="line">    a:not(.btn)&#123;</span><br><span class="line">      color: convert(hexo-config(&quot;custom_css.post_body_a.normal_color&quot;));</span><br><span class="line">      border-bottom: none;</span><br><span class="line">      &amp;:hover &#123;</span><br><span class="line">        color: convert(hexo-config(&quot;custom_css.post_body_a.hover_color&quot;));</span><br><span class="line">        text-decoration: underline;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>在主题配置文件 <code>next.yml</code>，新增配置项：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 文章内链接文本样式</span><br><span class="line">custom_css:</span><br><span class="line">  # the style of post body link</span><br><span class="line">  post_body_a:</span><br><span class="line">    enable: true			# 是否启用</span><br><span class="line">    normal_color: &quot;#0593d3&quot;		# 正常颜色</span><br><span class="line">    hover_color: &quot;#ff106c&quot;		# 鼠标放上去的颜色</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E9%93%BE%E6%8E%A5%E6%A0%B7%E5%BC%8F.png"></p>
-</li>
-</ul>
-<h3 id="10-网站底部添加网站运行时间"><a href="#10-网站底部添加网站运行时间" class="headerlink" title="10. 网站底部添加网站运行时间"></a>10. 网站底部添加网站运行时间</h3><ul>
-<li><p>新建 <code>.\source\_data\footer.swig</code> 文件，并在 <code>footer.swig</code> 中添加下面代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 网站运行时间的设置 --&gt;</span><br><span class="line">&lt;span id&#x3D;&quot;timeDate&quot;&gt;载入天数...&lt;&#x2F;span&gt;</span><br><span class="line">&lt;span id&#x3D;&quot;times&quot;&gt;载入时分秒...&lt;&#x2F;span&gt; </span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var now &#x3D; new Date();</span><br><span class="line">    function createtime() &#123;</span><br><span class="line">        var grt&#x3D; new Date(&quot;03&#x2F;01&#x2F;2021 00:00:00&quot;);&#x2F;&#x2F;此处修改你的建站时间或者网站上线时间</span><br><span class="line">        now.setTime(now.getTime()+250);</span><br><span class="line">        days &#x3D; (now - grt ) &#x2F; 1000 &#x2F; 60 &#x2F; 60 &#x2F; 24; dnum &#x3D; Math.floor(days);</span><br><span class="line">        hours &#x3D; (now - grt ) &#x2F; 1000 &#x2F; 60 &#x2F; 60 - (24 * dnum); hnum &#x3D; Math.floor(hours);</span><br><span class="line">        if(String(hnum).length &#x3D;&#x3D;1 )&#123;hnum &#x3D; &quot;0&quot; + hnum;&#125; minutes &#x3D; (now - grt ) &#x2F; 1000 &#x2F;60 - (24 * 60 * dnum) - (60 * hnum);</span><br><span class="line">        mnum &#x3D; Math.floor(minutes); if(String(mnum).length &#x3D;&#x3D;1 )&#123;mnum &#x3D; &quot;0&quot; + mnum;&#125;</span><br><span class="line">        seconds &#x3D; (now - grt ) &#x2F; 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);</span><br><span class="line">        snum &#x3D; Math.round(seconds); if(String(snum).length &#x3D;&#x3D;1 )&#123;snum &#x3D; &quot;0&quot; + snum;&#125;</span><br><span class="line">        document.getElementById(&quot;timeDate&quot;).innerHTML &#x3D; &quot;本站已安全运行 &quot;+dnum+&quot; 天 &quot;;</span><br><span class="line">        document.getElementById(&quot;times&quot;).innerHTML &#x3D; hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;;</span><br><span class="line">&#125;</span><br><span class="line">setInterval(&quot;createtime()&quot;,250);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>footer</code> 的注释：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #footer: source&#x2F;_data&#x2F;footer.swig</span><br><span class="line">+  footer: source&#x2F;_data&#x2F;footer.swig</span><br></pre></td></tr></table></figure></li>
-<li><p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4.png"></p>
-</li>
-</ul>
-<h3 id="11-粒子时钟"><a href="#11-粒子时钟" class="headerlink" title="11. 粒子时钟"></a>11. 粒子时钟</h3><ul>
-<li><p>下载 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/clock.swig">clock.swig</a> 文件，然后将其放在 <code>.\themes\next\layout</code> 下。</p>
-</li>
-<li><p>打开 <code>./theme/next/layout/_macro/sidebar.swig</code>，修改代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">      &#123;%- if theme.back2top.enable and theme.back2top.sidebar %&#125;</span><br><span class="line">        &lt;div class&#x3D;&quot;back-to-top motion-element&quot;&gt;</span><br><span class="line">          &lt;i class&#x3D;&quot;fa fa-arrow-up&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">          &lt;span&gt;0%&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">      &#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">+     &#123;% include &#39;..&#x2F;clock.swig&#39; %&#125;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;aside&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;sidebar-dimmer&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endmacro %&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E7%B2%92%E5%AD%90%E6%97%B6%E9%92%9F.png"></p>
-</li>
-</ul>
-<h3 id="12-评论"><a href="#12-评论" class="headerlink" title="12. 评论"></a>12. 评论</h3><ul>
-<li><p> 获取 APP id 和 APP key</p>
-</li>
-<li><p>你可以点击 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.leancloud.cn/">LeanCloud</a> ，注册登录，进入控制台后点击创建应用。(注意右上角选择 <code>国际版</code>)</p>
-</li>
-<li><p>进入刚刚创建的应用，选择设置 &gt; 应用Keys，就能看到你的 APP ID 和 APP Key</p>
-</li>
-<li><p>修改主题配置文件 <code>next.yml</code></p>
+<h3 id="4-自定义单行代码颜色">4. 自定义单行代码颜色</h3>
 <ul>
-<li><p>搜索关键字：<code>Valine</code></p>
+<li>
+<p>在 <code>./source/_data/styles.styl</code> 中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">code &#123;</span><br><span class="line">    color: #ff511A;</span><br><span class="line">    &#x2F;&#x2F;background: #fbf7f8;</span><br><span class="line">    margin: 2px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>注意<code>guest_info</code>这一栏，删除link，评论框就没有网址选项</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">valine:</span><br><span class="line"> enable: true 				# 开启评论功能</span><br><span class="line"> appid:  				# 填入刚刚获取的APP ID</span><br><span class="line"> appkey: 				# 填入刚刚获取的APP key</span><br><span class="line"> notify: false 				# 邮件通知默认关闭</span><br><span class="line"> verify: false 				# 验证码默认关闭</span><br><span class="line"> placeholder: 在这里写下你的评论吧！ 	# 评论框默认文字</span><br><span class="line"> avatar: wavatar 			# 头像风格</span><br><span class="line"> guest_info: nick,mail 			#,link # Custom comment header</span><br><span class="line"> pageSize: 10 				# Pagination size</span><br><span class="line"> language: 				# Language, available values: en, zh-cn</span><br><span class="line"> visitor: false 			# leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors&#39; for counter compatibility. Article reading statistic https:&#x2F;&#x2F;valine.js.org&#x2F;visitor.html</span><br><span class="line"> comment_count: false 			# If false, comment count will only be displayed in post page, not in home page</span><br><span class="line"> recordIP: false 			# 是否记录IP</span><br><span class="line"> serverURLs: 				# When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)</span><br><span class="line"> #post_meta_order: 0</span><br></pre></td></tr></table></figure></li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BB%A3%E7%A0%81%E9%A2%9C%E8%89%B2.png" alt=""></p>
+</li>
 </ul>
-</li>
-<li><p>valine评论标题改中文</p>
+<h3 id="5-文章末尾添加本文结束分割线">5. 文章末尾添加本文结束分割线</h3>
 <ul>
-<li><p>打开 <code>.\themes\next\languages\zh-CN.yml</code> ，在post标签下添加如下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">comments:</span><br><span class="line">    valine: 评论数 # 这里的中文随便自己定义</span><br></pre></td></tr></table></figure></li>
-</ul>
+<li>
+<p>新建 <code>./source/_data/post-body-end.swig</code> 文件，并在 <code>post-body-end.swig</code> 添加内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div style&#x3D;&quot;text-align:center;color: #ccc;font-size:14px;&quot;&gt;-------------本文结束&lt;i class&#x3D;&quot;fa fa-paw&quot;&gt;&lt;&#x2F;i&gt;感谢您的阅读-------------&lt;&#x2F;div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hjxlog.com/posts/20191203a1.html">valine评论不显示浏览器版本和操作系统版本（可选）</a></p>
+<li>
+<p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>postBodyEnd</code> 的注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #postBodyEnd: source&#x2F;_data&#x2F;post-body-end.swig</span><br><span class="line">+  postBodyEnd: source&#x2F;_data&#x2F;post-body-end.swig</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<h3 id="13-1-彩色标签页"><a href="#13-1-彩色标签页" class="headerlink" title="13.1 彩色标签页"></a>13.1 彩色标签页</h3><ul>
-<li><p>下载在 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/tag-color-1.swig">tag-color.swig</a> 文件，并将其放在 <code>.\themes\next\layout</code> 下。</p>
-</li>
-<li><p>打开 <code>./theme/next/layout/page.swig</code>，搜索<code>&lt;div class=&quot;tag-cloud-title&quot;&gt;</code>，修改代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">      &lt;div class&#x3D;&quot;post-body&#123;%- if page.direction and page.direction.toLowerCase() &#x3D;&#x3D;&#x3D; &#39;rtl&#39; %&#125; rtl&#123;%- endif %&#125;&quot;&gt;</span><br><span class="line">        &#123;%- if page.type &#x3D;&#x3D;&#x3D; &#39;tags&#39; %&#125;</span><br><span class="line">          &lt;div class&#x3D;&quot;tag-cloud&quot;&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;tag-cloud-title&quot;&gt;</span><br><span class="line">              &#123;&#123; _p(&#39;counter.tag_cloud&#39;, site.tags.length) &#125;&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;tag-cloud-tags&quot;&gt;</span><br><span class="line">              &#123;&#123; tagcloud(&#123;</span><br><span class="line">                min_font   : theme.tagcloud.min,</span><br><span class="line">                max_font   : theme.tagcloud.max,</span><br><span class="line">                amount     : theme.tagcloud.amount,</span><br><span class="line">-                color      : true,</span><br><span class="line">+                color      : false,</span><br><span class="line">                start_color: theme.tagcloud.start,</span><br><span class="line">                end_color  : theme.tagcloud.end&#125;)</span><br><span class="line">              &#125;&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">+       &#123;% include &#39;tag-color.swig&#39; %&#125;  </span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览（标签页）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE.png"></p>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E6%84%9F%E8%B0%A2%E9%98%85%E8%AF%BB.png" alt=""></p>
 </li>
 </ul>
-<h3 id="13-2-彩色标签页（补）"><a href="#13-2-彩色标签页（补）" class="headerlink" title="13.2 彩色标签页（补）"></a>13.2 彩色标签页（补）</h3><ul>
-<li><p>下载在 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/tag-color-2.swig">tag-color.swig</a> 文件，并将其放在 <code>.\themes\next\layout</code> 下。</p>
-</li>
-<li><p>打开 <code>./theme/next/layout/page.swig</code>，搜索<code>&lt;div class=&quot;tag-cloud-title&quot;&gt;</code>，修改代码如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">      &lt;div class&#x3D;&quot;post-body&#123;%- if page.direction and page.direction.toLowerCase() &#x3D;&#x3D;&#x3D; &#39;rtl&#39; %&#125; rtl&#123;%- endif %&#125;&quot;&gt;</span><br><span class="line">        &#123;%- if page.type &#x3D;&#x3D;&#x3D; &#39;tags&#39; %&#125;</span><br><span class="line">          &lt;div class&#x3D;&quot;tag-cloud&quot;&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;tag-cloud-title&quot;&gt;</span><br><span class="line">              &#123;&#123; _p(&#39;counter.tag_cloud&#39;, site.tags.length) &#125;&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;tag-cloud-tags&quot;&gt;</span><br><span class="line">              &#123;&#123; tagcloud(&#123;</span><br><span class="line">                min_font   : theme.tagcloud.min,</span><br><span class="line">                max_font   : theme.tagcloud.max,</span><br><span class="line">                amount     : theme.tagcloud.amount,</span><br><span class="line">                color      : true,</span><br><span class="line">                start_color: theme.tagcloud.start,</span><br><span class="line">                end_color  : theme.tagcloud.end&#125;)</span><br><span class="line">              &#125;&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">+       &#123;% include &#39;tag-color.swig&#39; %&#125;  </span><br></pre></td></tr></table></figure></li>
-<li><p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B51.png"></p>
+<h3 id="6-圆角设置、中文字体设置">6. 圆角设置、中文字体设置</h3>
+<ul>
+<li>
+<p>在自定义样式文件 <code>.\source\_data\variables.styl</code> 中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 圆角设置</span><br><span class="line">$border-radius-inner     &#x3D; 20px 20px 20px 20px;</span><br><span class="line">$border-radius           &#x3D; 20px;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="14-在文章底部添加彩色标签"><a href="#14-在文章底部添加彩色标签" class="headerlink" title="14. 在文章底部添加彩色标签"></a>14. 在文章底部添加彩色标签</h3><ul>
-<li><p>打开<code>.\themes\next\layout_macro\post.swig</code> 文件，搜索<code>for tag in post.tags.toArray()</code> ，在下面添加我们之前写好的黄金分割生成的随机颜色代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"> &lt;div class&#x3D;&quot;post-tags&quot;&gt;</span><br><span class="line">            &#123;%- for tag in post.tags.toArray() %&#125;</span><br><span class="line">              &lt;a href&#x3D;&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel&#x3D;&quot;tag&quot;&gt;&lt;i class&#x3D;&quot;fa fa-tag&quot;&gt;&lt;&#x2F;i&gt; &#123;&#123; tag.name &#125;&#125;&lt;&#x2F;a&gt;</span><br><span class="line">            &#123;%- endfor %&#125;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">          </span><br><span class="line">+         &lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">+           var tagsall&#x3D;document.getElementsByClassName(&quot;post-tags&quot;)</span><br><span class="line">+           for (var i &#x3D; tagsall.length - 1; i &gt;&#x3D; 0; i--)&#123;</span><br><span class="line">                var tags&#x3D;tagsall[i].getElementsByTagName(&quot;a&quot;);</span><br><span class="line">                for (var j &#x3D; tags.length - 1; j &gt;&#x3D; 0; j--) &#123;</span><br><span class="line">                    var golden_ratio &#x3D; 0.618033988749895;</span><br><span class="line">                    var s &#x3D; 0.5;</span><br><span class="line">                    var v &#x3D; 0.999;</span><br><span class="line">                    var h &#x3D; golden_ratio + Math.random()*0.8 - 0.5;</span><br><span class="line">                    var h_i &#x3D; parseInt(h * 6);</span><br><span class="line">                    var f &#x3D; h * 6 - h_i;</span><br><span class="line">                    var p &#x3D; v * (1 - s);</span><br><span class="line">                    var q &#x3D; v * (1 - f * s);</span><br><span class="line">                    var t &#x3D; v * (1 - (1 - f) * s);</span><br><span class="line">                    var r, g, b;</span><br><span class="line">                    switch (h_i) &#123;</span><br><span class="line">                        case 0:</span><br><span class="line">                            r &#x3D; v;</span><br><span class="line">                            g &#x3D; t;</span><br><span class="line">                            b &#x3D; p;</span><br><span class="line">                            break;</span><br><span class="line">                        case 1:</span><br><span class="line">                            r &#x3D; q;</span><br><span class="line">                            g &#x3D; v;</span><br><span class="line">                            b &#x3D; p;</span><br><span class="line">                            break;</span><br><span class="line">                        case 2:</span><br><span class="line">                            r &#x3D; p;</span><br><span class="line">                            g &#x3D; v;</span><br><span class="line">                            b &#x3D; t;</span><br><span class="line">                            break;</span><br><span class="line">                        case 3 :</span><br><span class="line">                            r &#x3D; p;</span><br><span class="line">                            g &#x3D; q;</span><br><span class="line">                            b &#x3D; v;</span><br><span class="line">                            break;</span><br><span class="line">                        case 4:</span><br><span class="line">                            r &#x3D; t;</span><br><span class="line">                            g &#x3D; p;</span><br><span class="line">                            b &#x3D; v;</span><br><span class="line">                            break;</span><br><span class="line">                        case 5:</span><br><span class="line">                            r &#x3D; v;</span><br><span class="line">                            g &#x3D; p;</span><br><span class="line">                            b &#x3D; q;</span><br><span class="line">                            break;</span><br><span class="line">                        default:</span><br><span class="line">                            r &#x3D; 1;</span><br><span class="line">                            g &#x3D; 1;</span><br><span class="line">                            b &#x3D; 1;</span><br><span class="line">                      &#125;</span><br><span class="line">                    tags[j].style.background &#x3D; &quot;rgba(&quot;+parseInt(r*255)+&quot;,&quot;+parseInt(g*255)+&quot;,&quot;+parseInt(b*255)+&quot;,&quot;+0.5+&quot;)&quot;;</span><br><span class="line">+               &#125;</span><br><span class="line">+           &#125;                        </span><br><span class="line">+           &lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>在自定义样式文件 <code>.\source\_data\style.styl</code> 中添加：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;文章底部彩色标签样式</span><br><span class="line">.posts-expand .post-tags a &#123;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    font-size: 0.8em;</span><br><span class="line">    padding: 0px 10px;</span><br><span class="line">    border-radius: 8px;</span><br><span class="line">    color: rgb(85, 85, 85);</span><br><span class="line">    border: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E6%96%87%E7%AB%A0%E5%BA%95%E9%83%A8%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE.png"></p>
+<h3 id="7-鼠标点击特效">7. 鼠标点击特效</h3>
+<ul>
+<li>
+<p>新建 <code>./source/_data/body-end.swig</code> 文件，并将以下代码 <code>body-end.swig</code> 文件中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 鼠标点击特效 #&#125;</span><br><span class="line">&#123;% if theme.cursor_effect &#x3D;&#x3D; &quot;fireworks&quot; %&#125;</span><br><span class="line">  &lt;script async src&#x3D;&quot;&#x2F;js&#x2F;cursor&#x2F;fireworks.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&#123;% elseif theme.cursor_effect &#x3D;&#x3D; &quot;explosion&quot; %&#125;</span><br><span class="line">  &lt;canvas class&#x3D;&quot;fireworks&quot; style&#x3D;&quot;position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;&quot; &gt;&lt;&#x2F;canvas&gt;</span><br><span class="line">  &lt;script src&#x3D;&quot;&#x2F;&#x2F;cdn.bootcss.com&#x2F;animejs&#x2F;2.2.0&#x2F;anime.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;script async src&#x3D;&quot;&#x2F;js&#x2F;cursor&#x2F;explosion.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&#123;% elseif theme.cursor_effect &#x3D;&#x3D; &quot;love&quot; %&#125;</span><br><span class="line">  &lt;script async src&#x3D;&quot;&#x2F;js&#x2F;cursor&#x2F;love.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&#123;% elseif theme.cursor_effect &#x3D;&#x3D; &quot;text&quot; %&#125;</span><br><span class="line">  &lt;script async src&#x3D;&quot;&#x2F;js&#x2F;cursor&#x2F;text.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>bodyEnd</code> 的注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #bodyEnd: source&#x2F;_data&#x2F;body-end.swig</span><br><span class="line">+  bodyEnd: source&#x2F;_data&#x2F;body-end.swig</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后在主题配置文件 <code>next.yml</code> 中增加如下配置项</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 鼠标点击特效</span><br><span class="line"># mouse click effect: fireworks | explosion | love | text</span><br><span class="line">cursor_effect: fireworks</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><font color="red">注意：</font>下面所有特效的JS代码文件都放在站点的source目录下（即 <code>./source/js/cursor/</code>）而不是主题目录下（如果没有 <code>js/cursor</code> 目录，则新建一个）</p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/fireworks.js">fireworks.js</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/explosion.js">explosion.js</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/love.js">love.js</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/text.js">text.js</a></p>
 </li>
 </ul>
-<h3 id="15-简体繁体切换"><a href="#15-简体繁体切换" class="headerlink" title="15. 简体繁体切换"></a>15. 简体繁体切换</h3><ul>
-<li><p>首先，我们可以在<a target="_blank" rel="noopener external nofollow noreferrer" href="https://tding.top/js/tw_cn.js">这里</a>右键另存下载简繁字体切换所需的 <code>tw_cn.js</code> 文件，我们把这个文件放到 <code>./source/js</code> 文件夹下</p>
-</li>
-<li><p>修改模板，在我们想要显示简繁转换按钮的地方添加如下代码。例如，我在 NexT 主题的布局文件 <code>./source/_data/footer.swig</code> 里添加了如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;translate-style&quot;&gt;</span><br><span class="line">繁&#x2F;简：&lt;a id&#x3D;&quot;translateLink&quot; href&#x3D;&quot;javascript:translatePage();&quot;&gt;繁体</span><br><span class="line">&lt;&#x2F;a&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;tw_cn.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">var defaultEncoding &#x3D; 2; &#x2F;&#x2F;网站编写字体是否繁体，1-繁体，2-简体</span><br><span class="line">var translateDelay &#x3D; 0; &#x2F;&#x2F;延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0</span><br><span class="line">var cookieDomain &#x3D; &quot;https:&#x2F;&#x2F;tding.top&#x2F;&quot;; &#x2F;&#x2F;Cookie地址, 一定要设定, 通常为你的网址</span><br><span class="line">var msgToTraditionalChinese &#x3D; &quot;繁体&quot;; &#x2F;&#x2F;此处可以更改为你想要显示的文字</span><br><span class="line">var msgToSimplifiedChinese &#x3D; &quot;简体&quot;; &#x2F;&#x2F;同上，但两处均不建议更改</span><br><span class="line">var translateButtonId &#x3D; &quot;translateLink&quot;; &#x2F;&#x2F;默认互换id</span><br><span class="line">translateInitilization();</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E7%AE%80%E4%BD%93%E7%B9%81%E4%BD%93.png"></p>
 </li>
 </ul>
-<h3 id="16-网易云音乐"><a href="#16-网易云音乐" class="headerlink" title="16. 网易云音乐"></a>16. 网易云音乐</h3><ul>
-<li><p>首先在网页搜索网易云音乐，选择音乐，并生成外链</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90.png"></p>
+<h3 id="8-近期文章（侧边栏）">8. 近期文章（侧边栏）</h3>
+<ul>
+<li>
+<p>新建 <code>./source/_data/sidebar.swig</code> 文件，并把下面的代码放到 <code>sidebar.swig</code> 中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.recent_posts %&#125;</span><br><span class="line">    &lt;div class&#x3D;&quot;links-of-blogroll motion-element &#123;&#123; &quot;links-of-blogroll-&quot; + theme.recent_posts_layout  &#125;&#125;&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;links-of-blogroll-title&quot;&gt;</span><br><span class="line">        &lt;!-- modify icon to fire by szw --&gt;</span><br><span class="line">        &lt;i class&#x3D;&quot;fa fa-history fa-&#123;&#123; theme.recent_posts_icon | lower &#125;&#125;&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">        &#123;&#123; theme.recent_posts_title &#125;&#125;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;ul class&#x3D;&quot;links-of-blogroll-list&quot;&gt;</span><br><span class="line">        &#123;% set posts &#x3D; site.posts.sort(&#39;-date&#39;).toArray() %&#125;</span><br><span class="line">        &#123;% for post in posts.slice(&#39;0&#39;, &#39;5&#39;) %&#125;</span><br><span class="line">          &lt;li&gt;</span><br><span class="line">            &lt;a href&#x3D;&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot; title&#x3D;&quot;&#123;&#123; post.title &#125;&#125;&quot; target&#x3D;&quot;_blank&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;&#x2F;a&gt;</span><br><span class="line">          &lt;&#x2F;li&gt;</span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">      &lt;&#x2F;ul&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>选择合适的宽高，是否自动播放，然后得到外链html代码</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E7%94%9F%E6%88%90%E9%93%BE%E6%8E%A5.png"></p>
+<li>
+<p>这是因为 NexT 已经更换 Nunjucks 作为模板引擎</p>
 </li>
-<li><p>打开 <code>.\source\_data\sidebar.swig</code> 文件，添加上面复制的外链html代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 网易云音乐 #&#125;</span><br><span class="line">&lt;iframe frameborder&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; width&#x3D;330 height&#x3D;86 src&#x3D;&quot;&#x2F;&#x2F;music.163.com&#x2F;outchain&#x2F;player?type&#x3D;2&amp;id&#x3D;536622304&amp;auto&#x3D;0&amp;height&#x3D;66&quot;&gt;&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>配合 <code>pjax</code> 实现音乐全局播放（切换页面不重新加载）</p>
+<li>
+<p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>sidebar</code> 的注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #sidebar: source&#x2F;_data&#x2F;sidebar.swig</span><br><span class="line">+  sidebar: source&#x2F;_data&#x2F;sidebar.swig</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>打开 <code>.\themes\next\layout\_layout.swig</code> 文件夹找到 <code>&lt;\head&gt;</code> 标签，在之前加下面代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;   &#x2F;&#x2F;粘贴到这里</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">+   &lt;!--pjax：防止跳转页面音乐暂停--&gt;</span><br><span class="line">+   &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;pjax@0.2.8&#x2F;pjax.js&quot;&gt;&lt;&#x2F;script&gt; </span><br><span class="line"></span><br><span class="line">&lt;&#x2F;head&gt; </span><br></pre></td></tr></table></figure></li>
-<li><p>在主题的配置文件 <code>next.yml</code> 中找到 <code>pajx</code> ，将它设置为<code>true</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  pjax: false</span><br><span class="line">+  pjax: true</span><br></pre></td></tr></table></figure></li>
+<li>
+<p>最后，为了配置方便，在主题配置文件 <code>next.yml</code> 中添加了几个变量，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">recent_posts_title: 近期文章</span><br><span class="line">recent_posts_layout: block</span><br><span class="line">recent_posts: true</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E8%BF%91%E6%9C%9F%E6%96%87%E7%AB%A0.png" alt=""></p>
+</li>
+</ul>
+<h3 id="8-去掉顶部黑线">8. 去掉顶部黑线</h3>
+<ul>
+<li>
+<p>在自定义样式文件 <code>.\source\_data\variables.styl</code> 中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;去掉顶部黑线：</span><br><span class="line">.headband &#123;display:none;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="9-修改链接文字样式">9. 修改链接文字样式</h3>
+<ul>
+<li>
+<p>在自定义样式文件 <code>.\source\_data\variables.styl</code> 中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 文章内链接文本样式</span><br><span class="line">if hexo-config(&quot;custom_css.post_body_a.enable&quot;)</span><br><span class="line">  .post-body </span><br><span class="line">    a:not(.btn)&#123;</span><br><span class="line">      color: convert(hexo-config(&quot;custom_css.post_body_a.normal_color&quot;));</span><br><span class="line">      border-bottom: none;</span><br><span class="line">      &amp;:hover &#123;</span><br><span class="line">        color: convert(hexo-config(&quot;custom_css.post_body_a.hover_color&quot;));</span><br><span class="line">        text-decoration: underline;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在主题配置文件 <code>next.yml</code>，新增配置项：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 文章内链接文本样式</span><br><span class="line">custom_css:</span><br><span class="line">  # the style of post body link</span><br><span class="line">  post_body_a:</span><br><span class="line">    enable: true			# 是否启用</span><br><span class="line">    normal_color: &quot;#0593d3&quot;		# 正常颜色</span><br><span class="line">    hover_color: &quot;#ff106c&quot;		# 鼠标放上去的颜色</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E9%93%BE%E6%8E%A5%E6%A0%B7%E5%BC%8F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="10-网站底部添加网站运行时间">10. 网站底部添加网站运行时间</h3>
+<ul>
+<li>
+<p>新建 <code>.\source\_data\footer.swig</code> 文件，并在 <code>footer.swig</code> 中添加下面代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 网站运行时间的设置 --&gt;</span><br><span class="line">&lt;span id&#x3D;&quot;timeDate&quot;&gt;载入天数...&lt;&#x2F;span&gt;</span><br><span class="line">&lt;span id&#x3D;&quot;times&quot;&gt;载入时分秒...&lt;&#x2F;span&gt; </span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var now &#x3D; new Date();</span><br><span class="line">    function createtime() &#123;</span><br><span class="line">        var grt&#x3D; new Date(&quot;03&#x2F;01&#x2F;2021 00:00:00&quot;);&#x2F;&#x2F;此处修改你的建站时间或者网站上线时间</span><br><span class="line">        now.setTime(now.getTime()+250);</span><br><span class="line">        days &#x3D; (now - grt ) &#x2F; 1000 &#x2F; 60 &#x2F; 60 &#x2F; 24; dnum &#x3D; Math.floor(days);</span><br><span class="line">        hours &#x3D; (now - grt ) &#x2F; 1000 &#x2F; 60 &#x2F; 60 - (24 * dnum); hnum &#x3D; Math.floor(hours);</span><br><span class="line">        if(String(hnum).length &#x3D;&#x3D;1 )&#123;hnum &#x3D; &quot;0&quot; + hnum;&#125; minutes &#x3D; (now - grt ) &#x2F; 1000 &#x2F;60 - (24 * 60 * dnum) - (60 * hnum);</span><br><span class="line">        mnum &#x3D; Math.floor(minutes); if(String(mnum).length &#x3D;&#x3D;1 )&#123;mnum &#x3D; &quot;0&quot; + mnum;&#125;</span><br><span class="line">        seconds &#x3D; (now - grt ) &#x2F; 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);</span><br><span class="line">        snum &#x3D; Math.round(seconds); if(String(snum).length &#x3D;&#x3D;1 )&#123;snum &#x3D; &quot;0&quot; + snum;&#125;</span><br><span class="line">        document.getElementById(&quot;timeDate&quot;).innerHTML &#x3D; &quot;本站已安全运行 &quot;+dnum+&quot; 天 &quot;;</span><br><span class="line">        document.getElementById(&quot;times&quot;).innerHTML &#x3D; hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;;</span><br><span class="line">&#125;</span><br><span class="line">setInterval(&quot;createtime()&quot;,250);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>footer</code> 的注释：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  #footer: source&#x2F;_data&#x2F;footer.swig</span><br><span class="line">+  footer: source&#x2F;_data&#x2F;footer.swig</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4.png" alt=""></p>
+</li>
+</ul>
+<h3 id="11-粒子时钟">11. 粒子时钟</h3>
+<ul>
+<li>
+<p>下载 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/clock.swig">clock.swig</a> 文件，然后将其放在 <code>.\themes\next\layout</code> 下。</p>
+</li>
+<li>
+<p>打开 <code>./theme/next/layout/_macro/sidebar.swig</code>，修改代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">      &#123;%- if theme.back2top.enable and theme.back2top.sidebar %&#125;</span><br><span class="line">        &lt;div class&#x3D;&quot;back-to-top motion-element&quot;&gt;</span><br><span class="line">          &lt;i class&#x3D;&quot;fa fa-arrow-up&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">          &lt;span&gt;0%&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">      &#123;%- endif %&#125;</span><br><span class="line"></span><br><span class="line">+     &#123;% include &#39;..&#x2F;clock.swig&#39; %&#125;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;aside&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;sidebar-dimmer&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endmacro %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E7%B2%92%E5%AD%90%E6%97%B6%E9%92%9F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="12-评论">12. 评论</h3>
+<ul>
+<li>
+<p>获取 APP id 和 APP key</p>
+</li>
+<li>
+<p>你可以点击 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.leancloud.cn/">LeanCloud</a> ，注册登录，进入控制台后点击创建应用。(注意右上角选择 <code>国际版</code>)</p>
+</li>
+<li>
+<p>进入刚刚创建的应用，选择设置 &gt; 应用Keys，就能看到你的 APP ID 和 APP Key</p>
+</li>
+<li>
+<p>修改主题配置文件 <code>next.yml</code></p>
+<ul>
+<li>
+<p>搜索关键字：<code>Valine</code></p>
+</li>
+<li>
+<p>注意<code>guest_info</code>这一栏，删除link，评论框就没有网址选项</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">valine:</span><br><span class="line"> enable: true 				# 开启评论功能</span><br><span class="line"> appid:  				# 填入刚刚获取的APP ID</span><br><span class="line"> appkey: 				# 填入刚刚获取的APP key</span><br><span class="line"> notify: false 				# 邮件通知默认关闭</span><br><span class="line"> verify: false 				# 验证码默认关闭</span><br><span class="line"> placeholder: 在这里写下你的评论吧！ 	# 评论框默认文字</span><br><span class="line"> avatar: wavatar 			# 头像风格</span><br><span class="line"> guest_info: nick,mail 			#,link # Custom comment header</span><br><span class="line"> pageSize: 10 				# Pagination size</span><br><span class="line"> language: 				# Language, available values: en, zh-cn</span><br><span class="line"> visitor: false 			# leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors&#39; for counter compatibility. Article reading statistic https:&#x2F;&#x2F;valine.js.org&#x2F;visitor.html</span><br><span class="line"> comment_count: false 			# If false, comment count will only be displayed in post page, not in home page</span><br><span class="line"> recordIP: false 			# 是否记录IP</span><br><span class="line"> serverURLs: 				# When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)</span><br><span class="line"> #post_meta_order: 0</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p>valine评论标题改中文</p>
+<ul>
+<li>
+<p>打开 <code>.\themes\next\languages\zh-CN.yml</code> ，在post标签下添加如下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">comments:</span><br><span class="line">    valine: 评论数 # 这里的中文随便自己定义</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hjxlog.com/posts/20191203a1.html">valine评论不显示浏览器版本和操作系统版本（可选）</a></p>
+</li>
+</ul>
+<h3 id="13-1-彩色标签页">13.1 彩色标签页</h3>
+<ul>
+<li>
+<p>下载在 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/tag-color-1.swig">tag-color.swig</a> 文件，并将其放在 <code>.\themes\next\layout</code> 下。</p>
+</li>
+<li>
+<p>打开 <code>./theme/next/layout/page.swig</code>，搜索<code>&lt;div class=&quot;tag-cloud-title&quot;&gt;</code>，修改代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">      &lt;div class&#x3D;&quot;post-body&#123;%- if page.direction and page.direction.toLowerCase() &#x3D;&#x3D;&#x3D; &#39;rtl&#39; %&#125; rtl&#123;%- endif %&#125;&quot;&gt;</span><br><span class="line">        &#123;%- if page.type &#x3D;&#x3D;&#x3D; &#39;tags&#39; %&#125;</span><br><span class="line">          &lt;div class&#x3D;&quot;tag-cloud&quot;&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;tag-cloud-title&quot;&gt;</span><br><span class="line">              &#123;&#123; _p(&#39;counter.tag_cloud&#39;, site.tags.length) &#125;&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;tag-cloud-tags&quot;&gt;</span><br><span class="line">              &#123;&#123; tagcloud(&#123;</span><br><span class="line">                min_font   : theme.tagcloud.min,</span><br><span class="line">                max_font   : theme.tagcloud.max,</span><br><span class="line">                amount     : theme.tagcloud.amount,</span><br><span class="line">-                color      : true,</span><br><span class="line">+                color      : false,</span><br><span class="line">                start_color: theme.tagcloud.start,</span><br><span class="line">                end_color  : theme.tagcloud.end&#125;)</span><br><span class="line">              &#125;&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">+       &#123;% include &#39;tag-color.swig&#39; %&#125;  </span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览（标签页）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE.png" alt=""></p>
+</li>
+</ul>
+<h3 id="13-2-彩色标签页（补）">13.2 彩色标签页（补）</h3>
+<ul>
+<li>
+<p>下载在 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/tag-color-2.swig">tag-color.swig</a> 文件，并将其放在 <code>.\themes\next\layout</code> 下。</p>
+</li>
+<li>
+<p>打开 <code>./theme/next/layout/page.swig</code>，搜索<code>&lt;div class=&quot;tag-cloud-title&quot;&gt;</code>，修改代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">      &lt;div class&#x3D;&quot;post-body&#123;%- if page.direction and page.direction.toLowerCase() &#x3D;&#x3D;&#x3D; &#39;rtl&#39; %&#125; rtl&#123;%- endif %&#125;&quot;&gt;</span><br><span class="line">        &#123;%- if page.type &#x3D;&#x3D;&#x3D; &#39;tags&#39; %&#125;</span><br><span class="line">          &lt;div class&#x3D;&quot;tag-cloud&quot;&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;tag-cloud-title&quot;&gt;</span><br><span class="line">              &#123;&#123; _p(&#39;counter.tag_cloud&#39;, site.tags.length) &#125;&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">            &lt;div class&#x3D;&quot;tag-cloud-tags&quot;&gt;</span><br><span class="line">              &#123;&#123; tagcloud(&#123;</span><br><span class="line">                min_font   : theme.tagcloud.min,</span><br><span class="line">                max_font   : theme.tagcloud.max,</span><br><span class="line">                amount     : theme.tagcloud.amount,</span><br><span class="line">                color      : true,</span><br><span class="line">                start_color: theme.tagcloud.start,</span><br><span class="line">                end_color  : theme.tagcloud.end&#125;)</span><br><span class="line">              &#125;&#125;</span><br><span class="line">            &lt;&#x2F;div&gt;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">+       &#123;% include &#39;tag-color.swig&#39; %&#125;  </span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE%E9%A1%B51.png" alt=""></p>
+</li>
+</ul>
+<h3 id="14-在文章底部添加彩色标签">14. 在文章底部添加彩色标签</h3>
+<ul>
+<li>
+<p>打开<code>.\themes\next\layout_macro\post.swig</code> 文件，搜索<code>for tag in post.tags.toArray()</code> ，在下面添加我们之前写好的黄金分割生成的随机颜色代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"> &lt;div class&#x3D;&quot;post-tags&quot;&gt;</span><br><span class="line">            &#123;%- for tag in post.tags.toArray() %&#125;</span><br><span class="line">              &lt;a href&#x3D;&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel&#x3D;&quot;tag&quot;&gt;&lt;i class&#x3D;&quot;fa fa-tag&quot;&gt;&lt;&#x2F;i&gt; &#123;&#123; tag.name &#125;&#125;&lt;&#x2F;a&gt;</span><br><span class="line">            &#123;%- endfor %&#125;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">          </span><br><span class="line">+         &lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">+           var tagsall&#x3D;document.getElementsByClassName(&quot;post-tags&quot;)</span><br><span class="line">+           for (var i &#x3D; tagsall.length - 1; i &gt;&#x3D; 0; i--)&#123;</span><br><span class="line">                var tags&#x3D;tagsall[i].getElementsByTagName(&quot;a&quot;);</span><br><span class="line">                for (var j &#x3D; tags.length - 1; j &gt;&#x3D; 0; j--) &#123;</span><br><span class="line">                    var golden_ratio &#x3D; 0.618033988749895;</span><br><span class="line">                    var s &#x3D; 0.5;</span><br><span class="line">                    var v &#x3D; 0.999;</span><br><span class="line">                    var h &#x3D; golden_ratio + Math.random()*0.8 - 0.5;</span><br><span class="line">                    var h_i &#x3D; parseInt(h * 6);</span><br><span class="line">                    var f &#x3D; h * 6 - h_i;</span><br><span class="line">                    var p &#x3D; v * (1 - s);</span><br><span class="line">                    var q &#x3D; v * (1 - f * s);</span><br><span class="line">                    var t &#x3D; v * (1 - (1 - f) * s);</span><br><span class="line">                    var r, g, b;</span><br><span class="line">                    switch (h_i) &#123;</span><br><span class="line">                        case 0:</span><br><span class="line">                            r &#x3D; v;</span><br><span class="line">                            g &#x3D; t;</span><br><span class="line">                            b &#x3D; p;</span><br><span class="line">                            break;</span><br><span class="line">                        case 1:</span><br><span class="line">                            r &#x3D; q;</span><br><span class="line">                            g &#x3D; v;</span><br><span class="line">                            b &#x3D; p;</span><br><span class="line">                            break;</span><br><span class="line">                        case 2:</span><br><span class="line">                            r &#x3D; p;</span><br><span class="line">                            g &#x3D; v;</span><br><span class="line">                            b &#x3D; t;</span><br><span class="line">                            break;</span><br><span class="line">                        case 3 :</span><br><span class="line">                            r &#x3D; p;</span><br><span class="line">                            g &#x3D; q;</span><br><span class="line">                            b &#x3D; v;</span><br><span class="line">                            break;</span><br><span class="line">                        case 4:</span><br><span class="line">                            r &#x3D; t;</span><br><span class="line">                            g &#x3D; p;</span><br><span class="line">                            b &#x3D; v;</span><br><span class="line">                            break;</span><br><span class="line">                        case 5:</span><br><span class="line">                            r &#x3D; v;</span><br><span class="line">                            g &#x3D; p;</span><br><span class="line">                            b &#x3D; q;</span><br><span class="line">                            break;</span><br><span class="line">                        default:</span><br><span class="line">                            r &#x3D; 1;</span><br><span class="line">                            g &#x3D; 1;</span><br><span class="line">                            b &#x3D; 1;</span><br><span class="line">                      &#125;</span><br><span class="line">                    tags[j].style.background &#x3D; &quot;rgba(&quot;+parseInt(r*255)+&quot;,&quot;+parseInt(g*255)+&quot;,&quot;+parseInt(b*255)+&quot;,&quot;+0.5+&quot;)&quot;;</span><br><span class="line">+               &#125;</span><br><span class="line">+           &#125;                        </span><br><span class="line">+           &lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在自定义样式文件 <code>.\source\_data\style.styl</code> 中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;文章底部彩色标签样式</span><br><span class="line">.posts-expand .post-tags a &#123;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    font-size: 0.8em;</span><br><span class="line">    padding: 0px 10px;</span><br><span class="line">    border-radius: 8px;</span><br><span class="line">    color: rgb(85, 85, 85);</span><br><span class="line">    border: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E6%96%87%E7%AB%A0%E5%BA%95%E9%83%A8%E5%BD%A9%E8%89%B2%E6%A0%87%E7%AD%BE.png" alt=""></p>
+</li>
+</ul>
+<h3 id="15-简体繁体切换">15. 简体繁体切换</h3>
+<ul>
+<li>
+<p>首先，我们可以在<a target="_blank" rel="noopener external nofollow noreferrer" href="https://tding.top/js/tw_cn.js">这里</a>右键另存下载简繁字体切换所需的 <code>tw_cn.js</code> 文件，我们把这个文件放到 <code>./source/js</code> 文件夹下</p>
+</li>
+<li>
+<p>修改模板，在我们想要显示简繁转换按钮的地方添加如下代码。例如，我在 NexT 主题的布局文件 <code>./source/_data/footer.swig</code> 里添加了如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;translate-style&quot;&gt;</span><br><span class="line">繁&#x2F;简：&lt;a id&#x3D;&quot;translateLink&quot; href&#x3D;&quot;javascript:translatePage();&quot;&gt;繁体</span><br><span class="line">&lt;&#x2F;a&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;js&#x2F;tw_cn.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">var defaultEncoding &#x3D; 2; &#x2F;&#x2F;网站编写字体是否繁体，1-繁体，2-简体</span><br><span class="line">var translateDelay &#x3D; 0; &#x2F;&#x2F;延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0</span><br><span class="line">var cookieDomain &#x3D; &quot;https:&#x2F;&#x2F;tding.top&#x2F;&quot;; &#x2F;&#x2F;Cookie地址, 一定要设定, 通常为你的网址</span><br><span class="line">var msgToTraditionalChinese &#x3D; &quot;繁体&quot;; &#x2F;&#x2F;此处可以更改为你想要显示的文字</span><br><span class="line">var msgToSimplifiedChinese &#x3D; &quot;简体&quot;; &#x2F;&#x2F;同上，但两处均不建议更改</span><br><span class="line">var translateButtonId &#x3D; &quot;translateLink&quot;; &#x2F;&#x2F;默认互换id</span><br><span class="line">translateInitilization();</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E7%AE%80%E4%BD%93%E7%B9%81%E4%BD%93.png" alt=""></p>
+</li>
+</ul>
+<h3 id="16-网易云音乐">16. 网易云音乐</h3>
+<ul>
+<li>
+<p>首先在网页搜索网易云音乐，选择音乐，并生成外链</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90.png" alt=""></p>
+</li>
+<li>
+<p>选择合适的宽高，是否自动播放，然后得到外链html代码</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E8%BF%9B%E9%98%B6%E9%85%8D%E7%BD%AE/%E7%94%9F%E6%88%90%E9%93%BE%E6%8E%A5.png" alt=""></p>
+</li>
+<li>
+<p>打开 <code>.\source\_data\sidebar.swig</code> 文件，添加上面复制的外链html代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 网易云音乐 #&#125;</span><br><span class="line">&lt;iframe frameborder&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; width&#x3D;330 height&#x3D;86 src&#x3D;&quot;&#x2F;&#x2F;music.163.com&#x2F;outchain&#x2F;player?type&#x3D;2&amp;id&#x3D;536622304&amp;auto&#x3D;0&amp;height&#x3D;66&quot;&gt;&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>配合 <code>pjax</code> 实现音乐全局播放（切换页面不重新加载）</p>
+</li>
+<li>
+<p>打开 <code>.\themes\next\layout\_layout.swig</code> 文件夹找到 <code>&lt;\head&gt;</code> 标签，在之前加下面代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;   &#x2F;&#x2F;粘贴到这里</span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line">+   &lt;!--pjax：防止跳转页面音乐暂停--&gt;</span><br><span class="line">+   &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;pjax@0.2.8&#x2F;pjax.js&quot;&gt;&lt;&#x2F;script&gt; </span><br><span class="line"></span><br><span class="line">&lt;&#x2F;head&gt; </span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在主题的配置文件 <code>next.yml</code> 中找到 <code>pajx</code> ，将它设置为<code>true</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  pjax: false</span><br><span class="line">+  pjax: true</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 <br>
-
 <blockquote>
 <p>参考网站：【鸣谢】</p>
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/iwyang/article/details/106989237">Hexo-NexT (v7.7.2) 主题配置</a></p>
@@ -526,6 +637,26 @@
         <div style="text-align:center;color: #ccc;font-size:16px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
     
 </div>
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/微信.png" alt="Mr.XiaoSi 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="https://gitee.com/zxiaosi/image/raw/master/Common/支付宝.jpg" alt="Mr.XiaoSi 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
         
 
 <div>
