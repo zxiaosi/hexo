@@ -1,6 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Github+jsDeliver免费cdn</title>
+    <url>/archives/445f3e70.html</url>
+    <content><![CDATA[<h2 id="一、CDN">一、CDN</h2>
+<h3 id="1-1-CND-简介">1.1 CND 简介</h3>
+<ul>
+<li>CDN的全称是Content Delivery Network，即内容分发网络</li>
+<li>当域名访问资源时，通过DNS查找离用户<font color='red'>最近</font>的CDN节点（边缘服务器）的IP，并通过IP访问资源</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><a href="https://www.zhihu.com/question/36514327?rf=37353035">更多详情</a></li>
+</ul>
+<h3 id="1-2-CDN-优势">1.2 CDN 优势</h3>
+<ul>
+<li>提高了站点的访问速度和稳定性</li>
+<li>保证不同网络中的用户都能得到良好的访问质量</li>
+<li>访问不占用宽带，对目标网站的服务器压力小</li>
+</ul>
+<h3 id="1-3-为什么选择-jsDeliver">1.3 为什么选择 jsDeliver</h3>
+<ul>
+<li>国内也有很多CDN厂商，比如<a href="https://www.wangsu.com/">网宿科技</a>、<a href="https://help.aliyun.com/product/27099.html">阿里云</a>、<a href="https://su.baidu.com/">百度云</a>等，不过作为白嫖党，我选择用 <a href="https://www.jsdelivr.com/">jsDeliver</a></li>
+<li>jsDeliver 在国内有很多节点，访问速度快</li>
+</ul>
+<h2 id="二、搭建CDN">二、搭建CDN</h2>
+<h3 id="2-1-Github-使用">2.1 <a href="http://localhost:4000/archives/d345b092.html#%E4%BA%8C%E3%80%81Gihub%E4%BD%BF%E7%94%A8">Github 使用</a></h3>
+<h3 id="2-2-CDN-仓库">2.2 CDN 仓库</h3>
+<ul>
+<li>
+<p>创建仓库，仓库名字随意</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt="创建仓库"></p>
+</li>
+<li>
+<p>上传文件（最大不能超过25M），这里我上传一张图片</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/bg.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-3-发布版本">2.3 发布版本</h3>
+<ul>
+<li>
+<p>点击 <code>Create a new release</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/release.png" alt=""></p>
+</li>
+<li>
+<p>版本号 <code>v+数字</code> 或 <code>数字</code>，版本名字随意，版本描述随意</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/public.png" alt=""></p>
+</li>
+<li>
+<p>发布成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-4-访问资源">2.4 访问资源</h3>
+<ul>
+<li>
+<p>jsDeliver 默认访问链接格式</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>比如刚刚上传的图片，在浏览器里输入下面地址即可访问到</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;zxiaosi&#x2F;jsDeliver@1.0&#x2F;bg.jpg</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>其他访问方式</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; 完全省略该版本以获取最新版本</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;zxiaosi&#x2F;cdn&#x2F;bootstrap.js</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 将“.min”添加到任何JS&#x2F;CSS文件中以获取缩小版本，如果不存在，将为会自动生成</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;zxiaosi&#x2F;cdn&#x2F;bootstrap.min.js</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 省略https</span><br><span class="line">&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;zxiaosi&#x2F;cdn&#x2F;bootstrap.min.js</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="三、注意事项">三、注意事项</h2>
+<h3 id="3-1-单个文件大小">3.1 单个文件大小</h3>
+<ul>
+<li>上传的单个文件大小不能超过25M，否则会加载失败</li>
+</ul>
+<h3 id="3-2-最好不要用来当图床">3.2 最好不要用来当图床</h3>
+<ul>
+<li>Github 官方限制每个仓库不能超过 1G，且仓库超过 1G 后会有人工审核仓库内容，如果发现用来做图床，轻则删库，重则封号</li>
+<li>建议使用 <a href="http://localhost:4000/archives/22902125.html">PicGo+Typora+Gitee图床</a></li>
+</ul>
+<h3 id="3-3-最好不要放网站">3.3 最好不要放网站</h3>
+<ul>
+<li>发布版本后，文件里会添加版本标签，网站不识别而造成一系列的错误</li>
+<li>已知：Hexo框架的网站不识别</li>
+</ul>
+<br>
+<blockquote>
+<p>参考链接：【鸣谢】</p>
+<p><a href="https://www.zhihu.com/question/36514327?rf=37353035">CDN是什么？使用CDN有什么优势？</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>CDN</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>jsDeliver</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>配置同时使用Github、Gitee的SSH密钥</title>
     <url>/archives/5f94ed31.html</url>
     <content><![CDATA[<h2 id="一、前提">一、前提</h2>
@@ -262,7 +358,7 @@
 </ul>
 <br/>]]></content>
       <categories>
-        <category>Github Pages</category>
+        <category>网站</category>
       </categories>
       <tags>
         <tag>Github</tag>
@@ -415,7 +511,7 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>Github Pages</category>
+        <category>网站</category>
       </categories>
       <tags>
         <tag>Github</tag>
@@ -521,7 +617,7 @@
 </blockquote>
 <br/>]]></content>
       <categories>
-        <category>Github Pages</category>
+        <category>网站</category>
       </categories>
       <tags>
         <tag>Github</tag>
@@ -1427,7 +1523,7 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>Docsify 笔记</category>
+        <category>Docsify笔记</category>
       </categories>
       <tags>
         <tag>Docsify</tag>
@@ -1550,7 +1646,7 @@
 <br>
 ]]></content>
       <categories>
-        <category>Docsify 笔记</category>
+        <category>Docsify笔记</category>
       </categories>
       <tags>
         <tag>Docsify</tag>

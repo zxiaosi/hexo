@@ -25,26 +25,35 @@
     var CONFIG = {"hostname":"hexo.xiaosi.world","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小四先生的博客">
-<meta property="og:url" content="https://hexo.xiaosi.world/page/3/index.html">
+  <meta name="description" content="一、CDN 1.1 CND 简介  CDN的全称是Content Delivery Network，即内容分发网络 当域名访问资源时，通过DNS查找离用户最近的CDN节点（边缘服务器）的IP，并通过IP访问资源">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github+jsDeliver免费cdn">
+<meta property="og:url" content="https://hexo.xiaosi.world/archives/445f3e70.html">
 <meta property="og:site_name" content="小四先生的博客">
-<meta property="og:description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
+<meta property="og:description" content="一、CDN 1.1 CND 简介  CDN的全称是Content Delivery Network，即内容分发网络 当域名访问资源时，通过DNS查找离用户最近的CDN节点（边缘服务器）的IP，并通过IP访问资源">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/bg.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/release.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/public.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F.png">
+<meta property="article:published_time" content="2021-04-14T01:37:31.000Z">
+<meta property="article:modified_time" content="2021-04-14T03:10:56.190Z">
 <meta property="article:author" content="Mr.XiaoSi">
-<meta property="article:tag" content="Hexo|Next|博客|日常|知识|分享">
+<meta property="article:tag" content="Github">
+<meta property="article:tag" content="jsDeliver">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png">
 
-<link rel="canonical" href="https://hexo.xiaosi.world/page/3/">
+<link rel="canonical" href="https://hexo.xiaosi.world/archives/445f3e70.html">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
@@ -53,7 +62,7 @@
   <meta name="msvalidate.01" content="0EA599BA79F88AF739AD8E309E599667" />
 
 
-  <title>小四先生的博客</title>
+  <title>Github+jsDeliver免费cdn | 小四先生的博客</title>
   
 
 
@@ -201,13 +210,14 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/f8fffde8.html">
+    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/445f3e70.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://gitee.com/zxiaosi/image/raw/master/Common/头像.jpg">
@@ -219,40 +229,44 @@
       <meta itemprop="name" content="小四先生的博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/archives/f8fffde8.html" class="post-title-link" itemprop="url">Docsify笔记搭建</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Github+jsDeliver免费cdn
+        </h1>
 
         <div class="post-meta">
 
+          
+            <i class="fa fa-anchor"></i>
+            <font color=7D26CD>置顶</font>
+            <span class="post-meta-divider">|</span>
           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-03-20 10:18:28" itemprop="dateCreated datePublished" datetime="2021-03-20T10:18:28+08:00">2021-03-20</time>
+              <time title="创建时间：2021-04-14 09:37:31 / 修改时间：11:10:56" itemprop="dateCreated datePublished" datetime="2021-04-14T09:37:31+08:00">2021-04-14</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-14 09:41:13" itemprop="dateModified" datetime="2021-04-14T09:41:13+08:00">2021-04-14</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Docsify%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">Docsify笔记</span></a>
+                  <a href="/categories/CDN/" itemprop="url" rel="index"><span itemprop="name">CDN</span></a>
                 </span>
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
   <span class="post-meta-item">
     
@@ -261,8 +275,8 @@
       </span>
       <span class="post-meta-item-text">评论数：</span>
     
-    <a title="valine" href="/archives/f8fffde8.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/f8fffde8.html" itemprop="commentCount"></span>
+    <a title="valine" href="/archives/445f3e70.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/445f3e70.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -272,14 +286,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.8k</span>
+              <span>1.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -291,529 +305,203 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="一、安装之前准备">一、安装之前准备</h2>
-<h3 id="1-1-Git">1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3>
-<h3 id="1-2-Node">1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3>
-<h3 id="1-3-Github">1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/f8fffde8.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/c776502.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://gitee.com/zxiaosi/image/raw/master/Common/头像.jpg">
-      <meta itemprop="name" content="Mr.XiaoSi">
-      <meta itemprop="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小四先生的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/archives/c776502.html" class="post-title-link" itemprop="url">Hexo-Next配置（进阶篇）</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-17 19:31:53" itemprop="dateCreated datePublished" datetime="2021-03-17T19:31:53+08:00">2021-03-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-11 14:37:45" itemprop="dateModified" datetime="2021-04-11T14:37:45+08:00">2021-04-11</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">Hexo博客</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">评论数：</span>
-    
-    <a title="valine" href="/archives/c776502.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/c776502.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>14k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>13 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><font color="red"><strong>注意：</strong></font></p>
-<ol>
-<li>
-<p>下面的配置每一项都需要 <code>hexo clean</code> 和 <code>hexo s</code> 来实现预览</p>
-</li>
-<li>
-<p>站点配置文件 <code>./_config.yml</code></p>
-</li>
-<li>
-<p>主题配置文件 <code>./source/_data/next.yml</code></p>
-</li>
-</ol>
-<h3 id="1-修改首页、归档页显示文章数量">1. 修改首页、归档页显示文章数量</h3>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/c776502.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/b78f5428.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://gitee.com/zxiaosi/image/raw/master/Common/头像.jpg">
-      <meta itemprop="name" content="Mr.XiaoSi">
-      <meta itemprop="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小四先生的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/archives/b78f5428.html" class="post-title-link" itemprop="url">Hexo-Next配置（插件篇）</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-14 17:07:19" itemprop="dateCreated datePublished" datetime="2021-03-14T17:07:19+08:00">2021-03-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-11 14:02:50" itemprop="dateModified" datetime="2021-04-11T14:02:50+08:00">2021-04-11</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">Hexo博客</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">评论数：</span>
-    
-    <a title="valine" href="/archives/b78f5428.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/b78f5428.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>6.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>6 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><font color="red"><strong>注意：</strong></font></p>
-<ol>
-<li>
-<p>下面的配置每一项都需要 <code>hexo clean</code> 和 <code>hexo s</code> 来实现预览</p>
-</li>
-<li>
-<p>站点配置文件 <code>./_config.yml</code></p>
-</li>
-<li>
-<p>主题配置文件 <code>./source/_data/next.yml</code></p>
-</li>
-</ol>
-<h3 id="1-设置-hexo-永久链接">1. 设置 hexo 永久链接</h3>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/b78f5428.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/2d288079.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://gitee.com/zxiaosi/image/raw/master/Common/头像.jpg">
-      <meta itemprop="name" content="Mr.XiaoSi">
-      <meta itemprop="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小四先生的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/archives/2d288079.html" class="post-title-link" itemprop="url">Hexo-Next配置（基础篇）</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-13 16:52:03" itemprop="dateCreated datePublished" datetime="2021-03-13T16:52:03+08:00">2021-03-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-29 15:04:25" itemprop="dateModified" datetime="2021-03-29T15:04:25+08:00">2021-03-29</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">Hexo博客</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">评论数：</span>
-    
-    <a title="valine" href="/archives/2d288079.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/2d288079.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>6.6k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>6 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><font color="red"><strong>注意：</strong></font></p>
-<ol>
-<li>
-<p>下面的配置每一项都需要 <code>hexo clean</code> 和 <code>hexo s</code> 来实现预览</p>
-</li>
-<li>
-<p>站点配置文件 <code>./_config.yml</code></p>
-</li>
-<li>
-<p>主题配置文件 <code>./source/_data/next.yml</code></p>
-</li>
-</ol>
-<h3 id="1-准备工作，配置文件分离（Next主题在7-3之后分离了配置文件与主题）">1. 准备工作，配置文件分离（Next主题在7.3之后分离了配置文件与主题）</h3>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/2d288079.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/65f611a4.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://gitee.com/zxiaosi/image/raw/master/Common/头像.jpg">
-      <meta itemprop="name" content="Mr.XiaoSi">
-      <meta itemprop="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小四先生的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/archives/65f611a4.html" class="post-title-link" itemprop="url">Hexo-Next安装及使用</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-10 16:37:49" itemprop="dateCreated datePublished" datetime="2021-03-10T16:37:49+08:00">2021-03-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-27 10:13:02" itemprop="dateModified" datetime="2021-03-27T10:13:02+08:00">2021-03-27</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">Hexo博客</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">评论数：</span>
-    
-    <a title="valine" href="/archives/65f611a4.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/65f611a4.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3.5k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="一、安装主题">一、安装主题</h2>
-<h3 id="1-1-进入到Hexo所在的文件夹">1.1 进入到Hexo所在的文件夹</h3>
+        <h2 id="一、CDN">一、CDN</h2>
+<h3 id="1-1-CND-简介">1.1 CND 简介</h3>
+<ul>
+<li>CDN的全称是Content Delivery Network，即内容分发网络</li>
+<li>当域名访问资源时，通过DNS查找离用户<font color='red'>最近</font>的CDN节点（边缘服务器）的IP，并通过IP访问资源</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/question/36514327?rf=37353035">更多详情</a></li>
+</ul>
+<h3 id="1-2-CDN-优势">1.2 CDN 优势</h3>
+<ul>
+<li>提高了站点的访问速度和稳定性</li>
+<li>保证不同网络中的用户都能得到良好的访问质量</li>
+<li>访问不占用宽带，对目标网站的服务器压力小</li>
+</ul>
+<h3 id="1-3-为什么选择-jsDeliver">1.3 为什么选择 jsDeliver</h3>
+<ul>
+<li>国内也有很多CDN厂商，比如<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.wangsu.com/">网宿科技</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://help.aliyun.com/product/27099.html">阿里云</a>、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://su.baidu.com/">百度云</a>等，不过作为白嫖党，我选择用 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jsdelivr.com/">jsDeliver</a></li>
+<li>jsDeliver 在国内有很多节点，访问速度快</li>
+</ul>
+<h2 id="二、搭建CDN">二、搭建CDN</h2>
+<h3 id="2-1-Github-使用">2.1 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:4000/archives/d345b092.html#%E4%BA%8C%E3%80%81Gihub%E4%BD%BF%E7%94%A8">Github 使用</a></h3>
+<h3 id="2-2-CDN-仓库">2.2 CDN 仓库</h3>
 <ul>
 <li>
-<p>我的文件在e盘下的blog文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">e:			# 输入 e: 回车进入e盘  </span><br><span class="line">cd blog			# 输入 cd blog 回车进入 blog 文件夹</span><br></pre></td></tr></table></figure>
+<p>创建仓库，仓库名字随意</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt="创建仓库"></p>
+</li>
+<li>
+<p>上传文件（最大不能超过25M），这里我上传一张图片</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/bg.png" alt=""></p>
 </li>
 </ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/65f611a4.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<h3 id="2-3-发布版本">2.3 发布版本</h3>
+<ul>
+<li>
+<p>点击 <code>Create a new release</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/release.png" alt=""></p>
+</li>
+<li>
+<p>版本号 <code>v+数字</code> 或 <code>数字</code>，版本名字随意，版本描述随意</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/public.png" alt=""></p>
+</li>
+<li>
+<p>发布成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-4-访问资源">2.4 访问资源</h3>
+<ul>
+<li>
+<p>jsDeliver 默认访问链接格式</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>比如刚刚上传的图片，在浏览器里输入下面地址即可访问到</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;zxiaosi&#x2F;jsDeliver@1.0&#x2F;bg.jpg</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>其他访问方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 完全省略该版本以获取最新版本</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;zxiaosi&#x2F;cdn&#x2F;bootstrap.js</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 将“.min”添加到任何JS&#x2F;CSS文件中以获取缩小版本，如果不存在，将为会自动生成</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;zxiaosi&#x2F;cdn&#x2F;bootstrap.min.js</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 省略https</span><br><span class="line">&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;zxiaosi&#x2F;cdn&#x2F;bootstrap.min.js</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="三、注意事项">三、注意事项</h2>
+<h3 id="3-1-单个文件大小">3.1 单个文件大小</h3>
+<ul>
+<li>上传的单个文件大小不能超过25M，否则会加载失败</li>
+</ul>
+<h3 id="3-2-最好不要用来当图床">3.2 最好不要用来当图床</h3>
+<ul>
+<li>Github 官方限制每个仓库不能超过 1G，且仓库超过 1G 后会有人工审核仓库内容，如果发现用来做图床，轻则删库，重则封号</li>
+<li>建议使用 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:4000/archives/22902125.html">PicGo+Typora+Gitee图床</a></li>
+</ul>
+<h3 id="3-3-最好不要放网站">3.3 最好不要放网站</h3>
+<ul>
+<li>发布版本后，文件里会添加版本标签，网站不识别而造成一系列的错误</li>
+<li>已知：Hexo框架的网站不识别</li>
+</ul>
+<br>
+<blockquote>
+<p>参考链接：【鸣谢】</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/question/36514327?rf=37353035">CDN是什么？使用CDN有什么优势？</a></p>
+</blockquote>
+
     </div>
 
     
     
+    <div>
     
+        <div style="text-align:center;color: #ccc;font-size:16px;">---------本文结束<i class="fa fa-paw"></i>感谢您的阅读---------</div>
+    
+</div>
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Mr.XiaoSi
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://hexo.xiaosi.world/archives/445f3e70.html" title="Github+jsDeliver免费cdn">https://hexo.xiaosi.world/archives/445f3e70.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          
+          <div class="post-tags">
+              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
+              <a href="/tags/jsDeliver/" rel="tag"><i class="fa fa-tag"></i> jsDeliver</a>
+          </div>
+          <script type="text/javascript">
+            var tagsall=document.getElementsByClassName("post-tags")
+            for (var i = tagsall.length - 1; i >= 0; i--){
+                var tags=tagsall[i].getElementsByTagName("a");
+                for (var j = tags.length - 1; j >= 0; j--) {
+                    var golden_ratio = 0.618033988749895;
+                    var s = 0.5;
+                    var v = 0.999;
+                    var h = golden_ratio + Math.random()*0.8 - 0.5;
+                    var h_i = parseInt(h * 6);
+                    var f = h * 6 - h_i;
+                    var p = v * (1 - s);
+                    var q = v * (1 - f * s);
+                    var t = v * (1 - (1 - f) * s);
+                    var r, g, b;
+                    switch (h_i) {
+                        case 0:
+                            r = v;
+                            g = t;
+                            b = p;
+                            break;
+                        case 1:
+                            r = q;
+                            g = v;
+                            b = p;
+                            break;
+                        case 2:
+                            r = p;
+                            g = v;
+                            b = t;
+                            break;
+                        case 3 :
+                            r = p;
+                            g = q;
+                            b = v;
+                            break;
+                        case 4:
+                            r = t;
+                            g = p;
+                            b = v;
+                            break;
+                        case 5:
+                            r = v;
+                            g = p;
+                            b = q;
+                            break;
+                        default:
+                            r = 1;
+                            g = 1;
+                            b = 1;
+                      }
+                    tags[j].style.background = "rgba("+parseInt(r*255)+","+parseInt(g*255)+","+parseInt(b*255)+","+0.5+")";
+                }
+            }                        
+            </script>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/archives/5f94ed31.html" rel="prev" title="配置同时使用Github、Gitee的SSH密钥">
+      <i class="fa fa-chevron-left"></i> 配置同时使用Github、Gitee的SSH密钥
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
   
-
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -860,6 +548,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81CDN"><span class="nav-text">一、CDN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-CND-%E7%AE%80%E4%BB%8B"><span class="nav-text">1.1 CND 简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-CDN-%E4%BC%98%E5%8A%BF"><span class="nav-text">1.2 CDN 优势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9-jsDeliver"><span class="nav-text">1.3 为什么选择 jsDeliver</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%90%AD%E5%BB%BACDN"><span class="nav-text">二、搭建CDN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Github-%E4%BD%BF%E7%94%A8"><span class="nav-text">2.1 Github 使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-CDN-%E4%BB%93%E5%BA%93"><span class="nav-text">2.2 CDN 仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E5%8F%91%E5%B8%83%E7%89%88%E6%9C%AC"><span class="nav-text">2.3 发布版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-%E8%AE%BF%E9%97%AE%E8%B5%84%E6%BA%90"><span class="nav-text">2.4 访问资源</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="nav-text">三、注意事项</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F"><span class="nav-text">3.1 单个文件大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E6%9C%80%E5%A5%BD%E4%B8%8D%E8%A6%81%E7%94%A8%E6%9D%A5%E5%BD%93%E5%9B%BE%E5%BA%8A"><span class="nav-text">3.2 最好不要用来当图床</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E6%9C%80%E5%A5%BD%E4%B8%8D%E8%A6%81%E6%94%BE%E7%BD%91%E7%AB%99"><span class="nav-text">3.3 最好不要放网站</span></a></li></ol></li></ol></div>
+          <br/>
       </div>
       <!--/noindex-->
 
