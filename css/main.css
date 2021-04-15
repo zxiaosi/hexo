@@ -9,6 +9,75 @@
   color: #ff106c;
   text-decoration: underline;
 }
+.fa {
+  font-size: 14px;
+}
+.fa-home {
+  color: #e74c3c;
+  font-size: 15px;
+}
+.fa-tags {
+  color: #3498db;
+}
+.fa-th {
+  color: #ffa500;
+}
+.fa-archive {
+  color: #1abc9c;
+}
+.fa-user {
+  color: #9b59b6;
+}
+.fa-sitemap {
+  color: #9980fa;
+}
+/*
+.fa-search{
+  color: #dcdde1;
+}
+*/
+.fa-globe {
+  color: #0ad0c6;
+}
+.fa-book {
+  color: #5f27cd;
+}
+.fa-github {
+  color: #57606f;
+  font-size: 14.5px;
+}
+.fa-google {
+  color: #ff4757;
+}
+.fa-gamepad {
+  color: #ff9f43;
+}
+/*
+.fa-anchor{
+  color: #57606f;
+}
+*/
+.fa-calendar {
+  color: #70a1ff;
+}
+.fa-calendar-check {
+  color: #5352ed;
+}
+.fa-folder {
+  color: #ffa502;
+}
+.fa-eye {
+  color: #70a1ff;
+}
+.fa-comment {
+  color: #2ed573;
+}
+.fa-file-word {
+  color: #273c75;
+}
+.fa-clock {
+  color: #ff5252;
+}
 :root {
   --body-bg-color: #eee;
   --content-bg-color: #fff;
@@ -1296,7 +1365,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #93545d;
+  background: #8c1a47;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
