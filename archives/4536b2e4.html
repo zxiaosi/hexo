@@ -70,7 +70,9 @@
   };
 </script>
 
+
   <meta name="baidu-site-verification" content="code-kwy5jp4uzm" />
+
 
 
 
@@ -107,9 +109,6 @@
   </style>
 </noscript>
 
-  
-  <!-- 百度收录 -->
-  <meta name="baidu-site-verification" content="code-BGK9bbVOtE" />
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -234,7 +233,7 @@
     <link itemprop="mainEntityOfPage" href="https://hexo.xiaosi.world/archives/4536b2e4.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://gitee.com/zxiaosi/image/raw/master/Common/头像.jpg">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/avatar.jpg">
       <meta itemprop="name" content="Mr.XiaoSi">
       <meta itemprop="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
     </span>
@@ -602,7 +601,7 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Mr.XiaoSi"
-      src="https://gitee.com/zxiaosi/image/raw/master/Common/头像.jpg">
+      src="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/avatar.jpg">
   <p class="site-author-name" itemprop="name">Mr.XiaoSi</p>
   
   <div class="site-description">生命不息 奋斗不止</div>
@@ -1040,13 +1039,13 @@ setInterval("createtime()",250);
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
 
 <script src="/js/utils.js"></script>
 
@@ -1109,11 +1108,21 @@ setInterval("createtime()",250);
   
 
   
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://hexo.xiaosi.world/archives/4536b2e4.html',]
+      });
+      });
+  </script>
 
 
 <script>
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
     var GUEST = ['nick', 'mail', 'link'];
     var guest = 'nick,mail';
     guest = guest.split(',').filter(item => {
