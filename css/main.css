@@ -75,6 +75,12 @@
 .fa-clock {
   color: #ff5252;
 }
+.fa-coffee {
+  color: #ffa801;
+}
+.fa-area-chart {
+  color: #25ccf7;
+}
 :root {
   --body-bg-color: #eee;
   --content-bg-color: #fff;
@@ -1362,7 +1368,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4e28ff;
+  background: #086e5b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
