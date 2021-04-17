@@ -47,7 +47,7 @@
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/%E7%9B%98%E5%8F%A4%E6%8F%92%E4%BB%B6.png">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/%E9%98%85%E8%AF%BB%E4%BA%BA%E6%95%B0%E5%92%8C%E6%AC%A1%E6%95%B0.png">
 <meta property="article:published_time" content="2021-03-13T08:52:03.000Z">
-<meta property="article:modified_time" content="2021-04-15T00:56:43.701Z">
+<meta property="article:modified_time" content="2021-04-17T11:22:01.491Z">
 <meta property="article:author" content="Mr.XiaoSi">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Next">
@@ -69,11 +69,6 @@
 
 
   <meta name="baidu-site-verification" content="code-kwy5jp4uzm" />
-
-
-
-
-  <meta name="msvalidate.01" content="0EA599BA79F88AF739AD8E309E599667" />
 
   <title>Hexo-Next配置（基础篇） | 小四先生的博客</title>
   
@@ -263,7 +258,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-15 08:56:43" itemprop="dateModified" datetime="2021-04-15T08:56:43+08:00">2021-04-15</time>
+                <time title="修改时间：2021-04-17 19:22:01" itemprop="dateModified" datetime="2021-04-17T19:22:01+08:00">2021-04-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -302,7 +297,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>6.6k</span>
+              <span>6.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -344,14 +339,14 @@
 </li>
 <li>
 <p>将 <code>next.yml</code> 中的 <code>override</code> 设置为 <code>true</code> 即可作为主题的配置文件使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  override: false</span><br><span class="line">+  override: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  override: <span class="literal">false</span></span><br><span class="line">+  override: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>在 <code>./source/_data</code> 中新建 <code>body-end.swig</code> 和 <code>styles.styl</code> 文件</p>
 </li>
 <li>
 <p>然后在 <code>next.yml</code> 的 <code>custom_file_path</code> 中删除前面的 <code>#</code> 来启用 <code>bodyEnd</code> 和 <code>style</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">custom_file_path:         </span><br><span class="line">  #head: source&#x2F;_data&#x2F;head.swig</span><br><span class="line">  #header: source&#x2F;_data&#x2F;header.swig</span><br><span class="line">  #sidebar: source&#x2F;_data&#x2F;sidebar.swig</span><br><span class="line">  #postMeta: source&#x2F;_data&#x2F;post-meta.swig</span><br><span class="line">  #postBodyEnd: source&#x2F;_data&#x2F;post-body-end.swig</span><br><span class="line">  #footer: source&#x2F;_data&#x2F;footer.swig</span><br><span class="line">- #bodyEnd: source&#x2F;_data&#x2F;body-end.swig</span><br><span class="line">+ bodyEnd: source&#x2F;_data&#x2F;body-end.swig</span><br><span class="line">  #variable: source&#x2F;_data&#x2F;variables.styl</span><br><span class="line">  #mixin: source&#x2F;_data&#x2F;mixins.styl</span><br><span class="line">- #style: source&#x2F;_data&#x2F;styles.styl</span><br><span class="line">+ style: source&#x2F;_data&#x2F;styles.styl</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">custom_file_path:         </span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.swig</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.swig</span></span><br><span class="line">- <span class="comment">#bodyEnd: source/_data/body-end.swig</span></span><br><span class="line">+ bodyEnd: <span class="built_in">source</span>/_data/body-end.swig</span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">- <span class="comment">#style: source/_data/styles.styl</span></span><br><span class="line">+ style: <span class="built_in">source</span>/_data/styles.styl</span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p><code>custom_file_path</code> 中的其他选项根据需要创建相关文件并启用</p>
@@ -361,7 +356,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code>，关键字：<code>Schemes</code> ，修改</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes (外观)</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini  # 前面的注释去除即可</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes (外观)</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line">scheme: Gemini  <span class="comment"># 前面的注释去除即可</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="3-修改网站的图标">3. 修改网站的图标</h3>
@@ -371,7 +366,7 @@
 </li>
 <li>
 <p>把图标放在<code>/themes/next/source/images</code>里，并且修改 主题配置文件 <code>next.yml</code>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">favicon:							# 网站的图标</span><br><span class="line">  small: &#x2F;images&#x2F;favicon-16x16-next.png				# 16x16的png图片</span><br><span class="line">  medium: &#x2F;images&#x2F;favicon-32x32-next.png			# 32x32的png图片</span><br><span class="line">  apple_touch_icon: &#x2F;images&#x2F;apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: &#x2F;images&#x2F;logo.svg</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">favicon:							<span class="comment"># 网站的图标</span></span><br><span class="line">  small: /images/favicon-16x16-next.png				<span class="comment"># 16x16的png图片</span></span><br><span class="line">  medium: /images/favicon-32x32-next.png			<span class="comment"># 32x32的png图片</span></span><br><span class="line">  apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: /images/logo.svg</span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>若是觉得麻烦，仅修改 <code>small</code> 和 <code>medium</code> 两处的图片也可以</p>
@@ -389,7 +384,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中，对底部 <code>footer</code> 可以开关显示 hexo 信息、theme 信息、建站时间等个性化配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">footer:</span><br><span class="line">-  #since: 2015 			# 建站时间(不开启则默认主题创建时间)</span><br><span class="line">+  since: 2021</span><br><span class="line">			</span><br><span class="line">  icon:					# 底部图标</span><br><span class="line">    name: fa fa-heart			# 图标名称</span><br><span class="line">-   animated: false			# 是否动画</span><br><span class="line">+   animated: true  </span><br><span class="line">    color: &quot;#ff0000&quot;			# 图标颜色</span><br><span class="line"></span><br><span class="line">  copyright:				# 版权</span><br><span class="line"></span><br><span class="line">- powered: true				# 是否显示底部 Hexo &amp; NexT.Gemini强力驱动</span><br><span class="line">+ powered: false</span><br><span class="line"></span><br><span class="line">  beian:				# 备案信息（可选）</span><br><span class="line">-   enable: false			# 是否启用</span><br><span class="line">    icp:				# ICP备案号&#x2F;许可证号</span><br><span class="line">    gongan_id:</span><br><span class="line">    gongan_num:</span><br><span class="line">    gongan_icon_url:			# 备案图标来源</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">footer:</span><br><span class="line">-  <span class="comment">#since: 2015 			# 建站时间(不开启则默认主题创建时间)</span></span><br><span class="line">+  since: 2021</span><br><span class="line">			</span><br><span class="line">  icon:					<span class="comment"># 底部图标</span></span><br><span class="line">    name: fa fa-heart			<span class="comment"># 图标名称</span></span><br><span class="line">-   animated: <span class="literal">false</span>			<span class="comment"># 是否动画</span></span><br><span class="line">+   animated: <span class="literal">true</span>  </span><br><span class="line">    color: <span class="string">&quot;#ff0000&quot;</span>			<span class="comment"># 图标颜色</span></span><br><span class="line"></span><br><span class="line">  copyright:				<span class="comment"># 版权</span></span><br><span class="line"></span><br><span class="line">- powered: <span class="literal">true</span>				<span class="comment"># 是否显示底部 Hexo &amp; NexT.Gemini强力驱动</span></span><br><span class="line">+ powered: <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  beian:				<span class="comment"># 备案信息（可选）</span></span><br><span class="line">-   <span class="built_in">enable</span>: <span class="literal">false</span>			<span class="comment"># 是否启用</span></span><br><span class="line">    icp:				<span class="comment"># ICP备案号/许可证号</span></span><br><span class="line">    gongan_id:</span><br><span class="line">    gongan_num:</span><br><span class="line">    gongan_icon_url:			<span class="comment"># 备案图标来源</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://xian6ge.cn/posts/2da0ce2e/">备案信息参考</a></p>
@@ -399,35 +394,35 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">creative_commons:         	# 版权</span><br><span class="line">  license: by-nc-sa	</span><br><span class="line">- sidebar: false		# 侧边栏显示</span><br><span class="line">+ sidebar: true</span><br><span class="line"></span><br><span class="line">- post: false			# 底部显示</span><br><span class="line">+ post: true</span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">creative_commons:         	<span class="comment"># 版权</span></span><br><span class="line">  license: by-nc-sa	</span><br><span class="line">- sidebar: <span class="literal">false</span>		<span class="comment"># 侧边栏显示</span></span><br><span class="line">+ sidebar: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">- post: <span class="literal">false</span>			<span class="comment"># 底部显示</span></span><br><span class="line">+ post: <span class="literal">true</span></span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="7-夜间模式">7. 夜间模式</h3>
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  darkmode: false</span><br><span class="line">+  darkmode: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  darkmode: <span class="literal">false</span></span><br><span class="line">+  darkmode: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="8-侧边栏（可选）">8. 侧边栏（可选）</h3>
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">sidebar:              			# 侧边栏 </span><br><span class="line">  position: left      			# 侧边栏位置:left&#x2F;right</span><br><span class="line"></span><br><span class="line">  # Muse | Mist: 320			# Muse 和 Mist 的侧边栏宽度</span><br><span class="line">  # Pisces | Gemini: 240		# Pisces 和 Gemini 的侧边栏宽度</span><br><span class="line">  #width: 300				# 侧边栏宽度</span><br><span class="line">  </span><br><span class="line">  display: post				# 侧边栏展示 post|always|hide| remove（仅适用于 Muse 和 Mist）</span><br><span class="line">  </span><br><span class="line">  padding: 18				# 内边距像素</span><br><span class="line"> </span><br><span class="line">  offset: 12				# 侧边栏距离顶部菜单的间距（仅适用于 Pisces 和 Gemini ）</span><br><span class="line">  </span><br><span class="line">  onmobile: false			# 顶部导航栏是否显示（仅适用于 Muse 和 Mist）</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">sidebar:              			<span class="comment"># 侧边栏 </span></span><br><span class="line">  position: left      			<span class="comment"># 侧边栏位置:left/right</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Muse | Mist: 320			# Muse 和 Mist 的侧边栏宽度</span></span><br><span class="line">  <span class="comment"># Pisces | Gemini: 240		# Pisces 和 Gemini 的侧边栏宽度</span></span><br><span class="line">  <span class="comment">#width: 300				# 侧边栏宽度</span></span><br><span class="line">  </span><br><span class="line">  display: post				<span class="comment"># 侧边栏展示 post|always|hide| remove（仅适用于 Muse 和 Mist）</span></span><br><span class="line">  </span><br><span class="line">  padding: 18				<span class="comment"># 内边距像素</span></span><br><span class="line"> </span><br><span class="line">  offset: 12				<span class="comment"># 侧边栏距离顶部菜单的间距（仅适用于 Pisces 和 Gemini ）</span></span><br><span class="line">  </span><br><span class="line">  onmobile: <span class="literal">false</span>			<span class="comment"># 顶部导航栏是否显示（仅适用于 Muse 和 Mist）</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="9-侧边栏头像">9. 侧边栏头像</h3>
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">avatar:           				# 侧边栏头像</span><br><span class="line">  url: #&#x2F;images&#x2F;avatar.gif			# 图片地址</span><br><span class="line">- rounded: false				# 是否为圆型</span><br><span class="line">+ rounded: true</span><br><span class="line"></span><br><span class="line">- rotated: false				# 是否旋转（鼠标放上去）</span><br><span class="line">+ rotated: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">avatar:           				<span class="comment"># 侧边栏头像</span></span><br><span class="line">  url: <span class="comment">#/images/avatar.gif			# 图片地址</span></span><br><span class="line">- rounded: <span class="literal">false</span>				<span class="comment"># 是否为圆型</span></span><br><span class="line">+ rounded: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">- rotated: <span class="literal">false</span>				<span class="comment"># 是否旋转（鼠标放上去）</span></span><br><span class="line">+ rotated: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="10-日志-分类-标签-是否显示">10. 日志|分类|标签 是否显示</h3>
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  site_state: false   </span><br><span class="line">+  site_state: true   </span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  site_state: <span class="literal">false</span>   </span><br><span class="line">+  site_state: <span class="literal">true</span>   </span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览</p>
@@ -438,7 +433,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中，根据个人情况</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">social:             			# 社交（去掉前面的注释即可）</span><br><span class="line">  GitHub: https:&#x2F;&#x2F;github.com&#x2F;yourname || fab fa-github</span><br><span class="line">  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope</span><br><span class="line">  </span><br><span class="line">social_icons:				# 社交图标</span><br><span class="line">  enable: true				# 是否启用</span><br><span class="line">- icons_only: false			# 是否只显示图标</span><br><span class="line">+ icons_only: true</span><br><span class="line">  transition: false			# 是否动画（未知）</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">social:             			<span class="comment"># 社交（去掉前面的注释即可）</span></span><br><span class="line">  GitHub: https://github.com/yourname || fab fa-github</span><br><span class="line">  <span class="comment">#E-Mail: mailto:yourname@gmail.com || fa fa-envelope</span></span><br><span class="line">  </span><br><span class="line">social_icons:				<span class="comment"># 社交图标</span></span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span>				<span class="comment"># 是否启用</span></span><br><span class="line">- icons_only: <span class="literal">false</span>			<span class="comment"># 是否只显示图标</span></span><br><span class="line">+ icons_only: <span class="literal">true</span></span><br><span class="line">  transition: <span class="literal">false</span>			<span class="comment"># 是否动画（未知）</span></span><br></pre></td></tr></table></figure>
 <p><code>yourname</code> 改成自己的名字</p>
 </li>
 <li>
@@ -454,7 +449,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">links_settings:         	# 友情链接</span><br><span class="line">    links_icon: link          	# 友情链接的图标</span><br><span class="line">    links_title: Links        	# 友情链接的名字</span><br><span class="line">    links_layout: block       	# 友情链接摆放的样式：按块（一行一个）</span><br><span class="line">    #links_layout: inline     	# 友情链接摆放的样式：按线摆放（一行很多个），注意，同时只能一种样式</span><br><span class="line">    links:</span><br><span class="line">      Title: http:&#x2F;&#x2F;example.com&#x2F;  # 友情链接的地址</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">links_settings:         	<span class="comment"># 友情链接</span></span><br><span class="line">    links_icon: link          	<span class="comment"># 友情链接的图标</span></span><br><span class="line">    links_title: Links        	<span class="comment"># 友情链接的名字</span></span><br><span class="line">    links_layout: block       	<span class="comment"># 友情链接摆放的样式：按块（一行一个）</span></span><br><span class="line">    <span class="comment">#links_layout: inline     	# 友情链接摆放的样式：按线摆放（一行很多个），注意，同时只能一种样式</span></span><br><span class="line">    links:</span><br><span class="line">      Title: http://example.com/  <span class="comment"># 友情链接的地址</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="13-关闭文章目录自动数字编号">13. 关闭文章目录自动数字编号</h3>
@@ -464,18 +459,18 @@
 </li>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">toc:					# 目录</span><br><span class="line">  enable: true				# 是否开启目录</span><br><span class="line">- number: true				# 是否开启数字目录</span><br><span class="line">+ number: false</span><br><span class="line">  wrap: false				# 是否隐藏</span><br><span class="line">  expand_all: false			# 是否展开所有</span><br><span class="line">  max_depth: 6				# 目录的最大生成个数</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">toc:					<span class="comment"># 目录</span></span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span>				<span class="comment"># 是否开启目录</span></span><br><span class="line">- number: <span class="literal">true</span>				<span class="comment"># 是否开启数字目录</span></span><br><span class="line">+ number: <span class="literal">false</span></span><br><span class="line">  wrap: <span class="literal">false</span>				<span class="comment"># 是否隐藏</span></span><br><span class="line">  expand_all: <span class="literal">false</span>			<span class="comment"># 是否展开所有</span></span><br><span class="line">  max_depth: 6				<span class="comment"># 目录的最大生成个数</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="14-阅读全文">14. 阅读全文</h3>
 <ul>
 <li>
 <p>默认情况下，生成的博文目录会显示全部的文章内容，不过自 7.6.0 版本开始，加入了阅读全文的按钮，不再需要我们手动添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">excerpt_description: true			# 是否截断文章</span><br><span class="line"></span><br><span class="line">read_more_btn: true				# 阅读全文按钮</span><br><span class="line"></span><br><span class="line">post_meta:					# 文章</span><br><span class="line">  item_text: true				# 文章标题</span><br><span class="line">  created_at: true				# 创建文章的时间</span><br><span class="line">  updated_at:					# 更新文章的时间</span><br><span class="line">    enable: true</span><br><span class="line">    another_day: true</span><br><span class="line">  categories: true				# 是否显示分类</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">excerpt_description: <span class="literal">true</span>			<span class="comment"># 是否截断文章</span></span><br><span class="line"></span><br><span class="line">read_more_btn: <span class="literal">true</span>				<span class="comment"># 阅读全文按钮</span></span><br><span class="line"></span><br><span class="line">post_meta:					<span class="comment"># 文章</span></span><br><span class="line">  item_text: <span class="literal">true</span>				<span class="comment"># 文章标题</span></span><br><span class="line">  created_at: <span class="literal">true</span>				<span class="comment"># 创建文章的时间</span></span><br><span class="line">  updated_at:					<span class="comment"># 更新文章的时间</span></span><br><span class="line">    <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">    another_day: <span class="literal">true</span></span><br><span class="line">  categories: <span class="literal">true</span>				<span class="comment"># 是否显示分类</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>具体在哪截断文章，需要我们手动添加 <code>&lt;!-- more --&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">一、安装之前准备</span><br><span class="line"></span><br><span class="line">1.1 git</span><br><span class="line"></span><br><span class="line">1.2 node</span><br><span class="line"></span><br><span class="line">1.3 github</span><br><span class="line"></span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line"></span><br><span class="line">1.4 镜像</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">一、安装之前准备</span><br><span class="line"></span><br><span class="line">1.1 git</span><br><span class="line"></span><br><span class="line">1.2 node</span><br><span class="line"></span><br><span class="line">1.3 github</span><br><span class="line"></span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line"></span><br><span class="line">1.4 镜像</span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览</p>
@@ -486,7 +481,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  tag_icon: false</span><br><span class="line">+  tag_icon: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  tag_icon: <span class="literal">false</span></span><br><span class="line">+  tag_icon: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览</p>
@@ -497,7 +492,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">reward_settings:            			# 打赏设置</span><br><span class="line">- enable: false				 	# 是否开启</span><br><span class="line">+ enable: true</span><br><span class="line"></span><br><span class="line">- animation: false			 	# 是否动画</span><br><span class="line">+ animation: true</span><br><span class="line"></span><br><span class="line">reward:						# 打赏		</span><br><span class="line">  wechatpay: &#x2F;images&#x2F;wechatpay.png		# 微信</span><br><span class="line">  alipay: &#x2F;images&#x2F;alipay.png			# 支付宝</span><br><span class="line">  #bitcoin: &#x2F;images&#x2F;bitcoin.png			# 比特币</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">reward_settings:            			<span class="comment"># 打赏设置</span></span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">false</span>				 	<span class="comment"># 是否开启</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">- animation: <span class="literal">false</span>			 	<span class="comment"># 是否动画</span></span><br><span class="line">+ animation: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">reward:						<span class="comment"># 打赏		</span></span><br><span class="line">  wechatpay: /images/wechatpay.png		<span class="comment"># 微信</span></span><br><span class="line">  alipay: /images/alipay.png			<span class="comment"># 支付宝</span></span><br><span class="line">  <span class="comment">#bitcoin: /images/bitcoin.png			# 比特币</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>将自己支付宝和微信的收款码放入 <code>./themes/next/source/images</code> 中</p>
@@ -507,21 +502,21 @@
 <ul>
 <li>
 <p>没人用，不推荐</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">follow_me:</span><br><span class="line">  #Twitter: https:&#x2F;&#x2F;twitter.com&#x2F;username || fab fa-twitter	# 推特</span><br><span class="line">  #Telegram: https:&#x2F;&#x2F;t.me&#x2F;channel_name || fab fa-telegram</span><br><span class="line">  #WeChat: &#x2F;images&#x2F;wechat_channel.jpg || fab fa-weixin		# 微信</span><br><span class="line">  #RSS: &#x2F;atom.xml || fa fa-rss					# RSS</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">follow_me:</span><br><span class="line">  <span class="comment">#Twitter: https://twitter.com/username || fab fa-twitter	# 推特</span></span><br><span class="line">  <span class="comment">#Telegram: https://t.me/channel_name || fab fa-telegram</span></span><br><span class="line">  <span class="comment">#WeChat: /images/wechat_channel.jpg || fab fa-weixin		# 微信</span></span><br><span class="line">  <span class="comment">#RSS: /atom.xml || fa fa-rss					# RSS</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="18-文本居中方式-可选">18. 文本居中方式(可选)</h3>
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">text_align:</span><br><span class="line">  # 可选择的值: start | end | left | right | center | justify | justify-all | match-parent</span><br><span class="line">  desktop: justify			# 电脑</span><br><span class="line">  mobile: justify			# 手机</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">text_align:</span><br><span class="line">  <span class="comment"># 可选择的值: start | end | left | right | center | justify | justify-all | match-parent</span></span><br><span class="line">  desktop: justify			<span class="comment"># 电脑</span></span><br><span class="line">  mobile: justify			<span class="comment"># 手机</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="19-内容页里的代码块新增复制按钮">19. 内容页里的代码块新增复制按钮</h3>
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">codeblock:				# 代码块</span><br><span class="line">  # 高亮主题: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic		</span><br><span class="line">  highlight_theme: normal		# 从上面选一个自己喜欢的主题</span><br><span class="line"></span><br><span class="line">  copy_button:				# 复制按钮</span><br><span class="line"> -  enable: false			# 是否开启</span><br><span class="line"> +  enable: true</span><br><span class="line"></span><br><span class="line"> -  show_result: false			# 点击复制完后是否显示 复制成功 结果提示</span><br><span class="line"> -  show_result: true</span><br><span class="line"> </span><br><span class="line">    # 可选择: default | flat | mac </span><br><span class="line"> -  style: 				# 代码块风格</span><br><span class="line"> +  style: mac</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">codeblock:				<span class="comment"># 代码块</span></span><br><span class="line">  <span class="comment"># 高亮主题: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic		</span></span><br><span class="line">  highlight_theme: normal		<span class="comment"># 从上面选一个自己喜欢的主题</span></span><br><span class="line"></span><br><span class="line">  copy_button:				<span class="comment"># 复制按钮</span></span><br><span class="line"> -  <span class="built_in">enable</span>: <span class="literal">false</span>			<span class="comment"># 是否开启</span></span><br><span class="line"> +  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"> -  show_result: <span class="literal">false</span>			<span class="comment"># 点击复制完后是否显示 复制成功 结果提示</span></span><br><span class="line"> -  show_result: <span class="literal">true</span></span><br><span class="line"> </span><br><span class="line">    <span class="comment"># 可选择: default | flat | mac </span></span><br><span class="line"> -  style: 				<span class="comment"># 代码块风格</span></span><br><span class="line"> +  style: mac</span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览</p>
@@ -532,7 +527,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中，第一种</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  enable: true						# 是否开启</span><br><span class="line">  sidebar: false					# 显示在侧边栏</span><br><span class="line">- scrollpercent: false					# 滚动百分比</span><br><span class="line">+ scrollpercent: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span>						<span class="comment"># 是否开启</span></span><br><span class="line">  sidebar: <span class="literal">false</span>					<span class="comment"># 显示在侧边栏</span></span><br><span class="line">- scrollpercent: <span class="literal">false</span>					<span class="comment"># 滚动百分比</span></span><br><span class="line">+ scrollpercent: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览</p>
@@ -540,7 +535,7 @@
 </li>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中，第二种</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">reading_progress:                   # 阅读进度条</span><br><span class="line">- enable: false						# 是否开启</span><br><span class="line">+ enable: true</span><br><span class="line">  # 可选择: top | bottom</span><br><span class="line">  position: top						# 显示在顶部或者底部</span><br><span class="line">  color: &quot;#37c6c0&quot;					# 进度条颜色</span><br><span class="line">  height: 3px						# 进度条宽度</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">reading_progress:                   <span class="comment"># 阅读进度条</span></span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">false</span>						<span class="comment"># 是否开启</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 可选择: top | bottom</span></span><br><span class="line">  position: top						<span class="comment"># 显示在顶部或者底部</span></span><br><span class="line">  color: <span class="string">&quot;#37c6c0&quot;</span>					<span class="comment"># 进度条颜色</span></span><br><span class="line">  height: 3px						<span class="comment"># 进度条宽度</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览</p>
@@ -554,7 +549,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">bookmark:                           			# 书签</span><br><span class="line">  enable: false						# 是否开启</span><br><span class="line">  color: &quot;#222&quot;						# 书签颜色</span><br><span class="line">  # 如果 auto, 在关闭页面或单击书签图标时保存阅读进度。</span><br><span class="line">  # 如果 manual, 仅通过点击书签图标保存它。</span><br><span class="line">  save: auto						# 书签保存方式 auto|manual</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">bookmark:                           			<span class="comment"># 书签</span></span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">false</span>						<span class="comment"># 是否开启</span></span><br><span class="line">  color: <span class="string">&quot;#222&quot;</span>						<span class="comment"># 书签颜色</span></span><br><span class="line">  <span class="comment"># 如果 auto, 在关闭页面或单击书签图标时保存阅读进度。</span></span><br><span class="line">  <span class="comment"># 如果 manual, 仅通过点击书签图标保存它。</span></span><br><span class="line">  save: auto						<span class="comment"># 书签保存方式 auto|manual</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览（貌似只在全屏下显示）</p>
@@ -565,7 +560,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">github_banner:</span><br><span class="line">- enable: false						# 是否开启</span><br><span class="line">+ enable: true</span><br><span class="line">  permalink: https:&#x2F;&#x2F;github.com&#x2F;yourname		# GitHub地址</span><br><span class="line">  title: Follow me on GitHub				# 鼠标放上去显示的标题</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">github_banner:</span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">false</span>						<span class="comment"># 是否开启</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  permalink: https://github.com/yourname		<span class="comment"># GitHub地址</span></span><br><span class="line">  title: Follow me on GitHub				<span class="comment"># 鼠标放上去显示的标题</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览</p>
@@ -576,7 +571,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-  fancybox: false</span><br><span class="line">+  fancybox: true</span><br><span class="line"></span><br><span class="line">-  mediumzoom: false</span><br><span class="line">+  mediumzoom: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-  fancybox: <span class="literal">false</span></span><br><span class="line">+  fancybox: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">-  mediumzoom: <span class="literal">false</span></span><br><span class="line">+  mediumzoom: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>两者都能实现图片放大功能，选一个即可（不能同时使用）</p>
@@ -590,14 +585,14 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  lazyload: false</span><br><span class="line">+  lazyload: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  lazyload: <span class="literal">false</span></span><br><span class="line">+  lazyload: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="25-汉字与英文之间加空格符-可选">25. 汉字与英文之间加空格符(可选)</h3>
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  pangu: false </span><br><span class="line">+  pangu: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-  pangu: <span class="literal">false</span> </span><br><span class="line">+  pangu: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览（自动加空格）</p>
@@ -608,7 +603,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">- enable: false              # 设 true 开启</span><br><span class="line">+ enable: false</span><br><span class="line">  total_visitors: true       # 总阅读人数（uv数）</span><br><span class="line">  total_visitors_icon: user  # 阅读总人数的图标</span><br><span class="line">  total_views: true          # 总阅读次数（pv数）</span><br><span class="line">  total_views_icon: eye      # 阅读总次数的图标</span><br><span class="line">  post_views: true           # 开启内容阅读次数</span><br><span class="line">  post_views_icon: eye       # 内容页阅读数的图标</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">false</span>              <span class="comment"># 设 true 开启</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">false</span></span><br><span class="line">  total_visitors: <span class="literal">true</span>       <span class="comment"># 总阅读人数（uv数）</span></span><br><span class="line">  total_visitors_icon: user  <span class="comment"># 阅读总人数的图标</span></span><br><span class="line">  total_views: <span class="literal">true</span>          <span class="comment"># 总阅读次数（pv数）</span></span><br><span class="line">  total_views_icon: eye      <span class="comment"># 阅读总次数的图标</span></span><br><span class="line">  post_views: <span class="literal">true</span>           <span class="comment"># 开启内容阅读次数</span></span><br><span class="line">  post_views_icon: eye       <span class="comment"># 内容页阅读数的图标</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>效果预览</p>
@@ -619,7 +614,7 @@
 <ul>
 <li>
 <p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">motion:</span><br><span class="line">  enable: true				# 是否开启</span><br><span class="line">  async: false				# 是否异步</span><br><span class="line">  </span><br><span class="line">  transition:				# 动画</span><br><span class="line">    # 可选择:</span><br><span class="line">    # fadeIn | flipXIn | flipYIn | flipBounceXIn | flipBounceYIn</span><br><span class="line">    # swoopIn | whirlIn | shrinkIn | expandIn</span><br><span class="line">    # bounceIn | bounceUpIn | bounceDownIn | bounceLeftIn | bounceRightIn</span><br><span class="line">    # slideUpIn | slideDownIn | slideLeftIn | slideRightIn</span><br><span class="line">    # slideUpBigIn | slideDownBigIn | slideLeftBigIn | slideRightBigIn</span><br><span class="line">    # perspectiveUpIn | perspectiveDownIn | perspectiveLeftIn | perspectiveRightIn</span><br><span class="line">    post_block: fadeIn			# 文章</span><br><span class="line"></span><br><span class="line">    post_header: slideDownIn		# 文章头</span><br><span class="line">    post_body: slideDownIn		# 文章身体</span><br><span class="line">    coll_header: slideLeftIn		# 未知</span><br><span class="line">    </span><br><span class="line">    sidebar: slideUpIn			#仅适用于（Pisces | Gemini）</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">motion:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span>				<span class="comment"># 是否开启</span></span><br><span class="line">  async: <span class="literal">false</span>				<span class="comment"># 是否异步</span></span><br><span class="line">  </span><br><span class="line">  transition:				<span class="comment"># 动画</span></span><br><span class="line">    <span class="comment"># 可选择:</span></span><br><span class="line">    <span class="comment"># fadeIn | flipXIn | flipYIn | flipBounceXIn | flipBounceYIn</span></span><br><span class="line">    <span class="comment"># swoopIn | whirlIn | shrinkIn | expandIn</span></span><br><span class="line">    <span class="comment"># bounceIn | bounceUpIn | bounceDownIn | bounceLeftIn | bounceRightIn</span></span><br><span class="line">    <span class="comment"># slideUpIn | slideDownIn | slideLeftIn | slideRightIn</span></span><br><span class="line">    <span class="comment"># slideUpBigIn | slideDownBigIn | slideLeftBigIn | slideRightBigIn</span></span><br><span class="line">    <span class="comment"># perspectiveUpIn | perspectiveDownIn | perspectiveLeftIn | perspectiveRightIn</span></span><br><span class="line">    post_block: fadeIn			<span class="comment"># 文章</span></span><br><span class="line"></span><br><span class="line">    post_header: slideDownIn		<span class="comment"># 文章头</span></span><br><span class="line">    post_body: slideDownIn		<span class="comment"># 文章身体</span></span><br><span class="line">    coll_header: slideLeftIn		<span class="comment"># 未知</span></span><br><span class="line">    </span><br><span class="line">    sidebar: slideUpIn			<span class="comment">#仅适用于（Pisces | Gemini）</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <br>
@@ -1172,12 +1167,12 @@ if(canvas.getContext){
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">67k</span>
+    <span title="站点总字数">63k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:01</span>
+    <span title="站点阅读时长">57 分钟</span>
 </div><!-- 网站运行时间的设置 -->
 <span id="timeDate">载入天数...</span>
 <span id="times">载入时分秒...</span> 

@@ -49,7 +49,7 @@
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.png">
 <meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385-1616991444889.png">
 <meta property="article:published_time" content="2021-03-04T03:06:58.000Z">
-<meta property="article:modified_time" content="2021-03-29T04:23:05.465Z">
+<meta property="article:modified_time" content="2021-04-17T10:59:18.258Z">
 <meta property="article:author" content="Mr.XiaoSi">
 <meta property="article:tag" content="Node">
 <meta name="twitter:card" content="summary">
@@ -70,11 +70,6 @@
 
 
   <meta name="baidu-site-verification" content="code-kwy5jp4uzm" />
-
-
-
-
-  <meta name="msvalidate.01" content="0EA599BA79F88AF739AD8E309E599667" />
 
   <title>Node安装 | 小四先生的博客</title>
   
@@ -260,7 +255,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-29 12:23:05" itemprop="dateModified" datetime="2021-03-29T12:23:05+08:00">2021-03-29</time>
+                <time title="修改时间：2021-04-17 18:59:18" itemprop="dateModified" datetime="2021-04-17T18:59:18+08:00">2021-04-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -359,7 +354,7 @@
 <ul>
 <li>
 <p>启动 <code>cmd</code> 命令框，执行下面代码查看 <code>node</code> 和 <code>npm</code> 版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt=""></p>
 </li>
 </ul>
@@ -376,7 +371,7 @@
 </li>
 <li>
 <p>启动cmd，依次输入：（我的 <code>node</code> 在D盘下）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm config set prefix &quot;D:\node\node_global&quot;</span><br><span class="line"></span><br><span class="line">npm config set cache &quot;D:\node\node_cache&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;D:\node\node_global&quot;</span></span><br><span class="line"></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;D:\node\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/npm%E5%85%A8%E5%B1%80-1616406279132.png" alt=""></p>
 </li>
 </ul>
@@ -412,11 +407,11 @@
 <ul>
 <li>
 <p>命令框输入下面代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>检查是否配置成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.png" alt=""></p>
 </li>
 </ul>
@@ -427,7 +422,7 @@
 </li>
 <li>
 <p>找到 <code>C:\Users\Administrator\.npmrc</code> 文件并打开</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">prefix&#x3D;D:\node\node_global</span><br><span class="line">cache&#x3D;D:\node\node_cache</span><br><span class="line"></span><br><span class="line"># 镜像</span><br><span class="line">registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">prefix=D:\node\node_global</span><br><span class="line">cache=D:\node\node_cache</span><br><span class="line"></span><br><span class="line"><span class="comment"># 镜像</span></span><br><span class="line">registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>删除 <code>prefix</code> 和 <code>cache</code> 这两个代码段，并环境变量改为原来的环境变量（<font color='red'><strong>见2.2</strong></font>）</p>
@@ -984,12 +979,12 @@ if(canvas.getContext){
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">67k</span>
+    <span title="站点总字数">63k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:01</span>
+    <span title="站点阅读时长">57 分钟</span>
 </div><!-- 网站运行时间的设置 -->
 <span id="timeDate">载入天数...</span>
 <span id="times">载入时分秒...</span> 
