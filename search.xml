@@ -1349,8 +1349,8 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
         <category>SSH密钥</category>
       </categories>
       <tags>
-        <tag>Github</tag>
         <tag>Gitee</tag>
+        <tag>Github</tag>
         <tag>SSH</tag>
       </tags>
   </entry>
@@ -1763,8 +1763,8 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
         <category>图床</category>
       </categories>
       <tags>
-        <tag>Node</tag>
         <tag>Gitee</tag>
+        <tag>Node</tag>
         <tag>Typora</tag>
         <tag>PicGo</tag>
       </tags>
@@ -2487,8 +2487,8 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
         <category>Docsify笔记</category>
       </categories>
       <tags>
-        <tag>Docsify</tag>
         <tag>Git</tag>
+        <tag>Docsify</tag>
       </tags>
   </entry>
   <entry>
@@ -2610,10 +2610,10 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
         <category>Docsify笔记</category>
       </categories>
       <tags>
-        <tag>Docsify</tag>
         <tag>Git</tag>
-        <tag>Node</tag>
         <tag>Github</tag>
+        <tag>Docsify</tag>
+        <tag>Node</tag>
       </tags>
   </entry>
   <entry>
@@ -2865,9 +2865,9 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       </categories>
       <tags>
         <tag>Git</tag>
-        <tag>Node</tag>
         <tag>Github</tag>
         <tag>Hexo</tag>
+        <tag>Node</tag>
       </tags>
   </entry>
   <entry>
