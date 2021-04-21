@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="/css/main.css">
 
 <link rel="stylesheet" href="https://fonts.loli.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/pace/pace-theme-minimal.min.css">
   <script src="//cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/pace/pace.min.js"></script>
@@ -54,8 +54,33 @@
 
   <title>分类: GitHub | 小四先生的博客</title>
   
+    <script>
+      function sendPageView() {
+        if (CONFIG.hostname !== location.hostname) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'G-9MFY40SQQ3',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
 
 
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?77275f71afd564f971b2eca446a8d32a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -128,17 +153,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">14</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">15</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">11</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">20</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">21</span></a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -314,20 +339,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -363,6 +388,10 @@
         
         
           <li>
+            <a style="color: #0593d3;" href="/archives/a5c9127.html" title="Gridea个人博客搭建(有手就行)" target="_blank" >Gridea个人博客搭建(有手就行)</a>
+          </li>
+        
+          <li>
             <a style="color: #0593d3;" href="/archives/1d79f7d1.html" title="Hexo-Next配置（后续更新）" target="_blank" >Hexo-Next配置（后续更新）</a>
           </li>
         
@@ -376,10 +405,6 @@
         
           <li>
             <a style="color: #0593d3;" href="/archives/4536b2e4.html" title="Vercel托管多个网站" target="_blank" >Vercel托管多个网站</a>
-          </li>
-        
-          <li>
-            <a style="color: #0593d3;" href="/archives/a2816564.html" title="Vercel托管Github Pages" target="_blank" >Vercel托管Github Pages</a>
           </li>
         
       </ul>
@@ -679,12 +704,12 @@ if(canvas.getContext){
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">63k</span>
+    <span title="站点总字数">64k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">57 分钟</span>
+    <span title="站点阅读时长">58 分钟</span>
 </div><!-- 网站运行时间的设置 -->
 <span id="timeDate">载入天数...</span>
 <span id="times">载入时分秒...</span> 
@@ -742,13 +767,13 @@ setInterval("createtime()",250);
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script>
 
 <script src="/js/utils.js"></script>
 
@@ -811,16 +836,6 @@ setInterval("createtime()",250);
   
 
   
-  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
-  <script>
-      window.addEventListener('load', () => {
-      quicklink({
-        timeout : 3000,
-        priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://hexo.xiaosi.world/categories/GitHub/',]
-      });
-      });
-  </script>
 
 
 <script>
@@ -852,17 +867,20 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 </script>
 
 
-  <script async src="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/text.js"></script>
+  <script async src="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/js/text.js"></script>
 
 
 
 
-  <script src="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/activate-power-mode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/js/activate-power-mode.min.js"></script>
   <script>
     POWERMODE.colorful = true;
     POWERMODE.shake = false;
     document.body.addEventListener('input', POWERMODE);
   </script>
 
+
+<!--崩溃欺骗-->
+<script src="//cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/js/crash_cheat.js"></script>
 </body>
 </html>

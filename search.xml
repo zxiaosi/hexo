@@ -705,16 +705,16 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
 <p><font color="red">注意：</font>下面所有特效的JS代码文件都放在站点的source目录下（即 <code>./source/js/cursor/</code>）而不是主题目录下（如果没有 <code>js/cursor</code> 目录，则新建一个）</p>
 <ul>
 <li>
-<p><a href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/fireworks.js">fireworks.js</a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/js/fireworks.js">fireworks.js</a></p>
 </li>
 <li>
-<p><a href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/explosion.js">explosion.js</a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/js/explosion.js">explosion.js</a></p>
 </li>
 <li>
-<p><a href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/love.js">love.js</a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/js/love.js">love.js</a></p>
 </li>
 <li>
-<p><a href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/text.js">text.js</a></p>
+<p><a href="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/js/text.js">text.js</a></p>
 </li>
 </ul>
 </li>
@@ -1175,6 +1175,245 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       <tags>
         <tag>Github</tag>
         <tag>jsDeliver</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Gridea个人博客搭建(有手就行)</title>
+    <url>/archives/a5c9127.html</url>
+    <content><![CDATA[<h2 id="一、Girdea下载">一、Girdea下载</h2>
+<h3 id="1-1-Gridea官网">1.1 <a href="https://gridea.dev/">Gridea官网</a></h3>
+<h3 id="1-2-Gridea使用手册">1.2 <a href="https://gridea.dev/gridea-start/">Gridea使用手册</a></h3>
+<h3 id="1-3-下载Gridea">1.3 下载Gridea</h3>
+<ul>
+<li>
+<p>点击 <code>立即开始</code></p>
+<span id="more"></span>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E7%AB%8B%E5%8D%B3%E5%BC%80%E5%A7%8B.png" alt=""></p>
+</li>
+<li>
+<p>选择对应版本下载</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E7%89%88%E6%9C%AC.png" alt=""></p>
+</li>
+</ul>
+<h3 id="1-4-安装Gridea">1.4 安装Gridea</h3>
+<ul>
+<li>
+<p>选择 <code>为所有用户安装</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E4%B8%BA%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7%E5%AE%89%E8%A3%85.png" alt=""></p>
+</li>
+<li>
+<p>选择安装位置</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE.png" alt=""></p>
+</li>
+</ul>
+<h2 id="二、Gridea使用">二、Gridea使用</h2>
+<h3 id="2-1-span-id-jump-修改源文件路径-span">2.1 <span id="jump">修改源文件路径</span></h3>
+<ul>
+<li>
+<p>点击 <code>设置</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p>更改站点源文件路径</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E6%BA%90%E6%96%87%E4%BB%B6.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-2-预览网站">2.2 预览网站</h3>
+<ul>
+<li>
+<p>点击 <code>预览</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E9%A2%84%E8%A7%88.png" alt=""></p>
+</li>
+<li>
+<p>效果</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E6%95%88%E6%9E%9C.png" alt=""></p>
+</li>
+<li>
+<p><font color="red">注意：</font>每次修改都要重新点击预览，刷新页面不会显示修改的效果</p>
+</li>
+</ul>
+<h3 id="2-3-文章">2.3 文章</h3>
+<ul>
+<li>
+<p>点击 <code>+</code> 开始写文章</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E6%96%87%E7%AB%A0.png" alt=""></p>
+</li>
+<li>
+<p>写文章</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%86%99%E6%96%87%E7%AB%A0.png" alt=""></p>
+</li>
+<li>
+<p>点击 <code>预览</code> 即可看到效果</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E9%A2%84%E8%A7%88%E6%96%87%E7%AB%A0.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-4-菜单">2.4 菜单</h3>
+<ul>
+<li>
+<p>新建菜单</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E6%96%B0%E5%BB%BA%E8%8F%9C%E5%8D%95.png" alt=""></p>
+</li>
+<li>
+<p>内部链接</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%86%85%E9%93%BE.png" alt=""></p>
+</li>
+<li>
+<p>外部链接</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%A4%96%E9%93%BE.png" alt=""></p>
+</li>
+<li>
+<p>效果</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E8%8F%9C%E5%8D%95%E6%95%88%E6%9E%9C.png" alt=""></p>
+</li>
+<li>
+<p>菜单顺序，长按可挪动位置</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E9%A1%BA%E5%BA%8F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-5-标签">2.5 标签</h3>
+<ul>
+<li>
+<p>新建标签</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E6%A0%87%E7%AD%BE.png" alt=""></p>
+</li>
+<li>
+<p>输入标签名，URL自动填充</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-6-主题（每一个配置都需要点击右下角的保存）">2.6 主题（每一个配置都需要点击右下角的保存）</h3>
+<ul>
+<li>
+<p>基础配置</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p>自定义配置（<font color="red">注意：</font>每个主题的自定义配置不一样）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p>网页图标</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E7%BD%91%E9%A1%B5%E5%9B%BE%E6%A0%87.png" alt=""></p>
+</li>
+<li>
+<p>头像配置（和网页图标配置一样）</p>
+</li>
+<li>
+<p>预览效果</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E4%B8%BB%E9%A2%98%E6%95%88%E6%9E%9C.png" alt=""></p>
+</li>
+</ul>
+<h2 id="三、部署到GitHub">三、部署到GitHub</h2>
+<h3 id="3-1-注册Github">3.1 注册<a href="https://github.com/">Github</a></h3>
+<h3 id="3-2-Github简单实用">3.2 <a href="https://hexo.xiaosi.world/archives/d345b092.html#%E4%BA%8C%E3%80%81Gihub%E4%BD%BF%E7%94%A8">Github简单实用</a></h3>
+<h3 id="3-3-Github配置">3.3 Github配置</h3>
+<ul>
+<li>
+<p>创建仓库</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93-1618976883099.png" alt=""></p>
+</li>
+<li>
+<p>开启 <code>Github Pages</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/Githubpages.png" alt=""></p>
+</li>
+<li>
+<p>获取令牌</p>
+<ul>
+<li>
+<p>点击 <code>Settings</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E7%82%B9%E5%87%BBSettings.png" alt=""></p>
+</li>
+<li>
+<p>往下拉找到并点击 <code>Developer settings</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p>点击<code>Personal access tokens</code>，生成token <code>Generate new token</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/token.png" alt=""></p>
+</li>
+<li>
+<p>令牌名字<code>Note</code>随意，赋予<code>repo</code>权限，最下面有生成按钮</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E6%9D%83%E9%99%90.png" alt=""></p>
+</li>
+<li>
+<p>复制令牌（<font color='red'>注意：</font>令牌只显示一次，刷新页面令牌就无了）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%A4%8D%E5%88%B6%E4%BB%A4%E7%89%8C.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-4-Gridea配置">3.4 Gridea配置</h3>
+<ul>
+<li>
+<p>根据提示填入信息，保存后检测连接</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/Gridea%E9%85%8D%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p>连接成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+<li>
+<p>同步到远程仓库</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%90%8C%E6%AD%A5.png" alt=""></p>
+</li>
+<li>
+<p>同步成功（连接成功后，同步有时会报错，多同步几次就好了）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%90%8C%E6%AD%A5%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+<li>
+<p>访问自己的网站：<a href="https://yourname.github.io/">https://yourname.github.io/</a></p>
+</li>
+</ul>
+<h2 id="四、更换主题">四、更换主题</h2>
+<h3 id="4-1-下载主题">4.1 下载主题</h3>
+<ul>
+<li>
+<p>更多主题</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E6%9B%B4%E5%A4%9A%E4%B8%BB%E9%A2%98.png" alt=""></p>
+</li>
+<li>
+<p>下载自己喜欢的主题</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98.png" alt=""></p>
+</li>
+<li>
+<p>下载压缩包</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E4%B8%8B%E8%BD%BDzip.png" alt=""></p>
+</li>
+<li>
+<p>解压文件，找到如图的文件目录，并将这个文件夹放到 <code>./Gridea/themes/</code> 下，找不到路径 <a href="#jump">见2.1</a></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png" alt=""></p>
+</li>
+</ul>
+<h3 id="4-2-选择主题">4.2 选择主题</h3>
+<ul>
+<li>
+<p>重启Gridea软件</p>
+</li>
+<li>
+<p>选择主题并保存</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98.png" alt=""></p>
+</li>
+<li>
+<p>配置 <code>自定义配置</code> （有的主题需要先配置 自定义配置 才能预览）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E9%85%8D%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89.png" alt=""></p>
+</li>
+<li>
+<p>预览效果</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gridea/%E5%95%A6%E5%95%A6%E5%95%A6.png" alt=""></p>
+</li>
+</ul>
+<h2 id="五、托管到Vercel">五、<a href="https://hexo.xiaosi.world/archives/a2816564.html#%E4%BA%8C%E3%80%81Vercel%E4%BD%BF%E7%94%A8">托管到Vercel</a></h2>
+<br/>
+<blockquote>
+<p>参考：【鸣谢】</p>
+<p><a href="https://thelightfor-pds.github.io/post/girdea-an-zhuang-ji-pei-zhi-jin-zai-ben-di/">Girdea 安装及配置</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>Gridea</tag>
       </tags>
   </entry>
   <entry>
