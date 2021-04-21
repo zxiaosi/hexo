@@ -126,6 +126,118 @@
       </tags>
   </entry>
   <entry>
+    <title>Git</title>
+    <url>/archives/6525f1ce.html</url>
+    <content><![CDATA[<h3 id="1-1-Git简介">1.1 Git简介</h3>
+<ul>
+<li>
+<p>Git是目前世界上最先进的分布式版本控制系统（没有之一）。</p>
+<span id="more"></span>
+</li>
+<li>
+<p><a href="https://baike.baidu.com/item/GIT/12647237?fr=aladdin">更多详情</a></p>
+</li>
+</ul>
+<h3 id="1-2-Git安装">1.2 Git安装</h3>
+<ul>
+<li>
+<p>windows 安装</p>
+<ul>
+<li>
+<p><a href="https://git-scm.com/downloads/">下载地址</a></p>
+</li>
+<li>
+<p><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">安装教程</a></p>
+</li>
+<li>
+<p>安装完成之后，找到这个 <code>Git Bash</code> 的命令行工具，用这个工具来使用git。</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git/git.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li>
+<p>linux 安装</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>安装完成之后，用  <code>git --version</code>  查看git版本</p>
+</li>
+</ul>
+<h3 id="1-3-Git使用">1.3 Git使用</h3>
+<ul>
+<li>
+<p>创建用户</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;your.name&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;your.email&quot;</span></span><br></pre></td></tr></table></figure>
+<p>在  <code> &quot;your.name&quot;</code>  <code>&quot;your.email&quot;</code>  内填入你的姓名与邮箱。</p>
+<p>检查信息是否写入成功。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>常用的命令如下：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加当前目录的所有文件到暂存区</span></span><br><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到仓库区</span></span><br><span class="line">git commit</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 版本库上传到远程仓库</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆远程代码 url: 他人仓库链接</span></span><br><span class="line">git <span class="built_in">clone</span> url</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 取回远程主机某个分支的更新，与本地分支合并</span></span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支 branch: 分支名</span></span><br><span class="line">git merge [branch]</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看提交日志</span></span><br><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><a href="https://git-scm.com/docs">更多Git命令</a></p>
+</li>
+</ul>
+<h3 id="1-4-本地文件上传">1.4 本地文件上传</h3>
+<ul>
+<li>
+<p>打开 <code>Git Bash</code> ，进入到项目文件夹</p>
+</li>
+<li>
+<p>初始化本地仓库</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git init  </span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>将所有文件添加到仓库</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>提交文件到仓库，引号内为提交说明</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&#x27;提交文件&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>添加远程仓库地址</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git remote add origin 远程仓库地址 </span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>如果是第一次提交，还需下面命令</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;your.name&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;your.email&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>将仓库内容推送到远程，<code>master</code> 为远程仓库分支名</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>如果推送失败！！！</p>
+<ul>
+<li>
+<p>方法一</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 远程库与本地同步合并</span></span><br><span class="line">git pull --rebase origin master	</span><br><span class="line"></span><br><span class="line"><span class="comment"># 再次推送</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>方法二（不推荐，文件可能丢失）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 强制上传</span></span><br><span class="line">git push -f origin master		</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<br>]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Github Pages</title>
     <url>/archives/b48e2719.html</url>
     <content><![CDATA[<h2 id="一、Github-Pages">一、Github Pages</h2>
@@ -332,118 +444,6 @@
       <tags>
         <tag>Git</tag>
         <tag>Gitee</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git</title>
-    <url>/archives/6525f1ce.html</url>
-    <content><![CDATA[<h3 id="1-1-Git简介">1.1 Git简介</h3>
-<ul>
-<li>
-<p>Git是目前世界上最先进的分布式版本控制系统（没有之一）。</p>
-<span id="more"></span>
-</li>
-<li>
-<p><a href="https://baike.baidu.com/item/GIT/12647237?fr=aladdin">更多详情</a></p>
-</li>
-</ul>
-<h3 id="1-2-Git安装">1.2 Git安装</h3>
-<ul>
-<li>
-<p>windows 安装</p>
-<ul>
-<li>
-<p><a href="https://git-scm.com/downloads/">下载地址</a></p>
-</li>
-<li>
-<p><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">安装教程</a></p>
-</li>
-<li>
-<p>安装完成之后，找到这个 <code>Git Bash</code> 的命令行工具，用这个工具来使用git。</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git/git.png" alt=""></p>
-</li>
-</ul>
-</li>
-<li>
-<p>linux 安装</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>安装完成之后，用  <code>git --version</code>  查看git版本</p>
-</li>
-</ul>
-<h3 id="1-3-Git使用">1.3 Git使用</h3>
-<ul>
-<li>
-<p>创建用户</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;your.name&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;your.email&quot;</span></span><br></pre></td></tr></table></figure>
-<p>在  <code> &quot;your.name&quot;</code>  <code>&quot;your.email&quot;</code>  内填入你的姓名与邮箱。</p>
-<p>检查信息是否写入成功。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>常用的命令如下：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加当前目录的所有文件到暂存区</span></span><br><span class="line">git add .</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 提交暂存区到仓库区</span></span><br><span class="line">git commit</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 版本库上传到远程仓库</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆远程代码 url: 他人仓库链接</span></span><br><span class="line">git <span class="built_in">clone</span> url</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 取回远程主机某个分支的更新，与本地分支合并</span></span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 合并指定分支到当前分支 branch: 分支名</span></span><br><span class="line">git merge [branch]</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看提交日志</span></span><br><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><a href="https://git-scm.com/docs">更多Git命令</a></p>
-</li>
-</ul>
-<h3 id="1-4-本地文件上传">1.4 本地文件上传</h3>
-<ul>
-<li>
-<p>打开 <code>Git Bash</code> ，进入到项目文件夹</p>
-</li>
-<li>
-<p>初始化本地仓库</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git init  </span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>将所有文件添加到仓库</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>提交文件到仓库，引号内为提交说明</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&#x27;提交文件&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>添加远程仓库地址</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git remote add origin 远程仓库地址 </span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>如果是第一次提交，还需下面命令</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;your.name&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;your.email&quot;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>将仓库内容推送到远程，<code>master</code> 为远程仓库分支名</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>如果推送失败！！！</p>
-<ul>
-<li>
-<p>方法一</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 远程库与本地同步合并</span></span><br><span class="line">git pull --rebase origin master	</span><br><span class="line"></span><br><span class="line"><span class="comment"># 再次推送</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>方法二（不推荐，文件可能丢失）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 强制上传</span></span><br><span class="line">git push -f origin master		</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<br>]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -1796,6 +1796,116 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       </tags>
   </entry>
   <entry>
+    <title>Hexo安装及配置</title>
+    <url>/archives/5ef212b6.html</url>
+    <content><![CDATA[<h2 id="一、安装之前准备">一、安装之前准备</h2>
+<h3 id="1-1-Git">1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3>
+<h3 id="1-2-Node">1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3>
+<h3 id="1-3-Github">1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3>
+<span id="more"></span>
+<h2 id="二、安装">二、安装</h2>
+<h3 id="2-1-安装Hexo">2.1 安装Hexo</h3>
+<ul>
+<li>
+<p>管理员身份启动cmd，控制台输入</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexo </span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>如果安装的慢，可以使用淘宝镜像，连续按两次 <code>Ctrl+C</code> 退出当前cmd进程，然后控制台输入</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexo cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-2-查看Hexo信息">2.2 查看Hexo信息</h3>
+<ul>
+<li>
+<p>控制台输入</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>我的Hexo信息（不需要输入）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo-cli: 4.2.0</span><br><span class="line">node: 14.15.4</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="三、初始化">三、初始化</h2>
+<h3 id="3-1-初始化">3.1 初始化</h3>
+<ul>
+<li>
+<p>新建一个文件夹（文件位置、名字随意）</p>
+</li>
+<li>
+<p>cmd命令进入文件夹（我的文件夹在e盘，名为blog）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">e:				<span class="comment"># 输入 e: 回车进入e盘  </span></span><br><span class="line"><span class="built_in">cd</span> blog				<span class="comment"># 输入 cd blog 回车进入 blog 文件夹</span></span><br><span class="line">hexo init			<span class="comment"># 初始化hexo文件</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>显示如下信息表示初始化成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" alt=""></p>
+</li>
+</ul>
+<h3 id="3-2-本地访问">3.2 本地访问</h3>
+<ul>
+<li>
+<p>控制台输入</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo clean		<span class="comment"># 清理缓存</span></span><br><span class="line">hexo s			<span class="comment"># 启动服务，本地访问</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>hexo s</code> 是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容</p>
+</li>
+</ul>
+<h2 id="四、配置站点信息">四、配置站点信息</h2>
+<h3 id="4-1-配置-Hexo-网站相关信息">4.1 配置 Hexo 网站相关信息</h3>
+<ul>
+<li>
+<p>找到根目录下的 <code>_config.yml</code> 文件（以下统称为站点配置文件）并打开</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site (设置)</span></span><br><span class="line">title: 小四先生の博客				<span class="comment"># 网站标题</span></span><br><span class="line">subtitle: <span class="string">&#x27;记录生活中的点点滴滴&#x27;</span>			<span class="comment"># 网站副标题</span></span><br><span class="line">description: <span class="string">&#x27;生命不息 奋斗不止&#x27;</span>			<span class="comment"># 描述，介绍网站的</span></span><br><span class="line">keywords:                        		<span class="comment"># 网站的关键字</span></span><br><span class="line">author: Mr.XiaoSi                		<span class="comment"># 博主姓名</span></span><br><span class="line">language: zh-CN                  		<span class="comment"># 语言：zh-CN 是简体中文</span></span><br><span class="line">timezone: <span class="string">&#x27;Asia/Shanghai&#x27;</span>        		<span class="comment"># 时区</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="4-2-部署到github">4.2 部署到github</h3>
+<ul>
+<li>
+<p><a href="https://blog.csdn.net/u013778905/article/details/83501204">ssh key</a> 配置</p>
+</li>
+<li>
+<p>找到站点配置文件 <code>_config.yml</code> 中的deploy的部分</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">deploy:               					<span class="comment"># git</span></span><br><span class="line">  <span class="built_in">type</span>: <span class="string">&#x27;git&#x27;</span>								</span><br><span class="line">  repo: <span class="string">&#x27;git@github.com:zxiaosi/Hexo.git&#x27;</span>		<span class="comment"># github的ssh链接</span></span><br><span class="line">  branch: <span class="string">&#x27;hexo&#x27;</span>					<span class="comment"># 分支</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>安装部署插件（可在后面加上淘宝镜像）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>控制台输入以下代码</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo clean			<span class="comment"># 清理缓存</span></span><br><span class="line">hexo g				<span class="comment"># 生成静态页面至public目录</span></span><br><span class="line">hexo d				<span class="comment"># 部署到GitHub</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>部署之后，就可以通过 <a href="http://yourname.github.io">http://yourname.github.io</a> 访问到你的博客了</p>
+</li>
+</ul>
+<h2 id="五、常用hexo命令">五、常用hexo命令</h2>
+<h3 id="5-1-常见命令">5.1 常见命令</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span> 					<span class="comment"># 新建文章</span></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> 				<span class="comment"># 新建页面</span></span><br><span class="line">hexo <span class="built_in">help</span>  						<span class="comment"># 查看帮助</span></span><br><span class="line">hexo version  						<span class="comment"># 查看Hexo的版本</span></span><br><span class="line"></span><br><span class="line">hexo clean						<span class="comment"># 清理缓存</span></span><br><span class="line">hexo server 						<span class="comment"># 开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）</span></span><br><span class="line">hexo generate 						<span class="comment"># 生成静态页面至public目录</span></span><br><span class="line">hexo deploy 						<span class="comment"># 部署到GitHub</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-2-缩写">5.2 缩写</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="5-3-组合">5.3 组合</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo s -g 						<span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g 						<span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure>
+<h2 id="六、HEXO卸载与重装">六、HEXO卸载与重装</h2>
+<h3 id="6-1-卸载hexo">6.1 卸载hexo</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo</span><br></pre></td></tr></table></figure>
+<h3 id="6-2-卸载hexo客户端">6.2 卸载hexo客户端</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="6-3-进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。">6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。</h3>
+<br>
+]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Node</tag>
+        <tag>Github</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Node安装</title>
     <url>/archives/84979429.html</url>
     <content><![CDATA[<h2 id="一、Node安装">一、Node安装</h2>
@@ -1926,116 +2036,6 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       </categories>
       <tags>
         <tag>Node</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo安装及配置</title>
-    <url>/archives/5ef212b6.html</url>
-    <content><![CDATA[<h2 id="一、安装之前准备">一、安装之前准备</h2>
-<h3 id="1-1-Git">1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3>
-<h3 id="1-2-Node">1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3>
-<h3 id="1-3-Github">1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3>
-<span id="more"></span>
-<h2 id="二、安装">二、安装</h2>
-<h3 id="2-1-安装Hexo">2.1 安装Hexo</h3>
-<ul>
-<li>
-<p>管理员身份启动cmd，控制台输入</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexo </span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>如果安装的慢，可以使用淘宝镜像，连续按两次 <code>Ctrl+C</code> 退出当前cmd进程，然后控制台输入</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexo cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="2-2-查看Hexo信息">2.2 查看Hexo信息</h3>
-<ul>
-<li>
-<p>控制台输入</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>我的Hexo信息（不需要输入）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo-cli: 4.2.0</span><br><span class="line">node: 14.15.4</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="三、初始化">三、初始化</h2>
-<h3 id="3-1-初始化">3.1 初始化</h3>
-<ul>
-<li>
-<p>新建一个文件夹（文件位置、名字随意）</p>
-</li>
-<li>
-<p>cmd命令进入文件夹（我的文件夹在e盘，名为blog）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">e:				<span class="comment"># 输入 e: 回车进入e盘  </span></span><br><span class="line"><span class="built_in">cd</span> blog				<span class="comment"># 输入 cd blog 回车进入 blog 文件夹</span></span><br><span class="line">hexo init			<span class="comment"># 初始化hexo文件</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>显示如下信息表示初始化成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" alt=""></p>
-</li>
-</ul>
-<h3 id="3-2-本地访问">3.2 本地访问</h3>
-<ul>
-<li>
-<p>控制台输入</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo clean		<span class="comment"># 清理缓存</span></span><br><span class="line">hexo s			<span class="comment"># 启动服务，本地访问</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><code>hexo s</code> 是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容</p>
-</li>
-</ul>
-<h2 id="四、配置站点信息">四、配置站点信息</h2>
-<h3 id="4-1-配置-Hexo-网站相关信息">4.1 配置 Hexo 网站相关信息</h3>
-<ul>
-<li>
-<p>找到根目录下的 <code>_config.yml</code> 文件（以下统称为站点配置文件）并打开</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site (设置)</span></span><br><span class="line">title: 小四先生の博客				<span class="comment"># 网站标题</span></span><br><span class="line">subtitle: <span class="string">&#x27;记录生活中的点点滴滴&#x27;</span>			<span class="comment"># 网站副标题</span></span><br><span class="line">description: <span class="string">&#x27;生命不息 奋斗不止&#x27;</span>			<span class="comment"># 描述，介绍网站的</span></span><br><span class="line">keywords:                        		<span class="comment"># 网站的关键字</span></span><br><span class="line">author: Mr.XiaoSi                		<span class="comment"># 博主姓名</span></span><br><span class="line">language: zh-CN                  		<span class="comment"># 语言：zh-CN 是简体中文</span></span><br><span class="line">timezone: <span class="string">&#x27;Asia/Shanghai&#x27;</span>        		<span class="comment"># 时区</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="4-2-部署到github">4.2 部署到github</h3>
-<ul>
-<li>
-<p><a href="https://blog.csdn.net/u013778905/article/details/83501204">ssh key</a> 配置</p>
-</li>
-<li>
-<p>找到站点配置文件 <code>_config.yml</code> 中的deploy的部分</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">deploy:               					<span class="comment"># git</span></span><br><span class="line">  <span class="built_in">type</span>: <span class="string">&#x27;git&#x27;</span>								</span><br><span class="line">  repo: <span class="string">&#x27;git@github.com:zxiaosi/Hexo.git&#x27;</span>		<span class="comment"># github的ssh链接</span></span><br><span class="line">  branch: <span class="string">&#x27;hexo&#x27;</span>					<span class="comment"># 分支</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>安装部署插件（可在后面加上淘宝镜像）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>控制台输入以下代码</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo clean			<span class="comment"># 清理缓存</span></span><br><span class="line">hexo g				<span class="comment"># 生成静态页面至public目录</span></span><br><span class="line">hexo d				<span class="comment"># 部署到GitHub</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>部署之后，就可以通过 <a href="http://yourname.github.io">http://yourname.github.io</a> 访问到你的博客了</p>
-</li>
-</ul>
-<h2 id="五、常用hexo命令">五、常用hexo命令</h2>
-<h3 id="5-1-常见命令">5.1 常见命令</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span> 					<span class="comment"># 新建文章</span></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> 				<span class="comment"># 新建页面</span></span><br><span class="line">hexo <span class="built_in">help</span>  						<span class="comment"># 查看帮助</span></span><br><span class="line">hexo version  						<span class="comment"># 查看Hexo的版本</span></span><br><span class="line"></span><br><span class="line">hexo clean						<span class="comment"># 清理缓存</span></span><br><span class="line">hexo server 						<span class="comment"># 开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）</span></span><br><span class="line">hexo generate 						<span class="comment"># 生成静态页面至public目录</span></span><br><span class="line">hexo deploy 						<span class="comment"># 部署到GitHub</span></span><br></pre></td></tr></table></figure>
-<h3 id="5-2-缩写">5.2 缩写</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
-<h3 id="5-3-组合">5.3 组合</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo s -g 						<span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g 						<span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure>
-<h2 id="六、HEXO卸载与重装">六、HEXO卸载与重装</h2>
-<h3 id="6-1-卸载hexo">6.1 卸载hexo</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo</span><br></pre></td></tr></table></figure>
-<h3 id="6-2-卸载hexo客户端">6.2 卸载hexo客户端</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-cli -g</span><br></pre></td></tr></table></figure>
-<h3 id="6-3-进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。">6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。</h3>
-<br>
-]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Node</tag>
-        <tag>Github</tag>
-        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -2547,6 +2547,129 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       </tags>
   </entry>
   <entry>
+    <title>Vercel托管多个网站</title>
+    <url>/archives/4536b2e4.html</url>
+    <content><![CDATA[<h2 id="一、须知">一、须知</h2>
+<h3 id="1-1-Github-Pages">1.1 Github Pages</h3>
+<ul>
+<li>GitHub 个人只能拥有一个 GitHub Pages。</li>
+<li><code>yourname.github.io</code> 只能作用于一个仓库。</li>
+</ul>
+<span id="more"></span>
+<h3 id="1-2-Vercel">1.2 Vercel</h3>
+<ul>
+<li>参考大佬的 <a href="https://zhuanlan.zhihu.com/p/183977963">如何拥有多个GitHub Pages</a> 没有成功，故选择了 <a href="https://hexo.xiaosi.world/archives/a2816564.html">Vercel</a> 。</li>
+<li>Vercel 可以复制一份Github Pages文件，然后在它的空间新开一个页面。</li>
+<li>相当于把网站托管到了 Vercel，而不是托管到 Github。</li>
+</ul>
+<h2 id="二、搭建">二、搭建</h2>
+<h3 id="2-1-Github配置">2.1 Github配置</h3>
+<ul>
+<li>
+<p>新建 Github 仓库，名字随意，添加 <code>README</code> 文件</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt=""></p>
+</li>
+<li>
+<p>可以将自己写好的网站上传到这个仓库，比如<a href="https://hexo.xiaosi.world/archives/5ef212b6.html">Hexo</a>、<a href="https://hexo.xiaosi.world/archives/f8fffde8.html">Docsify</a>。或者新建一个 <code>index.html</code> 文件。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>添加 <code>CNAME</code> 文件，文件里写上域名</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/CNAME.png" alt=""></p>
+</li>
+<li>
+<p>仓库目录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E4%BB%93%E5%BA%93%E7%9B%AE%E5%BD%95.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-2-Github-Pages配置">2.2 Github Pages配置</h3>
+<ul>
+<li>
+<p>找到 <code>Settings</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p><font color='red'>注意：</font><code>Github Pages</code> 不要开！不要开！不要开！！！</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/GithubPages.png" alt=""></p>
+</li>
+<li>
+<p>如果你已经有仓库开启了 Github Pages，那么请关闭。Github 只允许个人拥有一个 GitHub Pages 。</p>
+</li>
+<li>
+<p>否则仓库会报下面的错，并且每次部署都会给邮箱发消息（Page build warning）。</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E9%94%99%E8%AF%AF1.png" alt=""></p>
+</li>
+<li>
+<p>不如直接托管到 Vercel，此时的 Github Pages 就只是一个仓库。（CNAME文件一定要有）</p>
+</li>
+</ul>
+<h3 id="2-3-Vercel-配置">2.3 Vercel 配置</h3>
+<ul>
+<li>
+<p><a href="https://hexo.xiaosi.world/archives/a2816564.html#%E4%BA%8C%E3%80%81Vercel%E4%BD%BF%E7%94%A8">Vercle 简单使用</a></p>
+</li>
+<li>
+<p>新建项目 <code>New Project</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE.png" alt=""></p>
+</li>
+<li>
+<p>导入项目 <code>import</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/import.png" alt=""></p>
+</li>
+<li>
+<p>选择个人 <code>Select</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/Select.png" alt=""></p>
+</li>
+<li>
+<p>继续 <code>Continue</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E6%A0%B9%E8%B7%AF%E5%BE%84.png" alt=""></p>
+</li>
+<li>
+<p>部署 <code>Deploy</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/Deploy.png" alt=""></p>
+</li>
+<li>
+<p>部署成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-4-域名配置">2.4 域名配置</h3>
+<ul>
+<li>
+<p>进入项目</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png" alt=""></p>
+</li>
+<li>
+<p>查看域名 <code>View Domains</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%8F%82%E8%80%83%E5%9F%9F%E5%90%8D.png" alt=""></p>
+</li>
+<li>
+<p>添加域名 <code>Add</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/add.png" alt=""></p>
+</li>
+<li>
+<p>域名添加成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%9F%9F%E5%90%8D%E6%B7%BB%E5%8A%A0%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+<li>
+<p>Vercel 默认为项目创建一个域名，可以通过 <code>Edit</code> --&gt; <code>Remove</code> 删除。</p>
+</li>
+</ul>
+<h3 id="2-5-常见问题">2.5 常见问题</h3>
+<ul>
+<li>见<a href="https://hexo.xiaosi.world/archives/a2816564.html#%E4%B8%89%E3%80%81%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE">Vercel 托管 Github Pages</a></li>
+</ul>
+<br/>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Github Pages</tag>
+        <tag>Vercel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vercel托管Github Pages</title>
     <url>/archives/a2816564.html</url>
     <content><![CDATA[<h2 id="一、Vercel">一、Vercel</h2>
@@ -2690,129 +2813,6 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
 <p><a href="https://www.jianshu.com/p/9f67ff433d8e">vercel是什么神仙网站</a></p>
 </blockquote>
 ]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Github Pages</tag>
-        <tag>Vercel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vercel托管多个网站</title>
-    <url>/archives/4536b2e4.html</url>
-    <content><![CDATA[<h2 id="一、须知">一、须知</h2>
-<h3 id="1-1-Github-Pages">1.1 Github Pages</h3>
-<ul>
-<li>GitHub 个人只能拥有一个 GitHub Pages。</li>
-<li><code>yourname.github.io</code> 只能作用于一个仓库。</li>
-</ul>
-<span id="more"></span>
-<h3 id="1-2-Vercel">1.2 Vercel</h3>
-<ul>
-<li>参考大佬的 <a href="https://zhuanlan.zhihu.com/p/183977963">如何拥有多个GitHub Pages</a> 没有成功，故选择了 <a href="https://hexo.xiaosi.world/archives/a2816564.html">Vercel</a> 。</li>
-<li>Vercel 可以复制一份Github Pages文件，然后在它的空间新开一个页面。</li>
-<li>相当于把网站托管到了 Vercel，而不是托管到 Github。</li>
-</ul>
-<h2 id="二、搭建">二、搭建</h2>
-<h3 id="2-1-Github配置">2.1 Github配置</h3>
-<ul>
-<li>
-<p>新建 Github 仓库，名字随意，添加 <code>README</code> 文件</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt=""></p>
-</li>
-<li>
-<p>可以将自己写好的网站上传到这个仓库，比如<a href="https://hexo.xiaosi.world/archives/5ef212b6.html">Hexo</a>、<a href="https://hexo.xiaosi.world/archives/f8fffde8.html">Docsify</a>。或者新建一个 <code>index.html</code> 文件。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>添加 <code>CNAME</code> 文件，文件里写上域名</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/CNAME.png" alt=""></p>
-</li>
-<li>
-<p>仓库目录</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E4%BB%93%E5%BA%93%E7%9B%AE%E5%BD%95.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-2-Github-Pages配置">2.2 Github Pages配置</h3>
-<ul>
-<li>
-<p>找到 <code>Settings</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E8%AE%BE%E7%BD%AE.png" alt=""></p>
-</li>
-<li>
-<p><font color='red'>注意：</font><code>Github Pages</code> 不要开！不要开！不要开！！！</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/GithubPages.png" alt=""></p>
-</li>
-<li>
-<p>如果你已经有仓库开启了 Github Pages，那么请关闭。Github 只允许个人拥有一个 GitHub Pages 。</p>
-</li>
-<li>
-<p>否则仓库会报下面的错，并且每次部署都会给邮箱发消息（Page build warning）。</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E9%94%99%E8%AF%AF1.png" alt=""></p>
-</li>
-<li>
-<p>不如直接托管到 Vercel，此时的 Github Pages 就只是一个仓库。（CNAME文件一定要有）</p>
-</li>
-</ul>
-<h3 id="2-3-Vercel-配置">2.3 Vercel 配置</h3>
-<ul>
-<li>
-<p><a href="https://hexo.xiaosi.world/archives/a2816564.html#%E4%BA%8C%E3%80%81Vercel%E4%BD%BF%E7%94%A8">Vercle 简单使用</a></p>
-</li>
-<li>
-<p>新建项目 <code>New Project</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE.png" alt=""></p>
-</li>
-<li>
-<p>导入项目 <code>import</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/import.png" alt=""></p>
-</li>
-<li>
-<p>选择个人 <code>Select</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/Select.png" alt=""></p>
-</li>
-<li>
-<p>继续 <code>Continue</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E6%A0%B9%E8%B7%AF%E5%BE%84.png" alt=""></p>
-</li>
-<li>
-<p>部署 <code>Deploy</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/Deploy.png" alt=""></p>
-</li>
-<li>
-<p>部署成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-4-域名配置">2.4 域名配置</h3>
-<ul>
-<li>
-<p>进入项目</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png" alt=""></p>
-</li>
-<li>
-<p>查看域名 <code>View Domains</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%8F%82%E8%80%83%E5%9F%9F%E5%90%8D.png" alt=""></p>
-</li>
-<li>
-<p>添加域名 <code>Add</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/add.png" alt=""></p>
-</li>
-<li>
-<p>域名添加成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel%E6%89%98%E7%AE%A1%E5%A4%9A%E4%B8%AA%E7%BD%91%E7%AB%99/%E5%9F%9F%E5%90%8D%E6%B7%BB%E5%8A%A0%E6%88%90%E5%8A%9F.png" alt=""></p>
-</li>
-<li>
-<p>Vercel 默认为项目创建一个域名，可以通过 <code>Edit</code> --&gt; <code>Remove</code> 删除。</p>
-</li>
-</ul>
-<h3 id="2-5-常见问题">2.5 常见问题</h3>
-<ul>
-<li>见<a href="https://hexo.xiaosi.world/archives/a2816564.html#%E4%B8%89%E3%80%81%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE">Vercel 托管 Github Pages</a></li>
-</ul>
-<br/>]]></content>
       <categories>
         <category>网站</category>
       </categories>
