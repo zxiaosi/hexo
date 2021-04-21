@@ -33,6 +33,9 @@
   color: #dcdde1;
 }
 */
+.fa-link {
+  color: #fc427b;
+}
 .fa-globe {
   color: #0ad0c6;
 }
@@ -46,8 +49,8 @@
 .fa-google {
   color: #ff4757;
 }
-.fa-gamepad {
-  color: #ff9f43;
+.fa-history {
+  color: #636e72;
 }
 /*
 .fa-anchor{
@@ -1368,7 +1371,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #171300;
+  background: #e0ff69;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2908,6 +2911,9 @@ code {
 }
 .category-list li a {
   font-size: 18px;
+}
+blockquote {
+  border-left: 4px solid #70a1ff;
 }
 .vsys {
   display: none !important;

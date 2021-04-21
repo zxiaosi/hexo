@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hexo.xiaosi.world/archives/1d79f7d1.html</loc>
+    
+    <lastmod>2021-04-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.xiaosi.world/links/index.html</loc>
+    
+    <lastmod>2021-04-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hexo.xiaosi.world/archives/a5c9127.html</loc>
     
     <lastmod>2021-04-21</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://hexo.xiaosi.world/archives/c776502.html</loc>
     
     <lastmod>2021-04-19</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.xiaosi.world/archives/1d79f7d1.html</loc>
-    
-    <lastmod>2021-04-17</lastmod>
     
   </url>
   
@@ -207,13 +214,6 @@
   </url>
   
   <url>
-    <loc>https://hexo.xiaosi.world/tags/Gitee/</loc>
-    <lastmod>2021-04-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hexo.xiaosi.world/tags/Github-Pages/</loc>
     <lastmod>2021-04-21</lastmod>
     <changefreq>daily</changefreq>
@@ -221,7 +221,21 @@
   </url>
   
   <url>
+    <loc>https://hexo.xiaosi.world/tags/Gitee/</loc>
+    <lastmod>2021-04-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hexo.xiaosi.world/tags/jsDeliver/</loc>
+    <lastmod>2021-04-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hexo.xiaosi.world/tags/Gridea/</loc>
     <lastmod>2021-04-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -236,13 +250,6 @@
   
   <url>
     <loc>https://hexo.xiaosi.world/tags/Next/</loc>
-    <lastmod>2021-04-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hexo.xiaosi.world/tags/Gridea/</loc>
     <lastmod>2021-04-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -293,7 +300,7 @@
   </url>
   
   <url>
-    <loc>https://hexo.xiaosi.world/categories/Git/</loc>
+    <loc>https://hexo.xiaosi.world/categories/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2021-04-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -307,14 +314,7 @@
   </url>
   
   <url>
-    <loc>https://hexo.xiaosi.world/categories/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2021-04-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hexo.xiaosi.world/categories/GitHub/</loc>
+    <loc>https://hexo.xiaosi.world/categories/Git/</loc>
     <lastmod>2021-04-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -328,7 +328,7 @@
   </url>
   
   <url>
-    <loc>https://hexo.xiaosi.world/categories/Hexo%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://hexo.xiaosi.world/categories/GitHub/</loc>
     <lastmod>2021-04-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -336,6 +336,13 @@
   
   <url>
     <loc>https://hexo.xiaosi.world/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2021-04-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hexo.xiaosi.world/categories/Hexo%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-04-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

@@ -9,8 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="//cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="//cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <meta name="msvalidate.01" content="true">
-  <meta name="baidu-site-verification" content="true">
+  <meta name="baidu-site-verification" content="TJqlbbdrL7YmxTgX">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -67,27 +66,18 @@
     lang   : 'zh-CN'
   };
 </script>
-
-
-  <meta name="baidu-site-verification" content="code-kwy5jp4uzm" />
+<meta name="baidu-site-verification" content="code-kwy5jp4uzm" />
 
   <title>Github | 小四先生的博客</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9MFY40SQQ3"></script>
     <script>
-      function sendPageView() {
-        if (CONFIG.hostname !== location.hostname) return;
-        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
-        localStorage.setItem('uid', uid);
-        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
-          v  : 1,
-          tid: 'G-9MFY40SQQ3',
-          cid: uid,
-          t  : 'pageview',
-          dp : encodeURIComponent(location.pathname)
-        }));
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9MFY40SQQ3');
       }
-      document.addEventListener('pjax:complete', sendPageView);
-      sendPageView();
     </script>
 
 
@@ -183,6 +173,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">21</span></a>
+
+  </li>
+        <li class="menu-item menu-item-links">
+
+    <a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -653,9 +648,6 @@
       <span class="links-of-author-item">
         <a href="https://gitee.com/zxiaosi" title="Gitee → https:&#x2F;&#x2F;gitee.com&#x2F;zxiaosi" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-google fa-fw"></i>Gitee</a>
       </span>
-      <span class="links-of-author-item">
-        <a href="https://wq133.github.io/" title="Friendship → https:&#x2F;&#x2F;wq133.github.io" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-gamepad fa-fw"></i>Friendship</a>
-      </span>
   </div>
 
 
@@ -987,12 +979,12 @@ if(canvas.getContext){
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">64k</span>
+    <span title="站点总字数">65k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">58 分钟</span>
+    <span title="站点阅读时长">59 分钟</span>
 </div><!-- 网站运行时间的设置 -->
 <span id="timeDate">载入天数...</span>
 <span id="times">载入时分秒...</span> 
