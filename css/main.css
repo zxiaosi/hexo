@@ -25,6 +25,9 @@
 .fa-archive {
   color: #1abc9c;
 }
+.fa-link {
+  color: #fc427b;
+}
 .fa-user {
   color: #9b59b6;
 }
@@ -33,9 +36,6 @@
   color: #dcdde1;
 }
 */
-.fa-link {
-  color: #fc427b;
-}
 .fa-globe {
   color: #0ad0c6;
 }
@@ -50,7 +50,7 @@
   color: #ff4757;
 }
 .fa-history {
-  color: #636e72;
+  color: #40739e;
 }
 /*
 .fa-anchor{
@@ -81,8 +81,8 @@
 .fa-coffee {
   color: #ffa801;
 }
-.fa-area-chart {
-  color: #25ccf7;
+.fa-chart-area {
+  color: #474787;
 }
 :root {
   --body-bg-color: #eee;
@@ -1371,7 +1371,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b0fe85;
+  background: #1b42ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2873,7 +2873,7 @@ ul.breadcrumb li + li:last-child {
 .post {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 10px;
+  padding: 5px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
@@ -2889,6 +2889,9 @@ code {
   border-radius: 8px;
   color: #555;
   border: 0px;
+}
+blockquote {
+  border-left: 4px solid #70a1ff;
 }
 .category-all-page {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
@@ -2912,12 +2915,7 @@ code {
 .category-list li a {
   font-size: 18px;
 }
-blockquote {
-  border-left: 4px solid #70a1ff;
-}
-.vsys {
-  display: none !important;
-}
+/* 归档页样式 began */
 .page-archive .archive-page-counter {
   font-size: 18px;
   background-color: #49b1f5;
@@ -3037,4 +3035,11 @@ div.post-block.tag .collection-title h2 {
   margin-left: 5px;
   font-size: 16px;
   transition-duration: 0.15s;
+}
+/* 归档页样式 end */
+.vpower.txt-right {
+  display: none;
+}
+.vsys {
+  display: none !important;
 }
