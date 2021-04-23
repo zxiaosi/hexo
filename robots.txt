@@ -1,10 +1,19 @@
 # robots.txt generated at http://tool.chinaz.com/robots/ 
 User-agent: *
-Disallow: 
-Disallow: /bin/
+Allow: /
+Allow: /tags/
+Allow: /categories/
+Allow: /archives/
+Disallow: /links/
+Allow: /about/
+Allow: /page/
+
+Disallow: /lib/
+Disallow: /js/
 Disallow: /css/
 Disallow: /images/
-Disallow: /js/
+Disallow: /links/linklist.json
 Disallow: /自动上传脚本/
+
 Sitemap: https://hexo.xiaosi.world/sitemap.xml
-Sitemap: https://hexo.xiaosi.world/sitemap_baidu.xml
+Sitemap: https://hexo.xiaosi.world/baidusitemap.xml
