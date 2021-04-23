@@ -126,6 +126,110 @@
       </tags>
   </entry>
   <entry>
+    <title>Gitee</title>
+    <url>/archives/1c750174.html</url>
+    <content><![CDATA[<h2 id="一、Gitee">一、Gitee</h2>
+<h3 id="1-1-Gitee简介">1.1 Gitee简介</h3>
+<ul>
+<li><a href="https://gitee.com/">Gitee</a>是<a href="https://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD/5462428">开源中国</a>（OSChina）推出的基于Git的代码托管服务。同<a href="https://github.com/">Github</a>一样，都是代码托管服务平台。</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><a href="http://git.mydoc.io/">更多详情</a></li>
+</ul>
+<h3 id="1-2-Github与Gitee比较">1.2 Github与Gitee比较</h3>
+<ul>
+<li>GitHub界面是英文，且拥有相当多的开发者用户，知名的库也多</li>
+<li>Gitee界面是中文，且大部分用户都是国人，优秀的库相对于GitHub也少</li>
+<li>在国内访问Github偶尔会有不稳定情况，而Gitee不会出现不稳定情况。</li>
+</ul>
+<h2 id="二、Gihee使用-同Github">二、Gihee使用(同<a href="https://hexo.xiaosi.world/archives/d345b092.html#%E4%BA%8C%E3%80%81Gihub%E4%BD%BF%E7%94%A8">Github</a>)</h2>
+<h3 id="2-1-Gitee官网，注册账号并登录">2.1 <a href="https://gitee.com">Gitee官网</a>，注册账号并登录</h3>
+<h3 id="2-2-创建仓库">2.2 创建仓库</h3>
+<ul>
+<li>
+<p>找到左下角的 <code>仓库</code>，并点击左边的 <code>+</code>号</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%931.png" alt=""></p>
+</li>
+<li>
+<p>完善仓库相关信息</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93-1617005250610.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-3-文件操作">2.3 文件操作</h3>
+<ul>
+<li>
+<p>根据需要选择 <code>新建文件</code>、<code>新建文件夹</code>、<code>上传文件</code>、<code>搜索文件</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C-1617005262548.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-4-项目克隆-下载">2.4 项目克隆/下载</h3>
+<ul>
+<li>
+<p>方法一和方法二需要 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%85%8B%E9%9A%86%E5%92%8C%E4%B8%8B%E8%BD%BD.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-5-更多服务">2.5 更多服务</h3>
+<ul>
+<li>
+<p>这里的服务可以一键部署，个人感觉Gitee这点比Gihub好</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-6-删除仓库">2.6 删除仓库</h3>
+<ul>
+<li>
+<p>点击 <code>管理</code> --&gt; 找到<code>删除仓库</code> --&gt; <code>删除仓库</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93-1616810809021.png" alt=""></p>
+</li>
+<li>
+<p>根据操作输入 <code>仓库名</code> 以及 <code>密码</code> 即可删除（慎重！慎重！慎重！）</p>
+</li>
+</ul>
+<h2 id="三、Gitee同步Github">三、Gitee同步Github</h2>
+<h3 id="3-1-官方介绍">3.1 <a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">官方介绍</a></h3>
+<h3 id="3-2-仓库导入">3.2 仓库导入</h3>
+<ul>
+<li>
+<p>登陆 Gitee 账号，点击右上角的 + 号，点击「从 GitHub 导入仓库」，在跳转的页面中授权 Gitee 访问。</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%AF%BC%E5%85%A5.png" alt=""></p>
+</li>
+<li>
+<p>与 GitHub 对接。</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E6%8E%88%E6%9D%83.png" alt=""></p>
+</li>
+<li>
+<p>选择性的导入您的 Github 项目到 Gitee</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E9%80%89%E6%8B%A9%E9%A1%B9%E7%9B%AE.png" alt=""></p>
+</li>
+</ul>
+<h3 id="3-3-保持同步更新">3.3 保持同步更新</h3>
+<ul>
+<li>
+<p>在项目主页点击同步更新按钮即可！</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%90%8C%E6%AD%A5.png" alt=""></p>
+</li>
+<li>
+<p>这里的同步功能默认是强制同步（新代码直接覆盖）</p>
+</li>
+</ul>
+<br/>
+<blockquote>
+<p>参考文档：【鸣谢】</p>
+<p><a href="https://blog.csdn.net/AC_872767407/article/details/113177983?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_v2~rank_aggregation-3-113177983.pc_agg_rank_aggregation&amp;utm_term=gitee%E5%92%8Cgithub%E7%9A%84%E5%8C%BA%E5%88%AB&amp;spm=1000.2123.3001.4430">Gitee及Github的区别</a></p>
+<p><a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">如何将 GitHub 项目导入码云</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Gitee</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Gitee</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git</title>
     <url>/archives/6525f1ce.html</url>
     <content><![CDATA[<h3 id="1-1-Git简介">1.1 Git简介</h3>
@@ -235,110 +339,6 @@
       </categories>
       <tags>
         <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Gitee</title>
-    <url>/archives/1c750174.html</url>
-    <content><![CDATA[<h2 id="一、Gitee">一、Gitee</h2>
-<h3 id="1-1-Gitee简介">1.1 Gitee简介</h3>
-<ul>
-<li><a href="https://gitee.com/">Gitee</a>是<a href="https://baike.baidu.com/item/%E5%BC%80%E6%BA%90%E4%B8%AD%E5%9B%BD/5462428">开源中国</a>（OSChina）推出的基于Git的代码托管服务。同<a href="https://github.com/">Github</a>一样，都是代码托管服务平台。</li>
-</ul>
-<span id="more"></span>
-<ul>
-<li><a href="http://git.mydoc.io/">更多详情</a></li>
-</ul>
-<h3 id="1-2-Github与Gitee比较">1.2 Github与Gitee比较</h3>
-<ul>
-<li>GitHub界面是英文，且拥有相当多的开发者用户，知名的库也多</li>
-<li>Gitee界面是中文，且大部分用户都是国人，优秀的库相对于GitHub也少</li>
-<li>在国内访问Github偶尔会有不稳定情况，而Gitee不会出现不稳定情况。</li>
-</ul>
-<h2 id="二、Gihee使用-同Github">二、Gihee使用(同<a href="https://hexo.xiaosi.world/archives/d345b092.html#%E4%BA%8C%E3%80%81Gihub%E4%BD%BF%E7%94%A8">Github</a>)</h2>
-<h3 id="2-1-Gitee官网，注册账号并登录">2.1 <a href="https://gitee.com">Gitee官网</a>，注册账号并登录</h3>
-<h3 id="2-2-创建仓库">2.2 创建仓库</h3>
-<ul>
-<li>
-<p>找到左下角的 <code>仓库</code>，并点击左边的 <code>+</code>号</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%931.png" alt=""></p>
-</li>
-<li>
-<p>完善仓库相关信息</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93-1617005250610.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-3-文件操作">2.3 文件操作</h3>
-<ul>
-<li>
-<p>根据需要选择 <code>新建文件</code>、<code>新建文件夹</code>、<code>上传文件</code>、<code>搜索文件</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C-1617005262548.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-4-项目克隆-下载">2.4 项目克隆/下载</h3>
-<ul>
-<li>
-<p>方法一和方法二需要 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%85%8B%E9%9A%86%E5%92%8C%E4%B8%8B%E8%BD%BD.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-5-更多服务">2.5 更多服务</h3>
-<ul>
-<li>
-<p>这里的服务可以一键部署，个人感觉Gitee这点比Gihub好</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-6-删除仓库">2.6 删除仓库</h3>
-<ul>
-<li>
-<p>点击 <code>管理</code> --&gt; 找到<code>删除仓库</code> --&gt; <code>删除仓库</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%88%A0%E9%99%A4%E4%BB%93%E5%BA%93-1616810809021.png" alt=""></p>
-</li>
-<li>
-<p>根据操作输入 <code>仓库名</code> 以及 <code>密码</code> 即可删除（慎重！慎重！慎重！）</p>
-</li>
-</ul>
-<h2 id="三、Gitee同步Github">三、Gitee同步Github</h2>
-<h3 id="3-1-官方介绍">3.1 <a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">官方介绍</a></h3>
-<h3 id="3-2-仓库导入">3.2 仓库导入</h3>
-<ul>
-<li>
-<p>登陆 Gitee 账号，点击右上角的 + 号，点击「从 GitHub 导入仓库」，在跳转的页面中授权 Gitee 访问。</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%AF%BC%E5%85%A5.png" alt=""></p>
-</li>
-<li>
-<p>与 GitHub 对接。</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E6%8E%88%E6%9D%83.png" alt=""></p>
-</li>
-<li>
-<p>选择性的导入您的 Github 项目到 Gitee</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E9%80%89%E6%8B%A9%E9%A1%B9%E7%9B%AE.png" alt=""></p>
-</li>
-</ul>
-<h3 id="3-3-保持同步更新">3.3 保持同步更新</h3>
-<ul>
-<li>
-<p>在项目主页点击同步更新按钮即可！</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%90%8C%E6%AD%A5.png" alt=""></p>
-</li>
-<li>
-<p>这里的同步功能默认是强制同步（新代码直接覆盖）</p>
-</li>
-</ul>
-<br/>
-<blockquote>
-<p>参考文档：【鸣谢】</p>
-<p><a href="https://blog.csdn.net/AC_872767407/article/details/113177983?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_v2~rank_aggregation-3-113177983.pc_agg_rank_aggregation&amp;utm_term=gitee%E5%92%8Cgithub%E7%9A%84%E5%8C%BA%E5%88%AB&amp;spm=1000.2123.3001.4430">Gitee及Github的区别</a></p>
-<p><a href="https://blog.gitee.com/2018/06/05/github_to_gitee/">如何将 GitHub 项目导入码云</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Gitee</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Gitee</tag>
       </tags>
   </entry>
   <entry>
@@ -1050,6 +1050,144 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo-Next配置（后续更新）</title>
+    <url>/archives/1d79f7d1.html</url>
+    <content><![CDATA[<h3 id="1-修改图标颜色">1. 修改图标颜色</h3>
+<ul>
+<li>
+<p>在主题配置文件 <code>nexy.yml</code> 中找到对应的图标</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">fa fa-home</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li>
+<p>在 <code>./source/_data/variables.styl</code> 中，添加css来改变图标样式（<a href="https://flatuicolors.com/">调色板</a>）</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.fa</span>&#123;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.fa-home</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#ffa801</span>;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>我的代码</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 图标颜色</span><br><span class="line"><span class="selector-class">.fa</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 菜单栏</span><br><span class="line"><span class="selector-class">.fa-home</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#e74c3c</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-tags</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#3498db</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-th</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: orange;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-archive</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#1abc9c</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-link</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#FC427B</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-user</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#9b59b6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">.fa-search&#123;</span></span><br><span class="line"><span class="comment">  color: #dcdde1;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">// 社交</span><br><span class="line"><span class="selector-class">.fa-globe</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#0AD0C6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-book</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#5f27cd</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-github</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#57606f</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14.5px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-google</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff4757</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-history</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#40739e</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 文章</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">.fa-anchor&#123;</span></span><br><span class="line"><span class="comment">  color: #57606f;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.fa-calendar</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-calendar-check</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#5352ed</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-folder</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffa502</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-eye</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-comment</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#2ed573</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-file-word</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#273c75</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-clock</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff5252</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 底部</span><br><span class="line"><span class="selector-class">.fa-coffee</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffa801</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-chart-area</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#474787</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-添加404页面">2. 添加404页面</h3>
+<ul>
+<li>
+<p>在 <code>./source/</code> 下新建404.html</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;cn&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=UTF-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>(￣▽￣)&quot;正在赶稿404页面!!!<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge,chrome=1&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">img</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="attribute">position</span>: absolute;</span></span><br><span class="line"><span class="css">        <span class="attribute">top</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">left</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">min-width</span>: <span class="number">988px</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span></span><br><span class="line">      &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        &lt;img</span><br><span class="line">          src=&quot;https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/404/404.jpg&quot;</span><br><span class="line">          alt=&quot;&quot;</span><br><span class="line">        /&gt;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>并在站点配置文件 <code>_config.yml</code> 搜索 <code>skip_render</code>，以忽略渲染</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 跳过指定渲染，忽略文章skip_render: &quot;_posts/hello-world.md&quot;</span></span><br><span class="line">skip_render:      </span><br><span class="line">  - 404.html</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-修改近期文章字体大小及颜色">3. 修改近期文章字体大小及颜色</h3>
+<ul>
+<li>
+<p>找到 <code>./source/_data/sidebar.swig</code> ，修改代码如下</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;# 近期文章 #&#125;</span><br><span class="line">&#123;% if theme.recent_posts %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;links-of-blogroll motion-element &#123;&#123; &quot;</span><span class="attr">links-of-blogroll-</span>&quot; + <span class="attr">theme.recent_posts_layout</span>  &#125;&#125;&quot;&gt;</span></span><br><span class="line">+     <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;links-of-blogroll-title&quot;</span> <span class="attr">style</span>=<span class="string">&quot;font-size: 16px;&quot;</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- modify icon to fire by szw --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-history fa-&#123;&#123; theme.recent_posts_icon | lower &#125;&#125;&quot;</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        &#123;&#123; theme.recent_posts_title &#125;&#125;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;links-of-blogroll-list&quot;</span>&gt;</span></span><br><span class="line">        &#123;% set posts = site.posts.sort(&#x27;-date&#x27;).toArray() %&#125;</span><br><span class="line">        &#123;% for post in posts.slice(&#x27;0&#x27;, &#x27;5&#x27;) %&#125;</span><br><span class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">+           <span class="tag">&lt;<span class="name">a</span> <span class="attr">style</span>=<span class="string">&quot;color: #0593d3;&quot;</span> <span class="attr">href</span>=<span class="string">&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&#123;&#123; post.title &#125;&#125;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> &gt;</span>&#123;&#123; post.title &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="4-修改网站描述">4. 修改网站描述</h3>
+<ul>
+<li>
+<p>因为网站描述会显示在网站里，如图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E6%8F%8F%E8%BF%B0.png" alt=""></p>
+</li>
+<li>
+<p>又因为收录的主页会显示描述</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E7%BD%91%E7%AB%99.png" alt=""></p>
+</li>
+<li>
+<p>既不想在网站里显示太多字，又想在加多网站描述的字数。在 <code>themes/next/layout/_partials/sidebae/site-overview.swig</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-author motion-element&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;author&quot;</span> <span class="attr">itemscope</span> <span class="attr">itemtype</span>=<span class="string">&quot;http://schema.org/Person&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if theme.avatar.url %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;site-author-image&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;image&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&#123;&#123; author &#125;&#125;&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">src</span>=<span class="string">&quot;&#123;&#123; url_for(theme.avatar.url) &#125;&#125;&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- endif %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;site-author-name&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;name&quot;</span>&gt;</span>&#123;&#123; author &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">- &#123;#</span><br><span class="line">-   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;description&quot;</span>&gt;</span>&#123;&#123; description &#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">- #&#125;</span><br><span class="line">    </span><br><span class="line">+ <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span>&gt;</span>生命不息 奋斗不止<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>亦或者改成以下内容</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;description&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;binft&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> binft = <span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">t</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> b[<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * b.length)]</span></span><br><span class="line">      &#125;  </span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">e</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> <span class="built_in">String</span>.fromCharCode(<span class="number">94</span> * <span class="built_in">Math</span>.random() + <span class="number">33</span>)</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> n = <span class="built_in">document</span>.createDocumentFragment(), i = <span class="number">0</span>; r &gt; i; i++) &#123;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">var</span> l = <span class="built_in">document</span>.createElement(<span class="string">&quot;span&quot;</span>);</span></span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> n</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> t = o[c.skillI];</span></span><br><span class="line"><span class="javascript">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= <span class="number">0</span> &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : <span class="string">&quot;forward&quot;</span> === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = <span class="string">&quot;backward&quot;</span>, c.delay = a) : c.skillP &gt; <span class="number">0</span> ? (c.text = c.text.slice(<span class="number">0</span>, -<span class="number">1</span>), c.skillP--) : (c.skillI = (c.skillI + <span class="number">1</span>) % o.length, c.direction = <span class="string">&quot;forward&quot;</span>)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? <span class="built_in">Math</span>.min(s, s + c.prefixP) : <span class="built_in">Math</span>.min(s, t.length - c.skillP))), <span class="built_in">setTimeout</span>(i, d)</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> l = <span class="string">&quot;&quot;</span>,</span></span><br><span class="line"><span class="javascript">      o = [<span class="string">&quot;人生在勤，不索何获&quot;</span>, <span class="string">&quot;一个伪IT技术型骨灰级米粉&quot;</span>,<span class="string">&quot;日日待明日,万事成蹉跎&quot;</span>,<span class="string">&quot;丈夫志四海，万里犹比邻&quot;</span>,<span class="string">&quot;还在看这里吗？&quot;</span>,<span class="string">&quot;能不能别看了？&quot;</span>,<span class="string">&quot;文章更精彩....&quot;</span>].map(<span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">return</span> r + <span class="string">&quot;&quot;</span></span></span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line"><span class="javascript">      b = [<span class="string">&quot;rgb(110,64,170)&quot;</span>, <span class="string">&quot;rgb(150,61,179)&quot;</span>, <span class="string">&quot;rgb(191,60,175)&quot;</span>, <span class="string">&quot;rgb(228,65,157)&quot;</span>, <span class="string">&quot;rgb(254,75,131)&quot;</span>, <span class="string">&quot;rgb(255,94,99)&quot;</span>, <span class="string">&quot;rgb(255,120,71)&quot;</span>, <span class="string">&quot;rgb(251,150,51)&quot;</span>, <span class="string">&quot;rgb(226,183,47)&quot;</span>, <span class="string">&quot;rgb(198,214,60)&quot;</span>, <span class="string">&quot;rgb(175,240,91)&quot;</span>, <span class="string">&quot;rgb(127,246,88)&quot;</span>, <span class="string">&quot;rgb(82,246,103)&quot;</span>, <span class="string">&quot;rgb(48,239,130)&quot;</span>, <span class="string">&quot;rgb(29,223,163)&quot;</span>, <span class="string">&quot;rgb(26,199,194)&quot;</span>, <span class="string">&quot;rgb(35,171,216)&quot;</span>, <span class="string">&quot;rgb(54,140,225)&quot;</span>, <span class="string">&quot;rgb(76,110,219)&quot;</span>, <span class="string">&quot;rgb(96,84,200)&quot;</span>],</span></span><br><span class="line">      c = &#123;</span><br><span class="line"><span class="javascript">        text: <span class="string">&quot;&quot;</span>,</span></span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line"><span class="javascript">        direction: <span class="string">&quot;forward&quot;</span>,</span></span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line"><span class="javascript">      binft(<span class="built_in">document</span>.getElementById(<span class="string">&#x27;binft&#x27;</span>));</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+</li>
+</ul>
+<h3 id="5-canvas-nest-动态背景">5. <code>canvas-nest</code> 动态背景</h3>
+<ul>
+<li>
+<p><a href="https://github.com/theme-next/theme-next-canvas-nest">官方说明</a></p>
+</li>
+<li>
+<p>在 <code>./source/_data/footer.swig</code> 中添加如下代码</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script color=<span class="string">&quot;0,0,255&quot;</span> opacity=<span class="string">&quot;0.5&quot;</span> zIndex=<span class="string">&quot;-1&quot;</span> count=<span class="string">&quot;99&quot;</span> src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>参数说明</p>
+<ul>
+<li>color：颜色值</li>
+<li>opacity：线条的不透明度: 0~1</li>
+<li>zIndex：背景的z-index属性</li>
+<li>count：最大数量</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-夜间模式">6. 夜间模式</h3>
+<ul>
+<li>
+<p>在主题配置文件 <code>next.yml</code> 中搜索 <code>darkmode</code></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Dark Mode (夜间模式)</span></span><br><span class="line"><span class="comment"># 可选择的值</span></span><br><span class="line"><span class="comment"># true 开启夜间模式</span></span><br><span class="line"><span class="comment"># false 关闭夜间模式</span></span><br><span class="line"><span class="comment"># auto 根据系统的主题选择</span></span><br><span class="line"></span><br><span class="line">darkmode: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>想加切换夜间模式的按钮，奈何尝试无果。等待后续更新~~~</p>
+</li>
+</ul>
+<h3 id="7-Valine-隐藏系统信息-和-Powered-by">7. Valine 隐藏系统信息 和 Powered by</h3>
+<ul>
+<li>
+<p>在 <code>./source/_data/styles.styl</code> 中，添加如下代码</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 隐藏 valine 的 powered by</span><br><span class="line"><span class="selector-class">.vpower</span><span class="selector-class">.txt-right</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Valine 隐藏系统信息</span><br><span class="line"><span class="selector-class">.vsys</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/valine.png" alt=""></p>
+</li>
+</ul>
+<h3 id="8-修改引用样式">8. 修改引用样式</h3>
+<ul>
+<li>
+<p>在 <code>./source/_data/styles.styl</code> 中，添加如下代码</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 修改引用的样式</span><br><span class="line"><span class="selector-tag">blockquote</span> &#123;</span><br><span class="line">  <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E5%BC%95%E7%94%A8.png" alt=""></p>
+</li>
+</ul>
+<h3 id="10-添加友链页">10. 添加友链页</h3>
+<ul>
+<li><a href="https://tding.top/archives/73ce4e7.html">Hexo+next主题自定义友情链接页面</a>)</li>
+<li>方法二中将 <code>link.js</code> 放入 <code>./themes/next/source/js/</code> 目录下</li>
+</ul>
+<h3 id="11-美化分类页">11. 美化分类页</h3>
+<ul>
+<li><a href="https://www.liaofuzhan.com/posts/2114475547.html">Hexo NexT主题美化2.0</a></li>
+</ul>
+<h3 id="12-分类页美化">12. 分类页美化</h3>
+<ul>
+<li><a href="https://www.dazhuanlan.com/2019/12/11/5df0adc17885e/">Hexo+Next分类页样式美化</a></li>
+</ul>
+<h3 id="13-崩溃欺骗">13. 崩溃欺骗</h3>
+<ul>
+<li><a href="https://blog.csdn.net/qq_34146679/article/details/86065141">Hexo NexT主题中添加网页标题崩溃欺骗搞怪特效</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo-Next配置（基础篇）</title>
     <url>/archives/2d288079.html</url>
     <content><![CDATA[<p><font color="red"><strong>注意：</strong></font></p>
@@ -1368,254 +1506,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo-Next配置（后续更新）</title>
-    <url>/archives/1d79f7d1.html</url>
-    <content><![CDATA[<h3 id="1-修改图标颜色">1. 修改图标颜色</h3>
-<ul>
-<li>
-<p>在主题配置文件 <code>nexy.yml</code> 中找到对应的图标</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">fa fa-home</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<span id="more"></span>
-<ul>
-<li>
-<p>在 <code>./source/_data/variables.styl</code> 中，添加css来改变图标样式（<a href="https://flatuicolors.com/">调色板</a>）</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.fa</span>&#123;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.fa-home</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#ffa801</span>;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>我的代码</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 图标颜色</span><br><span class="line"><span class="selector-class">.fa</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 菜单栏</span><br><span class="line"><span class="selector-class">.fa-home</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#e74c3c</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-tags</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#3498db</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-th</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: orange;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-archive</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#1abc9c</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-link</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#FC427B</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-user</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#9b59b6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">.fa-search&#123;</span></span><br><span class="line"><span class="comment">  color: #dcdde1;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">// 社交</span><br><span class="line"><span class="selector-class">.fa-globe</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#0AD0C6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-book</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#5f27cd</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-github</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#57606f</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14.5px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-google</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff4757</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-history</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#40739e</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 文章</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">.fa-anchor&#123;</span></span><br><span class="line"><span class="comment">  color: #57606f;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.fa-calendar</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-calendar-check</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#5352ed</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-folder</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffa502</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-eye</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-comment</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#2ed573</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-file-word</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#273c75</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-clock</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff5252</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 底部</span><br><span class="line"><span class="selector-class">.fa-coffee</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffa801</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-chart-area</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#474787</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="2-添加404页面">2. 添加404页面</h3>
-<ul>
-<li>
-<p>在 <code>./source/</code> 下新建404.html</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;cn&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=UTF-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>(￣▽￣)&quot;正在赶稿404页面!!!<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge,chrome=1&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">img</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="attribute">position</span>: absolute;</span></span><br><span class="line"><span class="css">        <span class="attribute">top</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">left</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">min-width</span>: <span class="number">988px</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span></span><br><span class="line">      &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        &lt;img</span><br><span class="line">          src=&quot;https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/404/404.jpg&quot;</span><br><span class="line">          alt=&quot;&quot;</span><br><span class="line">        /&gt;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>并在站点配置文件 <code>_config.yml</code> 搜索 <code>skip_render</code>，以忽略渲染</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 跳过指定渲染，忽略文章skip_render: &quot;_posts/hello-world.md&quot;</span></span><br><span class="line">skip_render:      </span><br><span class="line">  - 404.html</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="3-修改近期文章字体大小及颜色">3. 修改近期文章字体大小及颜色</h3>
-<ul>
-<li>
-<p>找到 <code>./source/_data/sidebar.swig</code> ，修改代码如下</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&#123;# 近期文章 #&#125;</span><br><span class="line">&#123;% if theme.recent_posts %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;links-of-blogroll motion-element &#123;&#123; &quot;</span><span class="attr">links-of-blogroll-</span>&quot; + <span class="attr">theme.recent_posts_layout</span>  &#125;&#125;&quot;&gt;</span></span><br><span class="line">+     <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;links-of-blogroll-title&quot;</span> <span class="attr">style</span>=<span class="string">&quot;font-size: 16px;&quot;</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- modify icon to fire by szw --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-history fa-&#123;&#123; theme.recent_posts_icon | lower &#125;&#125;&quot;</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">        &#123;&#123; theme.recent_posts_title &#125;&#125;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;links-of-blogroll-list&quot;</span>&gt;</span></span><br><span class="line">        &#123;% set posts = site.posts.sort(&#x27;-date&#x27;).toArray() %&#125;</span><br><span class="line">        &#123;% for post in posts.slice(&#x27;0&#x27;, &#x27;5&#x27;) %&#125;</span><br><span class="line">          <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">+           <span class="tag">&lt;<span class="name">a</span> <span class="attr">style</span>=<span class="string">&quot;color: #0593d3;&quot;</span> <span class="attr">href</span>=<span class="string">&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&#123;&#123; post.title &#125;&#125;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> &gt;</span>&#123;&#123; post.title &#125;&#125;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        &#123;% endfor %&#125;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="4-修改网站描述">4. 修改网站描述</h3>
-<ul>
-<li>
-<p>因为网站描述会显示在网站里，如图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E6%8F%8F%E8%BF%B0.png" alt=""></p>
-</li>
-<li>
-<p>又因为收录的主页会显示描述</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E7%BD%91%E7%AB%99.png" alt=""></p>
-</li>
-<li>
-<p>既不想在网站里显示太多字，又想在加多网站描述的字数。在 <code>themes/next/layout/_partials/sidebae/site-overview.swig</code></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-author motion-element&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;author&quot;</span> <span class="attr">itemscope</span> <span class="attr">itemtype</span>=<span class="string">&quot;http://schema.org/Person&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if theme.avatar.url %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;site-author-image&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;image&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&#123;&#123; author &#125;&#125;&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">src</span>=<span class="string">&quot;&#123;&#123; url_for(theme.avatar.url) &#125;&#125;&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- endif %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;site-author-name&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;name&quot;</span>&gt;</span>&#123;&#123; author &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">- &#123;#</span><br><span class="line">-   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;description&quot;</span>&gt;</span>&#123;&#123; description &#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">- #&#125;</span><br><span class="line">    </span><br><span class="line">+ <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span>&gt;</span>生命不息 奋斗不止<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>亦或者改成以下内容</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;description&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;binft&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> binft = <span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">t</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> b[<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * b.length)]</span></span><br><span class="line">      &#125;  </span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">e</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> <span class="built_in">String</span>.fromCharCode(<span class="number">94</span> * <span class="built_in">Math</span>.random() + <span class="number">33</span>)</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> n = <span class="built_in">document</span>.createDocumentFragment(), i = <span class="number">0</span>; r &gt; i; i++) &#123;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">var</span> l = <span class="built_in">document</span>.createElement(<span class="string">&quot;span&quot;</span>);</span></span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> n</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> t = o[c.skillI];</span></span><br><span class="line"><span class="javascript">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= <span class="number">0</span> &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : <span class="string">&quot;forward&quot;</span> === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = <span class="string">&quot;backward&quot;</span>, c.delay = a) : c.skillP &gt; <span class="number">0</span> ? (c.text = c.text.slice(<span class="number">0</span>, -<span class="number">1</span>), c.skillP--) : (c.skillI = (c.skillI + <span class="number">1</span>) % o.length, c.direction = <span class="string">&quot;forward&quot;</span>)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? <span class="built_in">Math</span>.min(s, s + c.prefixP) : <span class="built_in">Math</span>.min(s, t.length - c.skillP))), <span class="built_in">setTimeout</span>(i, d)</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> l = <span class="string">&quot;&quot;</span>,</span></span><br><span class="line"><span class="javascript">      o = [<span class="string">&quot;人生在勤，不索何获&quot;</span>, <span class="string">&quot;一个伪IT技术型骨灰级米粉&quot;</span>,<span class="string">&quot;日日待明日,万事成蹉跎&quot;</span>,<span class="string">&quot;丈夫志四海，万里犹比邻&quot;</span>,<span class="string">&quot;还在看这里吗？&quot;</span>,<span class="string">&quot;能不能别看了？&quot;</span>,<span class="string">&quot;文章更精彩....&quot;</span>].map(<span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">return</span> r + <span class="string">&quot;&quot;</span></span></span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line"><span class="javascript">      b = [<span class="string">&quot;rgb(110,64,170)&quot;</span>, <span class="string">&quot;rgb(150,61,179)&quot;</span>, <span class="string">&quot;rgb(191,60,175)&quot;</span>, <span class="string">&quot;rgb(228,65,157)&quot;</span>, <span class="string">&quot;rgb(254,75,131)&quot;</span>, <span class="string">&quot;rgb(255,94,99)&quot;</span>, <span class="string">&quot;rgb(255,120,71)&quot;</span>, <span class="string">&quot;rgb(251,150,51)&quot;</span>, <span class="string">&quot;rgb(226,183,47)&quot;</span>, <span class="string">&quot;rgb(198,214,60)&quot;</span>, <span class="string">&quot;rgb(175,240,91)&quot;</span>, <span class="string">&quot;rgb(127,246,88)&quot;</span>, <span class="string">&quot;rgb(82,246,103)&quot;</span>, <span class="string">&quot;rgb(48,239,130)&quot;</span>, <span class="string">&quot;rgb(29,223,163)&quot;</span>, <span class="string">&quot;rgb(26,199,194)&quot;</span>, <span class="string">&quot;rgb(35,171,216)&quot;</span>, <span class="string">&quot;rgb(54,140,225)&quot;</span>, <span class="string">&quot;rgb(76,110,219)&quot;</span>, <span class="string">&quot;rgb(96,84,200)&quot;</span>],</span></span><br><span class="line">      c = &#123;</span><br><span class="line"><span class="javascript">        text: <span class="string">&quot;&quot;</span>,</span></span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line"><span class="javascript">        direction: <span class="string">&quot;forward&quot;</span>,</span></span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line"><span class="javascript">      binft(<span class="built_in">document</span>.getElementById(<span class="string">&#x27;binft&#x27;</span>));</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果图</p>
-</li>
-</ul>
-<h3 id="5-canvas-nest-动态背景">5. <code>canvas-nest</code> 动态背景</h3>
-<ul>
-<li>
-<p><a href="https://github.com/theme-next/theme-next-canvas-nest">官方说明</a></p>
-</li>
-<li>
-<p>在 <code>./source/_data/footer.swig</code> 中添加如下代码</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script color=<span class="string">&quot;0,0,255&quot;</span> opacity=<span class="string">&quot;0.5&quot;</span> zIndex=<span class="string">&quot;-1&quot;</span> count=<span class="string">&quot;99&quot;</span> src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>参数说明</p>
-<ul>
-<li>color：颜色值</li>
-<li>opacity：线条的不透明度: 0~1</li>
-<li>zIndex：背景的z-index属性</li>
-<li>count：最大数量</li>
-</ul>
-</li>
-</ul>
-<h3 id="6-夜间模式">6. 夜间模式</h3>
-<ul>
-<li>
-<p>在主题配置文件 <code>next.yml</code> 中搜索 <code>darkmode</code></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Dark Mode (夜间模式)</span></span><br><span class="line"><span class="comment"># 可选择的值</span></span><br><span class="line"><span class="comment"># true 开启夜间模式</span></span><br><span class="line"><span class="comment"># false 关闭夜间模式</span></span><br><span class="line"><span class="comment"># auto 根据系统的主题选择</span></span><br><span class="line"></span><br><span class="line">darkmode: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>想加切换夜间模式的按钮，奈何尝试无果。等待后续更新~~~</p>
-</li>
-</ul>
-<h3 id="7-Valine-隐藏系统信息-和-Powered-by">7. Valine 隐藏系统信息 和 Powered by</h3>
-<ul>
-<li>
-<p>在 <code>./source/_data/styles.styl</code> 中，添加如下代码</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 隐藏 valine 的 powered by</span><br><span class="line"><span class="selector-class">.vpower</span><span class="selector-class">.txt-right</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Valine 隐藏系统信息</span><br><span class="line"><span class="selector-class">.vsys</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/valine.png" alt=""></p>
-</li>
-</ul>
-<h3 id="8-修改引用样式">8. 修改引用样式</h3>
-<ul>
-<li>
-<p>在 <code>./source/_data/styles.styl</code> 中，添加如下代码</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 修改引用的样式</span><br><span class="line"><span class="selector-tag">blockquote</span> &#123;</span><br><span class="line">  <span class="attribute">border-left</span>: <span class="number">4px</span> solid <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E5%BC%95%E7%94%A8.png" alt=""></p>
-</li>
-</ul>
-<h3 id="10-添加友链页">10. 添加友链页</h3>
-<ul>
-<li><a href="https://tding.top/archives/73ce4e7.html">Hexo+next主题自定义友情链接页面</a>)</li>
-<li>方法二中将 <code>link.js</code> 放入 <code>./themes/next/source/js/</code> 目录下</li>
-</ul>
-<h3 id="11-美化分类页">11. 美化分类页</h3>
-<ul>
-<li><a href="https://www.liaofuzhan.com/posts/2114475547.html">Hexo NexT主题美化2.0</a></li>
-</ul>
-<h3 id="12-分类页美化">12. 分类页美化</h3>
-<ul>
-<li><a href="https://www.dazhuanlan.com/2019/12/11/5df0adc17885e/">Hexo+Next分类页样式美化</a></li>
-</ul>
-<h3 id="13-崩溃欺骗">13. 崩溃欺骗</h3>
-<ul>
-<li><a href="https://blog.csdn.net/qq_34146679/article/details/86065141">Hexo NexT主题中添加网页标题崩溃欺骗搞怪特效</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo安装及配置</title>
-    <url>/archives/5ef212b6.html</url>
-    <content><![CDATA[<h2 id="一、安装之前准备">一、安装之前准备</h2>
-<h3 id="1-1-Git">1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3>
-<h3 id="1-2-Node">1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3>
-<h3 id="1-3-Github">1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3>
-<span id="more"></span>
-<h2 id="二、安装">二、安装</h2>
-<h3 id="2-1-安装Hexo">2.1 安装Hexo</h3>
-<ul>
-<li>
-<p>管理员身份启动cmd，控制台输入</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexo </span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>如果安装的慢，可以使用淘宝镜像，连续按两次 <code>Ctrl+C</code> 退出当前cmd进程，然后控制台输入</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexo cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="2-2-查看Hexo信息">2.2 查看Hexo信息</h3>
-<ul>
-<li>
-<p>控制台输入</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>我的Hexo信息（不需要输入）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo-cli: 4.2.0</span><br><span class="line">node: 14.15.4</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="三、初始化">三、初始化</h2>
-<h3 id="3-1-初始化">3.1 初始化</h3>
-<ul>
-<li>
-<p>新建一个文件夹（文件位置、名字随意）</p>
-</li>
-<li>
-<p>cmd命令进入文件夹（我的文件夹在e盘，名为blog）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">e:				<span class="comment"># 输入 e: 回车进入e盘  </span></span><br><span class="line"><span class="built_in">cd</span> blog				<span class="comment"># 输入 cd blog 回车进入 blog 文件夹</span></span><br><span class="line">hexo init			<span class="comment"># 初始化hexo文件</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>显示如下信息表示初始化成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" alt=""></p>
-</li>
-</ul>
-<h3 id="3-2-本地访问">3.2 本地访问</h3>
-<ul>
-<li>
-<p>控制台输入</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo clean		<span class="comment"># 清理缓存</span></span><br><span class="line">hexo s			<span class="comment"># 启动服务，本地访问</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><code>hexo s</code> 是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容</p>
-</li>
-</ul>
-<h2 id="四、配置站点信息">四、配置站点信息</h2>
-<h3 id="4-1-配置-Hexo-网站相关信息">4.1 配置 Hexo 网站相关信息</h3>
-<ul>
-<li>
-<p>找到根目录下的 <code>_config.yml</code> 文件（以下统称为站点配置文件）并打开</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site (设置)</span></span><br><span class="line">title: 小四先生の博客				<span class="comment"># 网站标题</span></span><br><span class="line">subtitle: <span class="string">&#x27;记录生活中的点点滴滴&#x27;</span>			<span class="comment"># 网站副标题</span></span><br><span class="line">description: <span class="string">&#x27;生命不息 奋斗不止&#x27;</span>			<span class="comment"># 描述，介绍网站的</span></span><br><span class="line">keywords:                        		<span class="comment"># 网站的关键字</span></span><br><span class="line">author: Mr.XiaoSi                		<span class="comment"># 博主姓名</span></span><br><span class="line">language: zh-CN                  		<span class="comment"># 语言：zh-CN 是简体中文</span></span><br><span class="line">timezone: <span class="string">&#x27;Asia/Shanghai&#x27;</span>        		<span class="comment"># 时区</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="4-2-部署到github">4.2 部署到github</h3>
-<ul>
-<li>
-<p><a href="https://blog.csdn.net/u013778905/article/details/83501204">ssh key</a> 配置</p>
-</li>
-<li>
-<p>找到站点配置文件 <code>_config.yml</code> 中的deploy的部分</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">deploy:               					<span class="comment"># git</span></span><br><span class="line">  <span class="built_in">type</span>: <span class="string">&#x27;git&#x27;</span>								</span><br><span class="line">  repo: <span class="string">&#x27;git@github.com:zxiaosi/Hexo.git&#x27;</span>		<span class="comment"># github的ssh链接</span></span><br><span class="line">  branch: <span class="string">&#x27;hexo&#x27;</span>					<span class="comment"># 分支</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>安装部署插件（可在后面加上淘宝镜像）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>控制台输入以下代码</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo clean			<span class="comment"># 清理缓存</span></span><br><span class="line">hexo g				<span class="comment"># 生成静态页面至public目录</span></span><br><span class="line">hexo d				<span class="comment"># 部署到GitHub</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>部署之后，就可以通过 <a href="http://yourname.github.io">http://yourname.github.io</a> 访问到你的博客了</p>
-</li>
-</ul>
-<h2 id="五、常用hexo命令">五、常用hexo命令</h2>
-<h3 id="5-1-常见命令">5.1 常见命令</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span> 					<span class="comment"># 新建文章</span></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> 				<span class="comment"># 新建页面</span></span><br><span class="line">hexo <span class="built_in">help</span>  						<span class="comment"># 查看帮助</span></span><br><span class="line">hexo version  						<span class="comment"># 查看Hexo的版本</span></span><br><span class="line"></span><br><span class="line">hexo clean						<span class="comment"># 清理缓存</span></span><br><span class="line">hexo server 						<span class="comment"># 开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）</span></span><br><span class="line">hexo generate 						<span class="comment"># 生成静态页面至public目录</span></span><br><span class="line">hexo deploy 						<span class="comment"># 部署到GitHub</span></span><br></pre></td></tr></table></figure>
-<h3 id="5-2-缩写">5.2 缩写</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
-<h3 id="5-3-组合">5.3 组合</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo s -g 						<span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g 						<span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure>
-<h2 id="六、HEXO卸载与重装">六、HEXO卸载与重装</h2>
-<h3 id="6-1-卸载hexo">6.1 卸载hexo</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo</span><br></pre></td></tr></table></figure>
-<h3 id="6-2-卸载hexo客户端">6.2 卸载hexo客户端</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-cli -g</span><br></pre></td></tr></table></figure>
-<h3 id="6-3-进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。">6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。</h3>
-<br>
-]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>Node</tag>
-        <tag>Github</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo-Next配置（插件篇）</title>
     <url>/archives/b78f5428.html</url>
     <content><![CDATA[<p><font color="red"><strong>注意：</strong></font></p>
@@ -1898,136 +1788,113 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       </tags>
   </entry>
   <entry>
-    <title>Node安装</title>
-    <url>/archives/84979429.html</url>
-    <content><![CDATA[<h2 id="一、Node安装">一、Node安装</h2>
-<h3 id="1-1-Node简介">1.1 Node简介</h3>
-<ul>
-<li>
-<p>node（结点）:网络连接的端点，或两条（或多条）线路的连接点。结点可以是处理器、控制器或工作站。结点随其功能不同而各不相同，它们可以通过链路互联在一起，在网络中用作控制点。</p>
+    <title>Hexo安装及配置</title>
+    <url>/archives/5ef212b6.html</url>
+    <content><![CDATA[<h2 id="一、安装之前准备">一、安装之前准备</h2>
+<h3 id="1-1-Git">1.1 <a href="https://hexo.xiaosi.world/archives/6525f1ce.html">Git</a></h3>
+<h3 id="1-2-Node">1.2 <a href="https://hexo.xiaosi.world/archives/84979429.html">Node</a></h3>
+<h3 id="1-3-Github">1.3 <a href="https://hexo.xiaosi.world/archives/d345b092.html">Github</a></h3>
 <span id="more"></span>
-</li>
-</ul>
-<h3 id="1-2-Node下载">1.2 Node下载</h3>
+<h2 id="二、安装">二、安装</h2>
+<h3 id="2-1-安装Hexo">2.1 安装Hexo</h3>
 <ul>
 <li>
-<p>可以在 <a href="https://nodejs.org/zh-cn/">Node官网</a> 下载 <code>node</code> 并安装</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E5%AE%98%E7%BD%91-1616991075154.png" alt=""></p>
+<p>管理员身份启动cmd，控制台输入</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexo </span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>如果安装的慢，可以使用淘宝镜像，连续按两次 <code>Ctrl+C</code> 退出当前cmd进程，然后控制台输入</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexo cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="1-3-Node安装">1.3 Node安装</h3>
+<h3 id="2-2-查看Hexo信息">2.2 查看Hexo信息</h3>
 <ul>
 <li>
-<p><code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node1.png" alt=""></p>
+<p>控制台输入</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p><code>I accept...</code> --&gt; <code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node2.png" alt=""></p>
-</li>
-<li>
-<p><code>Change</code> --&gt; <code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node3.png" alt=""></p>
-</li>
-<li>
-<p><code>Next</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node4.png" alt=""></p>
-</li>
-<li>
-<p><code>Next</code> --&gt; <code>Finish</code></p>
+<p>我的Hexo信息（不需要输入）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo-cli: 4.2.0</span><br><span class="line">node: 14.15.4</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="1-4-node和npm版本">1.4 node和npm版本</h3>
+<h2 id="三、初始化">三、初始化</h2>
+<h3 id="3-1-初始化">3.1 初始化</h3>
 <ul>
 <li>
-<p>启动 <code>cmd</code> 命令框，执行下面代码查看 <code>node</code> 和 <code>npm</code> 版本</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt=""></p>
+<p>新建一个文件夹（文件位置、名字随意）</p>
+</li>
+<li>
+<p>cmd命令进入文件夹（我的文件夹在e盘，名为blog）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">e:				<span class="comment"># 输入 e: 回车进入e盘  </span></span><br><span class="line"><span class="built_in">cd</span> blog				<span class="comment"># 输入 cd blog 回车进入 blog 文件夹</span></span><br><span class="line">hexo init			<span class="comment"># 初始化hexo文件</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>显示如下信息表示初始化成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/hexo%E5%88%9D%E5%A7%8B%E5%8C%96%E6%88%90%E5%8A%9F%E6%A0%87%E5%BF%97.png" alt=""></p>
 </li>
 </ul>
-<h2 id="二、node配置-可选">二、node配置(可选)</h2>
-<h3 id="2-1-配置npm在安装全局模块时的路径和缓存cache的路径">2.1 配置npm在安装全局模块时的路径和缓存cache的路径</h3>
+<h3 id="3-2-本地访问">3.2 本地访问</h3>
 <ul>
 <li>
-<p>因为在执行例如 <code>npm i docsify-cli -g</code> 等命令全局安装的时候，默认会将模块安装在 <code>C:\Users\用户名\AppData\Roaming</code> (需显示隐藏文件才能看到 <code>AppData</code> )路径下的 <code>npm</code> 和 <code>npm_cache</code> 中，不方便管理且占用C盘空间，如下图所示：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E8%B7%AF%E5%BE%841.png" alt=""></p>
+<p>控制台输入</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo clean		<span class="comment"># 清理缓存</span></span><br><span class="line">hexo s			<span class="comment"># 启动服务，本地访问</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p>在 <code>node.js</code> 安装目录下建立 <code>node_global</code> 及 <code>node_cache</code> 两个文件夹</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E5%88%9B%E5%BB%BAnode_%E6%96%87%E4%BB%B6.png" alt=""></p>
-</li>
-<li>
-<p>启动cmd，依次输入：（我的 <code>node</code> 在D盘下）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;D:\node\node_global&quot;</span></span><br><span class="line"></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;D:\node\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/npm%E5%85%A8%E5%B1%80-1616406279132.png" alt=""></p>
+<p><code>hexo s</code> 是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容</p>
 </li>
 </ul>
-<h3 id="2-2-配置环境变量">2.2 配置环境变量</h3>
+<h2 id="四、配置站点信息">四、配置站点信息</h2>
+<h3 id="4-1-配置-Hexo-网站相关信息">4.1 配置 Hexo 网站相关信息</h3>
 <ul>
 <li>
-<p>右键 <code>此电脑</code> --&gt; <code>属性</code> --&gt; <code>高级系统设置</code> --&gt; <code>环境变量</code>（找不到可以直接搜 <code>环境变量</code>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt=""></p>
+<p>找到根目录下的 <code>_config.yml</code> 文件（以下统称为站点配置文件）并打开</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site (设置)</span></span><br><span class="line">title: 小四先生の博客				<span class="comment"># 网站标题</span></span><br><span class="line">subtitle: <span class="string">&#x27;记录生活中的点点滴滴&#x27;</span>			<span class="comment"># 网站副标题</span></span><br><span class="line">description: <span class="string">&#x27;生命不息 奋斗不止&#x27;</span>			<span class="comment"># 描述，介绍网站的</span></span><br><span class="line">keywords:                        		<span class="comment"># 网站的关键字</span></span><br><span class="line">author: Mr.XiaoSi                		<span class="comment"># 博主姓名</span></span><br><span class="line">language: zh-CN                  		<span class="comment"># 语言：zh-CN 是简体中文</span></span><br><span class="line">timezone: <span class="string">&#x27;Asia/Shanghai&#x27;</span>        		<span class="comment"># 时区</span></span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p><code>系统变量</code> 中新建一个变量名为 <code>NODE_PATH</code> ，变量值为<code>D:\node\node_global\node_modules</code>，如下图：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F-1616406654354.png" alt=""></p>
-</li>
-<li>
-<p>最后编辑 <code>用户变量</code> 里的 <code>Path</code>，将相应npm的路径改为：<code>D:\node\node_global</code>，如下：（npm路径为刚刚新建 <code>node_global</code> 路径）</p>
+</ul>
+<h3 id="4-2-部署到github">4.2 部署到github</h3>
 <ul>
 <li>
-<p>更改前：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385.png" alt=""></p>
+<p><a href="https://blog.csdn.net/u013778905/article/details/83501204">ssh key</a> 配置</p>
 </li>
 <li>
-<p>更改后：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/path%E5%8F%98%E9%87%8F2.png" alt=""></p>
+<p>找到站点配置文件 <code>_config.yml</code> 中的deploy的部分</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">deploy:               					<span class="comment"># git</span></span><br><span class="line">  <span class="built_in">type</span>: <span class="string">&#x27;git&#x27;</span>								</span><br><span class="line">  repo: <span class="string">&#x27;git@github.com:zxiaosi/Hexo.git&#x27;</span>		<span class="comment"># github的ssh链接</span></span><br><span class="line">  branch: <span class="string">&#x27;hexo&#x27;</span>					<span class="comment"># 分支</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>安装部署插件（可在后面加上淘宝镜像）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>控制台输入以下代码</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo clean			<span class="comment"># 清理缓存</span></span><br><span class="line">hexo g				<span class="comment"># 生成静态页面至public目录</span></span><br><span class="line">hexo d				<span class="comment"># 部署到GitHub</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>部署之后，就可以通过 <a href="http://yourname.github.io">http://yourname.github.io</a> 访问到你的博客了</p>
 </li>
 </ul>
-</li>
-<li>
-<p>重新打开命令框，出现下面界面表示配置成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-3-node淘宝镜像">2.3 node淘宝镜像</h3>
-<ul>
-<li>
-<p>命令框输入下面代码</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>检查是否配置成功</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-4-取消node全局配置">2.4 取消node全局配置</h3>
-<ul>
-<li>
-<p>想取消node的全局变量，卸载重装解决不了问题</p>
-</li>
-<li>
-<p>找到 <code>C:\Users\Administrator\.npmrc</code> 文件并打开</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">prefix=D:\node\node_global</span><br><span class="line">cache=D:\node\node_cache</span><br><span class="line"></span><br><span class="line"><span class="comment"># 镜像</span></span><br><span class="line">registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>删除 <code>prefix</code> 和 <code>cache</code> 这两个代码段，并环境变量改为原来的环境变量（<font color='red'><strong>见2.2</strong></font>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385-1616991444889.png" alt=""></p>
-<br/>
-</li>
-</ul>
-<blockquote>
-<p>参考链接：【鸣谢】</p>
-<p><a href="https://blog.csdn.net/antma/article/details/86104068">Node.js 安装详细步骤教程</a></p>
-<p><a href="https://blog.csdn.net/huanghanqian/article/details/52808170">如何删除npm之前设置的npm config set prefix…</a></p>
-</blockquote>
-<br/>]]></content>
+<h2 id="五、常用hexo命令">五、常用hexo命令</h2>
+<h3 id="5-1-常见命令">5.1 常见命令</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span> 					<span class="comment"># 新建文章</span></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> 				<span class="comment"># 新建页面</span></span><br><span class="line">hexo <span class="built_in">help</span>  						<span class="comment"># 查看帮助</span></span><br><span class="line">hexo version  						<span class="comment"># 查看Hexo的版本</span></span><br><span class="line"></span><br><span class="line">hexo clean						<span class="comment"># 清理缓存</span></span><br><span class="line">hexo server 						<span class="comment"># 开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）</span></span><br><span class="line">hexo generate 						<span class="comment"># 生成静态页面至public目录</span></span><br><span class="line">hexo deploy 						<span class="comment"># 部署到GitHub</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-2-缩写">5.2 缩写</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="5-3-组合">5.3 组合</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo s -g 						<span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g 						<span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure>
+<h2 id="六、HEXO卸载与重装">六、HEXO卸载与重装</h2>
+<h3 id="6-1-卸载hexo">6.1 卸载hexo</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo</span><br></pre></td></tr></table></figure>
+<h3 id="6-2-卸载hexo客户端">6.2 卸载hexo客户端</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="6-3-进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。">6.3 进行重装之前，如果还是在原来位置，必须手动清理了才能迁移安装。</h3>
+<br>
+]]></content>
       <categories>
-        <category>Node</category>
+        <category>Hexo博客</category>
       </categories>
       <tags>
+        <tag>Git</tag>
         <tag>Node</tag>
+        <tag>Github</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -2215,6 +2082,139 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
         <tag>Gitee</tag>
         <tag>Typora</tag>
         <tag>PicGo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Node安装</title>
+    <url>/archives/84979429.html</url>
+    <content><![CDATA[<h2 id="一、Node安装">一、Node安装</h2>
+<h3 id="1-1-Node简介">1.1 Node简介</h3>
+<ul>
+<li>
+<p>node（结点）:网络连接的端点，或两条（或多条）线路的连接点。结点可以是处理器、控制器或工作站。结点随其功能不同而各不相同，它们可以通过链路互联在一起，在网络中用作控制点。</p>
+<span id="more"></span>
+</li>
+</ul>
+<h3 id="1-2-Node下载">1.2 Node下载</h3>
+<ul>
+<li>
+<p>可以在 <a href="https://nodejs.org/zh-cn/">Node官网</a> 下载 <code>node</code> 并安装</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E5%AE%98%E7%BD%91-1616991075154.png" alt=""></p>
+</li>
+</ul>
+<h3 id="1-3-Node安装">1.3 Node安装</h3>
+<ul>
+<li>
+<p><code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node1.png" alt=""></p>
+</li>
+<li>
+<p><code>I accept...</code> --&gt; <code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node2.png" alt=""></p>
+</li>
+<li>
+<p><code>Change</code> --&gt; <code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node3.png" alt=""></p>
+</li>
+<li>
+<p><code>Next</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node4.png" alt=""></p>
+</li>
+<li>
+<p><code>Next</code> --&gt; <code>Finish</code></p>
+</li>
+</ul>
+<h3 id="1-4-node和npm版本">1.4 node和npm版本</h3>
+<ul>
+<li>
+<p>启动 <code>cmd</code> 命令框，执行下面代码查看 <code>node</code> 和 <code>npm</code> 版本</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/node%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt=""></p>
+</li>
+</ul>
+<h2 id="二、node配置-可选">二、node配置(可选)</h2>
+<h3 id="2-1-配置npm在安装全局模块时的路径和缓存cache的路径">2.1 配置npm在安装全局模块时的路径和缓存cache的路径</h3>
+<ul>
+<li>
+<p>因为在执行例如 <code>npm i docsify-cli -g</code> 等命令全局安装的时候，默认会将模块安装在 <code>C:\Users\用户名\AppData\Roaming</code> (需显示隐藏文件才能看到 <code>AppData</code> )路径下的 <code>npm</code> 和 <code>npm_cache</code> 中，不方便管理且占用C盘空间，如下图所示：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E8%B7%AF%E5%BE%841.png" alt=""></p>
+</li>
+<li>
+<p>在 <code>node.js</code> 安装目录下建立 <code>node_global</code> 及 <code>node_cache</code> 两个文件夹</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E5%88%9B%E5%BB%BAnode_%E6%96%87%E4%BB%B6.png" alt=""></p>
+</li>
+<li>
+<p>启动cmd，依次输入：（我的 <code>node</code> 在D盘下）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> prefix <span class="string">&quot;D:\node\node_global&quot;</span></span><br><span class="line"></span><br><span class="line">npm config <span class="built_in">set</span> cache <span class="string">&quot;D:\node\node_cache&quot;</span></span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/npm%E5%85%A8%E5%B1%80-1616406279132.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-2-配置环境变量">2.2 配置环境变量</h3>
+<ul>
+<li>
+<p>右键 <code>此电脑</code> --&gt; <code>属性</code> --&gt; <code>高级系统设置</code> --&gt; <code>环境变量</code>（找不到可以直接搜 <code>环境变量</code>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt=""></p>
+</li>
+<li>
+<p><code>系统变量</code> 中新建一个变量名为 <code>NODE_PATH</code> ，变量值为<code>D:\node\node_global\node_modules</code>，如下图：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F-1616406654354.png" alt=""></p>
+</li>
+<li>
+<p>最后编辑 <code>用户变量</code> 里的 <code>Path</code>，将相应npm的路径改为：<code>D:\node\node_global</code>，如下：（npm路径为刚刚新建 <code>node_global</code> 路径）</p>
+<ul>
+<li>
+<p>更改前：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385.png" alt=""></p>
+</li>
+<li>
+<p>更改后：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/path%E5%8F%98%E9%87%8F2.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li>
+<p>重新打开命令框，出现下面界面表示配置成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-3-node淘宝镜像">2.3 node淘宝镜像</h3>
+<ul>
+<li>
+<p>命令框输入下面代码</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>检查是否配置成功</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm get registry</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E6%B7%98%E5%AE%9D%E9%95%9C%E5%83%8F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-4-取消node全局配置">2.4 取消node全局配置</h3>
+<ul>
+<li>
+<p>想取消node的全局变量，卸载重装解决不了问题</p>
+</li>
+<li>
+<p>找到 <code>C:\Users\Administrator\.npmrc</code> 文件并打开</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">prefix=D:\node\node_global</span><br><span class="line">cache=D:\node\node_cache</span><br><span class="line"></span><br><span class="line"><span class="comment"># 镜像</span></span><br><span class="line">registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>删除 <code>prefix</code> 和 <code>cache</code> 这两个代码段，并环境变量改为原来的环境变量（<font color='red'><strong>见2.2</strong></font>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%94%A8%E6%88%B7%E5%8F%98%E9%87%8F1-1616407429385-1616991444889.png" alt=""></p>
+<br/>
+</li>
+</ul>
+<blockquote>
+<p>参考链接：【鸣谢】</p>
+<p><a href="https://blog.csdn.net/antma/article/details/86104068">Node.js 安装详细步骤教程</a></p>
+<p><a href="https://blog.csdn.net/huanghanqian/article/details/52808170">如何删除npm之前设置的npm config set prefix…</a></p>
+</blockquote>
+<br/>]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>Node</tag>
       </tags>
   </entry>
   <entry>
