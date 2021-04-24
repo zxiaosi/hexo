@@ -4,7 +4,7 @@ Allow: /
 Allow: /tags/
 Allow: /categories/
 Allow: /archives/
-Disallow: /links/
+Allow: /links/
 Allow: /about/
 Allow: /page/
 

@@ -84,6 +84,14 @@
 .fa-chart-area {
   color: #474787;
 }
+/* 图标样式 end */
+h1.site-title {
+  font-family: 'Dancing Script', cursive;
+}
+p.site-subtitle {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 18px;
+}
 :root {
   --body-bg-color: #eee;
   --content-bg-color: #fff;
@@ -263,7 +271,7 @@ body {
 body {
   background: var(--body-bg-color);
   color: var(--text-color);
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
 }
@@ -279,7 +287,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Noto Serif SC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -522,7 +530,7 @@ pre {
 }
 pre,
 code {
-  font-family: consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
+  font-family: 'Roboto Mono', consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
 }
 code {
   background: #eee;
@@ -716,22 +724,22 @@ pre .javascript .function {
   padding: 0 2px;
 }
 .post-body .label.default {
-  background: #f0f0f0;
+  background: #d8d8d8;
 }
 .post-body .label.primary {
-  background: #efe6f7;
+  background: #d9c4ec;
 }
 .post-body .label.info {
-  background: #e5f2f8;
+  background: #c3e1ee;
 }
 .post-body .label.success {
-  background: #e7f4e9;
+  background: #c9e8ce;
 }
 .post-body .label.warning {
-  background: #fcf6e1;
+  background: #faecc1;
 }
 .post-body .label.danger {
-  background: #fae8eb;
+  background: #f3c8ce;
 }
 .post-body .tabs {
   margin-bottom: 20px;
@@ -849,15 +857,16 @@ pre .javascript .function {
   margin-bottom: 20px;
   padding: 1em;
   position: relative;
-  border: 1px solid #eee;
-  border-left-width: 5px;
+  background: #f9f9f9;
+  border: initial;
+  border-left: 3px solid #eee;
 }
 .post-body .note h2,
 .post-body .note h3,
 .post-body .note h4,
 .post-body .note h5,
 .post-body .note h6 {
-  margin-top: 0;
+  margin-top: 3px;
   border-bottom: initial;
   margin-bottom: 0;
   padding-top: 0;
@@ -880,7 +889,19 @@ pre .javascript .function {
 .post-body .note img:last-child {
   margin-bottom: 0;
 }
+.post-body .note:not(.no-icon) {
+  padding-left: 2.5em;
+}
+.post-body .note:not(.no-icon)::before {
+  font-size: 1.5em;
+  left: 0.4em;
+  position: absolute;
+  top: calc(50% - 1em);
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
 .post-body .note.default {
+  background: #dedede;
   border-left-color: #777;
 }
 .post-body .note.default h2,
@@ -890,7 +911,12 @@ pre .javascript .function {
 .post-body .note.default h6 {
   color: #777;
 }
+.post-body .note.default:not(.no-icon)::before {
+  content: "\f0a9";
+  color: #777;
+}
 .post-body .note.primary {
+  background: #dfceef;
   border-left-color: #6f42c1;
 }
 .post-body .note.primary h2,
@@ -900,7 +926,12 @@ pre .javascript .function {
 .post-body .note.primary h6 {
   color: #6f42c1;
 }
+.post-body .note.primary:not(.no-icon)::before {
+  content: "\f055";
+  color: #6f42c1;
+}
 .post-body .note.info {
+  background: #cce6f1;
   border-left-color: #428bca;
 }
 .post-body .note.info h2,
@@ -910,7 +941,12 @@ pre .javascript .function {
 .post-body .note.info h6 {
   color: #428bca;
 }
+.post-body .note.info:not(.no-icon)::before {
+  content: "\f05a";
+  color: #428bca;
+}
 .post-body .note.success {
+  background: #d1ebd6;
   border-left-color: #5cb85c;
 }
 .post-body .note.success h2,
@@ -920,7 +956,12 @@ pre .javascript .function {
 .post-body .note.success h6 {
   color: #5cb85c;
 }
+.post-body .note.success:not(.no-icon)::before {
+  content: "\f058";
+  color: #5cb85c;
+}
 .post-body .note.warning {
+  background: #fbefca;
   border-left-color: #f0ad4e;
 }
 .post-body .note.warning h2,
@@ -930,7 +971,12 @@ pre .javascript .function {
 .post-body .note.warning h6 {
   color: #f0ad4e;
 }
+.post-body .note.warning:not(.no-icon)::before {
+  content: "\f06a";
+  color: #f0ad4e;
+}
 .post-body .note.danger {
+  background: #f5d1d6;
   border-left-color: #d9534f;
 }
 .post-body .note.danger h2,
@@ -938,6 +984,10 @@ pre .javascript .function {
 .post-body .note.danger h4,
 .post-body .note.danger h5,
 .post-body .note.danger h6 {
+  color: #d9534f;
+}
+.post-body .note.danger:not(.no-icon)::before {
+  content: "\f056";
   color: #d9534f;
 }
 .pagination .prev,
@@ -1116,7 +1166,7 @@ pre .javascript .function {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
@@ -1371,7 +1421,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #41a14e;
+  background: #49ffc3;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1723,7 +1773,7 @@ pre .javascript .function {
   top: 0;
 }
 .post-body {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -2021,7 +2071,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   color: #999;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 0.75em;
   margin: 3px 0 60px 0;
   text-align: center;
@@ -2890,9 +2940,7 @@ code {
   color: #555;
   border: 0px;
 }
-blockquote {
-  border-left: 4px solid #70a1ff;
-}
+/* 分类页样式 began */
 .category-all-page {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   background-color: #4e606a;
@@ -2910,11 +2958,12 @@ blockquote {
   height: 30px;
   width: 200px;
   float: left;
-  padding-left: 20px;
+  padding: 0px 20px 20px 0px;
 }
 .category-list li a {
   font-size: 18px;
 }
+/* 分类页样式 end */
 /* 归档页样式 began */
 .page-archive .archive-page-counter {
   font-size: 18px;
@@ -3037,6 +3086,15 @@ div.post-block.tag .collection-title h2 {
   transition-duration: 0.15s;
 }
 /* 归档页样式 end */
+.links-of-blogroll-title {
+  font-size: 16px;
+}
+.links-of-blogroll-list li a {
+  color: #0593d3;
+}
+.links-of-blogroll-list li a:hover {
+  color: #ff106c;
+}
 .vpower.txt-right {
   display: none;
 }
