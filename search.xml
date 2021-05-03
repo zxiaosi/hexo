@@ -459,6 +459,118 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo引用标签</title>
+    <url>/archives/484f1820.html</url>
+    <content><![CDATA[<h2 id="一-Center-quote-标签">一. Center-quote 标签</h2>
+<h3 id="1-1-Center-quote-简介">1.1 Center-quote 简介</h3>
+<ul>
+<li>center-quote插件可以实现引用效果，在目标文本前后插入引号，建议用在单个文本中。</li>
+</ul>
+<span id="more"></span>
+<h3 id="1-2-Center-quote-语法">1.2 Center-quote 语法</h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% centerquote %&#125;文本&#123;% endcenterquote %&#125;</span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125; </span><br></pre></td></tr></table></figure>
+<h3 id="1-3-Center-quote-使用">1.3 Center-quote 使用</h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-4-效果图">1.4 效果图</h3>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/center.png" alt=""></p>
+<h2 id="二、Node-标签">二、Node 标签</h2>
+<h3 id="2-1-Note简介">2.1 Note简介</h3>
+<p>Note标签通过在左边界使用特殊颜色划线，实现提醒功能。</p>
+<h3 id="2-2-Note配置">2.2 Note配置</h3>
+<ul>
+<li>
+<p>在主题配置文件 <code>next.yml</code> 中找到 <code>note</code>，修改如下</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">note:</span><br><span class="line">  <span class="comment"># style 风格</span></span><br><span class="line">  <span class="comment"># 四个可选值: simple | modern | flat | disabled</span></span><br><span class="line">  style: flat</span><br><span class="line">  icons: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># light_bg_offset 背景颜色深度</span></span><br><span class="line">  <span class="comment"># modern: (-12 | 12); flat: (-18 | 6).</span></span><br><span class="line">  light_bg_offset: -18</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-3-Note语法">2.3 Note语法</h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">文本</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br><span class="line">[no-icon] : 是否启用图标</span><br></pre></td></tr></table></figure>
+<h3 id="2-4-Note使用">2.4 Note使用</h3>
+<ul>
+<li>
+<p>简单使用</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 或者无图标 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default no-icon&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note1.png" alt=""></p>
+</li>
+<li>
+<p>语法使用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">## 标题</span><br><span class="line">文本</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note2.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-5-Note风格展示">2.5 Note风格展示</h3>
+<ul>
+<li>
+<p>primary</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note primary&quot;</span>&gt;</span> 我是 primary 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary %&#125; 我是 primary 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary">
+            <p>我是 primary 标签</p>
+          </div>
+</li>
+<li>
+<p>success</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note success&quot;</span>&gt;</span> 我是 success 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note success %&#125; 我是 success 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success">
+            <p>我是 success 标签</p>
+          </div>
+</li>
+<li>
+<p>info</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note info&quot;</span>&gt;</span> 我是 info 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note info %&#125; 我是 info 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <p>我是 info 标签</p>
+          </div>
+</li>
+<li>
+<p>warning</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note warning&quot;</span>&gt;</span> 我是 warning 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note warning %&#125; 我是 warning 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning">
+            <p>我是 warning 标签</p>
+          </div>
+</li>
+<li>
+<p>danger</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note danger&quot;</span>&gt;</span> 我是 danger 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note danger %&#125; 我是 danger 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger">
+            <p>我是 danger 标签</p>
+          </div>
+</li>
+<li>
+<p>default</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span> 我是 default 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note <span class="keyword">default</span> %&#125; 我是 <span class="keyword">default</span> 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default">
+            <p>我是 default 标签</p>
+          </div>
+</li>
+</ul>
+<h2 id="三、更多详情">三、更多详情</h2>
+<ul>
+<li><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/234757411">Ubuntu+Hexo+Next 8.0 进阶美化篇</a></li>
+</ul>
+<br/>
+<div class="note success no-icon">
+            <p>参考链接【鸣谢】</p><p><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></p>
+          </div>
+]]></content>
+      <categories>
+        <category>Hexo 博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Tags</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo网站优化</title>
     <url>/archives/64e4e304.html</url>
     <content><![CDATA[<div class="note info">
@@ -1244,8 +1356,8 @@
         <category>SSH密钥</category>
       </categories>
       <tags>
-        <tag>Gitee</tag>
         <tag>Github</tag>
+        <tag>Gitee</tag>
         <tag>SSH</tag>
       </tags>
   </entry>
@@ -1662,8 +1774,8 @@
         <category>图床</category>
       </categories>
       <tags>
-        <tag>Gitee</tag>
         <tag>Node</tag>
+        <tag>Gitee</tag>
         <tag>Typora</tag>
         <tag>PicGo</tag>
       </tags>
@@ -2379,8 +2491,8 @@
         <category>Docsify笔记</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Docsify</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -2501,8 +2613,8 @@
         <category>Docsify笔记</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Docsify</tag>
+        <tag>Git</tag>
         <tag>Node</tag>
         <tag>Github</tag>
       </tags>

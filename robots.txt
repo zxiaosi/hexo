@@ -15,5 +15,5 @@ Disallow: /images/
 Disallow: /links/linklist.json
 Disallow: /自动上传脚本/
 
-Sitemap: https://hexo.xiaosi.world/sitemap.xml
-Sitemap: https://hexo.xiaosi.world/baidusitemap.xml
+Sitemap: https://hexo.zxiaosi.cn/sitemap.xml
+Sitemap: https://hexo.zxiaosi.cn/baidusitemap.xml
