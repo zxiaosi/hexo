@@ -1356,8 +1356,8 @@
         <category>SSH密钥</category>
       </categories>
       <tags>
-        <tag>Gitee</tag>
         <tag>Github</tag>
+        <tag>Gitee</tag>
         <tag>SSH</tag>
       </tags>
   </entry>
@@ -1774,8 +1774,8 @@
         <category>图床</category>
       </categories>
       <tags>
-        <tag>Gitee</tag>
         <tag>Node</tag>
+        <tag>Gitee</tag>
         <tag>Typora</tag>
         <tag>PicGo</tag>
       </tags>
@@ -2491,8 +2491,8 @@
         <category>Docsify笔记</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Docsify</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -2613,8 +2613,8 @@
         <category>Docsify笔记</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Docsify</tag>
+        <tag>Git</tag>
         <tag>Node</tag>
         <tag>Github</tag>
       </tags>
