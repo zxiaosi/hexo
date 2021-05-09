@@ -459,6 +459,68 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo白天黑夜模式按钮</title>
+    <url>/archives/24a19e71.html</url>
+    <content><![CDATA[<h2 id="一、原生黑夜模式">一、原生黑夜模式</h2>
+<h3 id="1-1-Next-7-8-之后的原生黑夜模式">1.1 Next 7.8 之后的原生黑夜模式</h3>
+<ul>
+<li>
+<p>在主题配置文件中 <code>Next.yml</code> 中，搜索 <code>darkmode</code></p>
+<span id="more"></span>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Dark Mode (夜间模式)</span></span><br><span class="line"><span class="comment"># 可选择的值</span></span><br><span class="line"><span class="comment"># true 开启夜间模式</span></span><br><span class="line"><span class="comment"># false 关闭夜间模式</span></span><br><span class="line"><span class="comment"># auto 根据系统的主题选择</span></span><br><span class="line"></span><br><span class="line">darkmode: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="1-2-原生黑夜模式的优缺点">1.2 原生黑夜模式的优缺点</h3>
+<ul>
+<li>优点：配置简单</li>
+<li>缺点：缺少切换按钮，不能根据用户心意来选择</li>
+</ul>
+<h2 id="二、hexo-next-darkmode-插件">二、<a href="https://github.com/rqh656418510/hexo-next-darkmode">hexo-next-darkmode</a> 插件</h2>
+<h3 id="2-1-插件简介">2.1 插件简介</h3>
+<ul>
+<li>插件支持自动添加可切换的暗黑模式，同时支持暗黑模式下的 CSS 样式高度自定义，包括自定义代码块颜色切换等，兼容 Next 7.x 与 8.x 版本。</li>
+</ul>
+<h3 id="2-2-安装Hexo插件">2.2 安装Hexo插件</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-next-darkmode --save</span><br></pre></td></tr></table></figure>
+<h3 id="2-3-配置Hexo插件">2.3 配置Hexo插件</h3>
+<ul>
+<li>
+<p>在主题配置文件 <code>Next.yml</code> 中，找到 <code>darkmode</code>，并将其改为 <code>false</code>，如下</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">darkmode: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后在最后面添加如下代码</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Darkmode JS</span></span><br><span class="line"><span class="comment"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span></span><br><span class="line">darkmode_js:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  bottom: <span class="string">&#x27;64px&#x27;</span> <span class="comment"># default: &#x27;32px&#x27;</span></span><br><span class="line">  right: <span class="string">&#x27;unset&#x27;</span> <span class="comment"># default: &#x27;32px&#x27;</span></span><br><span class="line">  left: <span class="string">&#x27;32px&#x27;</span> <span class="comment"># default: &#x27;unset&#x27;</span></span><br><span class="line">  time: <span class="string">&#x27;0.5s&#x27;</span> <span class="comment"># default: &#x27;0.3s&#x27;</span></span><br><span class="line">  mixColor: <span class="string">&#x27;transparent&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  backgroundColor: <span class="string">&#x27;transparent&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  buttonColorDark: <span class="string">&#x27;#100f2c&#x27;</span> <span class="comment"># default: &#x27;#100f2c&#x27;</span></span><br><span class="line">  buttonColorLight: <span class="string">&#x27;#fff&#x27;</span> <span class="comment"># default: &#x27;#fff&#x27;</span></span><br><span class="line">  isActivated: <span class="literal">false</span> <span class="comment"># default false</span></span><br><span class="line">  saveInCookies: <span class="literal">true</span> <span class="comment"># default: true</span></span><br><span class="line">  label: <span class="string">&#x27;🌓&#x27;</span> <span class="comment"># default: &#x27;&#x27;</span></span><br><span class="line">  autoMatchOsTheme: <span class="literal">true</span> <span class="comment"># default: true</span></span><br><span class="line">  libUrl: <span class="comment"># Set custom library cdn url for Darkmode.js</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>可以配置 <code>Darkmode.js</code> 的cdn连接</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">libUrl: https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-4-效果演示">2.4 效果演示</h3>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/%E9%BB%91%E5%A4%9C%E6%A8%A1%E5%BC%8F/dark.gif" alt=""></p>
+<h2 id="三、其他">三、其他</h2>
+<h3 id="3-1-图片居中">3.1 图片居中</h3>
+<ul>
+<li>
+<p>在 <code>./source/_data/styles.styl</code> 中加上下面代码可实现图片居中</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 图片居中</span><br><span class="line"><span class="selector-tag">img</span>, <span class="selector-class">.darkmode-ignore</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-2-自定义css配置">3.2 <a href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">自定义css配置</a></h3>
+<h3 id="3-3-Next-7-x-8-x-添加可切换的暗黑模式">3.3 <a href="https://www.techgrow.cn/posts/abf4aee1.html">Next 7.x / 8.x 添加可切换的暗黑模式</a></h3>
+<div class="note success no-icon">
+            <p>参考链接：【鸣谢】</p><p><a href="https://www.techgrow.cn/posts/abf4aee1.html">Hexo Next 8.x 主题添加可切换的暗黑模式</a></p>
+          </div>]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>dark</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo引用标签</title>
     <url>/archives/484f1820.html</url>
     <content><![CDATA[<h2 id="一-Center-quote-标签">一. Center-quote 标签</h2>
@@ -1082,7 +1144,10 @@
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Dark Mode (夜间模式)</span></span><br><span class="line"><span class="comment"># 可选择的值</span></span><br><span class="line"><span class="comment"># true 开启夜间模式</span></span><br><span class="line"><span class="comment"># false 关闭夜间模式</span></span><br><span class="line"><span class="comment"># auto 根据系统的主题选择</span></span><br><span class="line"></span><br><span class="line">darkmode: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p>想加切换夜间模式的按钮，奈何尝试无果。等待后续更新~~~</p>
+<p><s>想加切换夜间模式的按钮，奈何尝试无果。等待后续更新~~</s></p>
+</li>
+<li>
+<a href="/archives/24a19e71.html" title="Hexo夜间模式">Hexo夜间模式</a>
 </li>
 </ul>
 <h3 id="7-Valine-隐藏系统信息-和-Powered-by">7. Valine 隐藏系统信息 和 Powered by</h3>

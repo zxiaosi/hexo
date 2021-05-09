@@ -1414,7 +1414,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #09f0df;
+  background: #ffffcf;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3101,4 +3101,8 @@ div.post-block.tag .collection-title h2 {
 ::-moz-selection {
   color: #fff;
   background: #e84893;
+}
+img,
+.darkmode-ignore {
+  display: block !important;
 }
