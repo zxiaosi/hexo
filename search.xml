@@ -125,6 +125,109 @@
       </tags>
   </entry>
   <entry>
+    <title>Github Pages</title>
+    <url>/archives/b48e2719.html</url>
+    <content><![CDATA[<h2 id="一、Github-Pages">一、Github Pages</h2>
+<h3 id="1-1-Github-Pages简介">1.1 Github Pages简介</h3>
+<ul>
+<li>GitHub Pages是一种静态站点托管服务，旨在直接从GitHub仓库托管你的个人、组织或项目页面。</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><a href="https://pages.github.com/">更多详情</a>。</li>
+</ul>
+<h3 id="1-2-Github简单使用">1.2 <a href="http://hexo.zxiaosi.cn/archives/d345b092.html#%E4%BA%8C%E3%80%81Gihub%E4%BD%BF%E7%94%A8">Github简单使用</a></h3>
+<h3 id="span-id-1-2-1-3-span-创建存储库"><span id="1.2">1.3</span> 创建存储库</h3>
+<ul>
+<li>
+<p>仓库名为 <code>yourname.github.io</code> ，且选择公共仓库</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt=""></p>
+</li>
+<li>
+<p><code>Settings</code> --&gt; <code>Options</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p>往下拉找到 <code>GitHub Pages</code> ，并访问你的网站</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98-1617174903039.png" alt=""></p>
+</li>
+<li>
+<p>这个时候，可以选择一个主题，也可以将自己写好的网站上传到这个仓库。比如<a href="/archives/5ef212b6.html" title="Hexo">Hexo</a>、<a href="/archives/f8fffde8.html" title="Docsify">Docsify</a></p>
+</li>
+</ul>
+<h2 id="二、域名（可选）">二、域名（可选）</h2>
+<h3 id="2-1-注册域名">2.1 注册域名</h3>
+<ul>
+<li>
+<p>你可以选择各种注册域名服务商，我选择的是<a href="https://wanwang.aliyun.com/">万网</a>，下面的步骤也是基于阿里云域名服务进行</p>
+</li>
+<li>
+<p>输入想要的域名并查询</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E5%9F%9F%E5%90%8D.png" alt=""></p>
+</li>
+<li>
+<p>购买域名注意看 <code>更多价格</code> --&gt; <code>续费价格</code> （有的域名首年便宜，续费贵）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E4%BB%B7%E6%A0%BC.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-2-域名解析">2.2 域名解析</h3>
+<ul>
+<li>
+<p>购买成功后，登录<a href="https://www.aliyun.com/">阿里云</a>，找到 <code>控制台</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E6%8E%A7%E5%88%B6%E5%8F%B0.png" alt=""></p>
+</li>
+<li>
+<p>找到左上角的 <code>产品与服务</code> ，搜索 <code>域名</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png" alt=""></p>
+</li>
+<li>
+<p>点击 <code>解析</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E8%A7%A3%E6%9E%90.png" alt=""></p>
+</li>
+<li>
+<p><code>添加记录</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E6%B7%BB%E5%8A%A0%E8%AE%B0%E5%BD%95.png" alt=""></p>
+</li>
+<li>
+<p>选择 <code>CNAME</code> --&gt; 主机记录为 <code>www</code> --&gt; 记录值为 <code>yourname.github.io</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E6%B7%BB%E5%8A%A0%E8%AE%B0%E5%BD%952.png" alt=""></p>
+</li>
+<li>
+<p>然后再添加四条记录</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">@	A	默认	185.199.108.153</span><br><span class="line">@	A	默认	185.199.109.153</span><br><span class="line">@	A	默认	185.199.110.153</span><br><span class="line">@	A	默认	185.199.111.153</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/githubio.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-3-添加CNAME文件">2.3 添加CNAME文件</h3>
+<ul>
+<li>
+<p>在 <code>yourname.github.io</code> 仓库根目录下添加 <code>CNAME</code> 文件 <font color='red'>CNAME文件一定要确保在根目录下</font></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/CNAME.png" alt=""></p>
+</li>
+<li>
+<p>解析线路大抵是 访问<code>www.xiaosi.world</code> --&gt; 重定向到<code>xiaosi.world</code> --&gt; 指向 <code>zxiaosi.github.io</code> --&gt; 找到 <code>CNAME</code> 文件 --&gt; 渲染文件（个人猜测）</p>
+</li>
+</ul>
+<h3 id="2-4-绑定域名">2.4 绑定域名</h3>
+<ul>
+<li>
+<p>回到 <code>Github Pages</code> ，如果上一步已经完成，这一步只需开启HTTPS之后，便可访问自己的网站</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E7%BB%91%E5%AE%9A%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+</ul>
+<br/>
+<div class="note success no-icon">
+            <p>参考网站：【鸣谢】</p><p><a href="https://blog.csdn.net/junecscscs/article/details/89605161">如何利用GitHub Pages免费搭建个人网站以及绑定自己的域名</a></p>
+          </div>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Github Pages</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git</title>
     <url>/archives/6525f1ce.html</url>
     <content><![CDATA[<h3 id="1-1-Git简介">1.1 Git简介</h3>
@@ -335,109 +438,6 @@
       <tags>
         <tag>Git</tag>
         <tag>Gitee</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Github Pages</title>
-    <url>/archives/b48e2719.html</url>
-    <content><![CDATA[<h2 id="一、Github-Pages">一、Github Pages</h2>
-<h3 id="1-1-Github-Pages简介">1.1 Github Pages简介</h3>
-<ul>
-<li>GitHub Pages是一种静态站点托管服务，旨在直接从GitHub仓库托管你的个人、组织或项目页面。</li>
-</ul>
-<span id="more"></span>
-<ul>
-<li><a href="https://pages.github.com/">更多详情</a>。</li>
-</ul>
-<h3 id="1-2-Github简单使用">1.2 <a href="http://hexo.zxiaosi.cn/archives/d345b092.html#%E4%BA%8C%E3%80%81Gihub%E4%BD%BF%E7%94%A8">Github简单使用</a></h3>
-<h3 id="span-id-1-2-1-3-span-创建存储库"><span id="1.2">1.3</span> 创建存储库</h3>
-<ul>
-<li>
-<p>仓库名为 <code>yourname.github.io</code> ，且选择公共仓库</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt=""></p>
-</li>
-<li>
-<p><code>Settings</code> --&gt; <code>Options</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E8%AE%BE%E7%BD%AE.png" alt=""></p>
-</li>
-<li>
-<p>往下拉找到 <code>GitHub Pages</code> ，并访问你的网站</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E9%80%89%E6%8B%A9%E4%B8%BB%E9%A2%98-1617174903039.png" alt=""></p>
-</li>
-<li>
-<p>这个时候，可以选择一个主题，也可以将自己写好的网站上传到这个仓库。比如<a href="/archives/5ef212b6.html" title="Hexo">Hexo</a>、<a href="/archives/f8fffde8.html" title="Docsify">Docsify</a></p>
-</li>
-</ul>
-<h2 id="二、域名（可选）">二、域名（可选）</h2>
-<h3 id="2-1-注册域名">2.1 注册域名</h3>
-<ul>
-<li>
-<p>你可以选择各种注册域名服务商，我选择的是<a href="https://wanwang.aliyun.com/">万网</a>，下面的步骤也是基于阿里云域名服务进行</p>
-</li>
-<li>
-<p>输入想要的域名并查询</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E5%9F%9F%E5%90%8D.png" alt=""></p>
-</li>
-<li>
-<p>购买域名注意看 <code>更多价格</code> --&gt; <code>续费价格</code> （有的域名首年便宜，续费贵）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E4%BB%B7%E6%A0%BC.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-2-域名解析">2.2 域名解析</h3>
-<ul>
-<li>
-<p>购买成功后，登录<a href="https://www.aliyun.com/">阿里云</a>，找到 <code>控制台</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E6%8E%A7%E5%88%B6%E5%8F%B0.png" alt=""></p>
-</li>
-<li>
-<p>找到左上角的 <code>产品与服务</code> ，搜索 <code>域名</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png" alt=""></p>
-</li>
-<li>
-<p>点击 <code>解析</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E8%A7%A3%E6%9E%90.png" alt=""></p>
-</li>
-<li>
-<p><code>添加记录</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E6%B7%BB%E5%8A%A0%E8%AE%B0%E5%BD%95.png" alt=""></p>
-</li>
-<li>
-<p>选择 <code>CNAME</code> --&gt; 主机记录为 <code>www</code> --&gt; 记录值为 <code>yourname.github.io</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E6%B7%BB%E5%8A%A0%E8%AE%B0%E5%BD%952.png" alt=""></p>
-</li>
-<li>
-<p>然后再添加四条记录</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">@	A	默认	185.199.108.153</span><br><span class="line">@	A	默认	185.199.109.153</span><br><span class="line">@	A	默认	185.199.110.153</span><br><span class="line">@	A	默认	185.199.111.153</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/githubio.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-3-添加CNAME文件">2.3 添加CNAME文件</h3>
-<ul>
-<li>
-<p>在 <code>yourname.github.io</code> 仓库根目录下添加 <code>CNAME</code> 文件 <font color='red'>CNAME文件一定要确保在根目录下</font></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/CNAME.png" alt=""></p>
-</li>
-<li>
-<p>解析线路大抵是 访问<code>www.xiaosi.world</code> --&gt; 重定向到<code>xiaosi.world</code> --&gt; 指向 <code>zxiaosi.github.io</code> --&gt; 找到 <code>CNAME</code> 文件 --&gt; 渲染文件（个人猜测）</p>
-</li>
-</ul>
-<h3 id="2-4-绑定域名">2.4 绑定域名</h3>
-<ul>
-<li>
-<p>回到 <code>Github Pages</code> ，如果上一步已经完成，这一步只需开启HTTPS之后，便可访问自己的网站</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github-Pags%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/%E7%BB%91%E5%AE%9A%E6%88%90%E5%8A%9F.png" alt=""></p>
-</li>
-</ul>
-<br/>
-<div class="note success no-icon">
-            <p>参考网站：【鸣谢】</p><p><a href="https://blog.csdn.net/junecscscs/article/details/89605161">如何利用GitHub Pages免费搭建个人网站以及绑定自己的域名</a></p>
-          </div>]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>Github Pages</tag>
       </tags>
   </entry>
   <entry>
@@ -896,137 +896,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo-Next配置（后续更新）</title>
-    <url>/archives/1d79f7d1.html</url>
-    <content><![CDATA[<h3 id="1-修改图标颜色">1. 修改图标颜色</h3>
-<ul>
-<li>
-<p>在主题配置文件 <code>nexy.yml</code> 中找到对应的图标</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">fa fa-home</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<span id="more"></span>
-<ul>
-<li>
-<p>在 <code>./source/_data/variables.styl</code> 中，添加css来改变图标样式（<a href="https://flatuicolors.com/">调色板</a>）</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.fa</span>&#123;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.fa-home</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#ffa801</span>;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>我的代码</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 图标颜色</span><br><span class="line"><span class="selector-class">.fa</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 菜单栏</span><br><span class="line"><span class="selector-class">.fa-home</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#e74c3c</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-tags</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#3498db</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-th</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: orange;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-archive</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#1abc9c</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-link</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#FC427B</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-user</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#9b59b6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">.fa-search&#123;</span></span><br><span class="line"><span class="comment">  color: #dcdde1;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">// 社交</span><br><span class="line"><span class="selector-class">.fa-globe</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#0AD0C6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-book</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#5f27cd</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-github</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#57606f</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14.5px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-google</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff4757</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-history</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#40739e</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 文章</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">.fa-anchor&#123;</span></span><br><span class="line"><span class="comment">  color: #57606f;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.fa-calendar</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-calendar-check</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#5352ed</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-folder</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffa502</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-eye</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-comment</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#2ed573</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-file-word</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#273c75</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-clock</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff5252</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 底部</span><br><span class="line"><span class="selector-class">.fa-coffee</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffa801</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-chart-area</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#474787</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="2-添加404页面">2. 添加404页面</h3>
-<ul>
-<li>
-<p>在 <code>./source/</code> 下新建404.html</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;cn&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=UTF-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>(￣▽￣)&quot;正在赶稿404页面!!!<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge,chrome=1&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">img</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="attribute">position</span>: absolute;</span></span><br><span class="line"><span class="css">        <span class="attribute">top</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">left</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">min-width</span>: <span class="number">988px</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span></span><br><span class="line">      &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        &lt;img</span><br><span class="line">          src=&quot;https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/404/404.jpg&quot;</span><br><span class="line">          alt=&quot;&quot;</span><br><span class="line">        /&gt;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>并在站点配置文件 <code>_config.yml</code> 搜索 <code>skip_render</code>，以忽略渲染</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 跳过指定渲染，忽略文章skip_render: &quot;_posts/hello-world.md&quot;</span></span><br><span class="line">skip_render:      </span><br><span class="line">  - 404.html</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="3-修改近期文章字体大小及颜色">3. 修改近期文章字体大小及颜色</h3>
-<ul>
-<li>
-<p>找到 <code>./source/_data/styles.styl</code> ，天添加代码如下</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 近期文章</span><br><span class="line"><span class="selector-class">.links-of-blogroll-title</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.links-of-blogroll-list</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#0593d3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.links-of-blogroll-list</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff106c</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="4-修改网站描述">4. 修改网站描述</h3>
-<ul>
-<li>
-<p>因为网站描述会显示在网站里，如图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E6%8F%8F%E8%BF%B0.png" alt=""></p>
-</li>
-<li>
-<p>又因为收录的主页会显示描述</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E7%BD%91%E7%AB%99.png" alt=""></p>
-</li>
-<li>
-<p>既不想在网站里显示太多字，又想在加多网站描述的字数。在 <code>themes/next/layout/_partials/sidebae/site-overview.swig</code></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-author motion-element&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;author&quot;</span> <span class="attr">itemscope</span> <span class="attr">itemtype</span>=<span class="string">&quot;http://schema.org/Person&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if theme.avatar.url %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;site-author-image&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;image&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&#123;&#123; author &#125;&#125;&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">src</span>=<span class="string">&quot;&#123;&#123; url_for(theme.avatar.url) &#125;&#125;&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- endif %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;site-author-name&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;name&quot;</span>&gt;</span>&#123;&#123; author &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">- &#123;#</span><br><span class="line">-   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;description&quot;</span>&gt;</span>&#123;&#123; description &#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">- #&#125;</span><br><span class="line">    </span><br><span class="line">+ <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span>&gt;</span>生命不息 奋斗不止<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>亦或者改成以下内容</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;description&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;binft&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> binft = <span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">t</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> b[<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * b.length)]</span></span><br><span class="line">      &#125;  </span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">e</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> <span class="built_in">String</span>.fromCharCode(<span class="number">94</span> * <span class="built_in">Math</span>.random() + <span class="number">33</span>)</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> n = <span class="built_in">document</span>.createDocumentFragment(), i = <span class="number">0</span>; r &gt; i; i++) &#123;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">var</span> l = <span class="built_in">document</span>.createElement(<span class="string">&quot;span&quot;</span>);</span></span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> n</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> t = o[c.skillI];</span></span><br><span class="line"><span class="javascript">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= <span class="number">0</span> &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : <span class="string">&quot;forward&quot;</span> === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = <span class="string">&quot;backward&quot;</span>, c.delay = a) : c.skillP &gt; <span class="number">0</span> ? (c.text = c.text.slice(<span class="number">0</span>, -<span class="number">1</span>), c.skillP--) : (c.skillI = (c.skillI + <span class="number">1</span>) % o.length, c.direction = <span class="string">&quot;forward&quot;</span>)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? <span class="built_in">Math</span>.min(s, s + c.prefixP) : <span class="built_in">Math</span>.min(s, t.length - c.skillP))), <span class="built_in">setTimeout</span>(i, d)</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> l = <span class="string">&quot;&quot;</span>,</span></span><br><span class="line"><span class="javascript">      o = [<span class="string">&quot;人生在勤，不索何获&quot;</span>, <span class="string">&quot;一个伪IT技术型骨灰级米粉&quot;</span>,<span class="string">&quot;日日待明日,万事成蹉跎&quot;</span>,<span class="string">&quot;丈夫志四海，万里犹比邻&quot;</span>,<span class="string">&quot;还在看这里吗？&quot;</span>,<span class="string">&quot;能不能别看了？&quot;</span>,<span class="string">&quot;文章更精彩....&quot;</span>].map(<span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">return</span> r + <span class="string">&quot;&quot;</span></span></span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line"><span class="javascript">      b = [<span class="string">&quot;rgb(110,64,170)&quot;</span>, <span class="string">&quot;rgb(150,61,179)&quot;</span>, <span class="string">&quot;rgb(191,60,175)&quot;</span>, <span class="string">&quot;rgb(228,65,157)&quot;</span>, <span class="string">&quot;rgb(254,75,131)&quot;</span>, <span class="string">&quot;rgb(255,94,99)&quot;</span>, <span class="string">&quot;rgb(255,120,71)&quot;</span>, <span class="string">&quot;rgb(251,150,51)&quot;</span>, <span class="string">&quot;rgb(226,183,47)&quot;</span>, <span class="string">&quot;rgb(198,214,60)&quot;</span>, <span class="string">&quot;rgb(175,240,91)&quot;</span>, <span class="string">&quot;rgb(127,246,88)&quot;</span>, <span class="string">&quot;rgb(82,246,103)&quot;</span>, <span class="string">&quot;rgb(48,239,130)&quot;</span>, <span class="string">&quot;rgb(29,223,163)&quot;</span>, <span class="string">&quot;rgb(26,199,194)&quot;</span>, <span class="string">&quot;rgb(35,171,216)&quot;</span>, <span class="string">&quot;rgb(54,140,225)&quot;</span>, <span class="string">&quot;rgb(76,110,219)&quot;</span>, <span class="string">&quot;rgb(96,84,200)&quot;</span>],</span></span><br><span class="line">      c = &#123;</span><br><span class="line"><span class="javascript">        text: <span class="string">&quot;&quot;</span>,</span></span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line"><span class="javascript">        direction: <span class="string">&quot;forward&quot;</span>,</span></span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line"><span class="javascript">      binft(<span class="built_in">document</span>.getElementById(<span class="string">&#x27;binft&#x27;</span>));</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/GIF.gif" alt=""></p>
-</li>
-</ul>
-<h3 id="5-canvas-nest-动态背景">5. <code>canvas-nest</code> 动态背景</h3>
-<ul>
-<li>
-<p><a href="https://github.com/theme-next/theme-next-canvas-nest">官方说明</a></p>
-</li>
-<li>
-<p>在 <code>./source/_data/footer.swig</code> 中添加如下代码</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script color=<span class="string">&quot;0,0,255&quot;</span> opacity=<span class="string">&quot;0.5&quot;</span> zIndex=<span class="string">&quot;-1&quot;</span> count=<span class="string">&quot;99&quot;</span> src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>参数说明</p>
-<ul>
-<li>color：颜色值</li>
-<li>opacity：线条的不透明度: 0~1</li>
-<li>zIndex：背景的z-index属性</li>
-<li>count：最大数量</li>
-</ul>
-</li>
-</ul>
-<h3 id="6-夜间模式">6. 夜间模式</h3>
-<ul>
-<li>
-<p>在主题配置文件 <code>next.yml</code> 中搜索 <code>darkmode</code></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Dark Mode (夜间模式)</span></span><br><span class="line"><span class="comment"># 可选择的值</span></span><br><span class="line"><span class="comment"># true 开启夜间模式</span></span><br><span class="line"><span class="comment"># false 关闭夜间模式</span></span><br><span class="line"><span class="comment"># auto 根据系统的主题选择</span></span><br><span class="line"></span><br><span class="line">darkmode: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><s>想加切换夜间模式的按钮，奈何尝试无果。等待后续更新~~</s></p>
-</li>
-<li>
-<a href="/archives/24a19e71.html" title="Hexo夜间模式">Hexo夜间模式</a>
-</li>
-</ul>
-<h3 id="7-Valine-隐藏系统信息-和-Powered-by">7. Valine 隐藏系统信息 和 Powered by</h3>
-<ul>
-<li>
-<p>在 <code>./source/_data/styles.styl</code> 中，添加如下代码</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 隐藏 valine 的 powered by</span><br><span class="line"><span class="selector-class">.vpower</span><span class="selector-class">.txt-right</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Valine 隐藏系统信息</span><br><span class="line"><span class="selector-class">.vsys</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/valine.png" alt=""></p>
-</li>
-</ul>
-<h3 id="8-添加友链页">8. 添加友链页</h3>
-<ul>
-<li><a href="https://tding.top/archives/73ce4e7.html">Hexo+next主题自定义友情链接页面</a></li>
-<li>方法二中将 <code>link.js</code> 放入 <code>./themes/next/source/js/</code> 目录下</li>
-</ul>
-<h3 id="9-美化归档页">9. 美化归档页</h3>
-<ul>
-<li><a href="https://www.liaofuzhan.com/posts/2114475547.html">Hexo NexT主题美化2.0</a></li>
-</ul>
-<h3 id="10-分类页美化">10. 分类页美化</h3>
-<ul>
-<li><a href="https://www.dazhuanlan.com/2019/12/11/5df0adc17885e/">Hexo+Next分类页样式美化</a></li>
-</ul>
-<h3 id="11-崩溃欺骗">11. 崩溃欺骗</h3>
-<ul>
-<li><a href="https://blog.csdn.net/qq_34146679/article/details/86065141">Hexo NexT主题中添加网页标题崩溃欺骗搞怪特效</a></li>
-</ul>
-<br/>]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo-Next安装及使用</title>
     <url>/archives/65f611a4.html</url>
     <content><![CDATA[<h2 id="一、安装主题">一、安装主题</h2>
@@ -1159,6 +1028,137 @@
 <div class="note success no-icon">
             <p>参考网站：【鸣谢】</p><p><a href="https://blog.csdn.net/iwyang/article/details/106989237">Hexo-NexT (v7.7.2) 主题配置</a></p><p><a href="https://blog.csdn.net/qq_35396510/article/details/105953460">Hexo 主题 next7.8 版本配置美化</a></p>
           </div>]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo-Next配置（后续更新）</title>
+    <url>/archives/1d79f7d1.html</url>
+    <content><![CDATA[<h3 id="1-修改图标颜色">1. 修改图标颜色</h3>
+<ul>
+<li>
+<p>在主题配置文件 <code>nexy.yml</code> 中找到对应的图标</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">fa fa-home</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li>
+<p>在 <code>./source/_data/variables.styl</code> 中，添加css来改变图标样式（<a href="https://flatuicolors.com/">调色板</a>）</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.fa</span>&#123;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.fa-home</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#ffa801</span>;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>我的代码</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 图标颜色</span><br><span class="line"><span class="selector-class">.fa</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 菜单栏</span><br><span class="line"><span class="selector-class">.fa-home</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#e74c3c</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">15px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-tags</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#3498db</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-th</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: orange;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-archive</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#1abc9c</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-link</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#FC427B</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-user</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#9b59b6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">.fa-search&#123;</span></span><br><span class="line"><span class="comment">  color: #dcdde1;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line">// 社交</span><br><span class="line"><span class="selector-class">.fa-globe</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#0AD0C6</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-book</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#5f27cd</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-github</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#57606f</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14.5px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-google</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff4757</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-history</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#40739e</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 文章</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">.fa-anchor&#123;</span></span><br><span class="line"><span class="comment">  color: #57606f;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="selector-class">.fa-calendar</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-calendar-check</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#5352ed</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-folder</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffa502</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-eye</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#70a1ff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-comment</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#2ed573</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-file-word</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#273c75</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-clock</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff5252</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 底部</span><br><span class="line"><span class="selector-class">.fa-coffee</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ffa801</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fa-chart-area</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#474787</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-添加404页面">2. 添加404页面</h3>
+<ul>
+<li>
+<p>在 <code>./source/</code> 下新建404.html</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;cn&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=UTF-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>(￣▽￣)&quot;正在赶稿404页面!!!<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge,chrome=1&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">img</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="attribute">position</span>: absolute;</span></span><br><span class="line"><span class="css">        <span class="attribute">top</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">left</span>: <span class="number">50%</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">min-width</span>: <span class="number">988px</span>;</span></span><br><span class="line"><span class="css">        <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span></span><br><span class="line">      &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        &lt;img</span><br><span class="line">          src=&quot;https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/404/404.jpg&quot;</span><br><span class="line">          alt=&quot;&quot;</span><br><span class="line">        /&gt;</span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>并在站点配置文件 <code>_config.yml</code> 搜索 <code>skip_render</code>，以忽略渲染</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 跳过指定渲染，忽略文章skip_render: &quot;_posts/hello-world.md&quot;</span></span><br><span class="line">skip_render:      </span><br><span class="line">  - 404.html</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-修改近期文章字体大小及颜色">3. 修改近期文章字体大小及颜色</h3>
+<ul>
+<li>
+<p>找到 <code>./source/_data/styles.styl</code> ，天添加代码如下</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 近期文章</span><br><span class="line"><span class="selector-class">.links-of-blogroll-title</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.links-of-blogroll-list</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#0593d3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.links-of-blogroll-list</span> <span class="selector-tag">li</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff106c</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="4-修改网站描述">4. 修改网站描述</h3>
+<ul>
+<li>
+<p>因为网站描述会显示在网站里，如图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E6%8F%8F%E8%BF%B0.png" alt=""></p>
+</li>
+<li>
+<p>又因为收录的主页会显示描述</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/%E7%BD%91%E7%AB%99.png" alt=""></p>
+</li>
+<li>
+<p>既不想在网站里显示太多字，又想在加多网站描述的字数。在 <code>themes/next/layout/_partials/sidebae/site-overview.swig</code></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-author motion-element&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;author&quot;</span> <span class="attr">itemscope</span> <span class="attr">itemtype</span>=<span class="string">&quot;http://schema.org/Person&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- if theme.avatar.url %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;site-author-image&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;image&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&#123;&#123; author &#125;&#125;&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">src</span>=<span class="string">&quot;&#123;&#123; url_for(theme.avatar.url) &#125;&#125;&quot;</span>&gt;</span></span><br><span class="line">  &#123;%- endif %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;site-author-name&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;name&quot;</span>&gt;</span>&#123;&#123; author &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">- &#123;#</span><br><span class="line">-   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;description&quot;</span>&gt;</span>&#123;&#123; description &#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">- #&#125;</span><br><span class="line">    </span><br><span class="line">+ <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span>&gt;</span>生命不息 奋斗不止<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>亦或者改成以下内容</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;site-description&quot;</span> <span class="attr">itemprop</span>=<span class="string">&quot;description&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;binft&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> binft = <span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">t</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> b[<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * b.length)]</span></span><br><span class="line">      &#125;  </span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">e</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> <span class="built_in">String</span>.fromCharCode(<span class="number">94</span> * <span class="built_in">Math</span>.random() + <span class="number">33</span>)</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">for</span> (<span class="keyword">var</span> n = <span class="built_in">document</span>.createDocumentFragment(), i = <span class="number">0</span>; r &gt; i; i++) &#123;</span></span><br><span class="line"><span class="javascript">          <span class="keyword">var</span> l = <span class="built_in">document</span>.createElement(<span class="string">&quot;span&quot;</span>);</span></span><br><span class="line">          l.textContent = e(), l.style.color = t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> n</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> t = o[c.skillI];</span></span><br><span class="line"><span class="javascript">        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= <span class="number">0</span> &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : <span class="string">&quot;forward&quot;</span> === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = <span class="string">&quot;backward&quot;</span>, c.delay = a) : c.skillP &gt; <span class="number">0</span> ? (c.text = c.text.slice(<span class="number">0</span>, -<span class="number">1</span>), c.skillP--) : (c.skillI = (c.skillI + <span class="number">1</span>) % o.length, c.direction = <span class="string">&quot;forward&quot;</span>)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? <span class="built_in">Math</span>.min(s, s + c.prefixP) : <span class="built_in">Math</span>.min(s, t.length - c.skillP))), <span class="built_in">setTimeout</span>(i, d)</span></span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> l = <span class="string">&quot;&quot;</span>,</span></span><br><span class="line"><span class="javascript">      o = [<span class="string">&quot;人生在勤，不索何获&quot;</span>, <span class="string">&quot;一个伪IT技术型骨灰级米粉&quot;</span>,<span class="string">&quot;日日待明日,万事成蹉跎&quot;</span>,<span class="string">&quot;丈夫志四海，万里犹比邻&quot;</span>,<span class="string">&quot;还在看这里吗？&quot;</span>,<span class="string">&quot;能不能别看了？&quot;</span>,<span class="string">&quot;文章更精彩....&quot;</span>].map(<span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">return</span> r + <span class="string">&quot;&quot;</span></span></span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line"><span class="javascript">      b = [<span class="string">&quot;rgb(110,64,170)&quot;</span>, <span class="string">&quot;rgb(150,61,179)&quot;</span>, <span class="string">&quot;rgb(191,60,175)&quot;</span>, <span class="string">&quot;rgb(228,65,157)&quot;</span>, <span class="string">&quot;rgb(254,75,131)&quot;</span>, <span class="string">&quot;rgb(255,94,99)&quot;</span>, <span class="string">&quot;rgb(255,120,71)&quot;</span>, <span class="string">&quot;rgb(251,150,51)&quot;</span>, <span class="string">&quot;rgb(226,183,47)&quot;</span>, <span class="string">&quot;rgb(198,214,60)&quot;</span>, <span class="string">&quot;rgb(175,240,91)&quot;</span>, <span class="string">&quot;rgb(127,246,88)&quot;</span>, <span class="string">&quot;rgb(82,246,103)&quot;</span>, <span class="string">&quot;rgb(48,239,130)&quot;</span>, <span class="string">&quot;rgb(29,223,163)&quot;</span>, <span class="string">&quot;rgb(26,199,194)&quot;</span>, <span class="string">&quot;rgb(35,171,216)&quot;</span>, <span class="string">&quot;rgb(54,140,225)&quot;</span>, <span class="string">&quot;rgb(76,110,219)&quot;</span>, <span class="string">&quot;rgb(96,84,200)&quot;</span>],</span></span><br><span class="line">      c = &#123;</span><br><span class="line"><span class="javascript">        text: <span class="string">&quot;&quot;</span>,</span></span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line"><span class="javascript">        direction: <span class="string">&quot;forward&quot;</span>,</span></span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line"><span class="javascript">      binft(<span class="built_in">document</span>.getElementById(<span class="string">&#x27;binft&#x27;</span>));</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/GIF.gif" alt=""></p>
+</li>
+</ul>
+<h3 id="5-canvas-nest-动态背景">5. <code>canvas-nest</code> 动态背景</h3>
+<ul>
+<li>
+<p><a href="https://github.com/theme-next/theme-next-canvas-nest">官方说明</a></p>
+</li>
+<li>
+<p>在 <code>./source/_data/footer.swig</code> 中添加如下代码</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script color=<span class="string">&quot;0,0,255&quot;</span> opacity=<span class="string">&quot;0.5&quot;</span> zIndex=<span class="string">&quot;-1&quot;</span> count=<span class="string">&quot;99&quot;</span> src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>参数说明</p>
+<ul>
+<li>color：颜色值</li>
+<li>opacity：线条的不透明度: 0~1</li>
+<li>zIndex：背景的z-index属性</li>
+<li>count：最大数量</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-夜间模式">6. 夜间模式</h3>
+<ul>
+<li>
+<p>在主题配置文件 <code>next.yml</code> 中搜索 <code>darkmode</code></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Dark Mode (夜间模式)</span></span><br><span class="line"><span class="comment"># 可选择的值</span></span><br><span class="line"><span class="comment"># true 开启夜间模式</span></span><br><span class="line"><span class="comment"># false 关闭夜间模式</span></span><br><span class="line"><span class="comment"># auto 根据系统的主题选择</span></span><br><span class="line"></span><br><span class="line">darkmode: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><s>想加切换夜间模式的按钮，奈何尝试无果。等待后续更新~~</s></p>
+</li>
+<li>
+<a href="/archives/24a19e71.html" title="Hexo夜间模式">Hexo夜间模式</a>
+</li>
+</ul>
+<h3 id="7-Valine-隐藏系统信息-和-Powered-by">7. Valine 隐藏系统信息 和 Powered by</h3>
+<ul>
+<li>
+<p>在 <code>./source/_data/styles.styl</code> 中，添加如下代码</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 隐藏 valine 的 powered by</span><br><span class="line"><span class="selector-class">.vpower</span><span class="selector-class">.txt-right</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Valine 隐藏系统信息</span><br><span class="line"><span class="selector-class">.vsys</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:none <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E5%90%8E%E7%BB%AD%E6%9B%B4%E6%96%B0/valine.png" alt=""></p>
+</li>
+</ul>
+<h3 id="8-添加友链页">8. 添加友链页</h3>
+<ul>
+<li><a href="https://tding.top/archives/73ce4e7.html">Hexo+next主题自定义友情链接页面</a></li>
+<li>方法二中将 <code>link.js</code> 放入 <code>./themes/next/source/js/</code> 目录下</li>
+</ul>
+<h3 id="9-美化归档页">9. 美化归档页</h3>
+<ul>
+<li><a href="https://www.liaofuzhan.com/posts/2114475547.html">Hexo NexT主题美化2.0</a></li>
+</ul>
+<h3 id="10-分类页美化">10. 分类页美化</h3>
+<ul>
+<li><a href="https://www.dazhuanlan.com/2019/12/11/5df0adc17885e/">Hexo+Next分类页样式美化</a></li>
+</ul>
+<h3 id="11-崩溃欺骗">11. 崩溃欺骗</h3>
+<ul>
+<li><a href="https://blog.csdn.net/qq_34146679/article/details/86065141">Hexo NexT主题中添加网页标题崩溃欺骗搞怪特效</a></li>
+</ul>
+<br/>]]></content>
       <categories>
         <category>Hexo博客</category>
       </categories>
@@ -1472,6 +1472,118 @@
       <tags>
         <tag>Hexo</tag>
         <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo引用标签</title>
+    <url>/archives/484f1820.html</url>
+    <content><![CDATA[<h2 id="一-Center-quote-标签">一. Center-quote 标签</h2>
+<h3 id="1-1-Center-quote-简介">1.1 Center-quote 简介</h3>
+<ul>
+<li>center-quote插件可以实现引用效果，在目标文本前后插入引号，建议用在单个文本中。</li>
+</ul>
+<span id="more"></span>
+<h3 id="1-2-Center-quote-语法">1.2 Center-quote 语法</h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% centerquote %&#125;文本&#123;% endcenterquote %&#125;</span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125; </span><br></pre></td></tr></table></figure>
+<h3 id="1-3-Center-quote-使用">1.3 Center-quote 使用</h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-4-效果图">1.4 效果图</h3>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/center.png" alt=""></p>
+<h2 id="二、Node-标签">二、Node 标签</h2>
+<h3 id="2-1-Note简介">2.1 Note简介</h3>
+<p>Note标签通过在左边界使用特殊颜色划线，实现提醒功能。</p>
+<h3 id="2-2-Note配置">2.2 Note配置</h3>
+<ul>
+<li>
+<p>在主题配置文件 <code>next.yml</code> 中找到 <code>note</code>，修改如下</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">note:</span><br><span class="line">  <span class="comment"># style 风格</span></span><br><span class="line">  <span class="comment"># 四个可选值: simple | modern | flat | disabled</span></span><br><span class="line">  style: flat</span><br><span class="line">  icons: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># light_bg_offset 背景颜色深度</span></span><br><span class="line">  <span class="comment"># modern: (-12 | 12); flat: (-18 | 6).</span></span><br><span class="line">  light_bg_offset: -18</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-3-Note语法">2.3 Note语法</h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">文本</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br><span class="line">[no-icon] : 是否启用图标</span><br></pre></td></tr></table></figure>
+<h3 id="2-4-Note使用">2.4 Note使用</h3>
+<ul>
+<li>
+<p>简单使用</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 或者无图标 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default no-icon&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note1.png" alt=""></p>
+</li>
+<li>
+<p>语法使用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">## 标题</span><br><span class="line">文本</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note2.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-5-Note风格展示">2.5 Note风格展示</h3>
+<ul>
+<li>
+<p>primary</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note primary&quot;</span>&gt;</span> 我是 primary 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary %&#125; 我是 primary 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary">
+            <p>我是 primary 标签</p>
+          </div>
+</li>
+<li>
+<p>success</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note success&quot;</span>&gt;</span> 我是 success 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note success %&#125; 我是 success 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success">
+            <p>我是 success 标签</p>
+          </div>
+</li>
+<li>
+<p>info</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note info&quot;</span>&gt;</span> 我是 info 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note info %&#125; 我是 info 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <p>我是 info 标签</p>
+          </div>
+</li>
+<li>
+<p>warning</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note warning&quot;</span>&gt;</span> 我是 warning 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note warning %&#125; 我是 warning 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning">
+            <p>我是 warning 标签</p>
+          </div>
+</li>
+<li>
+<p>danger</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note danger&quot;</span>&gt;</span> 我是 danger 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note danger %&#125; 我是 danger 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger">
+            <p>我是 danger 标签</p>
+          </div>
+</li>
+<li>
+<p>default</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span> 我是 default 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note <span class="keyword">default</span> %&#125; 我是 <span class="keyword">default</span> 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default">
+            <p>我是 default 标签</p>
+          </div>
+</li>
+</ul>
+<h2 id="三、更多详情">三、更多详情</h2>
+<ul>
+<li><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/234757411">Ubuntu+Hexo+Next 8.0 进阶美化篇</a></li>
+</ul>
+<br/>
+<div class="note success no-icon">
+            <p>参考链接【鸣谢】</p><p><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></p>
+          </div>
+]]></content>
+      <categories>
+        <category>Hexo 博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Tags</tag>
       </tags>
   </entry>
   <entry>
@@ -1853,118 +1965,6 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       </tags>
   </entry>
   <entry>
-    <title>Hexo引用标签</title>
-    <url>/archives/484f1820.html</url>
-    <content><![CDATA[<h2 id="一-Center-quote-标签">一. Center-quote 标签</h2>
-<h3 id="1-1-Center-quote-简介">1.1 Center-quote 简介</h3>
-<ul>
-<li>center-quote插件可以实现引用效果，在目标文本前后插入引号，建议用在单个文本中。</li>
-</ul>
-<span id="more"></span>
-<h3 id="1-2-Center-quote-语法">1.2 Center-quote 语法</h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% centerquote %&#125;文本&#123;% endcenterquote %&#125;</span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125; </span><br></pre></td></tr></table></figure>
-<h3 id="1-3-Center-quote-使用">1.3 Center-quote 使用</h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="1-4-效果图">1.4 效果图</h3>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/center.png" alt=""></p>
-<h2 id="二、Node-标签">二、Node 标签</h2>
-<h3 id="2-1-Note简介">2.1 Note简介</h3>
-<p>Note标签通过在左边界使用特殊颜色划线，实现提醒功能。</p>
-<h3 id="2-2-Note配置">2.2 Note配置</h3>
-<ul>
-<li>
-<p>在主题配置文件 <code>next.yml</code> 中找到 <code>note</code>，修改如下</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">note:</span><br><span class="line">  <span class="comment"># style 风格</span></span><br><span class="line">  <span class="comment"># 四个可选值: simple | modern | flat | disabled</span></span><br><span class="line">  style: flat</span><br><span class="line">  icons: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># light_bg_offset 背景颜色深度</span></span><br><span class="line">  <span class="comment"># modern: (-12 | 12); flat: (-18 | 6).</span></span><br><span class="line">  light_bg_offset: -18</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="2-3-Note语法">2.3 Note语法</h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">文本</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br><span class="line">[no-icon] : 是否启用图标</span><br></pre></td></tr></table></figure>
-<h3 id="2-4-Note使用">2.4 Note使用</h3>
-<ul>
-<li>
-<p>简单使用</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 或者无图标 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default no-icon&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note1.png" alt=""></p>
-</li>
-<li>
-<p>语法使用</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">## 标题</span><br><span class="line">文本</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note2.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-5-Note风格展示">2.5 Note风格展示</h3>
-<ul>
-<li>
-<p>primary</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note primary&quot;</span>&gt;</span> 我是 primary 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary %&#125; 我是 primary 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note primary">
-            <p>我是 primary 标签</p>
-          </div>
-</li>
-<li>
-<p>success</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note success&quot;</span>&gt;</span> 我是 success 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note success %&#125; 我是 success 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note success">
-            <p>我是 success 标签</p>
-          </div>
-</li>
-<li>
-<p>info</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note info&quot;</span>&gt;</span> 我是 info 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note info %&#125; 我是 info 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note info">
-            <p>我是 info 标签</p>
-          </div>
-</li>
-<li>
-<p>warning</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note warning&quot;</span>&gt;</span> 我是 warning 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note warning %&#125; 我是 warning 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note warning">
-            <p>我是 warning 标签</p>
-          </div>
-</li>
-<li>
-<p>danger</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note danger&quot;</span>&gt;</span> 我是 danger 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note danger %&#125; 我是 danger 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note danger">
-            <p>我是 danger 标签</p>
-          </div>
-</li>
-<li>
-<p>default</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span> 我是 default 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note <span class="keyword">default</span> %&#125; 我是 <span class="keyword">default</span> 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note default">
-            <p>我是 default 标签</p>
-          </div>
-</li>
-</ul>
-<h2 id="三、更多详情">三、更多详情</h2>
-<ul>
-<li><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/234757411">Ubuntu+Hexo+Next 8.0 进阶美化篇</a></li>
-</ul>
-<br/>
-<div class="note success no-icon">
-            <p>参考链接【鸣谢】</p><p><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></p>
-          </div>
-]]></content>
-      <categories>
-        <category>Hexo 博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Tags</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo白天黑夜模式按钮</title>
     <url>/archives/24a19e71.html</url>
     <content><![CDATA[<h2 id="一、原生黑夜模式">一、原生黑夜模式</h2>
@@ -2005,7 +2005,7 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
 </ul>
 <h3 id="2-4-效果演示">2.4 效果演示</h3>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/%E9%BB%91%E5%A4%9C%E6%A8%A1%E5%BC%8F/dark.gif" alt=""></p>
-<h2 id="三、其他">三、其他</h2>
+<h2 id="三、自定义css样式">三、自定义css样式</h2>
 <h3 id="3-1-图片居中">3.1 图片居中</h3>
 <ul>
 <li>
@@ -2013,8 +2013,8 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// 图片居中</span><br><span class="line"><span class="selector-tag">img</span>, <span class="selector-class">.darkmode-ignore</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="3-2-自定义css配置">3.2 <a href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">自定义css配置</a></h3>
-<h3 id="3-3-Next-7-x-8-x-添加可切换的暗黑模式">3.3 <a href="https://www.techgrow.cn/posts/abf4aee1.html">Next 7.x / 8.x 添加可切换的暗黑模式</a></h3>
+<h3 id="3-2-官方文档">3.2 <a href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">官方文档</a></h3>
+<h2 id="四、Next-7-x-8-x-添加可切换的暗黑模式">四、<a href="https://www.techgrow.cn/posts/abf4aee1.html">Next 7.x / 8.x 添加可切换的暗黑模式</a></h2>
 <div class="note success no-icon">
             <p>参考链接：【鸣谢】</p><p><a href="https://www.techgrow.cn/posts/abf4aee1.html">Hexo Next 8.x 主题添加可切换的暗黑模式</a></p>
           </div>]]></content>
@@ -2024,185 +2024,6 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       <tags>
         <tag>Hexo</tag>
         <tag>dark</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo网站优化</title>
-    <url>/archives/64e4e304.html</url>
-    <content><![CDATA[<div class="note info">
-            <h2 id="影响网站的加载速度的因素众多">影响网站的加载速度的因素众多</h2><p>比如：内置插件的加载、文件的大小、服务器的部署等</p>
-          </div>
-<h2 id="一、开源的CDN链接">一、开源的CDN链接</h2>
-<span id="more"></span>
-<h3 id="1-1-BootCDN">1.1 <a href="https://www.bootcdn.cn/">BootCDN</a></h3>
-<ul>
-<li>
-<p>BootCDN，国内稳定、快速、免费的前端开源项目 CDN 加速服务</p>
-</li>
-<li>
-<p>在里面搜对应的前端开源项目，复制链接即可使用，比如jquery</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/bootcdn.png" alt=""></p>
-</li>
-</ul>
-<h3 id="1-2-Valine的CDN链接">1.2 Valine的CDN链接</h3>
-<ul>
-<li>
-<p>Next主题已经内置了Valine的文件，但是加载稍慢，所以换成了CDN链接</p>
-</li>
-<li>
-<p>在主题配置文件中 <code>next.yml</code>，找到并开启 <code>Valine</code></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">valine:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  appid:  <span class="comment"># 填入刚刚获取的APP ID</span></span><br><span class="line">  appkey: <span class="comment"># 填入刚刚获取的APP key</span></span><br><span class="line">  notify: <span class="literal">false</span>                     <span class="comment"># 邮件通知默认关闭 </span></span><br><span class="line">  verify: <span class="literal">false</span>                     <span class="comment"># 验证码默认关闭</span></span><br><span class="line">  placeholder: 在这里写下你的评论吧！ 	<span class="comment"># 评论框默认文字</span></span><br><span class="line">  avatar: wavatar                   <span class="comment"># 头像风格</span></span><br><span class="line">  guest_info: nick,mail             <span class="comment">#,link # 自定义头部链接</span></span><br><span class="line">  pageSize: 10                      <span class="comment"># 分页大小</span></span><br><span class="line">  language:                         <span class="comment"># 语言, 值: en, zh-cn</span></span><br><span class="line">  visitor: <span class="literal">false</span>                    <span class="comment"># 文章阅读统计</span></span><br><span class="line">  comment_count: <span class="literal">true</span>               <span class="comment"># 如果为false，评论计数将只显示在文章页面，而不是首页</span></span><br><span class="line">  recordIP: <span class="literal">false</span>                   <span class="comment"># 是否记录IP</span></span><br><span class="line">  serverURLs:                       <span class="comment"># 当自定义域名启用时，在这里填写(默认自动检测，不需要填写)</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在主题配置文件  <code>next.yml</code> 的最后面，找到 <code>Valine</code>，如下</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  <span class="comment"># valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js</span></span><br><span class="line">  <span class="comment"># valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js</span></span><br><span class="line">  valine: </span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在Valine的上放有两个官方提供的CDN链接，一样可以使用。复制其中一个，在浏览器内打开，找到版本号</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/valine%E7%89%88%E6%9C%AC%E5%8F%B71.png" alt=""></p>
-</li>
-<li>
-<p>然后在 <a href="https://www.bootcdn.cn/">BootCDN</a> 中搜索Valine，找到对应版本号的CDN链接</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/valine%E7%89%88%E6%9C%AC%E5%8F%B72.png" alt=""></p>
-</li>
-<li>
-<p>最后复制到配置文件中就算成功了，如下</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  valine: https://cdn.bootcdn.net/ajax/libs/valine/1.4.14/Valine.min.js</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="1-3-图片懒加载的CDN链接">1.3 图片懒加载的CDN链接</h3>
-<ul>
-<li>
-<p>在主题配置文件  <code>next.yml</code> 中，找到并开启 <code>lazyload</code>，如下</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Vanilla JavaScript plugin for lazyloading images.</span></span><br><span class="line"><span class="comment"># For more information: https://github.com/ApoorvSaxena/lozad.js</span></span><br><span class="line">lazyload: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>然后在配置文件的最后面找到并更换<code>lazyload</code> 的cdn链接（同上）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  lazyload: https://cdn.bootcdn.net/ajax/libs/lozad.js/1.16.0/lozad.min.js</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>不过Next主题内置图片懒加载速度就很快，根据个人情况而定吧</p>
-</li>
-</ul>
-<h3 id="1-4-CDN链接配置">1.4 CDN链接配置</h3>
-<ul>
-<li>
-<p>在这里贴出我的配置，仅供参考</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  _internal: lib</span><br><span class="line">  </span><br><span class="line">  <span class="comment"># 主题文件, 在 ./themes/next/source/lib/ 下, 根据个人情况而定</span></span><br><span class="line">  anime: https://cdn.bootcdn.net/ajax/libs/animejs/3.1.0/anime.min.js</span><br><span class="line"></span><br><span class="line">  <span class="comment"># fontawesome, 主题文件, 在 ./themes/next/source/lib/ 下, 根据个人情况而定</span></span><br><span class="line">  <span class="comment"># 小图标, 推荐使用CDN链接</span></span><br><span class="line">  fontawesome: https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css</span><br><span class="line"></span><br><span class="line">  <span class="comment"># MathJax, 数学公式渲染</span></span><br><span class="line">  <span class="comment"># 和lazyload一样, 需要先开启才能使用</span></span><br><span class="line">  mathjax:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># KaTeX, 公式渲染</span></span><br><span class="line">  <span class="comment"># 和lazyload一样, 需要先开启才能使用</span></span><br><span class="line">  katex:</span><br><span class="line">  copy_tex_js:</span><br><span class="line">  copy_tex_css:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># pjax, 异步无刷新改变页面内容(容易与其他插件冲突)</span></span><br><span class="line">  <span class="comment"># 和lazyload一样, 需要先开启才能使用</span></span><br><span class="line">  pjax:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># FancyBox, 图片放大功能, </span></span><br><span class="line">  <span class="comment"># Next主题内置的就很快, 不推荐使用CDN</span></span><br><span class="line">  jquery: </span><br><span class="line">  fancybox: </span><br><span class="line">  fancybox_css: </span><br><span class="line"></span><br><span class="line">  <span class="comment"># Medium-zoom, 图片放大功能</span></span><br><span class="line">  <span class="comment"># 和lazyload一样, 需要先开启才能使用</span></span><br><span class="line">  mediumzoom:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Lazyload, 图片懒加载</span></span><br><span class="line">  lazyload: </span><br><span class="line"></span><br><span class="line">  <span class="comment"># Pangu,中英文之间自动加空格</span></span><br><span class="line">  <span class="comment"># Next主题内置的就很快, 不推荐使用CDN</span></span><br><span class="line">  pangu: </span><br><span class="line"></span><br><span class="line">  <span class="comment"># Quicklink,快链接(提前加载页面内的链接),与pjax冲突</span></span><br><span class="line">  quicklink:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># DisqusJS 评论</span></span><br><span class="line">  disqusjs_js:</span><br><span class="line">  disqusjs_css:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Valine 评论,推荐</span></span><br><span class="line">  valine: https://cdn.bootcdn.net/ajax/libs/valine/1.4.14/Valine.min.js</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Gitalk 评论</span></span><br><span class="line">  gitalk_js:</span><br><span class="line">  gitalk_css:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Algolia 搜索,开启本地搜索这个就用不着了</span></span><br><span class="line">  algolia_search:</span><br><span class="line">  instant_search:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Mermaid,未知</span></span><br><span class="line">  mermaid:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># 主题文件,在 ./themes/next/source/lib/ 下, 根据个人情况而定</span></span><br><span class="line">  velocity: https://cdn.bootcss.com/velocity/1.5.2/velocity.min.js</span><br><span class="line">  velocity_ui: https://cdn.bootcss.com/velocity/1.5.2/velocity.ui.min.js</span><br><span class="line"></span><br><span class="line">  <span class="comment"># pace,加载动画，推荐</span></span><br><span class="line">  pace: https://cdn.bootcss.com/pace/1.2.4/pace.min.js</span><br><span class="line">  pace_css: https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.min.css</span><br><span class="line">  </span><br><span class="line">  three:</span><br><span class="line">  three_waves:</span><br><span class="line">  canvas_lines:</span><br><span class="line">  canvas_sphere:</span><br><span class="line"></span><br><span class="line">  canvas_ribbon: </span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="二、免费的-CDN-服务">二、免费的 CDN 服务</h2>
-<h3 id="2-1-jsDeliver-免费-cdn">2.1 jsDeliver 免费 cdn</h3>
-<ul>
-<li>BootCDN是前端开源项目 CDN 加速服务</li>
-<li>如果我们想实现本地一些文件的CDN加速，可以使用 jsDeliver，具体使用教程：<a href="/archives/445f3e70.html" title="Github+jsDeliver 免费 cdn">Github+jsDeliver 免费 cdn</a></li>
-</ul>
-<h3 id="2-2-更换卜算子链接">2.2 更换卜算子链接</h3>
-<ul>
-<li>
-<p>卜算子统计 因为请求的数据较多，所以慢也是在所难免。</p>
-</li>
-<li>
-<p>找到 <code>./themes/next/layout/_third-party/statistics/busuanzi-counter.swig</code> 文件</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;%- <span class="keyword">if</span> theme.busuanzi_count.enable %&#125;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;busuanzi-count&quot;</span>&gt;</span><br><span class="line">  &lt;script&#123;&#123; pjax &#125;&#125; <span class="keyword">async</span> src=<span class="string">&quot;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在浏览器里打开上面的src 链接 <code>https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js</code>，复制里面的内容，然后转换成自己的CDN链接。</p>
-</li>
-<li>
-<p>示例如下</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;%- <span class="keyword">if</span> theme.busuanzi_count.enable %&#125;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;busuanzi-count&quot;</span>&gt;</span><br><span class="line">    &lt;script&#123;&#123; pjax &#125;&#125; <span class="keyword">async</span> src=<span class="string">&quot;https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/js/busuanzi.pure.min.js&quot;</span>&gt;</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>这样只是加载的js文件快了一点，实际请求数据的api接口没有变化，不过聊胜于无</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/busuanzi.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-3-图片大小优化">2.3 图片大小优化</h3>
-<ul>
-<li>可以将本地的图片转换成 <a href="https://baike.baidu.com/item/webp%E6%A0%BC%E5%BC%8F/4077671?fr=aladdin">webp</a> 格式，然后放到 jsDeliver 实现CDN加速</li>
-<li>推荐一个 <a href="https://convertio.co/zh/">文件转换器</a></li>
-<li>当然，css、js文件也可以放到jsDeliver 实现CDN加速</li>
-</ul>
-<h2 id="三、压缩文件大小">三、压缩文件大小</h2>
-<h3 id="3-1-hexo-all-minifier-压缩-推荐">3.1 <a href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier</a> 压缩 (推荐)</h3>
-<ul>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>如果安装失败试试用 <code>cnpm</code></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在站点配置文件 <code>_config.yml</code> 中添加下面代码即可</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">all_minifier: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>也可以自定义配置（详见 <a href="https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md">README</a>）</p>
-</li>
-</ul>
-<h3 id="3-2-gulp-压缩">3.2 gulp 压缩</h3>
-<ul>
-<li>
-<p>安装插件和依赖</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g gulp</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-clean-css gulp-uglify-es gulp-imagemin del gulp-minify-inline-json --save-dev</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在站点根目录下新建一个 <code>gulpfile.js</code> 文件，写入以下内容</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">&#x27;gulp&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> minifycss = <span class="built_in">require</span>(<span class="string">&#x27;gulp-clean-css&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> uglify = <span class="built_in">require</span>(<span class="string">&#x27;gulp-uglify-es&#x27;</span>).default;</span><br><span class="line"><span class="keyword">var</span> htmlmin = <span class="built_in">require</span>(<span class="string">&#x27;gulp-htmlmin&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> htmlclean = <span class="built_in">require</span>(<span class="string">&#x27;gulp-htmlclean&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> imagemin = <span class="built_in">require</span>(<span class="string">&#x27;gulp-imagemin&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> del = <span class="built_in">require</span>(<span class="string">&#x27;del&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> Hexo = <span class="built_in">require</span>(<span class="string">&#x27;hexo&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> minifyInlineJSON = <span class="built_in">require</span>(<span class="string">&#x27;gulp-minify-inline-json&#x27;</span>);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;clean&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> del([<span class="string">&#x27;public/**/*&#x27;</span>]);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> hexo = <span class="keyword">new</span> Hexo(process.cwd(), &#123;&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;generate&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">cb</span>) </span>&#123;</span><br><span class="line">    hexo.init().then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> hexo.call(<span class="string">&#x27;generate&#x27;</span>, &#123;</span><br><span class="line">            watch: <span class="literal">false</span></span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;).then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> hexo.exit();</span><br><span class="line">    &#125;).then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> cb()</span><br><span class="line">    &#125;).catch(<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(err);</span><br><span class="line">        hexo.exit(err);</span><br><span class="line">        <span class="keyword">return</span> cb(err);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;deploy&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> hexo.init().then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> hexo.call(<span class="string">&#x27;deploy&#x27;</span>, &#123;</span><br><span class="line">            watch: <span class="literal">false</span></span><br><span class="line">        &#125;).then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> hexo.exit();</span><br><span class="line">        &#125;).catch(<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> hexo.exit(err);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-css&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.css&#x27;</span>)</span><br><span class="line">        .pipe(minifycss(&#123;</span><br><span class="line">            compatibility: <span class="string">&#x27;ie8&#x27;</span></span><br><span class="line">        &#125;))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-html&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">        .pipe(htmlclean())</span><br><span class="line">        .pipe(htmlmin(&#123;</span><br><span class="line">            removeComments: <span class="literal">true</span>,</span><br><span class="line">            minifyJS: <span class="literal">true</span>,</span><br><span class="line">            minifyCSS: <span class="literal">true</span>,</span><br><span class="line">            minifyURLs: <span class="literal">true</span>,</span><br><span class="line">        &#125;))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-img&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/img/**/*&#x27;</span>)</span><br><span class="line">        .pipe(imagemin([</span><br><span class="line">            imagemin.gifsicle(&#123;</span><br><span class="line">                interlaced: <span class="literal">true</span></span><br><span class="line">            &#125;),</span><br><span class="line">            imagemin.jpegtran(&#123;</span><br><span class="line">                progressive: <span class="literal">true</span></span><br><span class="line">            &#125;),</span><br><span class="line">            imagemin.optipng(&#123;</span><br><span class="line">                optimizationLevel: <span class="number">5</span></span><br><span class="line">            &#125;),</span><br><span class="line">            imagemin.svgo(&#123;</span><br><span class="line">                plugins: [&#123;</span><br><span class="line">                    removeViewBox: <span class="literal">true</span></span><br><span class="line">                &#125;, &#123;</span><br><span class="line">                    cleanupIDs: <span class="literal">false</span></span><br><span class="line">                &#125;]</span><br><span class="line">            &#125;)</span><br><span class="line">        ]))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public/img&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-js&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.js&#x27;</span>)</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minifyInlineJSON&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">        .pipe(minifyInlineJSON())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;compress&#x27;</span>, gulp.series(<span class="string">&#x27;minify-html&#x27;</span>, <span class="string">&#x27;minify-css&#x27;</span>, <span class="string">&#x27;minify-img&#x27;</span>, <span class="string">&#x27;minify-js&#x27;</span>, <span class="string">&#x27;minifyInlineJSON&#x27;</span>));</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;default&#x27;</span>, gulp.series(<span class="string">&#x27;clean&#x27;</span>, <span class="string">&#x27;generate&#x27;</span>, <span class="string">&#x27;compress&#x27;</span>, <span class="string">&#x27;deploy&#x27;</span>));</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>运行命令，实现压缩</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">gulp  <span class="comment"># 包含 hexo c &amp; hexo g &amp; hexo d</span></span><br><span class="line">gulp compress	<span class="comment"># 只进行压缩</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="3-3-hexo-neat-压缩">3.3 hexo-neat 压缩</h3>
-<ul>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-neat --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在站点配置文件<code>_config.yml</code>的末尾添加下面配置</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-neat</span></span><br><span class="line"><span class="comment"># 博文压缩</span></span><br><span class="line">neat_enable: <span class="literal">true</span></span><br><span class="line"><span class="comment"># 压缩html</span></span><br><span class="line">neat_html:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line"><span class="comment"># 压缩css  </span></span><br><span class="line">neat_css:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;**/*.min.css&#x27;</span></span><br><span class="line"><span class="comment"># 压缩js</span></span><br><span class="line">neat_js:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  mangle: <span class="literal">true</span></span><br><span class="line">  output:</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;**/*.min.js&#x27;</span></span><br><span class="line">    - <span class="string">&#x27;**/jquery.fancybox.pack.js&#x27;</span></span><br><span class="line">    - <span class="string">&#x27;**/index.js&#x27;</span>  </span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="四、网站的部署">四、网站的部署</h2>
-<h3 id="4-1-swig￼21">4.1 <a href="/archives/b48e2719.html" title="Github Pages 部署">Github Pages 部署</a></h3>
-<h3 id="4-2-swig￼22">4.2 <a href="/archives/a2816564.html" title="Vercel 部署">Vercel 部署</a></h3>
-<h3 id="4-3-Coding-部署">4.3 Coding 部署</h3>
-<ul>
-<li>现在Coding已经开始收费了，不推荐部署到Coding上面</li>
-<li>如果想部署，参考大佬的链接<a href="https://www.heson10.com/posts/54971.html">Hexo在GitHub和Coding双线部署教程</a></li>
-</ul>
-<h2 id="五、补">五、补</h2>
-<h3 id="5-1-中文字体">5.1 中文字体</h3>
-<ul>
-<li>
-<p>在主题配置文件  <code>next.yml</code> 中，找到 <code>font</code>，如果启用了字体，更换 <code>host</code> 链接</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 字体</span></span><br><span class="line">font:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  host: https://fonts.loli.net</span><br><span class="line">  <span class="comment"># 备用 </span></span><br><span class="line">  <span class="comment"># https://fonts.loli.net</span></span><br><span class="line">  <span class="comment"># 国内科大的库 https://fonts.lug.ustc.edu.cn/</span></span><br><span class="line">  <span class="comment"># 捷速网络 https://fonts.css.network/</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>然后在 <a href="https://fonts.google.com/">Google Font</a>，找到自己喜欢的字体，并复制 <code>font-family</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/%E5%AD%97%E4%BD%93.png" alt="">)</p>
-</li>
-<li>
-<p>参考</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">global:</span><br><span class="line">    external: <span class="literal">false</span></span><br><span class="line">    family: </span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for site title (.site-title).</span></span><br><span class="line">  title:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Ma Shan Zheng</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for headlines (&lt;h1&gt; to &lt;h6&gt;).</span></span><br><span class="line">  headings:</span><br><span class="line">    external: <span class="literal">false</span></span><br><span class="line">    family: </span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for posts (.post-body).</span></span><br><span class="line">  posts:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Noto Serif SC</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for &lt;code&gt; and code blocks.</span></span><br><span class="line">  codes:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Roboto Mono</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<br/>
-<div class="note success no-icon">
-            <p>参考链接：【鸣谢】</p><p><a href="https://www.zhyong.cn/posts/ddf2/">Hexo+Next 使用 CDN 加速网站以及静态文件</a></p><p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">Hexo折腾系列——博客访问速度优化</a></p><p><a href="https://blog.csdn.net/iwyang/article/details/106989237">Hexo-NexT (v7.7.2) 主题配置</a></p>
-          </div>]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
       </tags>
   </entry>
   <entry>
@@ -2850,154 +2671,182 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       </tags>
   </entry>
   <entry>
-    <title>Vercel托管Github Pages</title>
-    <url>/archives/a2816564.html</url>
-    <content><![CDATA[<h2 id="一、Vercel">一、Vercel</h2>
-<h3 id="1-1-Vercel简介（以前叫-ZEIT）">1.1 Vercel简介（以前叫 ZEIT）</h3>
-<ul>
-<li>
-<p><a href="https://vercel.com/">Vercel</a> 是一个站点托管服务平台，相较于其他的站点托管服务平台<a href="https://www.cloudflare.com/">CloudFlare</a>、<a href="https://www.netlify.com/">Netlify</a>，主要优点体现在下面几点：</p>
-<ul>
-<li>国内访问速度快（首要原因）</li>
-<li>项目自动更新部署（懒人专属）</li>
-<li><font color='red'>可以部署多个网站或者服务</font> （简直不要太爽！！！）</li>
-</ul>
+    <title>Hexo网站优化</title>
+    <url>/archives/64e4e304.html</url>
+    <content><![CDATA[<div class="note info">
+            <h2 id="影响网站的加载速度的因素众多">影响网站的加载速度的因素众多</h2><p>比如：内置插件的加载、文件的大小、服务器的部署等</p>
+          </div>
+<h2 id="一、开源的CDN链接">一、开源的CDN链接</h2>
 <span id="more"></span>
-<ul>
-<li>网站自动配置https，不用自己申请证书</li>
-<li>子域名的个数没有限制</li>
-</ul>
-</li>
-<li>
-<p>最重要的是Vercel个人完全免费。Vercel从开始的一个月免费20G，到后来的一个月免费100G，直到现在的个人完全免费，可见其诚意。</p>
-</li>
-</ul>
-<h3 id="1-2-Vercel工作原理">1.2 Vercel工作原理</h3>
-<ul>
-<li>Vercel属于复制一份Github Pages文件，然后在它给你的空间新开一个页面，同时提供cdn加速。</li>
-<li>部署比较简单，用GitHub登陆授权后，修改DNS配置域名即可。</li>
-</ul>
-<h2 id="二、Vercel使用">二、Vercel使用</h2>
-<h3 id="2-1-Vercel官网">2.1 <a href="https://vercel.com/">Vercel官网</a></h3>
+<h3 id="1-1-BootCDN">1.1 <a href="https://www.bootcdn.cn/">BootCDN</a></h3>
 <ul>
 <li>
-<p>进入官网，注册账号</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7.png" alt=""></p>
+<p>BootCDN，国内稳定、快速、免费的前端开源项目 CDN 加速服务</p>
 </li>
 <li>
-<p>使用GitHub或者GitLab登录</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BD%BF%E7%94%A8Github%E7%99%BB%E5%BD%95.png" alt=""></p>
-</li>
-<li>
-<p>选择 <code>Github Pages</code> 导入，或者新建一个模板（Vercel提供了诸多模板）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E5%AF%BC%E5%85%A5.png" alt=""></p>
-</li>
-<li>
-<p>选择作用范围，用于个人还是用于小组</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E8%8C%83%E5%9B%B4.png" alt=""></p>
-</li>
-<li>
-<p>选择路径（一般都是在仓库根目录下 <code>root</code> ）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%B7%AF%E5%BE%84.png" alt=""></p>
-</li>
-<li>
-<p>选择网站对应的模板（如果网站使用了不属于原模板框架的文件，建议选择Other，部署效果和选择模板是一样的）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2.png" alt=""></p>
-</li>
-<li>
-<p>部署成功，点击 <code>Visit</code> 即可看到自己的网站</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png" alt=""></p>
+<p>在里面搜对应的前端开源项目，复制链接即可使用，比如jquery</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/bootcdn.png" alt=""></p>
 </li>
 </ul>
-<h3 id="2-2-绑定域名-可选">2.2 绑定域名(可选)</h3>
+<h3 id="1-2-Valine的CDN链接">1.2 Valine的CDN链接</h3>
 <ul>
 <li>
-<p>进入项目</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png" alt=""></p>
+<p>Next主题已经内置了Valine的文件，但是加载稍慢，所以换成了CDN链接</p>
 </li>
 <li>
-<p>参观域名</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82%E5%9F%9F%E5%90%8D.png" alt=""></p>
+<p>在主题配置文件中 <code>next.yml</code>，找到并开启 <code>Valine</code></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">valine:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  appid:  <span class="comment"># 填入刚刚获取的APP ID</span></span><br><span class="line">  appkey: <span class="comment"># 填入刚刚获取的APP key</span></span><br><span class="line">  notify: <span class="literal">false</span>                     <span class="comment"># 邮件通知默认关闭 </span></span><br><span class="line">  verify: <span class="literal">false</span>                     <span class="comment"># 验证码默认关闭</span></span><br><span class="line">  placeholder: 在这里写下你的评论吧！ 	<span class="comment"># 评论框默认文字</span></span><br><span class="line">  avatar: wavatar                   <span class="comment"># 头像风格</span></span><br><span class="line">  guest_info: nick,mail             <span class="comment">#,link # 自定义头部链接</span></span><br><span class="line">  pageSize: 10                      <span class="comment"># 分页大小</span></span><br><span class="line">  language:                         <span class="comment"># 语言, 值: en, zh-cn</span></span><br><span class="line">  visitor: <span class="literal">false</span>                    <span class="comment"># 文章阅读统计</span></span><br><span class="line">  comment_count: <span class="literal">true</span>               <span class="comment"># 如果为false，评论计数将只显示在文章页面，而不是首页</span></span><br><span class="line">  recordIP: <span class="literal">false</span>                   <span class="comment"># 是否记录IP</span></span><br><span class="line">  serverURLs:                       <span class="comment"># 当自定义域名启用时，在这里填写(默认自动检测，不需要填写)</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p>输入域名，点击 <code>Add</code>（Vercel会为每一个项目自带一个域名，可以点击 <code>Edit</code> --&gt; <code>Remove</code> 删除）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt=""></p>
+<p>在主题配置文件  <code>next.yml</code> 的最后面，找到 <code>Valine</code>，如下</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  <span class="comment"># valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js</span></span><br><span class="line">  <span class="comment"># valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js</span></span><br><span class="line">  valine: </span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在Valine的上放有两个官方提供的CDN链接，一样可以使用。复制其中一个，在浏览器内打开，找到版本号</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/valine%E7%89%88%E6%9C%AC%E5%8F%B71.png" alt=""></p>
+</li>
+<li>
+<p>然后在 <a href="https://www.bootcdn.cn/">BootCDN</a> 中搜索Valine，找到对应版本号的CDN链接</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/valine%E7%89%88%E6%9C%AC%E5%8F%B72.png" alt=""></p>
+</li>
+<li>
+<p>最后复制到配置文件中就算成功了，如下</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  valine: https://cdn.bootcdn.net/ajax/libs/valine/1.4.14/Valine.min.js</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="三、域名配置-可选">三、域名配置(可选)</h2>
-<h3 id="3-1-DNS配置">3.1 DNS配置</h3>
+<h3 id="1-3-图片懒加载的CDN链接">1.3 图片懒加载的CDN链接</h3>
 <ul>
 <li>
-<p>Add之后，它会弹出来一些需要做的配置，接下来需要去我们的域名提供商那里根据Vercel给出的要求进行域名配置。（我是在阿里买的域名 <a href="https://dc.console.aliyun.com/">阿里域名服务</a>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+<p>在主题配置文件  <code>next.yml</code> 中，找到并开启 <code>lazyload</code>，如下</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Vanilla JavaScript plugin for lazyloading images.</span></span><br><span class="line"><span class="comment"># For more information: https://github.com/ApoorvSaxena/lozad.js</span></span><br><span class="line">lazyload: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p>进入域名服务，点击 <code>管理</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E7%AE%A1%E7%90%86.png" alt=""></p>
+<p>然后在配置文件的最后面找到并更换<code>lazyload</code> 的cdn链接（同上）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  lazyload: https://cdn.bootcdn.net/ajax/libs/lozad.js/1.16.0/lozad.min.js</span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p>修改DNS（DNS修改之后，大概需要等10分钟才会生效）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BF%AE%E6%94%B9DNS.png" alt=""></p>
+<p>不过Next主题内置图片懒加载速度就很快，根据个人情况而定吧</p>
 </li>
 </ul>
-<h3 id="3-2-域名解析">3.2 域名解析</h3>
+<h3 id="1-4-CDN链接配置">1.4 CDN链接配置</h3>
 <ul>
 <li>
-<p>域名解析，点击 <code>解析</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png" alt=""></p>
-</li>
-<li>
-<p>添加这条解析记录</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">@	A	默认	76.76.21.21</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt=""></p>
-</li>
-<li>
-<p>如果绑定的是主域名的话，这个时候就算配置成功了！！！</p>
+<p>在这里贴出我的配置，仅供参考</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">  _internal: lib</span><br><span class="line">  </span><br><span class="line">  <span class="comment"># 主题文件, 在 ./themes/next/source/lib/ 下, 根据个人情况而定</span></span><br><span class="line">  anime: https://cdn.bootcdn.net/ajax/libs/animejs/3.1.0/anime.min.js</span><br><span class="line"></span><br><span class="line">  <span class="comment"># fontawesome, 主题文件, 在 ./themes/next/source/lib/ 下, 根据个人情况而定</span></span><br><span class="line">  <span class="comment"># 小图标, 推荐使用CDN链接</span></span><br><span class="line">  fontawesome: https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css</span><br><span class="line"></span><br><span class="line">  <span class="comment"># MathJax, 数学公式渲染</span></span><br><span class="line">  <span class="comment"># 和lazyload一样, 需要先开启才能使用</span></span><br><span class="line">  mathjax:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># KaTeX, 公式渲染</span></span><br><span class="line">  <span class="comment"># 和lazyload一样, 需要先开启才能使用</span></span><br><span class="line">  katex:</span><br><span class="line">  copy_tex_js:</span><br><span class="line">  copy_tex_css:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># pjax, 异步无刷新改变页面内容(容易与其他插件冲突)</span></span><br><span class="line">  <span class="comment"># 和lazyload一样, 需要先开启才能使用</span></span><br><span class="line">  pjax:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># FancyBox, 图片放大功能, </span></span><br><span class="line">  <span class="comment"># Next主题内置的就很快, 不推荐使用CDN</span></span><br><span class="line">  jquery: </span><br><span class="line">  fancybox: </span><br><span class="line">  fancybox_css: </span><br><span class="line"></span><br><span class="line">  <span class="comment"># Medium-zoom, 图片放大功能</span></span><br><span class="line">  <span class="comment"># 和lazyload一样, 需要先开启才能使用</span></span><br><span class="line">  mediumzoom:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Lazyload, 图片懒加载</span></span><br><span class="line">  lazyload: </span><br><span class="line"></span><br><span class="line">  <span class="comment"># Pangu,中英文之间自动加空格</span></span><br><span class="line">  <span class="comment"># Next主题内置的就很快, 不推荐使用CDN</span></span><br><span class="line">  pangu: </span><br><span class="line"></span><br><span class="line">  <span class="comment"># Quicklink,快链接(提前加载页面内的链接),与pjax冲突</span></span><br><span class="line">  quicklink:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># DisqusJS 评论</span></span><br><span class="line">  disqusjs_js:</span><br><span class="line">  disqusjs_css:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Valine 评论,推荐</span></span><br><span class="line">  valine: https://cdn.bootcdn.net/ajax/libs/valine/1.4.14/Valine.min.js</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Gitalk 评论</span></span><br><span class="line">  gitalk_js:</span><br><span class="line">  gitalk_css:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Algolia 搜索,开启本地搜索这个就用不着了</span></span><br><span class="line">  algolia_search:</span><br><span class="line">  instant_search:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Mermaid,未知</span></span><br><span class="line">  mermaid:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># 主题文件,在 ./themes/next/source/lib/ 下, 根据个人情况而定</span></span><br><span class="line">  velocity: https://cdn.bootcss.com/velocity/1.5.2/velocity.min.js</span><br><span class="line">  velocity_ui: https://cdn.bootcss.com/velocity/1.5.2/velocity.ui.min.js</span><br><span class="line"></span><br><span class="line">  <span class="comment"># pace,加载动画，推荐</span></span><br><span class="line">  pace: https://cdn.bootcss.com/pace/1.2.4/pace.min.js</span><br><span class="line">  pace_css: https://cdn.bootcdn.net/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.min.css</span><br><span class="line">  </span><br><span class="line">  three:</span><br><span class="line">  three_waves:</span><br><span class="line">  canvas_lines:</span><br><span class="line">  canvas_sphere:</span><br><span class="line"></span><br><span class="line">  canvas_ribbon: </span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="3-3-CNAME配置（子域名）">3.3 CNAME配置（子域名）</h3>
+<h2 id="二、免费的-CDN-服务">二、免费的 CDN 服务</h2>
+<h3 id="2-1-jsDeliver-免费-cdn">2.1 jsDeliver 免费 cdn</h3>
+<ul>
+<li>BootCDN是前端开源项目 CDN 加速服务</li>
+<li>如果我们想实现本地一些文件的CDN加速，可以使用 jsDeliver，具体使用教程：<a href="/archives/445f3e70.html" title="Github+jsDeliver 免费 cdn">Github+jsDeliver 免费 cdn</a></li>
+</ul>
+<h3 id="2-2-更换卜算子链接">2.2 更换卜算子链接</h3>
 <ul>
 <li>
-<p>记住DNS解析记录</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%B0%E5%BD%95.png" alt=""></p>
+<p>卜算子统计 因为请求的数据较多，所以慢也是在所难免。</p>
 </li>
 <li>
-<p>回到Vercel，点击 <code>Domains</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/Domains.png" alt=""></p>
+<p>找到 <code>./themes/next/layout/_third-party/statistics/busuanzi-counter.swig</code> 文件</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;%- <span class="keyword">if</span> theme.busuanzi_count.enable %&#125;</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;busuanzi-count&quot;</span>&gt;</span><br><span class="line">  &lt;script&#123;&#123; pjax &#125;&#125; <span class="keyword">async</span> src=<span class="string">&quot;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p>点击 <code>View DNS Records &amp; More</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82DNS.png" alt=""></p>
+<p>在浏览器里打开上面的src 链接 <code>https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js</code>，复制里面的内容，然后转换成自己的CDN链接。</p>
 </li>
 <li>
-<p>填入子域名的名称，选择 <code>CNAME</code>，值为 <code>cname.vercel-dns.com</code> , TTL为 <code>60</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0DNS.png" alt=""></p>
+<p>示例如下</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;%- <span class="keyword">if</span> theme.busuanzi_count.enable %&#125;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;busuanzi-count&quot;</span>&gt;</span><br><span class="line">    &lt;script&#123;&#123; pjax &#125;&#125; <span class="keyword">async</span> src=<span class="string">&quot;https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/js/busuanzi.pure.min.js&quot;</span>&gt;</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p>回到项目中，等待几分钟后，即可看到绑定子域名成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%88%90%E5%8A%9F.png" alt=""></p>
-</li>
-<li>
-<p>接下来就可以通过我们设置的域名访问我们的网站啦！！！</p>
+<p>这样只是加载的js文件快了一点，实际请求数据的api接口没有变化，不过聊胜于无</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/busuanzi.png" alt=""></p>
 </li>
 </ul>
-<h2 id="四、相关事项">四、相关事项</h2>
+<h3 id="2-3-图片大小优化">2.3 图片大小优化</h3>
 <ul>
-<li><font color="red">【注意】绑定域名的话，需要在网站根目录下添加CNAME文件 </font></li>
-<li>需要更新网站时，只需要将新内容提交到Github上，Vercel就会自动部署了！</li>
+<li>可以将本地的图片转换成 <a href="https://baike.baidu.com/item/webp%E6%A0%BC%E5%BC%8F/4077671?fr=aladdin">webp</a> 格式，然后放到 jsDeliver 实现CDN加速</li>
+<li>推荐一个 <a href="https://convertio.co/zh/">文件转换器</a></li>
+<li>当然，css、js文件也可以放到jsDeliver 实现CDN加速</li>
 </ul>
-<br>
+<h2 id="三、压缩文件大小">三、压缩文件大小</h2>
+<h3 id="3-1-hexo-all-minifier-压缩-推荐">3.1 <a href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier</a> 压缩 (推荐)</h3>
+<ul>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>如果安装失败试试用 <code>cnpm</code></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在站点配置文件 <code>_config.yml</code> 中添加下面代码即可</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">all_minifier: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>也可以自定义配置（详见 <a href="https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md">README</a>）</p>
+</li>
+</ul>
+<h3 id="3-2-gulp-压缩">3.2 gulp 压缩</h3>
+<ul>
+<li>
+<p>安装插件和依赖</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g gulp</span><br><span class="line">npm install gulp gulp-htmlclean gulp-htmlmin gulp-clean-css gulp-uglify-es gulp-imagemin del gulp-minify-inline-json --save-dev</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在站点根目录下新建一个 <code>gulpfile.js</code> 文件，写入以下内容</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">&#x27;gulp&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> minifycss = <span class="built_in">require</span>(<span class="string">&#x27;gulp-clean-css&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> uglify = <span class="built_in">require</span>(<span class="string">&#x27;gulp-uglify-es&#x27;</span>).default;</span><br><span class="line"><span class="keyword">var</span> htmlmin = <span class="built_in">require</span>(<span class="string">&#x27;gulp-htmlmin&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> htmlclean = <span class="built_in">require</span>(<span class="string">&#x27;gulp-htmlclean&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> imagemin = <span class="built_in">require</span>(<span class="string">&#x27;gulp-imagemin&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> del = <span class="built_in">require</span>(<span class="string">&#x27;del&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> Hexo = <span class="built_in">require</span>(<span class="string">&#x27;hexo&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> minifyInlineJSON = <span class="built_in">require</span>(<span class="string">&#x27;gulp-minify-inline-json&#x27;</span>);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;clean&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> del([<span class="string">&#x27;public/**/*&#x27;</span>]);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> hexo = <span class="keyword">new</span> Hexo(process.cwd(), &#123;&#125;);</span><br><span class="line">gulp.task(<span class="string">&#x27;generate&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">cb</span>) </span>&#123;</span><br><span class="line">    hexo.init().then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> hexo.call(<span class="string">&#x27;generate&#x27;</span>, &#123;</span><br><span class="line">            watch: <span class="literal">false</span></span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;).then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> hexo.exit();</span><br><span class="line">    &#125;).then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> cb()</span><br><span class="line">    &#125;).catch(<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(err);</span><br><span class="line">        hexo.exit(err);</span><br><span class="line">        <span class="keyword">return</span> cb(err);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;deploy&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> hexo.init().then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> hexo.call(<span class="string">&#x27;deploy&#x27;</span>, &#123;</span><br><span class="line">            watch: <span class="literal">false</span></span><br><span class="line">        &#125;).then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> hexo.exit();</span><br><span class="line">        &#125;).catch(<span class="function"><span class="keyword">function</span> (<span class="params">err</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> hexo.exit(err);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-css&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.css&#x27;</span>)</span><br><span class="line">        .pipe(minifycss(&#123;</span><br><span class="line">            compatibility: <span class="string">&#x27;ie8&#x27;</span></span><br><span class="line">        &#125;))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-html&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">        .pipe(htmlclean())</span><br><span class="line">        .pipe(htmlmin(&#123;</span><br><span class="line">            removeComments: <span class="literal">true</span>,</span><br><span class="line">            minifyJS: <span class="literal">true</span>,</span><br><span class="line">            minifyCSS: <span class="literal">true</span>,</span><br><span class="line">            minifyURLs: <span class="literal">true</span>,</span><br><span class="line">        &#125;))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-img&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/img/**/*&#x27;</span>)</span><br><span class="line">        .pipe(imagemin([</span><br><span class="line">            imagemin.gifsicle(&#123;</span><br><span class="line">                interlaced: <span class="literal">true</span></span><br><span class="line">            &#125;),</span><br><span class="line">            imagemin.jpegtran(&#123;</span><br><span class="line">                progressive: <span class="literal">true</span></span><br><span class="line">            &#125;),</span><br><span class="line">            imagemin.optipng(&#123;</span><br><span class="line">                optimizationLevel: <span class="number">5</span></span><br><span class="line">            &#125;),</span><br><span class="line">            imagemin.svgo(&#123;</span><br><span class="line">                plugins: [&#123;</span><br><span class="line">                    removeViewBox: <span class="literal">true</span></span><br><span class="line">                &#125;, &#123;</span><br><span class="line">                    cleanupIDs: <span class="literal">false</span></span><br><span class="line">                &#125;]</span><br><span class="line">            &#125;)</span><br><span class="line">        ]))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public/img&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minify-js&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.js&#x27;</span>)</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;minifyInlineJSON&#x27;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">        .pipe(minifyInlineJSON())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;compress&#x27;</span>, gulp.series(<span class="string">&#x27;minify-html&#x27;</span>, <span class="string">&#x27;minify-css&#x27;</span>, <span class="string">&#x27;minify-img&#x27;</span>, <span class="string">&#x27;minify-js&#x27;</span>, <span class="string">&#x27;minifyInlineJSON&#x27;</span>));</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">&#x27;default&#x27;</span>, gulp.series(<span class="string">&#x27;clean&#x27;</span>, <span class="string">&#x27;generate&#x27;</span>, <span class="string">&#x27;compress&#x27;</span>, <span class="string">&#x27;deploy&#x27;</span>));</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>运行命令，实现压缩</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">gulp  <span class="comment"># 包含 hexo c &amp; hexo g &amp; hexo d</span></span><br><span class="line">gulp compress	<span class="comment"># 只进行压缩</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-3-hexo-neat-压缩">3.3 hexo-neat 压缩</h3>
+<ul>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-neat --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在站点配置文件<code>_config.yml</code>的末尾添加下面配置</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-neat</span></span><br><span class="line"><span class="comment"># 博文压缩</span></span><br><span class="line">neat_enable: <span class="literal">true</span></span><br><span class="line"><span class="comment"># 压缩html</span></span><br><span class="line">neat_html:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line"><span class="comment"># 压缩css  </span></span><br><span class="line">neat_css:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;**/*.min.css&#x27;</span></span><br><span class="line"><span class="comment"># 压缩js</span></span><br><span class="line">neat_js:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  mangle: <span class="literal">true</span></span><br><span class="line">  output:</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;**/*.min.js&#x27;</span></span><br><span class="line">    - <span class="string">&#x27;**/jquery.fancybox.pack.js&#x27;</span></span><br><span class="line">    - <span class="string">&#x27;**/index.js&#x27;</span>  </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="四、网站的部署">四、网站的部署</h2>
+<h3 id="4-1-swig￼21">4.1 <a href="/archives/b48e2719.html" title="Github Pages 部署">Github Pages 部署</a></h3>
+<h3 id="4-2-swig￼22">4.2 <a href="/archives/a2816564.html" title="Vercel 部署">Vercel 部署</a></h3>
+<h3 id="4-3-Coding-部署">4.3 Coding 部署</h3>
+<ul>
+<li>现在Coding已经开始收费了，不推荐部署到Coding上面</li>
+<li>如果想部署，参考大佬的链接<a href="https://www.heson10.com/posts/54971.html">Hexo在GitHub和Coding双线部署教程</a></li>
+</ul>
+<h2 id="五、补">五、补</h2>
+<h3 id="5-1-中文字体">5.1 中文字体</h3>
+<ul>
+<li>
+<p>在主题配置文件  <code>next.yml</code> 中，找到 <code>font</code>，如果启用了字体，更换 <code>host</code> 链接</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 字体</span></span><br><span class="line">font:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  host: https://fonts.loli.net</span><br><span class="line">  <span class="comment"># 备用 </span></span><br><span class="line">  <span class="comment"># https://fonts.loli.net</span></span><br><span class="line">  <span class="comment"># 国内科大的库 https://fonts.lug.ustc.edu.cn/</span></span><br><span class="line">  <span class="comment"># 捷速网络 https://fonts.css.network/</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后在 <a href="https://fonts.google.com/">Google Font</a>，找到自己喜欢的字体，并复制 <code>font-family</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E4%BC%98%E5%8C%96/%E5%AD%97%E4%BD%93.png" alt="">)</p>
+</li>
+<li>
+<p>参考</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">global:</span><br><span class="line">    external: <span class="literal">false</span></span><br><span class="line">    family: </span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for site title (.site-title).</span></span><br><span class="line">  title:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Ma Shan Zheng</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for headlines (&lt;h1&gt; to &lt;h6&gt;).</span></span><br><span class="line">  headings:</span><br><span class="line">    external: <span class="literal">false</span></span><br><span class="line">    family: </span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for posts (.post-body).</span></span><br><span class="line">  posts:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Noto Serif SC</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for &lt;code&gt; and code blocks.</span></span><br><span class="line">  codes:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Roboto Mono</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<br/>
 <div class="note success no-icon">
-            <p>参考网站：【鸣谢】</p><p><a href="https://www.jianshu.com/p/9f67ff433d8e">vercel是什么神仙网站</a></p>
+            <p>参考链接：【鸣谢】</p><p><a href="https://www.zhyong.cn/posts/ddf2/">Hexo+Next 使用 CDN 加速网站以及静态文件</a></p><p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">Hexo折腾系列——博客访问速度优化</a></p><p><a href="https://blog.csdn.net/iwyang/article/details/106989237">Hexo-NexT (v7.7.2) 主题配置</a></p>
           </div>]]></content>
       <categories>
-        <category>网站</category>
+        <category>Hexo博客</category>
       </categories>
       <tags>
-        <tag>Github</tag>
-        <tag>Github Pages</tag>
-        <tag>Vercel</tag>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
       </tags>
   </entry>
   <entry>
@@ -3266,6 +3115,157 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
         <tag>Github</tag>
         <tag>Gitee</tag>
         <tag>SSH</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vercel托管Github Pages</title>
+    <url>/archives/a2816564.html</url>
+    <content><![CDATA[<h2 id="一、Vercel">一、Vercel</h2>
+<h3 id="1-1-Vercel简介（以前叫-ZEIT）">1.1 Vercel简介（以前叫 ZEIT）</h3>
+<ul>
+<li>
+<p><a href="https://vercel.com/">Vercel</a> 是一个站点托管服务平台，相较于其他的站点托管服务平台<a href="https://www.cloudflare.com/">CloudFlare</a>、<a href="https://www.netlify.com/">Netlify</a>，主要优点体现在下面几点：</p>
+<ul>
+<li>国内访问速度快（首要原因）</li>
+<li>项目自动更新部署（懒人专属）</li>
+<li><font color='red'>可以部署多个网站或者服务</font> （简直不要太爽！！！）</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li>网站自动配置https，不用自己申请证书</li>
+<li>子域名的个数没有限制</li>
+</ul>
+</li>
+<li>
+<p>最重要的是Vercel个人完全免费。Vercel从开始的一个月免费20G，到后来的一个月免费100G，直到现在的个人完全免费，可见其诚意。</p>
+</li>
+</ul>
+<h3 id="1-2-Vercel工作原理">1.2 Vercel工作原理</h3>
+<ul>
+<li>Vercel属于复制一份Github Pages文件，然后在它给你的空间新开一个页面，同时提供cdn加速。</li>
+<li>部署比较简单，用GitHub登陆授权后，修改DNS配置域名即可。</li>
+</ul>
+<h2 id="二、Vercel使用">二、Vercel使用</h2>
+<h3 id="2-1-Vercel官网">2.1 <a href="https://vercel.com/">Vercel官网</a></h3>
+<ul>
+<li>
+<p>进入官网，注册账号</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7.png" alt=""></p>
+</li>
+<li>
+<p>使用GitHub或者GitLab登录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BD%BF%E7%94%A8Github%E7%99%BB%E5%BD%95.png" alt=""></p>
+</li>
+<li>
+<p>选择 <code>Github Pages</code> 导入，或者新建一个模板（Vercel提供了诸多模板）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E5%AF%BC%E5%85%A5.png" alt=""></p>
+</li>
+<li>
+<p>选择作用范围，用于个人还是用于小组</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%80%89%E6%8B%A9%E8%8C%83%E5%9B%B4.png" alt=""></p>
+</li>
+<li>
+<p>选择路径（一般都是在仓库根目录下 <code>root</code> ）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%B7%AF%E5%BE%84.png" alt=""></p>
+</li>
+<li>
+<p>选择网站对应的模板（如果网站使用了不属于原模板框架的文件，建议选择Other，部署效果和选择模板是一样的）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2.png" alt=""></p>
+</li>
+<li>
+<p>部署成功，点击 <code>Visit</code> 即可看到自己的网站</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E9%83%A8%E7%BD%B2%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-2-绑定域名-可选">2.2 绑定域名(可选)</h3>
+<ul>
+<li>
+<p>进入项目</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%BF%9B%E5%85%A5%E9%A1%B9%E7%9B%AE.png" alt=""></p>
+</li>
+<li>
+<p>参观域名</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82%E5%9F%9F%E5%90%8D.png" alt=""></p>
+</li>
+<li>
+<p>输入域名，点击 <code>Add</code>（Vercel会为每一个项目自带一个域名，可以点击 <code>Edit</code> --&gt; <code>Remove</code> 删除）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt=""></p>
+</li>
+</ul>
+<h2 id="三、域名配置-可选">三、域名配置(可选)</h2>
+<h3 id="3-1-DNS配置">3.1 DNS配置</h3>
+<ul>
+<li>
+<p>Add之后，它会弹出来一些需要做的配置，接下来需要去我们的域名提供商那里根据Vercel给出的要求进行域名配置。（我是在阿里买的域名 <a href="https://dc.console.aliyun.com/">阿里域名服务</a>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%BE%E7%BD%AE.png" alt=""></p>
+</li>
+<li>
+<p>进入域名服务，点击 <code>管理</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E7%AE%A1%E7%90%86.png" alt=""></p>
+</li>
+<li>
+<p>修改DNS（DNS修改之后，大概需要等10分钟才会生效）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">ns1.vercel-dns.com</span><br><span class="line">ns2.vercel-dns.com</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E4%BF%AE%E6%94%B9DNS.png" alt=""></p>
+</li>
+</ul>
+<h3 id="3-2-域名解析">3.2 域名解析</h3>
+<ul>
+<li>
+<p>域名解析，点击 <code>解析</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png" alt=""></p>
+</li>
+<li>
+<p>添加这条解析记录</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">@	A	默认	76.76.21.21</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt=""></p>
+</li>
+<li>
+<p>如果绑定的是主域名的话，这个时候就算配置成功了！！！</p>
+</li>
+</ul>
+<h3 id="3-3-CNAME配置（子域名）">3.3 CNAME配置（子域名）</h3>
+<ul>
+<li>
+<p>记住DNS解析记录</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/DNS%E8%AE%B0%E5%BD%95.png" alt=""></p>
+</li>
+<li>
+<p>回到Vercel，点击 <code>Domains</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/Domains.png" alt=""></p>
+</li>
+<li>
+<p>点击 <code>View DNS Records &amp; More</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E5%8F%82%E8%A7%82DNS.png" alt=""></p>
+</li>
+<li>
+<p>填入子域名的名称，选择 <code>CNAME</code>，值为 <code>cname.vercel-dns.com</code> , TTL为 <code>60</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%B7%BB%E5%8A%A0DNS.png" alt=""></p>
+</li>
+<li>
+<p>回到项目中，等待几分钟后，即可看到绑定子域名成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Vercel/%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+<li>
+<p>接下来就可以通过我们设置的域名访问我们的网站啦！！！</p>
+</li>
+</ul>
+<h2 id="四、相关事项">四、相关事项</h2>
+<ul>
+<li><font color="red">【注意】绑定域名的话，需要在网站根目录下添加CNAME文件 </font></li>
+<li>需要更新网站时，只需要将新内容提交到Github上，Vercel就会自动部署了！</li>
+</ul>
+<br>
+<div class="note success no-icon">
+            <p>参考网站：【鸣谢】</p><p><a href="https://www.jianshu.com/p/9f67ff433d8e">vercel是什么神仙网站</a></p>
+          </div>]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Github Pages</tag>
+        <tag>Vercel</tag>
       </tags>
   </entry>
   <entry>
