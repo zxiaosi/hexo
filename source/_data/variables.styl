@@ -1,0 +1,100 @@
+// 圆角设置
+$border-radius-inner = 20px 20px 20px 20px;
+$border-radius = 20px;
+
+//去掉顶部黑线：
+.headband {display:none;}
+
+// 文章内链接文本样式
+if hexo-config("custom_css.post_body_a.enable")
+  .post-body 
+    a:not(.btn){
+      color: convert(hexo-config("custom_css.post_body_a.normal_color"));
+      border-bottom: none;
+      &:hover {
+        color: convert(hexo-config("custom_css.post_body_a.hover_color"));
+        text-decoration: underline;
+      }
+    }
+
+/* 图标样式 began */
+.fa{
+  font-size: 14px;
+}
+// 菜单栏
+.fa-home{
+  color: #e74c3c;
+  font-size: 15px;
+}
+.fa-tags{
+  color: #3498db;
+}
+.fa-th{
+  color: orange;
+}
+.fa-archive{
+  color: #1abc9c;
+}
+.fa-link{
+  color: #FC427B;
+}
+.fa-user{
+  color: #9b59b6;
+}
+/*
+.fa-search{
+  color: #dcdde1;
+}
+*/
+// 社交
+.fa-globe{
+  color: #0AD0C6;
+}
+.fa-book{
+  color: #5f27cd;
+}
+.fa-github{
+  color: #57606f;
+  font-size: 14.5px;
+}
+.fa-google{
+  color: #ff4757;
+}
+.fa-history{
+  color: #40739e;
+}
+// 文章
+/*
+.fa-anchor{
+  color: #57606f;
+}
+*/
+.fa-calendar{
+  color: #70a1ff;
+}
+.fa-calendar-check{
+  color: #5352ed;
+}
+.fa-folder{
+  color: #ffa502;
+}
+.fa-eye{
+  color: #70a1ff;
+}
+.fa-comment{
+  color: #2ed573;
+}
+.fa-file-word{
+  color: #273c75;
+}
+.fa-clock{
+  color: #ff5252;
+}
+// 底部
+.fa-coffee{
+  color: #ffa801;
+}
+.fa-chart-area{
+  color: #474787;
+}
+/* 图标样式 end */

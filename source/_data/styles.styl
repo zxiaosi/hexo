@@ -1,0 +1,210 @@
+// 文章阴影边框
+.post {
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 5px;
+   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+}
+
+// 自定义单行代码颜色
+code {
+    color: #ff511A;
+    /* background: #fbf7f8; */
+    margin: 2px;
+}
+
+//文章底部彩色标签样式
+.posts-expand .post-tags a {
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 0px 10px;
+    border-radius: 8px;
+    color: rgb(85, 85, 85);
+    border: 0px;
+}
+
+/* 分类页样式 began */
+.category-all-page {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: #4E606A;
+    padding: 20px 30px 60px 30px;
+    border-radius: 25px 25px 25px 25px;
+}
+.category-all-title {
+    font-size: 24px;
+    color: aqua;
+}
+.category-list {
+    overflow: auto;
+}
+.category-list li {
+    height: 30px;
+    width: 200px;
+    float: left;
+    padding: 0px 20px 20px 0px;
+}
+.category-list li a {
+    font-size: 18px;
+}
+/* 分类页样式 end */
+
+/* 归档页样式 began */
+.page-archive .archive-page-counter {
+  font-size: 18px;
+  background-color: #49b1f5;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  color: #fff;
+  +mobile() {
+    font-size: 16px;
+  }
+}
+.my-post-time{
+  font-size: 11px;
+  position: absolute;
+  color: #fff;
+  background-color: #49b1f5;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 15px;
+}
+.mypost{
+  position: relative;
+  margin-bottom: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+a.my-post-title-link:before{
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "📚";
+  margin-right: 5px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 15px;
+  line-height: 18px;
+}
+.my-post:hover{
+  transform: scale(1.1);
+  box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);
+  border-radius: 30px;
+  width: 400px;
+  padding: 1px 10px;
+  margin-left: 25px;
+  font-size: 16px;
+  transition-duration: 0.15s;
+  +mobile(){
+    width: 260px;
+    margin-left: 18px;
+  }
+  //display:flex;
+}
+a.my-post-title-link{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  +mobile() {
+    font-size: 14px;
+  }
+}
+.my-post-title{
+  display: block;
+  margin-left: 4.5rem;
+  color: #4c4948;
+  text-decoration: none;
+  font-size: .8rem;
+  cursor: pointer;
+  +mobile() {
+    //margin-left: 4rem;
+  }
+}
+.my-post-header{
+  position: top;
+  margin-bottom: 1rem;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+//.my-post-title-link{
+//  font-size: 16px;
+//  font-weight: 500;
+//}
+.my-post-meta{
+  position: absolute;
+  color: #99a9bf;
+  width: 80px;
+  color: #114142;
+}
+div.post-block.tag .collection-title h2 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3f3f3f;
+  border-radius: 20px;
+  font-size: 22px;
+  background-color: #b4e8fa;
+  padding: 2px 15px;
+  letter-spacing: 1.5px;
+  box-sizing: border-box;
+  color: #3f3f3f;
+  display: inline-block;
+  margin: 10px 0 10px;
+  text-align: center;
+  +mobile(){
+    font-size: 18px;
+  }
+}
+.category-list-link:hover{
+  transform: scale(1.1);
+  box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);
+  border-radius: 8px;
+  padding: 1px 1px;
+  margin-left: 5px;
+  font-size: 16px;
+  transition-duration: 0.15s;
+  //display:flex;
+}
+/* 归档页样式 end */
+
+// 近期文章
+.links-of-blogroll-title{
+  font-size: 16px;
+}
+.links-of-blogroll-list li a{
+  color: #0593d3;
+}
+.links-of-blogroll-list li a:hover{
+  color: #ff106c;
+}
+
+// 隐藏 valine 的 powered by
+.vpower.txt-right{
+    display: none;
+}
+
+// Valine 隐藏系统信息
+.vsys{
+  display:none !important;
+}
+
+// 选中字体样式
+::selection{
+  color: #FFFFFF;
+  background: #E84893;
+}
+::-moz-selection{
+  color: #FFFFFF;
+  background: #E84893;
+}
+
+// 图片居中
+img, .darkmode-ignore {
+  display: block !important;
+}

@@ -1,0 +1,176 @@
+# Hexo Configuration (配置)
+## Docs (文档): https://hexo.io/docs/configuration.html
+## Source (来源): https://github.com/hexojs/hexo/
+
+# Site (设置)
+title: '小四先生的博客'              # 网站标题
+subtitle: '记录生活中的点点滴滴'     # 网站副标题
+description: '小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西'              # 描述，介绍网站的
+keywords: 'Hexo,Next,博客,日常,知识,分享'                                                           # 网站的关键字
+author: 'Mr.XiaoSi'                # 博主姓名
+language: 'zh-CN'                  # 语言：zh-CN 是简体中文
+timezone: 'Asia/Shanghai'          # 时区
+
+# URL (永久链接)
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://hexo.zxiaosi.cn/          # 网站域名
+
+#安装插件: npm install hexo-abbrlink --save
+permalink: archives/:abbrlink.html      # 永久链接格式
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory (目录)
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:      # 跳过指定渲染，忽略文章skip_render: "_posts/hello-world.md"
+  - 404.html
+  - README.md
+
+# Writing (写作)
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting (主页设置)
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 5               # 每页得文章数
+  order_by: -date
+
+# Category & Tag (分类和标签)
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements (数据元素)
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format (时间格式)
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination (页码)
+## Set per_page to 0 to disable pagination
+per_page: 15
+pagination_dir: page
+
+# Include / Exclude file(s) (包含/排除文件)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions (扩展)
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+## markdown 渲染引擎配置，默认是hexo-renderer-marked，这个插件渲染速度更快，且有新特性
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-footnote
+    - markdown-it-sup
+    - markdown-it-sub
+    - markdown-it-abbr
+    - markdown-it-emoji
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: false
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+
+# Deployment (部署)
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:                                     # github
+- type: 'git'
+  repo: 'git@github.com:zxiaosi/hexo.git'   # GitHub ssh链接
+  branch: 'gh-pages'                            # 分支
+- type: 'baidu_url_submitter'           # 百度主动推送
+
+# 本地搜索
+search:	
+  path: search.xml			# 索引文件的路径，相对于站点根目录
+  field: post				# 搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面
+  format: html
+  limit: 100				# 限制搜索的条目数
+
+# 外部链接优化
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'exclude1.com'
+    - 'exclude2.com'
+
+# 静态资源压缩
+all_minifier: true
+
+# 站点地图
+sitemap: 
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+# 百度收录
+baidu_url_submit:
+  count: 30                           # 提交最新的多少个链接
+  host: https://hexo.zxiaosi.cn/     # 在百度站长平台中添加的域名
+  token: baidu_url_submit.token      # 秘钥
+  path: baidu_urls.txt               # 文本文档的地址， 新链接会保存在此文本文档里
+
+algolia:
+  applicationID: 'your applicationID'
+  apiKey: 'your apiKey'
+  adminApiKey: 'your adminApiKey'
+  indexName: 'your indexName'
+  chunkSize: 5000
