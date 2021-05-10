@@ -103,3 +103,4 @@ npm install markdown-it-emoji --save
 + [Hexo-Next 配置（后续更新）](https://hexo.zxiaosi.cn/archives/1d79f7d1.html)
 + [Hexo 网站优化](https://hexo.zxiaosi.cn/archives/64e4e304.html)
 + [Hexo 引用标签](https://hexo.zxiaosi.cn/archives/484f1820.html)
++ [Hexo 白天黑夜模式按钮](https://hexo.zxiaosi.cn/archives/24a19e71.html)
