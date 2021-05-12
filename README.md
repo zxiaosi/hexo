@@ -44,9 +44,7 @@
 ### 4. 克隆
 
 + 克隆仓库，替换 `blog` 下的文件
-+ 将 `_config copy.yml` 修改为 `_config.yml`
-+ 将 `./source/_data/next copy.yml` 修改为 `./source/_data/next.yml`
-+ 使用 `npm install` 安装相关插件
++ 使用 `npm install` 安装插件
 + 启动服务
 
 ### 5. 插件目录（有不想用的插件可以在 `package.json` 中删去相对应的插件，然后执行 `npm install` ）
