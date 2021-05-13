@@ -242,6 +242,13 @@
   </url>
   
   <url>
+    <loc>https://hexo.zxiaosi.cn/tags/Gitee/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hexo.zxiaosi.cn/tags/Github-Pages/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
@@ -250,6 +257,13 @@
   
   <url>
     <loc>https://hexo.zxiaosi.cn/tags/jsDeliver/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hexo.zxiaosi.cn/tags/Gridea/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -270,14 +284,7 @@
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/tags/Gridea/</loc>
-    <lastmod>2021-05-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hexo.zxiaosi.cn/tags/Gitee/</loc>
+    <loc>https://hexo.zxiaosi.cn/tags/Tags/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -291,13 +298,6 @@
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/tags/Tags/</loc>
-    <lastmod>2021-05-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hexo.zxiaosi.cn/tags/Typora/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
@@ -305,14 +305,14 @@
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/tags/Markdown/</loc>
+    <loc>https://hexo.zxiaosi.cn/tags/PicGo/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/tags/PicGo/</loc>
+    <loc>https://hexo.zxiaosi.cn/tags/Markdown/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -349,6 +349,13 @@
   </url>
   
   <url>
+    <loc>https://hexo.zxiaosi.cn/categories/Gitee/</loc>
+    <lastmod>2021-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hexo.zxiaosi.cn/categories/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
@@ -370,13 +377,6 @@
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/categories/Hexo%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-05-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hexo.zxiaosi.cn/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
@@ -384,7 +384,7 @@
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/categories/Gitee/</loc>
+    <loc>https://hexo.zxiaosi.cn/categories/Hexo%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -398,14 +398,14 @@
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/categories/Typora/</loc>
+    <loc>https://hexo.zxiaosi.cn/categories/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/categories/%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>https://hexo.zxiaosi.cn/categories/Typora/</loc>
     <lastmod>2021-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
