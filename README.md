@@ -44,6 +44,8 @@
 ### 4. 克隆
 
 + 克隆仓库，替换 `blog` 下的文件
++ 将 `_config copy.yml` 修改为 `_config.yml`
++ 将 `./source/_data/next copy.yml` 修改为 `./source/_data/next.yml`
 + 使用 `npm install` 安装插件
 + 启动服务
 
