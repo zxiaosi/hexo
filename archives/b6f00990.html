@@ -24,21 +24,23 @@
     var CONFIG = {"hostname":"hexo.zxiaosi.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"appID":"1EPYSZ1CLW","apiKey":"7b3f19a8f210b579f33dc8648ed0b267","indexName":"Hexo","hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"我们没有找到任何搜索结果: ${query}","hits_stats":"找到${hits}条结果 (用时 ${time} ms)"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、安装主题 1.1 进入到Hexo所在的文件夹   我的文件在e盘下的blog文件 12e:			# 输入 e: 回车进入e盘  cd blog			# 输入 cd blog 回车进入 blog 文件夹">
+  <meta name="description" content="一、起因 1.1 说明   本地 hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 后，仓库的代码是已经渲染过的文件   如果某天电脑突然打不开，克隆下来的也是渲染的文件，无法直接使用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo-Next安装及使用">
-<meta property="og:url" content="https://hexo.zxiaosi.cn/archives/65f611a4.html">
+<meta property="og:title" content="Hexo源码构造">
+<meta property="og:url" content="https://hexo.zxiaosi.cn/archives/b6f00990.html">
 <meta property="og:site_name" content="小四先生的博客">
-<meta property="og:description" content="一、安装主题 1.1 进入到Hexo所在的文件夹   我的文件在e盘下的blog文件 12e:			# 输入 e: 回车进入e盘  cd blog			# 输入 cd blog 回车进入 blog 文件夹">
+<meta property="og:description" content="一、起因 1.1 说明   本地 hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 后，仓库的代码是已经渲染过的文件   如果某天电脑突然打不开，克隆下来的也是渲染的文件，无法直接使用">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-10T08:37:49.000Z">
-<meta property="article:modified_time" content="2021-04-28T09:18:18.690Z">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E6%BA%90%E7%A0%81%E6%9E%84%E9%80%A0/gitbash.png">
+<meta property="article:published_time" content="2021-05-15T08:05:16.000Z">
+<meta property="article:modified_time" content="2021-05-15T09:02:59.709Z">
 <meta property="article:author" content="Mr.XiaoSi">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Next">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E6%BA%90%E7%A0%81%E6%9E%84%E9%80%A0/gitbash.png">
 
-<link rel="canonical" href="https://hexo.zxiaosi.cn/archives/65f611a4.html">
+<link rel="canonical" href="https://hexo.zxiaosi.cn/archives/b6f00990.html">
 
 
 <script id="page-configurations">
@@ -51,7 +53,7 @@
   };
 </script>
 
-  <title>Hexo-Next安装及使用 | 小四先生的博客</title>
+  <title>Hexo源码构造 | 小四先生的博客</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFV6F84KP1"></script>
     <script>
@@ -226,7 +228,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://hexo.zxiaosi.cn/archives/65f611a4.html">
+    <link itemprop="mainEntityOfPage" href="https://hexo.zxiaosi.cn/archives/b6f00990.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/avatar.webp">
@@ -239,7 +241,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo-Next安装及使用
+          Hexo源码构造
         </h1>
 
         <div class="post-meta">
@@ -250,16 +252,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-03-10 16:37:49" itemprop="dateCreated datePublished" datetime="2021-03-10T16:37:49+08:00">2021-03-10</time>
+              <time title="创建时间：2021-05-15 16:05:16 / 修改时间：17:02:59" itemprop="dateCreated datePublished" datetime="2021-05-15T16:05:16+08:00">2021-05-15</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-28 17:18:18" itemprop="dateModified" datetime="2021-04-28T17:18:18+08:00">2021-04-28</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -286,8 +282,8 @@
       </span>
       <span class="post-meta-item-text">评论数：</span>
     
-    <a title="valine" href="/archives/65f611a4.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/65f611a4.html" itemprop="commentCount"></span>
+    <a title="valine" href="/archives/b6f00990.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/b6f00990.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -297,14 +293,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.2k</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -316,136 +312,64 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="一、安装主题">一、安装主题</h2>
-<h3 id="1-1-进入到Hexo所在的文件夹">1.1 进入到Hexo所在的文件夹</h3>
+        <h2 id="一、起因">一、起因</h2>
+<h3 id="1-1-说明">1.1 说明</h3>
 <ul>
 <li>
-<p>我的文件在e盘下的blog文件</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">e:			<span class="comment"># 输入 e: 回车进入e盘  </span></span><br><span class="line"><span class="built_in">cd</span> blog			<span class="comment"># 输入 cd blog 回车进入 blog 文件夹</span></span><br></pre></td></tr></table></figure>
+<p>本地 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code> 后，仓库的代码是已经渲染过的文件</p>
 </li>
-</ul>
+<li>
+<p>如果某天电脑突然打不开，克隆下来的也是渲染的文件，无法直接使用</p>
 <span id="more"></span>
-<h3 id="1-2-克隆Next主题">1.2 克隆Next主题</h3>
-<ul>
-<li>
-<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://theme-next.iissnan.com/">官方文档</a></p>
-</li>
-<li>
-<p>控制台输入下面命令</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="1-3-使用主题">1.3 使用主题</h3>
+<h3 id="1-2-计划">1.2 计划</h3>
 <ul>
-<li>
-<p>找到站点配置文件 <code>_config.yml</code> ，修改 <code>_config.yml</code> 中的</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- theme: landscape</span><br><span class="line">+ theme: next</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>本地预览</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean		<span class="comment"># 清理缓存</span></span><br><span class="line">hexo s			<span class="comment"># 启动服务，本地访问</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>打开浏览器访问 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:4000/">http://localhost:4000</a> 即可看到内容</p>
+<li>本来打算弄两个仓库，后来觉得太麻烦，索性在一个仓库弄两个分支</li>
+<li>站点根目录下的文件都要上传的话，避免不了私密信息的泄露，所以上传的时候忽略一些文件，然后将这些文件放到其他仓库，比如Github、Gitee私人仓库，或者一些云端的网盘等。主要忽略的文件如下：
+<ul>
+<li>站点配置文件：<code>_conifg.yml</code></li>
+<li>主题配置文件：<code>source/_data/next.yml</code></li>
+<li>文章：<code>source/_posts/</code></li>
+</ul>
 </li>
 </ul>
-<h2 id="二、配置主题">二、配置主题</h2>
-<h3 id="2-1-主题外观">2.1 主题外观</h3>
+<h2 id="二、经过（实施）">二、经过（实施）</h2>
+<h3 id="2-1-master分支（主分支）配置">2.1 master分支（主分支）配置</h3>
 <ul>
 <li>
-<p>在 <code>.\themes\next\_config.yml</code> 配置文件中，搜索关键字：<code>Schemes</code>，修改</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes (外观)</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line">scheme: Gemini  <span class="comment"># 前面的注释去除即可</span></span><br></pre></td></tr></table></figure>
+<p>找到站点根目录下的 <code>.gitignore</code>，配置如下</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 模块包和相关文件</span></span><br><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">*.<span class="built_in">log</span></span><br><span class="line">.deploy*/</span><br><span class="line">node_modules/</span><br><span class="line">package-lock.json</span><br><span class="line">db.json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置文件</span></span><br><span class="line">_config.yml</span><br><span class="line"><span class="built_in">source</span>/_data/next.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># 文章</span></span><br><span class="line"><span class="built_in">source</span>/_posts/</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><font color="red">注意：</font>如果你的项目部署在Vercel，第一次上传请不要将 <code>_config.yml</code> 和 <code>source/_data/next.yml</code> 写进 <code>.gitignore</code> 文件，因为那样Vercel部署会不成功</p>
+</li>
+<li>
+<p>找到 <code>./themes/next/</code> 下的 <code>git</code> 文件，将它删除确保 <code>next</code> 文件能上传</p>
 </li>
 </ul>
-<h3 id="2-2-配置-hexo-中的菜单">2.2 配置 hexo 中的菜单</h3>
+<h3 id="2-2-master分支（主分支）上传">2.2 master分支（主分支）上传</h3>
 <ul>
 <li>
-<p>默认的主题配置文件 <code>.\themes\next\_config.yml</code> 中，菜单只开启了首页和归档，我们根据需要，可以添加 about、tag、categories、sitemap 等菜单，所以把它们也取消注释。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 菜单设置为 菜单名: /菜单目录 || 菜单图标名字</span></span><br><span class="line">menu:</span><br><span class="line">    home: / || fa fa-home                     <span class="comment"># 首页</span></span><br><span class="line">    tags: /tags/ || fa fa-tags                <span class="comment"># 标签</span></span><br><span class="line">    categories: /categories/ || fa fa-th      <span class="comment"># 分类</span></span><br><span class="line">    archives: /archives/ || fa fa-archive     <span class="comment"># 归档</span></span><br><span class="line">    schedule: /schedule/ || fa fa-calendar    <span class="comment"># 日程表</span></span><br><span class="line">    about: /about/ || fa fa-user              <span class="comment"># 关于</span></span><br><span class="line">    <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap   # 地图</span></span><br><span class="line">    <span class="comment">#commonweal: /404/ || fa fa-heartbeat     # 404</span></span><br><span class="line">  </span><br><span class="line">menu_settings:</span><br><span class="line">    icons: <span class="literal">true</span>   <span class="comment"># 显示图标</span></span><br><span class="line">    badges: <span class="literal">true</span>  <span class="comment"># 显示统计信息</span></span><br></pre></td></tr></table></figure>
+<p>右击站点文件夹以 <code>Git Bush</code> 打开</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E6%BA%90%E7%A0%81%E6%9E%84%E9%80%A0/gitbash.png" alt=""></p>
 </li>
 <li>
-<p><font color="red">注意：</font><em>hexo 所有图标均来自 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.fontawesome.com.cn/faicons/">fontawesome</a>，其中 || 后面是你想要设置的图标的名字。菜单项的中文文本翻译见菜单中文翻译</em></p>
+<p>执行以下命令</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git init </span><br><span class="line">git config --global user.name <span class="string">&quot;your.name&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;your.email&quot;</span></span><br><span class="line">git remote add origin 远程仓库地址 </span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&#x27;提交文件&#x27;</span></span><br><span class="line">git push origin master -f		<span class="comment"># 强制上传，建议找到一个新仓库</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="三、使用主题">三、使用主题</h2>
-<h3 id="3-1-新建-about-页面">3.1 新建 about 页面</h3>
+<h3 id="2-1-master主分支">2.1 master主分支</h3>
 <ul>
 <li>
-<p>在博客根目录下输入以下命令新建页面：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
+<p>在站点配置文件中 <code>_conifg.yml</code>，找到 <code>deploy</code>，将 <code>branch</code> 改为 <code>master</code></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment (部署)</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line">deploy:                                     <span class="comment"># github</span></span><br><span class="line">- <span class="built_in">type</span>: <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  repo: <span class="string">&#x27;git@github.com:zxiaosi/hexo.git&#x27;</span>   <span class="comment"># GitHub ssh链接</span></span><br><span class="line">  branch: <span class="string">&#x27;master&#x27;</span>                            <span class="comment"># 分支</span></span><br><span class="line">- <span class="built_in">type</span>: <span class="string">&#x27;baidu_url_submitter&#x27;</span>          	    <span class="comment"># 百度主动推送</span></span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p>然后你会发现多了一个 <code>./source/about</code> 文件夹，里面有一个<code>index.md</code>文件，你可以根据自己的需要在这个 Markdown 文件中写一些内容（同文章一样，用 Markdown 语法）。</p>
+<p>然后 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code> 上传</p>
 </li>
 </ul>
-<h3 id="3-2-新建-tags-页面">3.2 新建 tags 页面</h3>
-<ul>
-<li>
-<p>同样的，我们可以新建 <code>tags</code> 页面：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在 <code>tags</code> 页面文件 <code>./source/tags/index.md</code> 的头部修改为：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2020-04-26 00:13:30   <span class="comment"># 时间随意</span></span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;tags&quot;</span>                <span class="comment"># 类型一定要为tags</span></span><br><span class="line">comments: <span class="literal">false</span>             <span class="comment"># 提示这个页面不需要加载评论</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="3-3-新建-categories-页面">3.3 新建 categories 页面</h3>
-<ul>
-<li>
-<p>同样的，我们可以新建 categories 页面：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在 <code>categories</code> 页面文件 <code>./source/categories/index.md</code> 的头部修改为：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章分类</span><br><span class="line">date: 2020-04-26 00:15:00</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;categories&quot;</span></span><br><span class="line">comments: <span class="literal">false</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="3-4-新建一个-404-页面-新建404页面">3.4 <s>新建一个 404 页面</s> <a href="http://hexo.zxiaosi.cn/archives/1d79f7d1.html#2-%E6%B7%BB%E5%8A%A0404%E9%A1%B5%E9%9D%A2">新建404页面</a></h3>
-<ul>
-<li>
-<p><s>这里我们将 404 替换成腾讯的公益页面。</s></p>
-</li>
-<li>
-<p><s>首先我们在 <code>./source</code> 目录下创建自己的 <code>404.html</code>：</s></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>404<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> <span class="attr">homePageUrl</span>=<span class="string">&quot;/&quot;</span> <span class="attr">homePageName</span>=<span class="string">&quot;返回&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><s>注意：Hexo 博客的基本内容是一些 Markdown 文件，放在 <code>./source/_post</code> 文件夹下，每个文件对应一篇文章。除此之外，放在 source 文件夹下的所有开头不是下划线的文件，在 hexo generate 的时候，都会被拷贝到 public 文件夹下。但是，Hexo 默认会渲染所有的 HTML 和 Markdown 文件</s></p>
-</li>
-<li>
-<p><s>因此我们可以简单地在文件开头加上 layout: false 一行来避免渲染</s></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">layout: false</span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>404<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span> <span class="attr">src</span>=<span class="string">&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot;</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> <span class="attr">homePageUrl</span>=<span class="string">&quot;/&quot;</span> <span class="attr">homePageName</span>=<span class="string">&quot;返回&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="3-5-修改文章默认模板">3.5 修改文章默认模板</h3>
-<ul>
-<li>
-<p>修改<code>.\scaffolds\post.md</code></p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;				<span class="comment"># 文章标题</span></span><br><span class="line">date: &#123;&#123; date &#125;&#125;				<span class="comment"># 文章创建时间</span></span><br><span class="line">categories:					<span class="comment"># 分类</span></span><br><span class="line">tags:						<span class="comment"># 标签</span></span><br><span class="line">comments:					<span class="comment"># 是否可评论</span></span><br><span class="line">abbrlink:					<span class="comment"># 永久链接</span></span><br><span class="line">top: 						<span class="comment"># 是否置顶</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><code>top</code> <code>comments</code> <code>abbrlink</code> 以后会用到</p>
-</li>
-</ul>
-<h3 id="3-6-创建文章">3.6 创建文章</h3>
-<ul>
-<li>
-<p>在hexo下创建一个新的文章</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;文章名称&quot;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>文章基本设置</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo-Next主题配置	</span><br><span class="line">date: 2021-01-20 21:01:24</span><br><span class="line">categories: Hexo网站	</span><br><span class="line">tags: Hexo</span><br><span class="line">comments: <span class="literal">true</span> </span><br><span class="line">abbrlink: </span><br><span class="line">top: <span class="literal">true</span>											</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>文章多标签、多分类设置</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo-Next主题配置	</span><br><span class="line">date: 2021-01-20 21:01:24</span><br><span class="line">categories:	</span><br><span class="line">  - Hexo网站</span><br><span class="line">  - Next主题</span><br><span class="line">tags: 							</span><br><span class="line">  - Hexo</span><br><span class="line">  - Next</span><br><span class="line">abbrlink:				</span><br><span class="line">comments: <span class="literal">true</span> </span><br><span class="line">top: <span class="literal">true</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<br>
-<div class="note success no-icon">
-            <p>参考网站：【鸣谢】</p><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/iwyang/article/details/106989237">Hexo-NexT (v7.7.2) 主题配置</a></p><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/qq_35396510/article/details/105953460">Hexo 主题 next7.8 版本配置美化</a></p>
-          </div>
+
     </div>
 
     
@@ -470,7 +394,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://hexo.zxiaosi.cn/archives/65f611a4.html" title="Hexo-Next安装及使用">https://hexo.zxiaosi.cn/archives/65f611a4.html</a>
+    <a href="https://hexo.zxiaosi.cn/archives/b6f00990.html" title="Hexo源码构造">https://hexo.zxiaosi.cn/archives/b6f00990.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -547,13 +471,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/archives/5ef212b6.html" rel="prev" title="Hexo安装及配置">
-      <i class="fa fa-chevron-left"></i> Hexo安装及配置
+    <a href="/archives/24a19e71.html" rel="prev" title="Hexo白天黑夜模式按钮">
+      <i class="fa fa-chevron-left"></i> Hexo白天黑夜模式按钮
     </a></div>
-      <div class="post-nav-item">
-    <a href="/archives/2d288079.html" rel="next" title="Hexo-Next配置（基础篇）">
-      Hexo-Next配置（基础篇） <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -613,7 +534,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98"><span class="nav-text">一、安装主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E8%BF%9B%E5%85%A5%E5%88%B0Hexo%E6%89%80%E5%9C%A8%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-text">1.1 进入到Hexo所在的文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E5%85%8B%E9%9A%86Next%E4%B8%BB%E9%A2%98"><span class="nav-text">1.2 克隆Next主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-%E4%BD%BF%E7%94%A8%E4%B8%BB%E9%A2%98"><span class="nav-text">1.3 使用主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="nav-text">二、配置主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E4%B8%BB%E9%A2%98%E5%A4%96%E8%A7%82"><span class="nav-text">2.1 主题外观</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E9%85%8D%E7%BD%AE-hexo-%E4%B8%AD%E7%9A%84%E8%8F%9C%E5%8D%95"><span class="nav-text">2.2 配置 hexo 中的菜单</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E4%BD%BF%E7%94%A8%E4%B8%BB%E9%A2%98"><span class="nav-text">三、使用主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E6%96%B0%E5%BB%BA-about-%E9%A1%B5%E9%9D%A2"><span class="nav-text">3.1 新建 about 页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E6%96%B0%E5%BB%BA-tags-%E9%A1%B5%E9%9D%A2"><span class="nav-text">3.2 新建 tags 页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E6%96%B0%E5%BB%BA-categories-%E9%A1%B5%E9%9D%A2"><span class="nav-text">3.3 新建 categories 页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA-404-%E9%A1%B5%E9%9D%A2-%E6%96%B0%E5%BB%BA404%E9%A1%B5%E9%9D%A2"><span class="nav-text">3.4 新建一个 404 页面 新建404页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-%E4%BF%AE%E6%94%B9%E6%96%87%E7%AB%A0%E9%BB%98%E8%AE%A4%E6%A8%A1%E6%9D%BF"><span class="nav-text">3.5 修改文章默认模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-text">3.6 创建文章</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E8%B5%B7%E5%9B%A0"><span class="nav-text">一、起因</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E8%AF%B4%E6%98%8E"><span class="nav-text">1.1 说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E8%AE%A1%E5%88%92"><span class="nav-text">1.2 计划</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%BB%8F%E8%BF%87%EF%BC%88%E5%AE%9E%E6%96%BD%EF%BC%89"><span class="nav-text">二、经过（实施）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-master%E5%88%86%E6%94%AF%EF%BC%88%E4%B8%BB%E5%88%86%E6%94%AF%EF%BC%89%E9%85%8D%E7%BD%AE"><span class="nav-text">2.1 master分支（主分支）配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-master%E5%88%86%E6%94%AF%EF%BC%88%E4%B8%BB%E5%88%86%E6%94%AF%EF%BC%89%E4%B8%8A%E4%BC%A0"><span class="nav-text">2.2 master分支（主分支）上传</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-master%E4%B8%BB%E5%88%86%E6%94%AF"><span class="nav-text">2.1 master主分支</span></a></li></ol></li></ol></div>
           <br/>
       </div>
       <!--/noindex-->
