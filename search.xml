@@ -3873,8 +3873,8 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png" alt=""></p>
 </li>
 <li>
-<p><code>系统变量</code> 中新建一个变量名为 <code>NODE_PATH</code> ，变量值为<code>D:\node\node_global\node_modules</code>，如下图：</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F-1616406654354.png" alt=""></p>
+<p><code>系统变量</code> 中新建一个变量名为 <code>NODE_PATH</code> ，变量值为<code>D:\node\node_global</code>，如下图：</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Node/%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F.png" alt=""></p>
 </li>
 <li>
 <p>最后编辑 <code>用户变量</code> 里的 <code>Path</code>，将相应npm的路径改为：<code>D:\node\node_global</code>，如下：（npm路径为刚刚新建 <code>node_global</code> 路径）</p>
