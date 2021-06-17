@@ -484,7 +484,7 @@
 <h2 id="二、项目部署">二、项目部署</h2>
 <h3 id="2-1-安装教程">2.1 安装教程</h3>
 <h4 id="1-配置-Python3-6-及以上-的虚拟环境">1. 配置 Python3.6 (及以上)的虚拟环境</h4>
-<h4 id="2-装包">2. 装包</h4>
+<h4 id="2-安装包">2. 安装包</h4>
 <ul>
 <li>
 <p>安装运行所需的包</p>
@@ -541,20 +541,20 @@
 </li>
 </ul>
 <h2 id="三、使用说明">三、使用说明</h2>
-<h3 id="1-学生管理系统">1. 学生管理系统</h3>
+<h3 id="3-1-学生管理系统">3.1 学生管理系统</h3>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/student.png" alt=""></p>
-<h3 id="2-学生信息的增操作">2. 学生信息的增操作</h3>
+<h3 id="3-2-学生信息的增操作">3.2 学生信息的增操作</h3>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/add.png" alt=""></p>
-<h3 id="3-学生信息的删操作">3. 学生信息的删操作</h3>
+<h3 id="3-3-学生信息的删操作">3.3 学生信息的删操作</h3>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/delete.png" alt=""></p>
-<h3 id="4-学生信息的改操作">4. 学生信息的改操作</h3>
+<h3 id="3-4-学生信息的改操作">3.4 学生信息的改操作</h3>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/update.png" alt=""></p>
 <h2 id="四、其他">四、其他</h2>
-<h3 id="1-搜索-搜索内容可以是学生姓名、班级名、课程号">1. 搜索(搜索内容可以是学生姓名、班级名、课程号)</h3>
+<h3 id="4-1-搜索-搜索内容可以是学生姓名、班级名、课程号">4.1 搜索(搜索内容可以是学生姓名、班级名、课程号)</h3>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/%E6%90%9C%E7%B4%A2.png" alt=""></p>
-<h3 id="2-过滤器-按性别过滤">2. 过滤器(按性别过滤)</h3>
+<h3 id="4-2-过滤器-按性别过滤">4.2 过滤器(按性别过滤)</h3>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/%E8%BF%87%E6%BB%A4%E5%99%A8.png" alt=""></p>
-<h3 id="3-主题">3. 主题</h3>
+<h3 id="4-3-主题">4.3 主题</h3>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/%E4%B8%BB%E9%A2%98.png" alt=""></p>
 ]]></content>
   </entry>
