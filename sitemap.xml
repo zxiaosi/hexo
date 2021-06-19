@@ -256,6 +256,20 @@
 
   
   <url>
+    <loc>https://hexo.zxiaosi.cn/tags/Python/</loc>
+    <lastmod>2021-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hexo.zxiaosi.cn/tags/Django/</loc>
+    <lastmod>2021-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hexo.zxiaosi.cn/tags/Docsify/</loc>
     <lastmod>2021-06-19</lastmod>
     <changefreq>daily</changefreq>
@@ -291,6 +305,13 @@
   </url>
   
   <url>
+    <loc>https://hexo.zxiaosi.cn/tags/Gridea/</loc>
+    <lastmod>2021-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hexo.zxiaosi.cn/tags/Github-Pages/</loc>
     <lastmod>2021-06-19</lastmod>
     <changefreq>daily</changefreq>
@@ -299,13 +320,6 @@
   
   <url>
     <loc>https://hexo.zxiaosi.cn/tags/jsDeliver/</loc>
-    <lastmod>2021-06-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hexo.zxiaosi.cn/tags/Gridea/</loc>
     <lastmod>2021-06-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -368,13 +382,6 @@
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/tags/Python/</loc>
-    <lastmod>2021-06-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hexo.zxiaosi.cn/tags/TK/</loc>
     <lastmod>2021-06-19</lastmod>
     <changefreq>daily</changefreq>
@@ -419,6 +426,13 @@
 
   
   <url>
+    <loc>https://hexo.zxiaosi.cn/categories/%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B/</loc>
+    <lastmod>2021-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hexo.zxiaosi.cn/categories/Docsify%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-06-19</lastmod>
     <changefreq>daily</changefreq>
@@ -440,21 +454,7 @@
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/categories/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2021-06-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hexo.zxiaosi.cn/categories/GitHub/</loc>
-    <lastmod>2021-06-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://hexo.zxiaosi.cn/categories/CDN/</loc>
     <lastmod>2021-06-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -468,14 +468,21 @@
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/categories/Hexo%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://hexo.zxiaosi.cn/categories/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2021-06-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://hexo.zxiaosi.cn/categories/%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B/</loc>
+    <loc>https://hexo.zxiaosi.cn/categories/CDN/</loc>
+    <lastmod>2021-06-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hexo.zxiaosi.cn/categories/Hexo%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2021-06-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
