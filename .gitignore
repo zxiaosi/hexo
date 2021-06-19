@@ -1,15 +1,14 @@
 # 模块包和相关文件
 .DS_Store
 Thumbs.db
-*.log
-.deploy*/
-node_modules/
-package-lock.json
 db.json
+*.log
+node_modules/
+public/
+.deploy*/
 
 # 配置文件
 _config.yml
-source/_data/next.yml
 
 # 文章
 source/_posts/
