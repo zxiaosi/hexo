@@ -546,20 +546,22 @@
 </ul>
 <h2 id="三、使用说明">三、使用说明</h2>
 <h3 id="3-1-学生管理系统">3.1 学生管理系统</h3>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/student.png" alt=""></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/student.gif" alt=""></p>
 <h3 id="3-2-学生信息的增操作">3.2 学生信息的增操作</h3>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/add.png" alt=""></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/add.gif" alt=""></p>
 <h3 id="3-3-学生信息的删操作">3.3 学生信息的删操作</h3>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/delete.png" alt=""></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/delete-1624076965820.gif" alt=""></p>
 <h3 id="3-4-学生信息的改操作">3.4 学生信息的改操作</h3>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/update.png" alt=""></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/update-1624076976733.gif" alt=""></p>
+<h3 id="3-5-学生信息的查看操作">3.5 学生信息的查看操作</h3>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/show-1624077005138.gif" alt=""></p>
 <h2 id="四、其他">四、其他</h2>
 <h3 id="4-1-搜索-搜索内容可以是学生姓名、班级名、课程号">4.1 搜索(搜索内容可以是学生姓名、班级名、课程号)</h3>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/%E6%90%9C%E7%B4%A2.png" alt=""></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/select-1624077313300.gif" alt=""></p>
 <h3 id="4-2-过滤器-按性别过滤">4.2 过滤器(按性别过滤)</h3>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/%E8%BF%87%E6%BB%A4%E5%99%A8.png" alt=""></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/sex.gif" alt=""></p>
 <h3 id="4-3-主题">4.3 主题</h3>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/%E4%B8%BB%E9%A2%98.png" alt=""></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/theme.gif" alt=""></p>
 ]]></content>
   </entry>
   <entry>
