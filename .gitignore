@@ -6,6 +6,7 @@ db.json
 node_modules/
 public/
 .deploy*/
+package-lock.json
 
 # 配置文件
 _config.yml
