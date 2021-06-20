@@ -33,6 +33,6 @@ type: links
 
 - 网站名称：小四先生的博客
 - 网站地址：https://hexo.zxiaosi.cn/
-- 网站Logo/头像：https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/avatar.webp
+- 网站Logo/头像：https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/author.webp
 
 {% endnote %}

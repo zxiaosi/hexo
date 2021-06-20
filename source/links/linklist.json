@@ -20,8 +20,13 @@
 		"site": "https://heidashuaishuai.github.io/"
 	},
 	{
-		"nickname": "廖大神",
-		"avatar": "https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/avatar.webp",
+		"nickname": "llspc",
+		"avatar": "https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/link/liao.webp",
 		"site": "https://llspc.github.io/"
+	},
+	{
+		"nickname": "lxhyf",
+		"avatar": "https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/link/li.webp",
+		"site": "https://lxhyf.github.io/"
 	}
 ]
