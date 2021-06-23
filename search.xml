@@ -555,6 +555,100 @@
       </tags>
   </entry>
   <entry>
+    <title>Github+jsDeliver免费cdn</title>
+    <url>/archives/445f3e70.html</url>
+    <content><![CDATA[<h2 id="一、CDN">一、CDN</h2>
+<h3 id="1-1-CND-简介">1.1 CND 简介</h3>
+<ul>
+<li>CDN的全称是Content Delivery Network，即内容分发网络</li>
+<li>当域名访问资源时，通过DNS查找离用户<font color='red'>最近</font>的CDN节点（边缘服务器）的IP，并通过IP访问资源</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><a href="https://www.zhihu.com/question/36514327?rf=37353035">更多详情</a></li>
+</ul>
+<h3 id="1-2-CDN-优势">1.2 CDN 优势</h3>
+<ul>
+<li>提高了站点的访问速度和稳定性</li>
+<li>保证不同网络中的用户都能得到良好的访问质量</li>
+<li>访问不占用宽带，对目标网站的服务器压力小</li>
+</ul>
+<h3 id="1-3-为什么选择-jsDeliver">1.3 为什么选择 jsDeliver</h3>
+<ul>
+<li>国内也有很多CDN厂商，比如<a href="https://www.upyun.com/">又拍云</a>、<a href="https://help.aliyun.com/product/27099.html">阿里云</a>、<a href="https://su.baidu.com/">百度云</a>等，不过作为白嫖党，我选择用 <a href="https://www.jsdelivr.com/">jsDeliver</a></li>
+<li>jsDeliver 在国内有很多节点，访问速度快</li>
+</ul>
+<h2 id="二、搭建CDN">二、搭建CDN</h2>
+<h3 id="2-1-Github-使用">2.1 <a href="http://hexo.zxiaosi.cn/archives/d345b092.html#%E4%BA%8C%E3%80%81Gihub%E4%BD%BF%E7%94%A8">Github 使用</a></h3>
+<h3 id="2-2-CDN-仓库">2.2 CDN 仓库</h3>
+<ul>
+<li>
+<p>创建仓库，仓库名字随意</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt="创建仓库"></p>
+</li>
+<li>
+<p>上传文件（最大不能超过25M），这里我上传一张图片</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/bg.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-3-发布版本">2.3 发布版本</h3>
+<ul>
+<li>
+<p>点击 <code>Create a new release</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/release.png" alt=""></p>
+</li>
+<li>
+<p>版本号 <code>v+数字</code> 或 <code>数字</code>，版本名字随意，版本描述随意</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/public.png" alt=""></p>
+</li>
+<li>
+<p>发布成功</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-4-访问资源">2.4 访问资源</h3>
+<ul>
+<li>
+<p>jsDeliver 默认访问链接格式</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>比如刚刚上传的图片，在浏览器里输入下面地址即可访问到</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/zxiaosi/jsDeliver@1.0/bg.jpg</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>其他访问方式</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">// 完全省略该版本以获取最新版本</span><br><span class="line">https://cdn.jsdelivr.net/gh/zxiaosi/cdn/bootstrap.js</span><br><span class="line"></span><br><span class="line">// 将“.min”添加到任何JS/CSS文件中以获取缩小版本，如果不存在，将为会自动生成</span><br><span class="line">https://cdn.jsdelivr.net/gh/zxiaosi/cdn/bootstrap.min.js</span><br><span class="line"></span><br><span class="line">// 省略https</span><br><span class="line">//cdn.jsdelivr.net/gh/zxiaosi/cdn/bootstrap.min.js</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="三、注意事项">三、注意事项</h2>
+<h3 id="3-1-单个文件大小">3.1 单个文件大小</h3>
+<ul>
+<li>上传的单个文件大小不能超过25M，否则会加载失败</li>
+</ul>
+<h3 id="3-2-最好不要用来当图床">3.2 最好不要用来当图床</h3>
+<ul>
+<li>Github 官方限制每个仓库不能超过 1G，且仓库超过 1G 后会有人工审核仓库内容，如果发现用来做图床，轻则删库，重则封号</li>
+<li>建议使用 <a href="/archives/22902125.html" title="PicGo+Typora+Gitee图床">PicGo+Typora+Gitee图床</a></li>
+</ul>
+<h3 id="3-3-最好不要放网站">3.3 最好不要放网站</h3>
+<ul>
+<li>发布版本后，文件里会添加版本标签，网站不识别而造成一系列的错误</li>
+<li>已知：Hexo框架的网站不识别</li>
+</ul>
+<br>
+<div class="note success no-icon"><p>参考链接：【鸣谢】</p>
+<p><a href="https://www.zhihu.com/question/36514327?rf=37353035">CDN是什么？使用CDN有什么优势？</a></p>
+</div>]]></content>
+      <categories>
+        <category>CDN</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>jsDeliver</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Github</title>
     <url>/archives/d345b092.html</url>
     <content><![CDATA[<h2 id="一、Github">一、Github</h2>
@@ -668,100 +762,6 @@
       <tags>
         <tag>Git</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Github+jsDeliver免费cdn</title>
-    <url>/archives/445f3e70.html</url>
-    <content><![CDATA[<h2 id="一、CDN">一、CDN</h2>
-<h3 id="1-1-CND-简介">1.1 CND 简介</h3>
-<ul>
-<li>CDN的全称是Content Delivery Network，即内容分发网络</li>
-<li>当域名访问资源时，通过DNS查找离用户<font color='red'>最近</font>的CDN节点（边缘服务器）的IP，并通过IP访问资源</li>
-</ul>
-<span id="more"></span>
-<ul>
-<li><a href="https://www.zhihu.com/question/36514327?rf=37353035">更多详情</a></li>
-</ul>
-<h3 id="1-2-CDN-优势">1.2 CDN 优势</h3>
-<ul>
-<li>提高了站点的访问速度和稳定性</li>
-<li>保证不同网络中的用户都能得到良好的访问质量</li>
-<li>访问不占用宽带，对目标网站的服务器压力小</li>
-</ul>
-<h3 id="1-3-为什么选择-jsDeliver">1.3 为什么选择 jsDeliver</h3>
-<ul>
-<li>国内也有很多CDN厂商，比如<a href="https://www.upyun.com/">又拍云</a>、<a href="https://help.aliyun.com/product/27099.html">阿里云</a>、<a href="https://su.baidu.com/">百度云</a>等，不过作为白嫖党，我选择用 <a href="https://www.jsdelivr.com/">jsDeliver</a></li>
-<li>jsDeliver 在国内有很多节点，访问速度快</li>
-</ul>
-<h2 id="二、搭建CDN">二、搭建CDN</h2>
-<h3 id="2-1-Github-使用">2.1 <a href="http://hexo.zxiaosi.cn/archives/d345b092.html#%E4%BA%8C%E3%80%81Gihub%E4%BD%BF%E7%94%A8">Github 使用</a></h3>
-<h3 id="2-2-CDN-仓库">2.2 CDN 仓库</h3>
-<ul>
-<li>
-<p>创建仓库，仓库名字随意</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt="创建仓库"></p>
-</li>
-<li>
-<p>上传文件（最大不能超过25M），这里我上传一张图片</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/bg.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-3-发布版本">2.3 发布版本</h3>
-<ul>
-<li>
-<p>点击 <code>Create a new release</code></p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/release.png" alt=""></p>
-</li>
-<li>
-<p>版本号 <code>v+数字</code> 或 <code>数字</code>，版本名字随意，版本描述随意</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/public.png" alt=""></p>
-</li>
-<li>
-<p>发布成功</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/jsDeliver-CDN/%E5%8F%91%E5%B8%83%E6%88%90%E5%8A%9F.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-4-访问资源">2.4 访问资源</h3>
-<ul>
-<li>
-<p>jsDeliver 默认访问链接格式</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/你的用户名/你的仓库名@发布的版本号/文件路径</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>比如刚刚上传的图片，在浏览器里输入下面地址即可访问到</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/zxiaosi/jsDeliver@1.0/bg.jpg</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>其他访问方式</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">// 完全省略该版本以获取最新版本</span><br><span class="line">https://cdn.jsdelivr.net/gh/zxiaosi/cdn/bootstrap.js</span><br><span class="line"></span><br><span class="line">// 将“.min”添加到任何JS/CSS文件中以获取缩小版本，如果不存在，将为会自动生成</span><br><span class="line">https://cdn.jsdelivr.net/gh/zxiaosi/cdn/bootstrap.min.js</span><br><span class="line"></span><br><span class="line">// 省略https</span><br><span class="line">//cdn.jsdelivr.net/gh/zxiaosi/cdn/bootstrap.min.js</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="三、注意事项">三、注意事项</h2>
-<h3 id="3-1-单个文件大小">3.1 单个文件大小</h3>
-<ul>
-<li>上传的单个文件大小不能超过25M，否则会加载失败</li>
-</ul>
-<h3 id="3-2-最好不要用来当图床">3.2 最好不要用来当图床</h3>
-<ul>
-<li>Github 官方限制每个仓库不能超过 1G，且仓库超过 1G 后会有人工审核仓库内容，如果发现用来做图床，轻则删库，重则封号</li>
-<li>建议使用 <a href="/archives/22902125.html" title="PicGo+Typora+Gitee图床">PicGo+Typora+Gitee图床</a></li>
-</ul>
-<h3 id="3-3-最好不要放网站">3.3 最好不要放网站</h3>
-<ul>
-<li>发布版本后，文件里会添加版本标签，网站不识别而造成一系列的错误</li>
-<li>已知：Hexo框架的网站不识别</li>
-</ul>
-<br>
-<div class="note success no-icon"><p>参考链接：【鸣谢】</p>
-<p><a href="https://www.zhihu.com/question/36514327?rf=37353035">CDN是什么？使用CDN有什么优势？</a></p>
-</div>]]></content>
-      <categories>
-        <category>CDN</category>
-      </categories>
-      <tags>
-        <tag>Github</tag>
-        <tag>jsDeliver</tag>
       </tags>
   </entry>
   <entry>
@@ -1283,6 +1283,281 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo-Next配置（插件篇）</title>
+    <url>/archives/b78f5428.html</url>
+    <content><![CDATA[<div class="note danger"><h3 id="注意">注意</h3>
+<ol>
+<li>下面的配置每一项都需要 <code>hexo clean</code> 和 <code>hexo s</code> 来实现预览</li>
+<li>站点配置文件 <code>./_config.yml</code></li>
+<li>主题配置文件 <code>./source/_data/next.yml</code></li>
+</ol>
+</div>
+<h3 id="1-设置-hexo-永久链接">1. 设置 hexo 永久链接</h3>
+<span id="more"></span>
+<ul>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后在站点配置文件<code>_config.yml</code> 中修改为：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">- url: http://example.com				<span class="comment"># 网站域名</span></span><br><span class="line">+ url: https://hexo.xiaosi.world     </span><br><span class="line"></span><br><span class="line">- permalink: :year/:month/:day/:title/  <span class="comment"># 永久链接格式</span></span><br><span class="line">+ permalink: archives/:abbrlink.html      </span><br><span class="line">+ abbrlink:</span><br><span class="line">+  alg: crc32  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">+  rep: hex    <span class="comment"># 进制：dec(default) and hex</span></span><br><span class="line"></span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览（文章链接由原来的 <code>时间+题目.html</code> 变成了 <code>算法+进制.html</code>）</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E6%B0%B8%E4%B9%85%E9%93%BE%E6%8E%A5.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-字数统计、阅读时长">2. 字数统计、阅读时长</h3>
+<ul>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>主题配置文件 <code>next.yml</code> 中</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: <span class="literal">true</span>		<span class="comment"># false会显示一行</span></span><br><span class="line">  item_text_post: <span class="literal">true</span>		<span class="comment"># 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字</span></span><br><span class="line">- item_text_total: <span class="literal">false</span>    <span class="comment"># 底部footer是否显示字数统计属性文字(可选)</span></span><br><span class="line">+ item_text_total: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF.png" alt=""></p>
+</li>
+</ul>
+<h3 id="3-相关文章推荐（文章末尾）">3. 相关文章推荐（文章末尾）</h3>
+<ul>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-related-popular-posts --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>主题配置文件 <code>next.yml</code> 中</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">related_posts:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  title: 相关文章推荐      <span class="comment"># 属性的命名</span></span><br><span class="line">  display_in_home: <span class="literal">false</span> <span class="comment"># false代表首页不显示</span></span><br><span class="line">  params:</span><br><span class="line">    maxCount: 5          <span class="comment"># 最多5条</span></span><br><span class="line">    <span class="comment">#PPMixingRate: 0.0   # 相关度</span></span><br><span class="line">    <span class="comment">#isDate: true        # 是否显示日期</span></span><br><span class="line">    <span class="comment">#isImage: false      # 是否显示配图</span></span><br><span class="line">    isExcerpt: <span class="literal">false</span>     <span class="comment"># 是否显示摘要</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%EF%BC%88%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%EF%BC%89.png" alt=""></p>
+</li>
+</ul>
+<h3 id="4-配置-hexo-本地搜索">4. 配置 hexo 本地搜索</h3>
+<ul>
+<li>
+<p>对于动态网站来说，可以通过php实现。但是，Hexo博客是静态网站，用不了php。<br>
+NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-searchdb，预先生成了一个文本库search.xml，然后传到了网站里面。在本地搜索的时候，NexT直接用 javascript调用了这个文件，从而实现了静态网站的本地搜索</p>
+</li>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后我们修改站点配置文件 <code>_config.yml</code> ，添加如下内容：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 本地搜索</span></span><br><span class="line">search:	</span><br><span class="line">  path: search.xml			<span class="comment"># 索引文件的路径，相对于站点根目录</span></span><br><span class="line">  field: post				<span class="comment"># 搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面</span></span><br><span class="line">  format: html</span><br><span class="line">  <span class="built_in">limit</span>: 100				<span class="comment"># 限制搜索的条目数</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>主题配置文件 <code>next.yml</code> 中</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">local_search:			<span class="comment"># 本地搜索</span></span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">true</span>			<span class="comment"># 是否开启</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 如果 auto, 通过改变输入触发搜索。</span></span><br><span class="line">  <span class="comment"># 如果 manual, 通过按enter键或搜索按钮触发搜索。</span></span><br><span class="line">  trigger: auto			<span class="comment"># auto|manual</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment"># 显示每篇文章的前n个结果，通过设置为-1显示所有结果</span></span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  <span class="comment"># 不可转义的html字符串到可读的字符串。</span></span><br><span class="line">  unescape: <span class="literal">false</span></span><br><span class="line">  <span class="comment"># 在页面加载时预加载搜索数据</span></span><br><span class="line">  preload: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2.png" alt=""></p>
+</li>
+</ul>
+<h3 id="5-加载进度条（可选）">5. 加载进度条（可选）</h3>
+<ul>
+<li>
+<p>进入NexT文件目录</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/next</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>克隆插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-pace <span class="built_in">source</span>/lib/pace</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>主题配置文件 <code>next.yml</code> 中</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">pace:</span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">false</span>						<span class="comment"># 是否开启</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 可选择加载主题:</span></span><br><span class="line">  <span class="comment"># big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple</span></span><br><span class="line">  <span class="comment"># corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal</span></span><br><span class="line">  theme: center-atom</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E5%8A%A0%E8%BD%BD%E8%BF%9B%E5%BA%A6.png" alt=""></p>
+</li>
+</ul>
+<h3 id="6-1-动态背景-动态背景">6.1 <s>动态背景</s> <a href="http://hexo.zxiaosi.cn/archives/1d79f7d1.html#5-canvas-nest-%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF">动态背景</a></h3>
+<ul>
+<li>
+<p><s>进入NexT文件目录</s></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/next</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><s>克隆插件</s></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-canvas-nest <span class="built_in">source</span>/lib/canvas-nest</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><s>主题配置文件 <code>next.yml</code> 中，添加如下内容：</s></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">canvas_nest:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 下面是自定义参数(去掉#即可启用)</span></span><br><span class="line">  <span class="comment"># onmobile: true 			# 是否显示在手机上</span></span><br><span class="line">  <span class="comment"># color: &#x27;0,0,255&#x27; 			# 颜色值</span></span><br><span class="line">  <span class="comment"># opacity: 0.5 			# 线条的不透明度: 0~1</span></span><br><span class="line">  <span class="comment"># zIndex: -1 				# 背景的z-index属性</span></span><br><span class="line">  <span class="comment"># count: 99 				# 行数</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF%E4%B8%80.png" alt=""></p>
+</li>
+</ul>
+<h3 id="6-2-动态背景-补">6.2 动态背景(补)</h3>
+<ul>
+<li>
+<p>进入NexT文件目录</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/next</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>克隆插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-three <span class="built_in">source</span>/lib/three</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>主题配置文件 <code>next.yml</code> 中，三种选一种</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">three:</span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">false</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  three_waves: <span class="literal">true</span></span><br><span class="line">  <span class="comment">#canvas_lines: true</span></span><br><span class="line">  <span class="comment">#canvas_sphere: true</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="7-nofollow-标签的使用">7. nofollow 标签的使用</h3>
+<ul>
+<li>
+<p>减少出站链接能够有效防止权重分散，hexo有很方便的自动为出站链接添加 <code>nofollow</code> 标签的插件</p>
+</li>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-nofollow --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后我们在站点的配置文件<code>_config.yml</code> 中添加配置，将 <code>nofollow</code> 设置为 <code>true</code>：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 外部链接优化</span></span><br><span class="line">nofollow:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  field: site</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;exclude1.com&#x27;</span></span><br><span class="line">    - <span class="string">&#x27;exclude2.com&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>其中 <code>exclude</code>（例外的链接，比如友链）将不会被加上 <code>nofollow</code> 属性</p>
+</li>
+</ul>
+<h3 id="8-置顶文章标志">8.  置顶文章标志</h3>
+<ul>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>方法一：</p>
+<ul>
+<li>
+<p>新建<code>./source/_data/post-meta.swig</code> 文件，并将下面代码放入 <code>post-meta.swig</code> 中</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> post.top %&#125;</span><br><span class="line">    &lt;span class=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">    &lt;i class=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;			<span class="comment"># 图标</span></span><br><span class="line">    &lt;font color=7D26CD&gt;置顶&lt;/font&gt;</span><br><span class="line">    &lt;span class=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>postMeta</code> 的注释：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">-  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">+  postMeta: <span class="built_in">source</span>/_data/post-meta.swig</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E7%BD%AE%E9%A1%B6%E4%B8%80.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li>
+<p>方法二：</p>
+<ul>
+<li>
+<p>添加置顶标志：在 <code>.\themes\next\layout_macro</code> 下的 <code>post.swig</code>，找到<code>&lt;div class=&quot;post-meta&quot;&gt;</code> ，在下面添加对应代码</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">&lt;div class=<span class="string">&quot;post-meta&quot;</span>&gt;</span><br><span class="line"> +        &#123;% <span class="keyword">if</span> post.top %&#125;</span><br><span class="line"> +            &lt;i class=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line"> +            &lt;font color=7D26CD&gt;置顶&lt;/font&gt;		<span class="comment"># 图标</span></span><br><span class="line"> +            &lt;span class=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line"> +        &#123;% endif %&#125;</span><br><span class="line">          </span><br><span class="line">          &#123;%- <span class="built_in">set</span> date_diff = date(post.date) != date(post.updated) %&#125;</span><br><span class="line">     ......</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E7%BD%AE%E9%A1%B6%E4%BA%8C-1615202884367.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li>
+<p>图标如果显示不出来，可替换</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">-  &lt;i class=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line">+  &lt;i class=<span class="string">&quot;fa fa-anchor&quot;</span>&gt;&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>使用方法：在需要置顶的文章的 Front-matter 中加上 top: true 或者 top: 任意数字，比如：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo-Next配置（插件篇）</span><br><span class="line">categories: Hexo博客</span><br><span class="line">tags:</span><br><span class="line">  - Hexo</span><br><span class="line">  - Next</span><br><span class="line">comments: <span class="literal">true</span></span><br><span class="line">abbrlink: b78f5428</span><br><span class="line">date: 2021-03-08 17:07:19</span><br><span class="line">top: <span class="literal">true</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h4 id="font-color-red-注意：-font-top-中数字越大，文章越靠前"><font color="red">注意：</font>top 中数字越大，文章越靠前</h4>
+</li>
+</ul>
+<h3 id="9-标签云">9. 标签云</h3>
+<ul>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-cloud@^2.0.* --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在自定义样式文件 <code>.\source\_data\sidebar.swig</code> 中添加：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">&#123;<span class="comment"># 标签云 #&#125;</span></span><br><span class="line">&#123;% <span class="keyword">if</span> site.tags.length &gt; 1 %&#125;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span> charset=<span class="string">&quot;utf-8&quot;</span> src=<span class="string">&quot;/js/tagcloud.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span> charset=<span class="string">&quot;utf-8&quot;</span> src=<span class="string">&quot;/js/tagcanvas.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;div class=<span class="string">&quot;widget-wrap&quot;</span>&gt;</span><br><span class="line">    &lt;h3 class=<span class="string">&quot;widget-title&quot;</span>&gt;Tag Cloud&lt;/h3&gt;</span><br><span class="line">    &lt;div id=<span class="string">&quot;myCanvasContainer&quot;</span> class=<span class="string">&quot;widget tagcloud&quot;</span>&gt;</span><br><span class="line">        &lt;canvas width=<span class="string">&quot;250&quot;</span> height=<span class="string">&quot;250&quot;</span> id=<span class="string">&quot;resCanvas&quot;</span> style=<span class="string">&quot;width=100%&quot;</span>&gt;</span><br><span class="line">            &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">        &lt;/canvas&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在主题配置文件 <code>_config.yml</code> 中添加如下的配置项，可以自定义标签云的字体和颜色，还有突出高亮</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-tag-cloud</span></span><br><span class="line">tag_cloud:</span><br><span class="line">    textFont: Trebuchet MS, Helvetica</span><br><span class="line">    textColor: <span class="string">&#x27;#333&#x27;</span></span><br><span class="line">    textHeight: 25</span><br><span class="line">    outlineColor: <span class="string">&#x27;#E2E1D1&#x27;</span></span><br><span class="line">    maxSpeed: 0.1</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果预览</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E6%A0%87%E7%AD%BE%E4%BA%91.png" alt=""></p>
+</li>
+</ul>
+<h3 id="10-静态资源压缩">10. 静态资源压缩</h3>
+<ul>
+<li>
+<p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">压缩静态资源</a></p>
+</li>
+<li>
+<p>安装hexo-all-minifier插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>如果安装失败试试用 <code>cnpm</code></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在站点配置文件 <code>_config.yml</code> 中添加</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">all_minifier: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>详细设置：（详见 <a href="https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md">README</a>）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># html压缩</span></span><br><span class="line">html_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  ignore_error: <span class="literal">false</span></span><br><span class="line">  exclude:</span><br><span class="line"></span><br><span class="line"><span class="comment"># css压缩</span></span><br><span class="line">css_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.css&#x27;</span></span><br><span class="line">    </span><br><span class="line"><span class="comment"># js压缩</span></span><br><span class="line">js_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  mangle: <span class="literal">true</span></span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.js&#x27;</span></span><br><span class="line">js_concator:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">false</span></span><br><span class="line">  bundle_path: <span class="string">&#x27;/js/bundle.js&#x27;</span></span><br><span class="line">  front: <span class="literal">false</span></span><br><span class="line">  silent: <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 图片优化</span></span><br><span class="line">image_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  interlaced: <span class="literal">false</span></span><br><span class="line">  multipass: <span class="literal">false</span></span><br><span class="line">  optimizationLevel: 2</span><br><span class="line">  pngquant: <span class="literal">false</span></span><br><span class="line">  progressive: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="11-数学公式">11. 数学公式</h3>
+<ul>
+<li><a href="https://blog.csdn.net/qq_38496329/article/details/104065659">数学公式渲染</a></li>
+</ul>
+<h3 id="12-插件管理器">12. 插件管理器</h3>
+<ul>
+<li>
+<p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexagon-cli</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>用来查看插件列表</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexagon -l</span><br><span class="line">hexa -l</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="13-添加live2d">13. 添加live2d</h3>
+<ul>
+<li><a href="https://www.dazhuanlan.com/2020/03/17/5e709539efa8e/">Hexo Next 添加萌萌的宠物live2d</a></li>
+</ul>
+<h3 id="14-收录">14. 收录</h3>
+<ul>
+<li><s><a href="https://www.cnblogs.com/TRHX/p/11699948.html">百度、谷歌收录</a></s></li>
+<li><a href="https://blog.csdn.net/qq_41603102/article/details/113798561">个人网站5-网站SEO优化推广和增加百度谷歌收录</a></li>
+</ul>
+<br>
+<div class="note success no-icon"><p>参考网站：【鸣谢】</p>
+<p><a href="https://blog.csdn.net/iwyang/article/details/106989237">Hexo-NexT (v7.7.2) 主题配置</a></p>
+<p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">Hexo折腾系列——博客访问速度优化</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/149575559">Hexo博客建立标签云及效果展示</a></p>
+</div>
+]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo-Next配置（基础篇）</title>
     <url>/archives/2d288079.html</url>
     <content><![CDATA[<div class="note danger"><h3 id="注意">注意</h3>
@@ -1594,387 +1869,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo-Next配置（插件篇）</title>
-    <url>/archives/b78f5428.html</url>
-    <content><![CDATA[<div class="note danger"><h3 id="注意">注意</h3>
-<ol>
-<li>下面的配置每一项都需要 <code>hexo clean</code> 和 <code>hexo s</code> 来实现预览</li>
-<li>站点配置文件 <code>./_config.yml</code></li>
-<li>主题配置文件 <code>./source/_data/next.yml</code></li>
-</ol>
-</div>
-<h3 id="1-设置-hexo-永久链接">1. 设置 hexo 永久链接</h3>
-<span id="more"></span>
-<ul>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>然后在站点配置文件<code>_config.yml</code> 中修改为：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">- url: http://example.com				<span class="comment"># 网站域名</span></span><br><span class="line">+ url: https://hexo.xiaosi.world     </span><br><span class="line"></span><br><span class="line">- permalink: :year/:month/:day/:title/  <span class="comment"># 永久链接格式</span></span><br><span class="line">+ permalink: archives/:abbrlink.html      </span><br><span class="line">+ abbrlink:</span><br><span class="line">+  alg: crc32  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line">+  rep: hex    <span class="comment"># 进制：dec(default) and hex</span></span><br><span class="line"></span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果预览（文章链接由原来的 <code>时间+题目.html</code> 变成了 <code>算法+进制.html</code>）</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E6%B0%B8%E4%B9%85%E9%93%BE%E6%8E%A5.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-字数统计、阅读时长">2. 字数统计、阅读时长</h3>
-<ul>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: <span class="literal">true</span>		<span class="comment"># false会显示一行</span></span><br><span class="line">  item_text_post: <span class="literal">true</span>		<span class="comment"># 显示属性名称,设为false后只显示图标和统计数字,不显示属性的文字</span></span><br><span class="line">- item_text_total: <span class="literal">false</span>    <span class="comment"># 底部footer是否显示字数统计属性文字(可选)</span></span><br><span class="line">+ item_text_total: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF.png" alt=""></p>
-</li>
-</ul>
-<h3 id="3-相关文章推荐（文章末尾）">3. 相关文章推荐（文章末尾）</h3>
-<ul>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-related-popular-posts --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">related_posts:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  title: 相关文章推荐      <span class="comment"># 属性的命名</span></span><br><span class="line">  display_in_home: <span class="literal">false</span> <span class="comment"># false代表首页不显示</span></span><br><span class="line">  params:</span><br><span class="line">    maxCount: 5          <span class="comment"># 最多5条</span></span><br><span class="line">    <span class="comment">#PPMixingRate: 0.0   # 相关度</span></span><br><span class="line">    <span class="comment">#isDate: true        # 是否显示日期</span></span><br><span class="line">    <span class="comment">#isImage: false      # 是否显示配图</span></span><br><span class="line">    isExcerpt: <span class="literal">false</span>     <span class="comment"># 是否显示摘要</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90%EF%BC%88%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%EF%BC%89.png" alt=""></p>
-</li>
-</ul>
-<h3 id="4-配置-hexo-本地搜索">4. 配置 hexo 本地搜索</h3>
-<ul>
-<li>
-<p>对于动态网站来说，可以通过php实现。但是，Hexo博客是静态网站，用不了php。<br>
-NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-searchdb，预先生成了一个文本库search.xml，然后传到了网站里面。在本地搜索的时候，NexT直接用 javascript调用了这个文件，从而实现了静态网站的本地搜索</p>
-</li>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>然后我们修改站点配置文件 <code>_config.yml</code> ，添加如下内容：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 本地搜索</span></span><br><span class="line">search:	</span><br><span class="line">  path: search.xml			<span class="comment"># 索引文件的路径，相对于站点根目录</span></span><br><span class="line">  field: post				<span class="comment"># 搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面</span></span><br><span class="line">  format: html</span><br><span class="line">  <span class="built_in">limit</span>: 100				<span class="comment"># 限制搜索的条目数</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">local_search:			<span class="comment"># 本地搜索</span></span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">true</span>			<span class="comment"># 是否开启</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 如果 auto, 通过改变输入触发搜索。</span></span><br><span class="line">  <span class="comment"># 如果 manual, 通过按enter键或搜索按钮触发搜索。</span></span><br><span class="line">  trigger: auto			<span class="comment"># auto|manual</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment"># 显示每篇文章的前n个结果，通过设置为-1显示所有结果</span></span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  <span class="comment"># 不可转义的html字符串到可读的字符串。</span></span><br><span class="line">  unescape: <span class="literal">false</span></span><br><span class="line">  <span class="comment"># 在页面加载时预加载搜索数据</span></span><br><span class="line">  preload: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2.png" alt=""></p>
-</li>
-</ul>
-<h3 id="5-加载进度条（可选）">5. 加载进度条（可选）</h3>
-<ul>
-<li>
-<p>进入NexT文件目录</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/next</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>克隆插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-pace <span class="built_in">source</span>/lib/pace</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>主题配置文件 <code>next.yml</code> 中</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">pace:</span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">false</span>						<span class="comment"># 是否开启</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 可选择加载主题:</span></span><br><span class="line">  <span class="comment"># big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple</span></span><br><span class="line">  <span class="comment"># corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal</span></span><br><span class="line">  theme: center-atom</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E5%8A%A0%E8%BD%BD%E8%BF%9B%E5%BA%A6.png" alt=""></p>
-</li>
-</ul>
-<h3 id="6-1-动态背景-动态背景">6.1 <s>动态背景</s> <a href="http://hexo.zxiaosi.cn/archives/1d79f7d1.html#5-canvas-nest-%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF">动态背景</a></h3>
-<ul>
-<li>
-<p><s>进入NexT文件目录</s></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/next</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><s>克隆插件</s></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-canvas-nest <span class="built_in">source</span>/lib/canvas-nest</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><s>主题配置文件 <code>next.yml</code> 中，添加如下内容：</s></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">canvas_nest:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 下面是自定义参数(去掉#即可启用)</span></span><br><span class="line">  <span class="comment"># onmobile: true 			# 是否显示在手机上</span></span><br><span class="line">  <span class="comment"># color: &#x27;0,0,255&#x27; 			# 颜色值</span></span><br><span class="line">  <span class="comment"># opacity: 0.5 			# 线条的不透明度: 0~1</span></span><br><span class="line">  <span class="comment"># zIndex: -1 				# 背景的z-index属性</span></span><br><span class="line">  <span class="comment"># count: 99 				# 行数</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF%E4%B8%80.png" alt=""></p>
-</li>
-</ul>
-<h3 id="6-2-动态背景-补">6.2 动态背景(补)</h3>
-<ul>
-<li>
-<p>进入NexT文件目录</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/next</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>克隆插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-three <span class="built_in">source</span>/lib/three</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>主题配置文件 <code>next.yml</code> 中，三种选一种</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">three:</span><br><span class="line">- <span class="built_in">enable</span>: <span class="literal">false</span></span><br><span class="line">+ <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  three_waves: <span class="literal">true</span></span><br><span class="line">  <span class="comment">#canvas_lines: true</span></span><br><span class="line">  <span class="comment">#canvas_sphere: true</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="7-nofollow-标签的使用">7. nofollow 标签的使用</h3>
-<ul>
-<li>
-<p>减少出站链接能够有效防止权重分散，hexo有很方便的自动为出站链接添加 <code>nofollow</code> 标签的插件</p>
-</li>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-filter-nofollow --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>然后我们在站点的配置文件<code>_config.yml</code> 中添加配置，将 <code>nofollow</code> 设置为 <code>true</code>：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 外部链接优化</span></span><br><span class="line">nofollow:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  field: site</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;exclude1.com&#x27;</span></span><br><span class="line">    - <span class="string">&#x27;exclude2.com&#x27;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>其中 <code>exclude</code>（例外的链接，比如友链）将不会被加上 <code>nofollow</code> 属性</p>
-</li>
-</ul>
-<h3 id="8-置顶文章标志">8.  置顶文章标志</h3>
-<ul>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>方法一：</p>
-<ul>
-<li>
-<p>新建<code>./source/_data/post-meta.swig</code> 文件，并将下面代码放入 <code>post-meta.swig</code> 中</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> post.top %&#125;</span><br><span class="line">    &lt;span class=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">    &lt;i class=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;			<span class="comment"># 图标</span></span><br><span class="line">    &lt;font color=7D26CD&gt;置顶&lt;/font&gt;</span><br><span class="line">    &lt;span class=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>然后在主题配置文件 <code>next.yml</code> 中，找到 <code>custom_file_path</code> ，取消 <code>postMeta</code> 的注释：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">-  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">+  postMeta: <span class="built_in">source</span>/_data/post-meta.swig</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E7%BD%AE%E9%A1%B6%E4%B8%80.png" alt=""></p>
-</li>
-</ul>
-</li>
-<li>
-<p>方法二：</p>
-<ul>
-<li>
-<p>添加置顶标志：在 <code>.\themes\next\layout_macro</code> 下的 <code>post.swig</code>，找到<code>&lt;div class=&quot;post-meta&quot;&gt;</code> ，在下面添加对应代码</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">&lt;div class=<span class="string">&quot;post-meta&quot;</span>&gt;</span><br><span class="line"> +        &#123;% <span class="keyword">if</span> post.top %&#125;</span><br><span class="line"> +            &lt;i class=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line"> +            &lt;font color=7D26CD&gt;置顶&lt;/font&gt;		<span class="comment"># 图标</span></span><br><span class="line"> +            &lt;span class=<span class="string">&quot;post-meta-divider&quot;</span>&gt;|&lt;/span&gt;</span><br><span class="line"> +        &#123;% endif %&#125;</span><br><span class="line">          </span><br><span class="line">          &#123;%- <span class="built_in">set</span> date_diff = date(post.date) != date(post.updated) %&#125;</span><br><span class="line">     ......</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E7%BD%AE%E9%A1%B6%E4%BA%8C-1615202884367.png" alt=""></p>
-</li>
-</ul>
-</li>
-<li>
-<p>图标如果显示不出来，可替换</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">-  &lt;i class=<span class="string">&quot;fa fa-thumb-tack&quot;</span>&gt;&lt;/i&gt;</span><br><span class="line">+  &lt;i class=<span class="string">&quot;fa fa-anchor&quot;</span>&gt;&lt;/i&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>使用方法：在需要置顶的文章的 Front-matter 中加上 top: true 或者 top: 任意数字，比如：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo-Next配置（插件篇）</span><br><span class="line">categories: Hexo博客</span><br><span class="line">tags:</span><br><span class="line">  - Hexo</span><br><span class="line">  - Next</span><br><span class="line">comments: <span class="literal">true</span></span><br><span class="line">abbrlink: b78f5428</span><br><span class="line">date: 2021-03-08 17:07:19</span><br><span class="line">top: <span class="literal">true</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h4 id="font-color-red-注意：-font-top-中数字越大，文章越靠前"><font color="red">注意：</font>top 中数字越大，文章越靠前</h4>
-</li>
-</ul>
-<h3 id="9-标签云">9. 标签云</h3>
-<ul>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-tag-cloud@^2.0.* --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在自定义样式文件 <code>.\source\_data\sidebar.swig</code> 中添加：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">&#123;<span class="comment"># 标签云 #&#125;</span></span><br><span class="line">&#123;% <span class="keyword">if</span> site.tags.length &gt; 1 %&#125;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span> charset=<span class="string">&quot;utf-8&quot;</span> src=<span class="string">&quot;/js/tagcloud.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span> charset=<span class="string">&quot;utf-8&quot;</span> src=<span class="string">&quot;/js/tagcanvas.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;div class=<span class="string">&quot;widget-wrap&quot;</span>&gt;</span><br><span class="line">    &lt;h3 class=<span class="string">&quot;widget-title&quot;</span>&gt;Tag Cloud&lt;/h3&gt;</span><br><span class="line">    &lt;div id=<span class="string">&quot;myCanvasContainer&quot;</span> class=<span class="string">&quot;widget tagcloud&quot;</span>&gt;</span><br><span class="line">        &lt;canvas width=<span class="string">&quot;250&quot;</span> height=<span class="string">&quot;250&quot;</span> id=<span class="string">&quot;resCanvas&quot;</span> style=<span class="string">&quot;width=100%&quot;</span>&gt;</span><br><span class="line">            &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">        &lt;/canvas&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在主题配置文件 <code>_config.yml</code> 中添加如下的配置项，可以自定义标签云的字体和颜色，还有突出高亮</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-tag-cloud</span></span><br><span class="line">tag_cloud:</span><br><span class="line">    textFont: Trebuchet MS, Helvetica</span><br><span class="line">    textColor: <span class="string">&#x27;#333&#x27;</span></span><br><span class="line">    textHeight: 25</span><br><span class="line">    outlineColor: <span class="string">&#x27;#E2E1D1&#x27;</span></span><br><span class="line">    maxSpeed: 0.1</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果预览</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo-Next%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/%E6%A0%87%E7%AD%BE%E4%BA%91.png" alt=""></p>
-</li>
-</ul>
-<h3 id="10-静态资源压缩">10. 静态资源压缩</h3>
-<ul>
-<li>
-<p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">压缩静态资源</a></p>
-</li>
-<li>
-<p>安装hexo-all-minifier插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>如果安装失败试试用 <code>cnpm</code></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-all-minifier --save</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>在站点配置文件 <code>_config.yml</code> 中添加</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">all_minifier: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>详细设置：（详见 <a href="https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md">README</a>）</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># html压缩</span></span><br><span class="line">html_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  ignore_error: <span class="literal">false</span></span><br><span class="line">  exclude:</span><br><span class="line"></span><br><span class="line"><span class="comment"># css压缩</span></span><br><span class="line">css_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.css&#x27;</span></span><br><span class="line">    </span><br><span class="line"><span class="comment"># js压缩</span></span><br><span class="line">js_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  mangle: <span class="literal">true</span></span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;*.min.js&#x27;</span></span><br><span class="line">js_concator:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">false</span></span><br><span class="line">  bundle_path: <span class="string">&#x27;/js/bundle.js&#x27;</span></span><br><span class="line">  front: <span class="literal">false</span></span><br><span class="line">  silent: <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 图片优化</span></span><br><span class="line">image_minifier:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  interlaced: <span class="literal">false</span></span><br><span class="line">  multipass: <span class="literal">false</span></span><br><span class="line">  optimizationLevel: 2</span><br><span class="line">  pngquant: <span class="literal">false</span></span><br><span class="line">  progressive: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="11-数学公式">11. 数学公式</h3>
-<ul>
-<li><a href="https://blog.csdn.net/qq_38496329/article/details/104065659">数学公式渲染</a></li>
-</ul>
-<h3 id="12-插件管理器">12. 插件管理器</h3>
-<ul>
-<li>
-<p>安装插件</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm install -g hexagon-cli</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>用来查看插件列表</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexagon -l</span><br><span class="line">hexa -l</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="13-添加live2d">13. 添加live2d</h3>
-<ul>
-<li><a href="https://www.dazhuanlan.com/2020/03/17/5e709539efa8e/">Hexo Next 添加萌萌的宠物live2d</a></li>
-</ul>
-<h3 id="14-收录">14. 收录</h3>
-<ul>
-<li><s><a href="https://www.cnblogs.com/TRHX/p/11699948.html">百度、谷歌收录</a></s></li>
-<li><a href="https://blog.csdn.net/qq_41603102/article/details/113798561">个人网站5-网站SEO优化推广和增加百度谷歌收录</a></li>
-</ul>
-<br>
-<div class="note success no-icon"><p>参考网站：【鸣谢】</p>
-<p><a href="https://blog.csdn.net/iwyang/article/details/106989237">Hexo-NexT (v7.7.2) 主题配置</a></p>
-<p><a href="https://blog.csdn.net/qq_29654777/article/details/108222881">Hexo折腾系列——博客访问速度优化</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/149575559">Hexo博客建立标签云及效果展示</a></p>
-</div>
-]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo引用标签</title>
-    <url>/archives/484f1820.html</url>
-    <content><![CDATA[<h2 id="一-Center-quote-标签">一. Center-quote 标签</h2>
-<h3 id="1-1-Center-quote-简介">1.1 Center-quote 简介</h3>
-<ul>
-<li>center-quote插件可以实现引用效果，在目标文本前后插入引号，建议用在单个文本中。</li>
-</ul>
-<span id="more"></span>
-<h3 id="1-2-Center-quote-语法">1.2 Center-quote 语法</h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% centerquote %&#125;文本&#123;% endcenterquote %&#125;</span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125; </span><br></pre></td></tr></table></figure>
-<h3 id="1-3-Center-quote-使用">1.3 Center-quote 使用</h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="1-4-效果图">1.4 效果图</h3>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/center.png" alt=""></p>
-<h2 id="二、Node-标签">二、Node 标签</h2>
-<h3 id="2-1-Note简介">2.1 Note简介</h3>
-<p>Note标签通过在左边界使用特殊颜色划线，实现提醒功能。</p>
-<h3 id="2-2-Note配置">2.2 Note配置</h3>
-<ul>
-<li>
-<p>在主题配置文件 <code>next.yml</code> 中找到 <code>note</code>，修改如下</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">note:</span><br><span class="line">  <span class="comment"># style 风格</span></span><br><span class="line">  <span class="comment"># 四个可选值: simple | modern | flat | disabled</span></span><br><span class="line">  style: flat</span><br><span class="line">  icons: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># light_bg_offset 背景颜色深度</span></span><br><span class="line">  <span class="comment"># modern: (-12 | 12); flat: (-18 | 6).</span></span><br><span class="line">  light_bg_offset: -18</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="2-3-Note语法">2.3 Note语法</h3>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note [<span class="class"><span class="keyword">class</span>] [<span class="title">no</span>-<span class="title">icon</span>] %&#125;</span></span><br><span class="line"><span class="class">文本</span></span><br><span class="line"><span class="class"></span>&#123;% endnote %&#125;</span><br><span class="line">[<span class="class"><span class="keyword">class</span>]   : <span class="title">default</span> | <span class="title">primary</span> | <span class="title">success</span> | <span class="title">info</span> | <span class="title">warning</span> | <span class="title">danger</span>.</span></span><br><span class="line"><span class="class">[<span class="title">no</span>-<span class="title">icon</span>] : 是否启用图标</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-4-Note使用">2.4 Note使用</h3>
-<ul>
-<li>
-<p>简单使用</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 或者无图标 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default no-icon&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>效果图</p>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note1.png" alt=""></p>
-</li>
-<li>
-<p>语法使用</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">## 标题</span><br><span class="line">文本</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note2.png" alt=""></p>
-</li>
-</ul>
-<h3 id="2-5-Note风格展示">2.5 Note风格展示</h3>
-<ul>
-<li>
-<p>primary</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note primary&quot;</span>&gt;</span> 我是 primary 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary %&#125; 我是 primary 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note primary"><p>我是 primary 标签</p>
-</div>
-</li>
-<li>
-<p>success</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note success&quot;</span>&gt;</span> 我是 success 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note success %&#125; 我是 success 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note success"><p>我是 success 标签</p>
-</div>
-</li>
-<li>
-<p>info</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note info&quot;</span>&gt;</span> 我是 info 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note info %&#125; 我是 info 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note info"><p>我是 info 标签</p>
-</div>
-</li>
-<li>
-<p>warning</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note warning&quot;</span>&gt;</span> 我是 warning 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note warning %&#125; 我是 warning 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note warning"><p>我是 warning 标签</p>
-</div>
-</li>
-<li>
-<p>danger</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note danger&quot;</span>&gt;</span> 我是 danger 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note danger %&#125; 我是 danger 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note danger"><p>我是 danger 标签</p>
-</div>
-</li>
-<li>
-<p>default</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span> 我是 default 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note <span class="keyword">default</span> %&#125; 我是 <span class="keyword">default</span> 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-<div class="note default"><p>我是 default 标签</p>
-</div>
-</li>
-</ul>
-<h2 id="三、更多详情">三、更多详情</h2>
-<ul>
-<li><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/234757411">Ubuntu+Hexo+Next 8.0 进阶美化篇</a></li>
-</ul>
-<br/>
-<div class="note success no-icon"><p>参考链接【鸣谢】</p>
-<p><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></p>
-</div>
-]]></content>
-      <categories>
-        <category>Hexo博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Tags</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo安装及配置</title>
     <url>/archives/5ef212b6.html</url>
     <content><![CDATA[<div class="note info"><h2 id="安装之前准备">安装之前准备</h2>
@@ -2085,6 +1979,112 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
         <tag>Node</tag>
         <tag>Github</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo引用标签</title>
+    <url>/archives/484f1820.html</url>
+    <content><![CDATA[<h2 id="一-Center-quote-标签">一. Center-quote 标签</h2>
+<h3 id="1-1-Center-quote-简介">1.1 Center-quote 简介</h3>
+<ul>
+<li>center-quote插件可以实现引用效果，在目标文本前后插入引号，建议用在单个文本中。</li>
+</ul>
+<span id="more"></span>
+<h3 id="1-2-Center-quote-语法">1.2 Center-quote 语法</h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% centerquote %&#125;文本&#123;% endcenterquote %&#125;</span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125; </span><br></pre></td></tr></table></figure>
+<h3 id="1-3-Center-quote-使用">1.3 Center-quote 使用</h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125;文本&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-4-效果图">1.4 效果图</h3>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/center.png" alt=""></p>
+<h2 id="二、Node-标签">二、Node 标签</h2>
+<h3 id="2-1-Note简介">2.1 Note简介</h3>
+<p>Note标签通过在左边界使用特殊颜色划线，实现提醒功能。</p>
+<h3 id="2-2-Note配置">2.2 Note配置</h3>
+<ul>
+<li>
+<p>在主题配置文件 <code>next.yml</code> 中找到 <code>note</code>，修改如下</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">note:</span><br><span class="line">  <span class="comment"># style 风格</span></span><br><span class="line">  <span class="comment"># 四个可选值: simple | modern | flat | disabled</span></span><br><span class="line">  style: flat</span><br><span class="line">  icons: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># light_bg_offset 背景颜色深度</span></span><br><span class="line">  <span class="comment"># modern: (-12 | 12); flat: (-18 | 6).</span></span><br><span class="line">  light_bg_offset: -18</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-3-Note语法">2.3 Note语法</h3>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note [<span class="class"><span class="keyword">class</span>] [<span class="title">no</span>-<span class="title">icon</span>] %&#125;</span></span><br><span class="line"><span class="class">文本</span></span><br><span class="line"><span class="class"></span>&#123;% endnote %&#125;</span><br><span class="line">[<span class="class"><span class="keyword">class</span>]   : <span class="title">default</span> | <span class="title">primary</span> | <span class="title">success</span> | <span class="title">info</span> | <span class="title">warning</span> | <span class="title">danger</span>.</span></span><br><span class="line"><span class="class">[<span class="title">no</span>-<span class="title">icon</span>] : 是否启用图标</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-4-Note使用">2.4 Note使用</h3>
+<ul>
+<li>
+<p>简单使用</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 或者无图标 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default no-icon&quot;</span>&gt;</span>文本<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>效果图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note1.png" alt=""></p>
+</li>
+<li>
+<p>语法使用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">## 标题</span><br><span class="line">文本</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Hexo%E5%BC%95%E7%94%A8%E6%A0%87%E7%AD%BE/note2.png" alt=""></p>
+</li>
+</ul>
+<h3 id="2-5-Note风格展示">2.5 Note风格展示</h3>
+<ul>
+<li>
+<p>primary</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note primary&quot;</span>&gt;</span> 我是 primary 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note primary %&#125; 我是 primary 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary"><p>我是 primary 标签</p>
+</div>
+</li>
+<li>
+<p>success</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note success&quot;</span>&gt;</span> 我是 success 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note success %&#125; 我是 success 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success"><p>我是 success 标签</p>
+</div>
+</li>
+<li>
+<p>info</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note info&quot;</span>&gt;</span> 我是 info 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note info %&#125; 我是 info 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info"><p>我是 info 标签</p>
+</div>
+</li>
+<li>
+<p>warning</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note warning&quot;</span>&gt;</span> 我是 warning 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note warning %&#125; 我是 warning 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning"><p>我是 warning 标签</p>
+</div>
+</li>
+<li>
+<p>danger</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note danger&quot;</span>&gt;</span> 我是 danger 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note danger %&#125; 我是 danger 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger"><p>我是 danger 标签</p>
+</div>
+</li>
+<li>
+<p>default</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;note default&quot;</span>&gt;</span> 我是 default 标签 <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&#123;% note <span class="keyword">default</span> %&#125; 我是 <span class="keyword">default</span> 标签 &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default"><p>我是 default 标签</p>
+</div>
+</li>
+</ul>
+<h2 id="三、更多详情">三、更多详情</h2>
+<ul>
+<li><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/234757411">Ubuntu+Hexo+Next 8.0 进阶美化篇</a></li>
+</ul>
+<br/>
+<div class="note success no-icon"><p>参考链接【鸣谢】</p>
+<p><a href="https://www.jianshu.com/p/2dbc70871918">Hexo中Tags配置</a></p>
+</div>
+]]></content>
+      <categories>
+        <category>Hexo博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Tags</tag>
       </tags>
   </entry>
   <entry>
@@ -3503,6 +3503,82 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
       </tags>
   </entry>
   <entry>
+    <title>感冒</title>
+    <url>/archives/c6b6172.html</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="721d2b9a86cd42759d52fcd0ad2240d94a8e62e99913c47dae8d8842d10e84bf">e5c8a9f599fb34a2b2bc90c630ce91a20f644d9934045d617af11ce34aea7713b6dda4fd0d5af712bebfb5a6af4d362cd31d1ba122d7fa38517ee3c5a7a0a5862af613c89d86686d22e261cc276bc38a7c578253e53692c357d73d88226a68409b50097d2e3e2b1840ad7e917c30f5b2c3c9a4bf667d8eaebcee4629b244ed74ba41e56213c8acd5a61274ff89f2dea3b120577c7c51840b65326e9346b912383924e09ebf7b339351cecf48cf6c15ad62db5ade6bd6aae513b73d80ba8115227d1283ee87ffe88f2d1db077f76882434f779ae9689ad002d9c52d4f7c55febf4c3688928d331e2942364831b965e126c0753432fc0db5a790997f209fd8c19d697f9073bb6b1f7f287f314d365fd036faa1c034cd23a5768a6ec1112751914a</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码，查看文章</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>日常琐事</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>质数</title>
+    <url>/archives/4c75c6b3.html</url>
+    <content><![CDATA[<h3 id="1-质数简介">1. 质数简介</h3>
+<ul>
+<li>质数是指在大于1的<a href="https://baike.baidu.com/item/%E8%87%AA%E7%84%B6%E6%95%B0/385394">自然数</a>中，除了1和它本身以外不再有其他<a href="https://baike.baidu.com/item/%E5%9B%A0%E6%95%B0/9539111">因数</a>的自然数。</li>
+<li>质数又称<a href="https://baike.baidu.com/item/%E7%B4%A0%E6%95%B0/115069">素数</a>。一个大于1的自然数，除了1和它自身外，不能被其他自然数整除的数叫做质数；否则称为<a href="https://baike.baidu.com/item/%E5%90%88%E6%95%B0/49186">合数</a>（规定1既不是质数也不是合数）</li>
+</ul>
+<span id="more"></span>
+<h3 id="2-JS版本">2. JS版本</h3>
+<ul>
+<li>
+<p>基础版</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 开始计时器</span></span><br><span class="line"><span class="comment">// console.time(&quot;test&quot;);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印2-100之间的数</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span> ; i++)&#123;</span><br><span class="line">    <span class="comment">// 创建一个布尔值，用来保存结果，默认i是质数</span></span><br><span class="line">    <span class="keyword">var</span> flag = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 判断i是否是质数</span></span><br><span class="line">    <span class="comment">// 获取2-i之间的所有的数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">2</span>; j &lt;= i; j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i % j == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">// 如果进入判断则证明i不是质数</span></span><br><span class="line">            flag = <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果是质数,则打印i的值</span></span><br><span class="line">    <span class="keyword">if</span>(flag)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 终止计时器</span></span><br><span class="line"><span class="comment">//console.timeEnd(&quot;test&quot;);</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>进阶版</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 开始计时器</span></span><br><span class="line"><span class="comment">// console.time(&quot;test&quot;);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印2-100之间的数</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span> ; i++)&#123;</span><br><span class="line">    <span class="comment">// 创建一个布尔值，用来保存结果，默认i是质数</span></span><br><span class="line">    <span class="keyword">var</span> flag = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 判断i是否是质数</span></span><br><span class="line">    <span class="comment">// 获取2-i之间的所有的数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">2</span>; j &lt;= i; j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i % j == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">// 如果进入判断则证明i不是质数</span></span><br><span class="line">            flag = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果是质数,则打印i的值</span></span><br><span class="line">    <span class="keyword">if</span>(flag)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 终止计时器</span></span><br><span class="line"><span class="comment">// console.timeEnd(&quot;test&quot;);</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>优化版</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 开始计时器</span></span><br><span class="line"><span class="comment">// console.time(&quot;test&quot;);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印2-100之间的数</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span> ; i++)&#123;</span><br><span class="line">    <span class="comment">// 创建一个布尔值，用来保存结果，默认i是质数</span></span><br><span class="line">    <span class="keyword">var</span> flag = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 判断i是否是质数</span></span><br><span class="line">    <span class="comment">// 获取2-i之间的所有的数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">2</span>; j &lt;= <span class="built_in">Math</span>.sqrt(i); j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i % j == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">// 如果进入判断则证明i不是质数</span></span><br><span class="line">            flag = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果是质数,则打印i的值</span></span><br><span class="line">    <span class="keyword">if</span>(flag)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 终止计时器</span></span><br><span class="line"><span class="comment">// console.timeEnd(&quot;test&quot;);</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-Python版本">3. Python版本</h3>
+<ul>
+<li>
+<p>方法一</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># import time</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 计时开始</span></span><br><span class="line"><span class="comment"># time_start = time.time()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>, <span class="number">101</span>):</span><br><span class="line">    flag = <span class="literal">True</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>, <span class="built_in">int</span>(i ** <span class="number">0.5</span>) + <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> i % j == <span class="number">0</span>:</span><br><span class="line">            flag = <span class="literal">False</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> flag:</span><br><span class="line">        <span class="built_in">print</span>(i, <span class="string">&quot;是质数&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 结束计时</span></span><br><span class="line"><span class="comment"># time_end = time.time()</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># print(&quot;所花费的时间为: &quot;, time_end - time_start)</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>方法二（Python独有）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># import time</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 计时开始</span></span><br><span class="line"><span class="comment"># time_start = time.time()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>, <span class="number">101</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>, <span class="built_in">int</span>(i ** <span class="number">0.5</span>) + <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> i % j == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># for...else语句: 当循环里的break没有被执行的时候，就会执行else</span></span><br><span class="line">        <span class="built_in">print</span>(i, <span class="string">&quot;是质数&quot;</span>)</span><br><span class="line">        </span><br><span class="line"><span class="comment"># 结束计时</span></span><br><span class="line"><span class="comment"># time_end = time.time()</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># print(&quot;所花费的时间为: &quot;, time_end - time_start)</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="4-Java版本">4. Java版本</h3>
+<ul>
+<li>
+<p>基础版</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 获取当前时间距离1970-01-01 00:00:00 的毫秒数</span></span><br><span class="line">    <span class="comment">// long start = System.currentTimeMillis();</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">        <span class="comment">// 标识</span></span><br><span class="line">        <span class="keyword">boolean</span> isFlag = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 遍历100以内的自然数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">2</span>; j &lt; Math.sqrt(i); j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i % j == <span class="number">0</span>) &#123;</span><br><span class="line">                isFlag = <span class="keyword">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (isFlag == <span class="keyword">true</span>) &#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 获取当前时间距离1970-01-01 00:00:00 的毫秒数</span></span><br><span class="line">    <span class="comment">// long end = System.currentTimeMillis();</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// System.out.println(&quot;所花费的时间为: &quot; + (end - start));</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>优化版</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获取当前时间距离1970-01-01 00:00:00 的毫秒数</span></span><br><span class="line">    <span class="comment">// long start = System.currentTimeMillis();</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">        <span class="comment">// 标识</span></span><br><span class="line">        <span class="keyword">boolean</span> isFlag = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 遍历100以内的自然数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">2</span>; j &lt; Math.sqrt(i); j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i % j == <span class="number">0</span>) &#123;</span><br><span class="line">                isFlag = <span class="keyword">false</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (isFlag == <span class="keyword">true</span>) &#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 获取当前时间距离1970-01-01 00:00:00 的毫秒数</span></span><br><span class="line">    <span class="comment">// long end = System.currentTimeMillis();</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// System.out.println(&quot;所花费的时间为: &quot; + (end - start));</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>练习</category>
+      </categories>
+      <tags>
+        <tag>日常学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>配置同时使用Github、Gitee的SSH密钥</title>
     <url>/archives/5f94ed31.html</url>
     <content><![CDATA[<h2 id="一、前提">一、前提</h2>
@@ -3645,82 +3721,6 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
         <tag>Github</tag>
         <tag>Gitee</tag>
         <tag>SSH</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>感冒</title>
-    <url>/archives/c6b6172.html</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="721d2b9a86cd42759d52fcd0ad2240d94a8e62e99913c47dae8d8842d10e84bf">e5c8a9f599fb34a2b2bc90c630ce91a20f644d9934045d617af11ce34aea7713b6dda4fd0d5af712bebfb5a6af4d362cd31d1ba122d7fa38517ee3c5a7a0a5862af613c89d86686d22e261cc276bc38a7c578253e53692c357d73d88226a68409b50097d2e3e2b1840ad7e917c30f5b2c3c9a4bf667d8eaebcee4629b244ed74ba41e56213c8acd5a61274ff89f2dea3b120577c7c51840b65326e9346b912383924e09ebf7b339351cecf48cf6c15ad62db5ade6bd6aae513b73d80ba8115227d1283ee87ffe88f2d1db077f76882434f779ae9689ad002d9c52d4f7c55febf4c3688928d331e2942364831b965e126c0753432fc0db5a790997f209fd8c19d697f9073bb6b1f7f287f314d365fd036faa1c034cd23a5768a6ec1112751914a</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">输入密码，查看文章</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>日常琐事</category>
-      </categories>
-      <tags>
-        <tag>日常</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>质数</title>
-    <url>/archives/4c75c6b3.html</url>
-    <content><![CDATA[<h3 id="1-质数简介">1. 质数简介</h3>
-<ul>
-<li>质数是指在大于1的<a href="https://baike.baidu.com/item/%E8%87%AA%E7%84%B6%E6%95%B0/385394">自然数</a>中，除了1和它本身以外不再有其他<a href="https://baike.baidu.com/item/%E5%9B%A0%E6%95%B0/9539111">因数</a>的自然数。</li>
-<li>质数又称<a href="https://baike.baidu.com/item/%E7%B4%A0%E6%95%B0/115069">素数</a>。一个大于1的自然数，除了1和它自身外，不能被其他自然数整除的数叫做质数；否则称为<a href="https://baike.baidu.com/item/%E5%90%88%E6%95%B0/49186">合数</a>（规定1既不是质数也不是合数）</li>
-</ul>
-<span id="more"></span>
-<h3 id="2-JS版本">2. JS版本</h3>
-<ul>
-<li>
-<p>基础版</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 开始计时器</span></span><br><span class="line"><span class="comment">// console.time(&quot;test&quot;);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印2-100之间的数</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span> ; i++)&#123;</span><br><span class="line">    <span class="comment">// 创建一个布尔值，用来保存结果，默认i是质数</span></span><br><span class="line">    <span class="keyword">var</span> flag = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 判断i是否是质数</span></span><br><span class="line">    <span class="comment">// 获取2-i之间的所有的数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">2</span>; j &lt;= i; j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i % j == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">// 如果进入判断则证明i不是质数</span></span><br><span class="line">            flag = <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果是质数,则打印i的值</span></span><br><span class="line">    <span class="keyword">if</span>(flag)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 终止计时器</span></span><br><span class="line"><span class="comment">//console.timeEnd(&quot;test&quot;);</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>进阶版</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 开始计时器</span></span><br><span class="line"><span class="comment">// console.time(&quot;test&quot;);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印2-100之间的数</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span> ; i++)&#123;</span><br><span class="line">    <span class="comment">// 创建一个布尔值，用来保存结果，默认i是质数</span></span><br><span class="line">    <span class="keyword">var</span> flag = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 判断i是否是质数</span></span><br><span class="line">    <span class="comment">// 获取2-i之间的所有的数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">2</span>; j &lt;= i; j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i % j == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">// 如果进入判断则证明i不是质数</span></span><br><span class="line">            flag = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果是质数,则打印i的值</span></span><br><span class="line">    <span class="keyword">if</span>(flag)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 终止计时器</span></span><br><span class="line"><span class="comment">// console.timeEnd(&quot;test&quot;);</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>优化版</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 开始计时器</span></span><br><span class="line"><span class="comment">// console.time(&quot;test&quot;);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 打印2-100之间的数</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span> ; i++)&#123;</span><br><span class="line">    <span class="comment">// 创建一个布尔值，用来保存结果，默认i是质数</span></span><br><span class="line">    <span class="keyword">var</span> flag = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 判断i是否是质数</span></span><br><span class="line">    <span class="comment">// 获取2-i之间的所有的数</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">2</span>; j &lt;= <span class="built_in">Math</span>.sqrt(i); j++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i % j == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">// 如果进入判断则证明i不是质数</span></span><br><span class="line">            flag = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果是质数,则打印i的值</span></span><br><span class="line">    <span class="keyword">if</span>(flag)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 终止计时器</span></span><br><span class="line"><span class="comment">// console.timeEnd(&quot;test&quot;);</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="3-Python版本">3. Python版本</h3>
-<ul>
-<li>
-<p>方法一</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># import time</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 计时开始</span></span><br><span class="line"><span class="comment"># time_start = time.time()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>, <span class="number">101</span>):</span><br><span class="line">    flag = <span class="literal">True</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>, <span class="built_in">int</span>(i ** <span class="number">0.5</span>) + <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> i % j == <span class="number">0</span>:</span><br><span class="line">            flag = <span class="literal">False</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> flag:</span><br><span class="line">        <span class="built_in">print</span>(i, <span class="string">&quot;是质数&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 结束计时</span></span><br><span class="line"><span class="comment"># time_end = time.time()</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># print(&quot;所花费的时间为: &quot;, time_end - time_start)</span></span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>方法二（Python独有）</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># import time</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 计时开始</span></span><br><span class="line"><span class="comment"># time_start = time.time()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>, <span class="number">101</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>, <span class="built_in">int</span>(i ** <span class="number">0.5</span>) + <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> i % j == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># for...else语句: 当循环里的break没有被执行的时候，就会执行else</span></span><br><span class="line">        <span class="built_in">print</span>(i, <span class="string">&quot;是质数&quot;</span>)</span><br><span class="line">        </span><br><span class="line"><span class="comment"># 结束计时</span></span><br><span class="line"><span class="comment"># time_end = time.time()</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># print(&quot;所花费的时间为: &quot;, time_end - time_start)</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="4-Java版本">4. Java版本</h3>
-<ul>
-<li>
-<p>基础版</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 获取当前时间距离1970-01-01 00:00:00 的毫秒数</span></span><br><span class="line">    <span class="comment">// long start = System.currentTimeMillis();</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">        <span class="comment">// 标识</span></span><br><span class="line">        <span class="keyword">boolean</span> isFlag = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 遍历100以内的自然数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">2</span>; j &lt; Math.sqrt(i); j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i % j == <span class="number">0</span>) &#123;</span><br><span class="line">                isFlag = <span class="keyword">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (isFlag == <span class="keyword">true</span>) &#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 获取当前时间距离1970-01-01 00:00:00 的毫秒数</span></span><br><span class="line">    <span class="comment">// long end = System.currentTimeMillis();</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// System.out.println(&quot;所花费的时间为: &quot; + (end - start));</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>优化版</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获取当前时间距离1970-01-01 00:00:00 的毫秒数</span></span><br><span class="line">    <span class="comment">// long start = System.currentTimeMillis();</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">        <span class="comment">// 标识</span></span><br><span class="line">        <span class="keyword">boolean</span> isFlag = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 遍历100以内的自然数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">2</span>; j &lt; Math.sqrt(i); j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i % j == <span class="number">0</span>) &#123;</span><br><span class="line">                isFlag = <span class="keyword">false</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (isFlag == <span class="keyword">true</span>) &#123;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 获取当前时间距离1970-01-01 00:00:00 的毫秒数</span></span><br><span class="line">    <span class="comment">// long end = System.currentTimeMillis();</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// System.out.println(&quot;所花费的时间为: &quot; + (end - start));</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>练习</category>
-      </categories>
-      <tags>
-        <tag>日常学习</tag>
       </tags>
   </entry>
   <entry>
