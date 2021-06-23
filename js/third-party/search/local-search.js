@@ -1,3 +1,307 @@
-document.addEventListener("DOMContentLoaded",()=>{if(CONFIG.path){let o=!1,s;const a=document.querySelector(".search-input"),g=(e,o,s=!1)=>{const a=[],l=new Set;return e.forEach(t=>{if(CONFIG.localsearch.unescape){const e=document.createElement("div");e.innerText=t,t=e.innerHTML}var n=t.length;if(0!==n){let e=0;var r;for(s||(o=o.toLowerCase(),t=t.toLowerCase());-1<(r=o.indexOf(t,e));)a.push({position:r,word:t}),l.add(t),e=r+n}}),a.sort((e,t)=>e.position!==t.position?e.position-t.position:t.word.length-e.word.length),[a,l]},f=(e,t,n)=>{var r;let{position:o,word:s}=r=n[0];const a=[],l=new Set;for(;o+s.length<=t&&0!==n.length;){l.add(s),a.push({position:o,length:s.length});var c=o+s.length;for(n.shift();0!==n.length&&(r=n[0],o=r.position,s=r.word,c>o);)n.shift()}return{hits:a,start:e,end:t,count:l.size}},m=(e,t)=>{let n="",r=t.start;for(var{position:o,length:s}of t.hits)n+=e.substring(r,o),r=o+s,n+=`<mark class="search-keyword">${e.substr(o,s)}</mark>`;return n+=e.substring(r,t.end),n},n=()=>{if(o){const n=a.value.trim().toLowerCase();var t=n.split(/[-\s]+/);const r=document.querySelector(".search-result-container");let e=[];0<n.length&&(e=(u=>{const p=[];return s.forEach(({title:n,content:r,url:o})=>{var[s,a]=g(u,n),[l,c]=g(u,r),a=new Set([...a,...c]).size,c=s.length+l.length;if(0!==c){const d=[];0!==s.length&&d.push(f(0,n.length,s));let e=[];for(;0!==l.length;){var{position:i}=l[0],h=Math.max(0,i-20),i=Math.min(r.length,i+80);e.push(f(h,i,l))}e.sort((e,t)=>e.count!==t.count?t.count-e.count:e.hits.length!==t.hits.length?t.hits.length-e.hits.length:e.start-t.start);s=parseInt(CONFIG.localsearch.top_n_per_article,10);0<=s&&(e=e.slice(0,s));let t="";(o=new URL(o,location.origin)).searchParams.append("highlight",u.join(" ")),0!==d.length?t+=`<li><a href="${o.href}" class="search-result-title">${m(n,d[0])}</a>`:t+=`<li><a href="${o.href}" class="search-result-title">${n}</a>`,e.forEach(e=>{t+=`<a href="${o.href}"><p class="search-result">${m(r,e)}...</p></a>`}),t+="</li>",p.push({item:t,id:p.length,hitCount:c,includedCount:a})}}),p})(t)),1===t.length&&""===t[0]?(r.classList.add("no-result"),r.innerHTML='<div class="search-result-icon"><i class="fa fa-search fa-5x"></i></div>'):0===e.length?(r.classList.add("no-result"),r.innerHTML='<div class="search-result-icon"><i class="far fa-frown fa-5x"></i></div>'):(e.sort((e,t)=>e.includedCount!==t.includedCount?t.includedCount-e.includedCount:e.hitCount!==t.hitCount?t.hitCount-e.hitCount:t.id-e.id),t=CONFIG.i18n.hits.replace(/\$\{hits}/,e.length),r.classList.remove("no-result"),r.innerHTML=`<div class="search-stats">${t}</div>
+/* global CONFIG, pjax */
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (!CONFIG.path) {
+    // Search DB path
+    console.warn('`hexo-generator-searchdb` plugin is not installed!');
+    return;
+  }
+  // Popup Window
+  let isfetched = false;
+  let datas;
+  const input = document.querySelector('.search-input');
+
+  const getIndexByWord = (words, text, caseSensitive = false) => {
+    const index = [];
+    const included = new Set();
+    words.forEach(word => {
+      if (CONFIG.localsearch.unescape) {
+        const div = document.createElement('div');
+        div.innerText = word;
+        word = div.innerHTML;
+      }
+      const wordLen = word.length;
+      if (wordLen === 0) return;
+      let startPosition = 0;
+      let position = -1;
+      if (!caseSensitive) {
+        text = text.toLowerCase();
+        word = word.toLowerCase();
+      }
+      while ((position = text.indexOf(word, startPosition)) > -1) {
+        index.push({ position, word });
+        included.add(word);
+        startPosition = position + wordLen;
+      }
+    });
+    // Sort index by position of keyword
+    index.sort((left, right) => {
+      if (left.position !== right.position) {
+        return left.position - right.position;
+      }
+      return right.word.length - left.word.length;
+    });
+    return [index, included];
+  };
+
+  // Merge hits into slices
+  const mergeIntoSlice = (start, end, index) => {
+    let item = index[0];
+    let { position, word } = item;
+    const hits = [];
+    const count = new Set();
+    while (position + word.length <= end && index.length !== 0) {
+      count.add(word);
+      hits.push({
+        position,
+        length: word.length
+      });
+      const wordEnd = position + word.length;
+
+      // Move to next position of hit
+      index.shift();
+      while (index.length !== 0) {
+        item = index[0];
+        position = item.position;
+        word = item.word;
+        if (wordEnd > position) {
+          index.shift();
+        } else {
+          break;
+        }
+      }
+    }
+    return {
+      hits,
+      start,
+      end,
+      count: count.size
+    };
+  };
+
+  // Highlight title and content
+  const highlightKeyword = (val, slice) => {
+    let result = '';
+    let index = slice.start;
+    for (const { position, length } of slice.hits) {
+      result += val.substring(index, position);
+      index = position + length;
+      result += `<mark class="search-keyword">${val.substr(position, length)}</mark>`;
+    }
+    result += val.substring(index, slice.end);
+    return result;
+  };
+
+  const getResultItems = keywords => {
+    const resultItems = [];
+    datas.forEach(({ title, content, url }) => {
+      // The number of different keywords included in the article.
+      const [indexOfTitle, keysOfTitle] = getIndexByWord(keywords, title);
+      const [indexOfContent, keysOfContent] = getIndexByWord(keywords, content);
+      const includedCount = new Set([...keysOfTitle, ...keysOfContent]).size;
+
+      // Show search results
+      const hitCount = indexOfTitle.length + indexOfContent.length;
+      if (hitCount === 0) return;
+
+      const slicesOfTitle = [];
+      if (indexOfTitle.length !== 0) {
+        slicesOfTitle.push(mergeIntoSlice(0, title.length, indexOfTitle));
+      }
+
+      let slicesOfContent = [];
+      while (indexOfContent.length !== 0) {
+        const item = indexOfContent[0];
+        const { position } = item;
+        // Cut out 100 characters. The maxlength of .search-input is 80.
+        const start = Math.max(0, position - 20);
+        const end = Math.min(content.length, position + 80);
+        slicesOfContent.push(mergeIntoSlice(start, end, indexOfContent));
+      }
+
+      // Sort slices in content by included keywords' count and hits' count
+      slicesOfContent.sort((left, right) => {
+        if (left.count !== right.count) {
+          return right.count - left.count;
+        } else if (left.hits.length !== right.hits.length) {
+          return right.hits.length - left.hits.length;
+        }
+        return left.start - right.start;
+      });
+
+      // Select top N slices in content
+      const upperBound = parseInt(CONFIG.localsearch.top_n_per_article, 10);
+      if (upperBound >= 0) {
+        slicesOfContent = slicesOfContent.slice(0, upperBound);
+      }
+
+      let resultItem = '';
+
+      url = new URL(url, location.origin);
+      url.searchParams.append('highlight', keywords.join(' '));
+
+      if (slicesOfTitle.length !== 0) {
+        resultItem += `<li><a href="${url.href}" class="search-result-title">${highlightKeyword(title, slicesOfTitle[0])}</a>`;
+      } else {
+        resultItem += `<li><a href="${url.href}" class="search-result-title">${title}</a>`;
+      }
+
+      slicesOfContent.forEach(slice => {
+        resultItem += `<a href="${url.href}"><p class="search-result">${highlightKeyword(content, slice)}...</p></a>`;
+      });
+
+      resultItem += '</li>';
+      resultItems.push({
+        item: resultItem,
+        id  : resultItems.length,
+        hitCount,
+        includedCount
+      });
+    });
+    return resultItems;
+  };
+
+  const inputEventFunction = () => {
+    if (!isfetched) return;
+    const searchText = input.value.trim().toLowerCase();
+    const keywords = searchText.split(/[-\s]+/);
+    const container = document.querySelector('.search-result-container');
+    let resultItems = [];
+    if (searchText.length > 0) {
+      // Perform local searching
+      resultItems = getResultItems(keywords);
+    }
+    if (keywords.length === 1 && keywords[0] === '') {
+      container.classList.add('no-result');
+      container.innerHTML = '<div class="search-result-icon"><i class="fa fa-search fa-5x"></i></div>';
+    } else if (resultItems.length === 0) {
+      container.classList.add('no-result');
+      container.innerHTML = '<div class="search-result-icon"><i class="far fa-frown fa-5x"></i></div>';
+    } else {
+      resultItems.sort((left, right) => {
+        if (left.includedCount !== right.includedCount) {
+          return right.includedCount - left.includedCount;
+        } else if (left.hitCount !== right.hitCount) {
+          return right.hitCount - left.hitCount;
+        }
+        return right.id - left.id;
+      });
+      const stats = CONFIG.i18n.hits.replace(/\$\{hits}/, resultItems.length);
+
+      container.classList.remove('no-result');
+      container.innerHTML = `<div class="search-stats">${stats}</div>
         <hr>
-        <ul class="search-result-list">${e.map(e=>e.item).join("")}</ul>`,"object"==typeof pjax&&pjax.refresh(r))}},t=()=>{const t=!CONFIG.path.endsWith("json");fetch(CONFIG.path).then(e=>e.text()).then(e=>{o=!0,s=t?[...(new DOMParser).parseFromString(e,"text/xml").querySelectorAll("entry")].map(e=>({title:e.querySelector("title").textContent,content:e.querySelector("content").textContent,url:e.querySelector("url").textContent})):JSON.parse(e),s=s.filter(e=>e.title).map(e=>(e.title=e.title.trim(),e.content=e.content?e.content.trim().replace(/<[^>]+>/g,""):"",e.url=decodeURIComponent(e.url).replace(/\/{2,}/g,"/"),e)),n()})},e=()=>{const e=new URL(location.href).searchParams.get("highlight"),n=e?e.split(" "):[];var t=document.querySelector(".post-body");if(n.length&&t){const r=document.createTreeWalker(t,NodeFilter.SHOW_TEXT,null),o=[];for(;r.nextNode();)r.currentNode.parentNode.matches("button, select, textarea")||o.push(r.currentNode);o.forEach(e=>{var[t]=g(n,e.nodeValue);t.length&&((t,e,n)=>{const r=t.nodeValue;let o=e.start;const s=[];for(var{position:a,length:l}of e.hits){var c=document.createTextNode(r.substring(o,a));o=a+l;const i=document.createElement("mark");i.className=n,i.appendChild(document.createTextNode(r.substr(a,l))),s.push(c,i)}t.nodeValue=r.substring(o,e.end),s.forEach(e=>{t.parentNode.insertBefore(e,t)})})(e,f(0,e.nodeValue.length,t),"search-keyword")})}};e(),CONFIG.localsearch.preload&&t(),"auto"===CONFIG.localsearch.trigger?a.addEventListener("input",n):(document.querySelector(".search-icon").addEventListener("click",n),a.addEventListener("keypress",e=>{"Enter"===e.key&&n()})),document.querySelectorAll(".popup-trigger").forEach(e=>{e.addEventListener("click",()=>{document.body.classList.add("search-active"),setTimeout(()=>a.focus(),500),o||t()})});const r=()=>{document.body.classList.remove("search-active")};document.querySelector(".search-pop-overlay").addEventListener("click",e=>{e.target===document.querySelector(".search-pop-overlay")&&r()}),document.querySelector(".popup-btn-close").addEventListener("click",r),document.addEventListener("pjax:success",()=>{e(),r()}),window.addEventListener("keyup",e=>{"Escape"===e.key&&r()})}else console.warn("`hexo-generator-searchdb` plugin is not installed!")});
+        <ul class="search-result-list">${resultItems.map(result => result.item).join('')}</ul>`;
+      if (typeof pjax === 'object') pjax.refresh(container);
+    }
+  };
+
+  const fetchData = () => {
+    const isXml = !CONFIG.path.endsWith('json');
+    fetch(CONFIG.path)
+      .then(response => response.text())
+      .then(res => {
+        // Get the contents from search data
+        isfetched = true;
+        datas = isXml ? [...new DOMParser().parseFromString(res, 'text/xml').querySelectorAll('entry')].map(element => ({
+          title  : element.querySelector('title').textContent,
+          content: element.querySelector('content').textContent,
+          url    : element.querySelector('url').textContent
+        })) : JSON.parse(res);
+        // Only match articles with non-empty titles
+        datas = datas.filter(data => data.title).map(data => {
+          data.title = data.title.trim();
+          data.content = data.content ? data.content.trim().replace(/<[^>]+>/g, '') : '';
+          data.url = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+          return data;
+        });
+        // Remove loading animation
+        inputEventFunction();
+      });
+  };
+
+  // Highlight by wrapping node in mark elements with the given class name
+  const highlightText = (node, slice, className) => {
+    const val = node.nodeValue;
+    let index = slice.start;
+    const children = [];
+    for (const { position, length } of slice.hits) {
+      const text = document.createTextNode(val.substring(index, position));
+      index = position + length;
+      const mark = document.createElement('mark');
+      mark.className = className;
+      mark.appendChild(document.createTextNode(val.substr(position, length)));
+      children.push(text, mark);
+    }
+    node.nodeValue = val.substring(index, slice.end);
+    children.forEach(element => {
+      node.parentNode.insertBefore(element, node);
+    });
+  };
+
+  // Highlight the search words provided in the url in the text
+  const highlightSearchWords = () => {
+    const params = new URL(location.href).searchParams.get('highlight');
+    const keywords = params ? params.split(' ') : [];
+    const body = document.querySelector('.post-body');
+    if (!keywords.length || !body) return;
+    const walk = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, null);
+    const allNodes = [];
+    while (walk.nextNode()) {
+      if (!walk.currentNode.parentNode.matches('button, select, textarea')) allNodes.push(walk.currentNode);
+    }
+    allNodes.forEach(node => {
+      const [indexOfNode] = getIndexByWord(keywords, node.nodeValue);
+      if (!indexOfNode.length) return;
+      const slice = mergeIntoSlice(0, node.nodeValue.length, indexOfNode);
+      highlightText(node, slice, 'search-keyword');
+    });
+  };
+
+  highlightSearchWords();
+  if (CONFIG.localsearch.preload) {
+    fetchData();
+  }
+
+  if (CONFIG.localsearch.trigger === 'auto') {
+    input.addEventListener('input', inputEventFunction);
+  } else {
+    document.querySelector('.search-icon').addEventListener('click', inputEventFunction);
+    input.addEventListener('keypress', event => {
+      if (event.key === 'Enter') {
+        inputEventFunction();
+      }
+    });
+  }
+
+  // Handle and trigger popup window
+  document.querySelectorAll('.popup-trigger').forEach(element => {
+    element.addEventListener('click', () => {
+      document.body.classList.add('search-active');
+      // Wait for search-popup animation to complete
+      setTimeout(() => input.focus(), 500);
+      if (!isfetched) fetchData();
+    });
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.body.classList.remove('search-active');
+  };
+
+  document.querySelector('.search-pop-overlay').addEventListener('click', event => {
+    if (event.target === document.querySelector('.search-pop-overlay')) {
+      onPopupClose();
+    }
+  });
+  document.querySelector('.popup-btn-close').addEventListener('click', onPopupClose);
+  document.addEventListener('pjax:success', () => {
+    highlightSearchWords();
+    onPopupClose();
+  });
+  window.addEventListener('keyup', event => {
+    if (event.key === 'Escape') {
+      onPopupClose();
+    }
+  });
+});

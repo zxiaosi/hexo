@@ -1,1 +1,5 @@
-((window.gitter={}).chat={}).options={room:CONFIG.gitter.room};
+/* global CONFIG */
+
+((window.gitter = {}).chat = {}).options = {
+  room: CONFIG.gitter.room
+};

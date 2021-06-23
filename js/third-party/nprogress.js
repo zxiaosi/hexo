@@ -1,1 +1,20 @@
-NProgress.configure({showSpinner:CONFIG.nprogress.spinner}),NProgress.start(),document.addEventListener("readystatechange",()=>{"interactive"===document.readyState&&NProgress.inc(.8),"complete"===document.readyState&&NProgress.done()}),document.addEventListener("pjax:send",()=>{NProgress.start()}),document.addEventListener("pjax:success",()=>{NProgress.done()});
+/* global CONFIG, NProgress */
+
+NProgress.configure({
+  showSpinner: CONFIG.nprogress.spinner
+});
+NProgress.start();
+document.addEventListener('readystatechange', () => {
+  if (document.readyState === 'interactive') {
+    NProgress.inc(0.8);
+  }
+  if (document.readyState === 'complete') {
+    NProgress.done();
+  }
+});
+document.addEventListener('pjax:send', () => {
+  NProgress.start();
+});
+document.addEventListener('pjax:success', () => {
+  NProgress.done();
+});

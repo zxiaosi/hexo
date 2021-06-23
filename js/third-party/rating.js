@@ -1,1 +1,22 @@
-!function(){const a=[{widget:"Rating",id:CONFIG.rating.id,el:"wpac-rating",color:CONFIG.rating.color}];document.addEventListener("page:loaded",()=>{var i;CONFIG.page.isPost&&(i=a.map(i=>({...i})),window.WPac?WPac.init(i):window.wpac_init=i)})}();
+/* global CONFIG, WPac */
+
+(function() {
+  const widgets = [{
+    widget: 'Rating',
+    id    : CONFIG.rating.id,
+    el    : 'wpac-rating',
+    color : CONFIG.rating.color
+  }];
+
+  document.addEventListener('page:loaded', () => {
+    if (!CONFIG.page.isPost) return;
+
+    const newWidgets = widgets.map(widget => ({ ...widget }));
+
+    if (window.WPac) {
+      WPac.init(newWidgets);
+    } else {
+      window.wpac_init = newWidgets;
+    }
+  });
+})();
