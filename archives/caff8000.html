@@ -23,26 +23,43 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"hexo.zxiaosi.cn","root":"/","images":"/images","scheme":"Gemini","version":"8.5.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小四先生的博客">
-<meta property="og:url" content="https://hexo.zxiaosi.cn/page/2/index.html">
+<meta name="description" content="一、Git安装教程 二、GitHub如何配置SSH Key 三、上传命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git常用命令">
+<meta property="og:url" content="https://hexo.zxiaosi.cn/archives/caff8000.html">
 <meta property="og:site_name" content="小四先生的博客">
-<meta property="og:description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
+<meta property="og:description" content="一、Git安装教程 二、GitHub如何配置SSH Key 三、上传命令">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/GitBash.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/ssh-1624673463225.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%95%88%E6%9E%9C%E5%9B%BE.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%96%87%E4%BB%B61.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%96%87%E4%BB%B6%E4%BA%8C.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/.git.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/config.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/url.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/test.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/delete.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E9%97%AE%E9%A2%981.png">
+<meta property="og:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/gitbash.png">
+<meta property="article:published_time" content="2021-06-26T01:19:47.000Z">
+<meta property="article:modified_time" content="2021-06-26T04:48:28.147Z">
 <meta property="article:author" content="Mr.XiaoSi">
-<meta property="article:tag" content="Hexo,Next,博客,日常,知识,分享">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/GitBash.png">
 
 
-<link rel="canonical" href="https://hexo.zxiaosi.cn/page/2/">
+<link rel="canonical" href="https://hexo.zxiaosi.cn/archives/caff8000.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"page/2/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://hexo.zxiaosi.cn/archives/caff8000.html","path":"archives/caff8000.html","title":"Git常用命令"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>小四先生的博客</title>
+<title>Git常用命令 | 小四先生的博客</title>
   
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-LFV6F84KP1","only_pageview":true}</script>
   <script src="/js/third-party/analytics/google-analytics.js"></script>
@@ -142,7 +159,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -155,6 +172,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81Git%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B"><span class="nav-text">一、Git安装教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81GitHub%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AESSH-Key"><span class="nav-text">二、GitHub如何配置SSH Key</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E4%B8%8A%E4%BC%A0%E5%91%BD%E4%BB%A4"><span class="nav-text">三、上传命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6"><span class="nav-text">3.1 第一次上传文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E4%B9%8B%E5%90%8E%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6"><span class="nav-text">3.2 之后上传文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4%E5%88%86%E6%94%AF"><span class="nav-text">3.3 设置默认分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-%E6%9F%A5%E7%9C%8BGit%E9%85%8D%E7%BD%AE"><span class="nav-text">3.4 查看Git配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4"><span class="nav-text">四、分支命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF"><span class="nav-text">4.1 创建分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF"><span class="nav-text">4.2 查看分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF"><span class="nav-text">4.3 合并分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-%E5%88%A0%E9%99%A4%E5%88%86%E6%94%AF"><span class="nav-text">4.4 删除分支</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-text">五、其他常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-%E6%8E%A8%E9%80%81%E5%A4%B1%E8%B4%A5"><span class="nav-text">5.1 推送失败</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-master-REBASE-1-10"><span class="nav-text">5.2 master|REBASE 1&#x2F;10</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-%E6%9F%A5%E7%9C%8BGit%E7%8A%B6%E6%80%81"><span class="nav-text">5.3 查看Git状态</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E4%BB%A3%E7%A0%81"><span class="nav-text">5.4 克隆远程代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E6%97%A5%E5%BF%97"><span class="nav-text">5.5 查看提交日志</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E6%9C%AC%E5%9C%B0%E9%85%8D%E7%BD%AE%E4%BA%86%E5%A4%9A%E4%B8%AASSH%E5%AF%86%E9%92%A5%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="nav-text">六、本地配置了多个SSH密钥（可选）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-%E7%AE%80%E8%BF%B0"><span class="nav-text">6.1 简述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81"><span class="nav-text">6.2 上传代码</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -573,17 +591,18 @@ if(canvas.getContext){
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://hexo.zxiaosi.cn/archives/5316700e.html">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://hexo.zxiaosi.cn/archives/caff8000.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/author.webp">
@@ -595,9 +614,9 @@ if(canvas.getContext){
       <meta itemprop="name" content="小四先生的博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/5316700e.html" class="post-title-link" itemprop="url">Python-Tk模块实现学生后台管理系统</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Git常用命令
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -607,27 +626,28 @@ if(canvas.getContext){
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-06-17 11:44:25" itemprop="dateCreated datePublished" datetime="2021-06-17T11:44:25+08:00">2021-06-17</time>
+      <time title="创建时间：2021-06-26 09:19:47 / 修改时间：12:48:28" itemprop="dateCreated datePublished" datetime="2021-06-26T09:19:47+08:00">2021-06-26</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 09:24:55" itemprop="dateModified" datetime="2021-06-26T09:24:55+08:00">2021-06-26</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%A1%B9%E7%9B%AE%E6%A1%88%E4%BE%8B/" itemprop="url" rel="index"><span itemprop="name">项目案例</span></a>
+          <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
         </span>
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
   
   <span class="post-meta-item">
     
@@ -636,8 +656,8 @@ if(canvas.getContext){
     </span>
     <span class="post-meta-item-text">评论数：</span>
   
-    <a title="waline" href="/archives/5316700e.html#waline-comments" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" id="/archives/5316700e.html" data-xid="/archives/5316700e.html" itemprop="commentCount"></span>
+    <a title="waline" href="/archives/caff8000.html#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/archives/caff8000.html" data-xid="/archives/caff8000.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -649,14 +669,14 @@ if(canvas.getContext){
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>762</span>
+      <span>2k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -667,495 +687,340 @@ if(canvas.getContext){
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="一、项目介绍">一、项目介绍</h2>
-<h3 id="1-1-简介">1.1 简介</h3>
+        <h2 id="一、Git安装教程">一、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Git安装教程</a></h2>
+<h2 id="二、GitHub如何配置SSH-Key">二、<a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/u013778905/article/details/83501204">GitHub如何配置SSH Key</a></h2>
+<h2 id="三、上传命令">三、上传命令</h2>
+<span id="more"></span>
+<h3 id="3-1-第一次上传文件">3.1 第一次上传文件</h3>
 <ul>
 <li>
-<p>Python-Tk模块实现学生后台管理系统</p>
+<p>右键需要上传的文件夹，选择 <code>Git Bash Here</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/GitBash.png" alt=""></p>
 </li>
 <li>
-<p>思维导图</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/5316700e.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://hexo.zxiaosi.cn/archives/4c75c6b3.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/author.webp">
-      <meta itemprop="name" content="Mr.XiaoSi">
-      <meta itemprop="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小四先生的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/4c75c6b3.html" class="post-title-link" itemprop="url">质数</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-  
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-06-07 17:14:24" itemprop="dateCreated datePublished" datetime="2021-06-07T17:14:24+08:00">2021-06-07</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-06-26 09:23:30" itemprop="dateModified" datetime="2021-06-26T09:23:30+08:00">2021-06-26</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%97%A5%E5%B8%B8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">日常学习</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="far fa-comment"></i>
-    </span>
-    <span class="post-meta-item-text">评论数：</span>
-  
-    <a title="waline" href="/archives/4c75c6b3.html#waline-comments" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" id="/archives/4c75c6b3.html" data-xid="/archives/4c75c6b3.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-      </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>2.8k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="1-质数简介">1. 质数简介</h3>
-<ul>
-<li>质数是指在大于1的<a target="_blank" rel="noopener external nofollow noreferrer" href="https://baike.baidu.com/item/%E8%87%AA%E7%84%B6%E6%95%B0/385394">自然数</a>中，除了1和它本身以外不再有其他<a target="_blank" rel="noopener external nofollow noreferrer" href="https://baike.baidu.com/item/%E5%9B%A0%E6%95%B0/9539111">因数</a>的自然数。</li>
-<li>质数又称<a target="_blank" rel="noopener external nofollow noreferrer" href="https://baike.baidu.com/item/%E7%B4%A0%E6%95%B0/115069">素数</a>。一个大于1的自然数，除了1和它自身外，不能被其他自然数整除的数叫做质数；否则称为<a target="_blank" rel="noopener external nofollow noreferrer" href="https://baike.baidu.com/item/%E5%90%88%E6%95%B0/49186">合数</a>（规定1既不是质数也不是合数）</li>
+<p>初始化 Git</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>创建用户（在 <code>&quot;your.name&quot;</code> <code>&quot;your.email&quot;</code> 内填入你的姓名与邮箱。）</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;your.name&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;your.email&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>添加远程仓库地址（SSH地址）</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin 远程仓库地址</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/ssh-1624673463225.png" alt=""></p>
+</li>
+<li>
+<p>拉取某个分支下文件，与本地分支合并</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 分支名为 master</span></span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><font color='red'>拉取完成后，远程仓库里的文件会与本地文件合并</font>（新仓库只有 <code>README.md</code> 文件）</p>
+</li>
+<li>
+<p>将所有文件添加到仓库</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>提交文件到仓库，引号内为提交说明</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&#x27;提交文件&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>将仓库内容推送到远程，<code>master</code> 为远程仓库分支名</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt=""></p>
+</li>
 </ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/4c75c6b3.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://hexo.zxiaosi.cn/archives/c6b6172.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/author.webp">
-      <meta itemprop="name" content="Mr.XiaoSi">
-      <meta itemprop="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小四先生的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/c6b6172.html" class="post-title-link" itemprop="url">感冒</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-  
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-05-25 22:52:30 / 修改时间：23:10:06" itemprop="dateCreated datePublished" datetime="2021-05-25T22:52:30+08:00">2021-05-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%97%A5%E5%B8%B8%E7%90%90%E4%BA%8B/" itemprop="url" rel="index"><span itemprop="name">日常琐事</span></a>
-        </span>
-    </span>
-
-  
-  
-  
-      </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>34</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          这里有东西被加密了，需要输入密码查看哦。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/c6b6172.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://hexo.zxiaosi.cn/archives/b6f00990.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/author.webp">
-      <meta itemprop="name" content="Mr.XiaoSi">
-      <meta itemprop="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小四先生的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/b6f00990.html" class="post-title-link" itemprop="url">Hexo源码构造</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-  
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-05-15 16:05:16 / 修改时间：17:38:38" itemprop="dateCreated datePublished" datetime="2021-05-15T16:05:16+08:00">2021-05-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Hexo%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">Hexo博客</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="far fa-comment"></i>
-    </span>
-    <span class="post-meta-item-text">评论数：</span>
-  
-    <a title="waline" href="/archives/b6f00990.html#waline-comments" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" id="/archives/b6f00990.html" data-xid="/archives/b6f00990.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-      </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.3k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="一、起因">一、起因</h2>
-<h3 id="1-1-说明">1.1 说明</h3>
+<h3 id="3-2-之后上传文件">3.2 之后上传文件</h3>
 <ul>
 <li>
-<p>本地 <code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code> 后，仓库的代码是已经渲染过的文件</p>
+<p>先拉取某个分支下的文件（<font color='red'>远程仓库没有修改的话，这一步可以跳过</font>）</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
 </li>
 <li>
-<p>如果某天电脑突然打不开，克隆下来的也是渲染的文件，无法直接使用</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/b6f00990.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://hexo.zxiaosi.cn/archives/24a19e71.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/zxiaosi/cdn/Hexo/icon/author.webp">
-      <meta itemprop="name" content="Mr.XiaoSi">
-      <meta itemprop="description" content="小四先生的博客|主要记录平时学习或者解决一些问题时的过程或是心得体会什么的东西">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小四先生的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/24a19e71.html" class="post-title-link" itemprop="url">Hexo白天黑夜模式按钮</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-  
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-05-09 20:14:01" itemprop="dateCreated datePublished" datetime="2021-05-09T20:14:01+08:00">2021-05-09</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-05-10 10:08:15" itemprop="dateModified" datetime="2021-05-10T10:08:15+08:00">2021-05-10</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Hexo%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">Hexo博客</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="far fa-comment"></i>
-    </span>
-    <span class="post-meta-item-text">评论数：</span>
-  
-    <a title="waline" href="/archives/24a19e71.html#waline-comments" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" id="/archives/24a19e71.html" data-xid="/archives/24a19e71.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-      </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.5k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="一、原生黑夜模式">一、原生黑夜模式</h2>
-<h3 id="1-1-Next-7-8-之后的原生黑夜模式">1.1 Next 7.8 之后的原生黑夜模式</h3>
+<p>将所有文件添加到仓库</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>提交文件到仓库，引号内为提交说明</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&#x27;提交文件&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>将仓库内容推送到远程，<code>master</code> 为远程仓库分支名</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-3-设置默认分支">3.3 设置默认分支</h3>
 <ul>
 <li>
-<p>在主题配置文件中 <code>Next.yml</code> 中，搜索 <code>darkmode</code></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/24a19e71.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<p>初衷：仓库的默认主分支名为 <code>master</code>，那么在拉取和推送时候，没必要带上分支名</p>
+</li>
+<li>
+<p>找到文件夹，右键以 <code>Git Bash Here</code>，输入下面命令</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch --set-upstream-to=origin/master master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>配置过之后，在下次拉取和推送的时候，不带分支名，就默认从 <code>master</code> 分支下拉取和推送</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 拉取远程仓库 master 分支下的文件</span></span><br><span class="line"><span class="comment"># 远程仓库没有修改的话，这一步可以跳过</span></span><br><span class="line">git pull	</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将内容推送到远程仓库的 master 分支下</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-4-查看Git配置">3.4 查看Git配置</h3>
+<ul>
+<li>
+<p>显示隐藏文件</p>
+<ul>
+<li>
+<p>找到文件所在的文件夹，点击左上角的 <code>文件</code>，然后选择<code>更改文件夹和搜索选项</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%96%87%E4%BB%B61.png" alt=""></p>
+</li>
+<li>
+<p>点击 <code>查看</code>，然后选中 <code>显示隐藏的文件、文件夹和驱动器</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%96%87%E4%BB%B6%E4%BA%8C.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li>
+<p>此时文件夹内会多出一个 <code>.git</code> 文件夹</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/.git.png" alt=""></p>
+</li>
+<li>
+<p>进入 <code>.git</code> 文件夹，找到 <code>config</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/config.png" alt=""></p>
+</li>
+<li>
+<p>右键以记事本打开，可以看到相应的信息</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/url.png" alt=""></p>
+</li>
+</ul>
+<h2 id="四、分支命令">四、分支命令</h2>
+<h3 id="4-1-创建分支">4.1 创建分支</h3>
+<ul>
+<li>
+<p>创建分支</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch 分支名</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>切换分支</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout 分支名</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/test.png" alt=""></p>
+</li>
+</ul>
+<h3 id="4-2-查看分支">4.2 查看分支</h3>
+<ul>
+<li>
+<p>查看分支名</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -a</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF.png" alt=""></p>
+</li>
+</ul>
+<h3 id="4-3-合并分支">4.3 合并分支</h3>
+<ul>
+<li>
+<p>合并指定分支到当前分支</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge 分支名</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF.png" alt=""></p>
+</li>
+</ul>
+<h3 id="4-4-删除分支">4.4 删除分支</h3>
+<ul>
+<li>
+<p>删除分支</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 删除本地已合并的分支</span></span><br><span class="line">git branch -d 分支名</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">git branch -D 分支名</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">git push origin --delete 分支名</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/delete.png" alt=""></p>
+</li>
+</ul>
+<h2 id="五、其他常用命令">五、其他常用命令</h2>
+<h3 id="5-1-推送失败">5.1 推送失败</h3>
+<ul>
+<li>
+<p>原因：远程仓库内容修改。应该先拉取合并，再推送</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>强制推送（不推荐，文件可能丢失）</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -f origin master</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="5-2-master-REBASE-1-10">5.2 <code>master|REBASE 1/10</code></h3>
+<ul>
+<li>
+<p>遇到如图所示问题</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E9%97%AE%E9%A2%981.png" alt=""></p>
+</li>
+<li>
+<p>使用下面命令解决</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase --abort</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>具体参考：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/qq_42469247/article/details/88901756">不小心git rebase后出现(master|REBASE 1/10)的解决办法</a></p>
+</li>
+</ul>
+<h3 id="5-3-查看Git状态">5.3 查看Git状态</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+<h3 id="5-4-克隆远程代码">5.4 克隆远程代码</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> url</span><br></pre></td></tr></table></figure>
+<h3 id="5-5-查看提交日志">5.5 查看提交日志</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
+<h2 id="六、本地配置了多个SSH密钥（可选）">六、本地配置了多个SSH密钥（可选）</h2>
+<h3 id="6-1-简述">6.1 简述</h3>
+<ul>
+<li>可以通过 <code>Git</code> 把代码上传到 <code>Github</code>、<code>Gitee</code>、<code>Gitlab</code>上</li>
+<li>
+<a href="/archives/5f94ed31.html" title="具体配置">具体配置</a>
+</li>
+</ul>
+<h3 id="6-2-上传代码">6.2 上传代码</h3>
+<ul>
+<li>
+<p>步骤和上面差不多，只不过身份验证需要使用本地身份</p>
+</li>
+<li>
+<p>打开 <code>Git Bash</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/gitbash.png" alt=""></p>
+</li>
+<li>
+<p>输入下面命令查看 Git 的全局配置</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>如果配置了 Git 全局变量，请删除该配置</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> user.name <span class="string">&quot;你的名字&quot;</span></span><br><span class="line">git config --global --<span class="built_in">unset</span> user.email <span class="string">&quot;你的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在本地上传文件时，会报不知道用户是谁的错误。此时需要到 <font color='red'>项目文件夹下</font> 配置邮箱和用户名，配置 <code>local</code> 用户名和邮箱，而不是 <code>global</code>。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="built_in">local</span> user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line">git config --<span class="built_in">local</span> user.email <span class="string">&#x27;邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>配置完成之后，可以在Git的配置文件中查看（<font color='red'>每个项目下都需要配置</font>）</p>
+</li>
+</ul>
+<div class="note success no-icon"><p>参考网站：【鸣谢】</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Git安装教程</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/u013778905/article/details/83501204">GitHub如何配置SSH Key</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jianshu.com/p/26d050497abb">git合并分支</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/qq_42469247/article/details/88901756">不小心git rebase后出现(master|REBASE 1/10)的解决办法</a></p>
+</div>
+
     </div>
 
     
     
     
 
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+    <footer class="post-footer"><div>
+    
+        <div style="text-align:center; color: #a4b0be; font-size:16px;">
+            <b>
+                ---------本文结束
+                <i class="fa fa-paw"></i>
+                感谢您的阅读---------
+            </b>
+        </div>
+    
+</div>
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Mr.XiaoSi
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://hexo.zxiaosi.cn/archives/caff8000.html" title="Git常用命令">https://hexo.zxiaosi.cn/archives/caff8000.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
+          </div>
+
+          <script type="text/javascript">
+            var tagsall=document.getElementsByClassName("post-tags")
+            for (var i = tagsall.length - 1; i >= 0; i--){
+                var tags=tagsall[i].getElementsByTagName("a");
+                for (var j = tags.length - 1; j >= 0; j--) {
+                    var golden_ratio = 0.618033988749895;
+                    var s = 0.5;
+                    var v = 0.999;
+                    var h = golden_ratio + Math.random()*0.8 - 0.5;
+                    var h_i = parseInt(h * 6);
+                    var f = h * 6 - h_i;
+                    var p = v * (1 - s);
+                    var q = v * (1 - f * s);
+                    var t = v * (1 - (1 - f) * s);
+                    var r, g, b;
+                    switch (h_i) {
+                        case 0:
+                            r = v;
+                            g = t;
+                            b = p;
+                            break;
+                        case 1:
+                            r = q;
+                            g = v;
+                            b = p;
+                            break;
+                        case 2:
+                            r = p;
+                            g = v;
+                            b = t;
+                            break;
+                        case 3 :
+                            r = p;
+                            g = q;
+                            b = v;
+                            break;
+                        case 4:
+                            r = t;
+                            g = p;
+                            b = v;
+                            break;
+                        case 5:
+                            r = v;
+                            g = p;
+                            b = q;
+                            break;
+                        default:
+                            r = 1;
+                            g = 1;
+                            b = 1;
+                      }
+                    tags[j].style.background = "rgba("+parseInt(r*255)+","+parseInt(g*255)+","+parseInt(b*255)+","+0.5+")";
+                }
+            }                        
+            </script>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/archives/5eb9f12a.html" rel="prev" title="JSP简单的实现了商品的增删改查">
+                  <i class="fa fa-chevron-left"></i> JSP简单的实现了商品的增删改查
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -1163,10 +1028,9 @@ if(canvas.getContext){
 
 
 
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
 
+
+    <div class="comments" id="waline-comments"></div>
 </div>
   </main>
 
@@ -1278,7 +1142,7 @@ window.darkmode = darkmode;
 darkmode.showWidget();
 </script>
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"https://hwaline.vercel.app/","placeholder":"添加邮箱评论作者能更快的回复哦！","dark":"body.darkmode--activated","avatar":"wavatar","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredMeta":[],"copyright":false,"libUrl":"//cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js","avatarCDN":"https://sdn.geekzu.org/avatar/","qiniuDomain":null,"qiniuTokenUrl":null,"el":"#waline-comments","path":"/page/2/"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"https://hwaline.vercel.app/","placeholder":"添加邮箱评论作者能更快的回复哦！","dark":"body.darkmode--activated","avatar":"wavatar","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredMeta":[],"copyright":false,"libUrl":"//cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js","avatarCDN":"https://sdn.geekzu.org/avatar/","qiniuDomain":null,"qiniuTokenUrl":null,"el":"#waline-comments","path":"/archives/caff8000.html"}</script>
 <script>
 document.addEventListener('page:loaded', () => {
   if(CONFIG.waline.qiniuDomain && CONFIG.waline.qiniuTokenUrl){

@@ -572,6 +572,245 @@
       </tags>
   </entry>
   <entry>
+    <title>Git常用命令</title>
+    <url>/archives/caff8000.html</url>
+    <content><![CDATA[<h2 id="一、Git安装教程">一、<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Git安装教程</a></h2>
+<h2 id="二、GitHub如何配置SSH-Key">二、<a href="https://blog.csdn.net/u013778905/article/details/83501204">GitHub如何配置SSH Key</a></h2>
+<h2 id="三、上传命令">三、上传命令</h2>
+<span id="more"></span>
+<h3 id="3-1-第一次上传文件">3.1 第一次上传文件</h3>
+<ul>
+<li>
+<p>右键需要上传的文件夹，选择 <code>Git Bash Here</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/GitBash.png" alt=""></p>
+</li>
+<li>
+<p>初始化 Git</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>创建用户（在 <code>&quot;your.name&quot;</code> <code>&quot;your.email&quot;</code> 内填入你的姓名与邮箱。）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;your.name&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;your.email&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>添加远程仓库地址（SSH地址）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git remote add origin 远程仓库地址</span><br></pre></td></tr></table></figure>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/ssh-1624673463225.png" alt=""></p>
+</li>
+<li>
+<p>拉取某个分支下文件，与本地分支合并</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 分支名为 master</span></span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><font color='red'>拉取完成后，远程仓库里的文件会与本地文件合并</font>（新仓库只有 <code>README.md</code> 文件）</p>
+</li>
+<li>
+<p>将所有文件添加到仓库</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>提交文件到仓库，引号内为提交说明</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&#x27;提交文件&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>将仓库内容推送到远程，<code>master</code> 为远程仓库分支名</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt=""></p>
+</li>
+</ul>
+<h3 id="3-2-之后上传文件">3.2 之后上传文件</h3>
+<ul>
+<li>
+<p>先拉取某个分支下的文件（<font color='red'>远程仓库没有修改的话，这一步可以跳过</font>）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>将所有文件添加到仓库</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>提交文件到仓库，引号内为提交说明</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&#x27;提交文件&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>将仓库内容推送到远程，<code>master</code> 为远程仓库分支名</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-3-设置默认分支">3.3 设置默认分支</h3>
+<ul>
+<li>
+<p>初衷：仓库的默认主分支名为 <code>master</code>，那么在拉取和推送时候，没必要带上分支名</p>
+</li>
+<li>
+<p>找到文件夹，右键以 <code>Git Bash Here</code>，输入下面命令</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git branch --set-upstream-to=origin/master master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>配置过之后，在下次拉取和推送的时候，不带分支名，就默认从 <code>master</code> 分支下拉取和推送</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 拉取远程仓库 master 分支下的文件</span></span><br><span class="line"><span class="comment"># 远程仓库没有修改的话，这一步可以跳过</span></span><br><span class="line">git pull	</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将内容推送到远程仓库的 master 分支下</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="3-4-查看Git配置">3.4 查看Git配置</h3>
+<ul>
+<li>
+<p>显示隐藏文件</p>
+<ul>
+<li>
+<p>找到文件所在的文件夹，点击左上角的 <code>文件</code>，然后选择<code>更改文件夹和搜索选项</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%96%87%E4%BB%B61.png" alt=""></p>
+</li>
+<li>
+<p>点击 <code>查看</code>，然后选中 <code>显示隐藏的文件、文件夹和驱动器</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%96%87%E4%BB%B6%E4%BA%8C.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li>
+<p>此时文件夹内会多出一个 <code>.git</code> 文件夹</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/.git.png" alt=""></p>
+</li>
+<li>
+<p>进入 <code>.git</code> 文件夹，找到 <code>config</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/config.png" alt=""></p>
+</li>
+<li>
+<p>右键以记事本打开，可以看到相应的信息</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/url.png" alt=""></p>
+</li>
+</ul>
+<h2 id="四、分支命令">四、分支命令</h2>
+<h3 id="4-1-创建分支">4.1 创建分支</h3>
+<ul>
+<li>
+<p>创建分支</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git branch 分支名</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>切换分支</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git checkout 分支名</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/test.png" alt=""></p>
+</li>
+</ul>
+<h3 id="4-2-查看分支">4.2 查看分支</h3>
+<ul>
+<li>
+<p>查看分支名</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git branch -a</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF.png" alt=""></p>
+</li>
+</ul>
+<h3 id="4-3-合并分支">4.3 合并分支</h3>
+<ul>
+<li>
+<p>合并指定分支到当前分支</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git merge 分支名</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF.png" alt=""></p>
+</li>
+</ul>
+<h3 id="4-4-删除分支">4.4 删除分支</h3>
+<ul>
+<li>
+<p>删除分支</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 删除本地已合并的分支</span></span><br><span class="line">git branch -d 分支名</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">git branch -D 分支名</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">git push origin --delete 分支名</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>示例图</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/delete.png" alt=""></p>
+</li>
+</ul>
+<h2 id="五、其他常用命令">五、其他常用命令</h2>
+<h3 id="5-1-推送失败">5.1 推送失败</h3>
+<ul>
+<li>
+<p>原因：远程仓库内容修改。应该先拉取合并，再推送</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git pull origin master</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>强制推送（不推荐，文件可能丢失）</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git push -f origin master</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="5-2-master-REBASE-1-10">5.2 <code>master|REBASE 1/10</code></h3>
+<ul>
+<li>
+<p>遇到如图所示问题</p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E9%97%AE%E9%A2%981.png" alt=""></p>
+</li>
+<li>
+<p>使用下面命令解决</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git rebase --abort</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>具体参考：<a href="https://blog.csdn.net/qq_42469247/article/details/88901756">不小心git rebase后出现(master|REBASE 1/10)的解决办法</a></p>
+</li>
+</ul>
+<h3 id="5-3-查看Git状态">5.3 查看Git状态</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+<h3 id="5-4-克隆远程代码">5.4 克隆远程代码</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> url</span><br></pre></td></tr></table></figure>
+<h3 id="5-5-查看提交日志">5.5 查看提交日志</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
+<h2 id="六、本地配置了多个SSH密钥（可选）">六、本地配置了多个SSH密钥（可选）</h2>
+<h3 id="6-1-简述">6.1 简述</h3>
+<ul>
+<li>可以通过 <code>Git</code> 把代码上传到 <code>Github</code>、<code>Gitee</code>、<code>Gitlab</code>上</li>
+<li>
+<a href="/archives/5f94ed31.html" title="具体配置">具体配置</a>
+</li>
+</ul>
+<h3 id="6-2-上传代码">6.2 上传代码</h3>
+<ul>
+<li>
+<p>步骤和上面差不多，只不过身份验证需要使用本地身份</p>
+</li>
+<li>
+<p>打开 <code>Git Bash</code></p>
+<p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/gitbash.png" alt=""></p>
+</li>
+<li>
+<p>输入下面命令查看 Git 的全局配置</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>如果配置了 Git 全局变量，请删除该配置</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> user.name <span class="string">&quot;你的名字&quot;</span></span><br><span class="line">git config --global --<span class="built_in">unset</span> user.email <span class="string">&quot;你的邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在本地上传文件时，会报不知道用户是谁的错误。此时需要到 <font color='red'>项目文件夹下</font> 配置邮箱和用户名，配置 <code>local</code> 用户名和邮箱，而不是 <code>global</code>。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config --<span class="built_in">local</span> user.name <span class="string">&#x27;用户名&#x27;</span></span><br><span class="line">git config --<span class="built_in">local</span> user.email <span class="string">&#x27;邮箱&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>配置完成之后，可以在Git的配置文件中查看（<font color='red'>每个项目下都需要配置</font>）</p>
+</li>
+</ul>
+<div class="note success no-icon"><p>参考网站：【鸣谢】</p>
+<p><a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Git安装教程</a></p>
+<p><a href="https://blog.csdn.net/u013778905/article/details/83501204">GitHub如何配置SSH Key</a></p>
+<p><a href="https://www.jianshu.com/p/26d050497abb">git合并分支</a></p>
+<p><a href="https://blog.csdn.net/qq_42469247/article/details/88901756">不小心git rebase后出现(master|REBASE 1/10)的解决办法</a></p>
+</div>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JSP简单的实现了商品的增删改查</title>
     <url>/archives/5eb9f12a.html</url>
     <content><![CDATA[<div class="note info"><p>免责声明：本篇文章中的代码间接或直接的使用了<code>hjp老师</code>的代码，如有侵权，请联系删除。</p>
@@ -738,7 +977,6 @@
       </categories>
       <tags>
         <tag>Python</tag>
-        <tag>TK</tag>
       </tags>
   </entry>
   <entry>
@@ -789,10 +1027,12 @@
 </ul>
 ]]></content>
       <categories>
-        <category>练习</category>
+        <category>日常学习</category>
       </categories>
       <tags>
-        <tag>日常学习</tag>
+        <tag>Python</tag>
+        <tag>Java</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -2996,7 +3236,6 @@
         <category>Docsify笔记</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Docsify</tag>
       </tags>
   </entry>
@@ -3122,8 +3361,8 @@
         <category>Docsify笔记</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Docsify</tag>
+        <tag>Git</tag>
         <tag>Node</tag>
         <tag>Github</tag>
       </tags>
@@ -4060,7 +4299,7 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
 <h3 id="2-6-修改文件、删除文件">2.6 修改文件、删除文件</h3>
 <ul>
 <li>
-<p>选择需要修改或删除的文件</p>
+<p>选择需要修改或删除的文件（<font color='red'>点击文件名</font>）</p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Github/%E7%82%B9%E5%87%BB%E6%96%87%E4%BB%B6.png" alt=""></p>
 </li>
 <li>
