@@ -621,7 +621,7 @@
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt=""></p>
 </li>
 </ul>
-<h3 id="3-2-之后上传文件">3.2 之后上传文件</h3>
+<h3 id="3-2-以后上传文件">3.2 以后上传文件</h3>
 <ul>
 <li>
 <p>先拉取某个分支下的文件（<font color='red'>远程仓库没有修改的话，这一步可以跳过</font>）</p>
@@ -1963,7 +1963,7 @@
     <title>配置同时使用Github、Gitee的SSH密钥</title>
     <url>/archives/5f94ed31.html</url>
     <content><![CDATA[<h2 id="一、前提">一、前提</h2>
-<h3 id="1-1-已安装-swig￼10">1.1 已安装 <a href="/archives/6525f1ce.html" title="Git">Git</a></h3>
+<h3 id="1-1-已安装-swig￼10">1.1 已安装<a href="/archives/caff8000.html" title="Git">Git</a></h3>
 <h3 id="1-2-清除-Git-的全局配置">1.2 清除 Git 的全局配置</h3>
 <ul>
 <li>打开 <code>Git Bash</code></li>
@@ -2564,7 +2564,7 @@
 <h3 id="2-4-项目克隆-下载">2.4 项目克隆/下载</h3>
 <ul>
 <li>
-<p>方法一和方法二需要 <a href="https://hexo.zxiaosi.cn/archives/6525f1ce.html">Git</a>，方法三下载压缩包</p>
+<p>方法一和方法二需要 <a href="/archives/caff8000.html" title="Git">Git</a>，方法三下载压缩包</p>
 <p><img data-src="https://gitee.com/zxiaosi/image/raw/master/Hexo/Gitee/%E5%85%8B%E9%9A%86%E5%92%8C%E4%B8%8B%E8%BD%BD.png" alt=""></p>
 </li>
 </ul>
@@ -3244,7 +3244,7 @@
     <url>/archives/f8fffde8.html</url>
     <content><![CDATA[<div class="note info"><h2 id="安装之前准备">安装之前准备</h2>
 <ol>
-<li><a href="/archives/6525f1ce.html" title="Git">Git</a></li>
+<li><a href="/archives/caff8000.html" title="Git">Git</a></li>
 <li><a href="/archives/84979429.html" title="Node">Node</a></li>
 <li><a href="/archives/d345b092.html" title="Github">Github</a></li>
 </ol>
@@ -4119,7 +4119,7 @@ NexT 主题已经实现这个功能，它用了Hexo的拓展包hexo-generator-se
     <url>/archives/5ef212b6.html</url>
     <content><![CDATA[<div class="note info"><h2 id="安装之前准备">安装之前准备</h2>
 <ol>
-<li><a href="/archives/6525f1ce.html" title="Git">Git</a></li>
+<li><a href="/archives/caff8000.html" title="Git">Git</a></li>
 <li><a href="/archives/84979429.html" title="Node">Node</a></li>
 <li><a href="/archives/d345b092.html" title="Github">Github</a></li>
 </ol>
